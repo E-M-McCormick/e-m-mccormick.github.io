@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](static/pubs/21-2020-JRA/21.vanHoorn-McCormick-Perino-Rogers-Telzer-2020-JRA.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/21-2020-JRA/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/BUYSSCLX/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1111/jora.12546)
+[<i class="fas fa-file-download"></i> PDF](21.vanHoorn-McCormick-Perino-Rogers-Telzer-2020-JRA.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/BUYSSCLX/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1111/jora.12546)
 
 ### Abstract
 Neuroimaging work has examined neural processes underlying risk taking in adolescence, yet predominantly in low‐risk youth. To determine whether we can extrapolate from current neurobiological models, this functional magnetic resonance imaging study investigated risk taking and peer effects in youth with conduct problems (CP; *N* = 19) and typically developing youth (TD; *N* = 25). Results revealed higher real‐life risk taking, lower risky decisions, and no peer effects on a risk‐taking task in CP youth. CP youth showed greater ventral striatum (VS) activity during safe than risky decisions, whereas TD youth showed greater VS activation during risky decisions. Differential VS activity explained higher real‐life risk taking in CP youth. Findings provide preliminary evidence that risk‐taking behavior in youth with CD problems is characterized by differential neural patterns.
