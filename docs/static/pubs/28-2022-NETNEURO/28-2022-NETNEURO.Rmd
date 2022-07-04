@@ -15,7 +15,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](28.McCormick-Arnemann-Ito-Hanson-Cole-2022-NETNEURO.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1162/netn_a_00234)
+[<i class="fas fa-file-download"></i> PDF](../../../static/pubs/28-2022-NETNEURO/28.McCormick-Arnemann-Ito-Hanson-Cole-2022-NETNEURO.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](../../../static/pubs/28-2022-NETNEURO/cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1162/netn_a_00234)
 
 <!-- | [<i class="ai ai-open-materials"></i> Code](https://osf.io/k9rfs/) | [<i class="ai ai-open-data"></i> Dataset](https://osf.io/k9rfs/) -->
 
