@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-2. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (*preprint*). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](https://mccormickneuro.github.io/longitudinal-primer/)
+2. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (*preprint*). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](https://mccormickneuro.github.io/static/longitudinal-primer/index.html)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true" class="altmetric-embed"></div>
