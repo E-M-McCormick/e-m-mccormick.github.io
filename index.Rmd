@@ -40,7 +40,7 @@ My research and teaching focus on the development of longitudinal and psychometr
 
 I use a variety of modeling frameworks in this work, including psychometric and longitudinal versions of multilevel and structural equation models, computational modeling, and both uni- and multi-variate methods in functional neuroimaging.
 
-Download my current [<i class="fas fa-file-download"></i> CV](static/McCormick_CV.pdf).
+Download my [<i class="fas fa-file-download"></i> current CV](static/McCormick_CV.pdf).
 
 ----------------------------------------------------------------------------------
 ### News
