@@ -1,0 +1,21 @@
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+@import url('https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css');
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Condensed|Open+Sans|Open+Sans+Condensed:300|Open+Sans+Condensed:light|Lato|Lora|Fira+Sans|Fira+Mono");
+
+

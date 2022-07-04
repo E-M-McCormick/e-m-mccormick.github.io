@@ -1,0 +1,17 @@
+---
+title: "Neural Correlates of Conﬂicting Social Inﬂuence on Adolescent Risk Taking."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](static/pubs/23-2020-JRA/23.Kwon-Do-McCormick-Telzer-2020-JRA.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/23-2020-JRA/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/6033/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1111/jora.12587)
+
+### Abstract
+Adolescence is often characterized by heightened risk‐taking behaviors, which are shaped by social influence from parents and peers. However, little is understood about how adolescents make risky decisions under conflicting influence. The valuation system in the brain may elucidate how adolescents differentially integrate conflicting social information. Twenty‐eight adolescents (*M<sub>age</sub>* = 12.7 years) completed a social influence task during a functional magnetic resonance imaging scan. Behaviorally, adolescents took more risks only when their parent endorsed risky decisions but not when their peers endorsed risky decisions. At the neural level, adolescents showed enhanced vmPFC–striatum functional connectivity when they made risky decisions that followed their parents' risky decisions. Results suggest that parents' decisions may guide youths' risk‐taking behavior under conflicting influence.
+
+**Citation:** Kwon, S-J., Do, K. T., McCormick, E. M., & Telzer, E. H. (2020). Neural correlates of conflicting social influence on adolescent risk-taking. *Journal of Research on Adolescence, 31*(1), 139-152.

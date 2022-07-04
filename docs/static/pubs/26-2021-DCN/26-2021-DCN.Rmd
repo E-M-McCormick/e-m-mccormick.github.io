@@ -1,0 +1,19 @@
+---
+title: "Multi-Level Multi-Growth Models: New opportunities for addressing developmental theory using advanced longitudinal designs with planned missingness."
+categories:
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](static/pubs/26-2021-DCN/26.McCormick-2021-DCN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/26-2021-DCN/cite.bib) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/k9rfs/) | [<i class="ai ai-open-data"></i> Dataset](https://osf.io/k9rfs/) | [<i class="fas fa-link"></i> DOI](https://doi.org/https://doi.org/10.1016/j.dcn.2021.101001)
+
+```{r, echo=FALSE, fig.align='left', out.width='80%'}
+knitr::include_graphics("../../../static/pubs/26-2021-DCN/featured.png")
+```
+
+**Citation:** McCormick, E. M. (2021). Multi-Level Multi-Growth Models: New opportunities for addressing developmental theory using advanced longitudinal designs with planned missingness. *Developmental Cognitive Neuroscience, 51*, 101001.

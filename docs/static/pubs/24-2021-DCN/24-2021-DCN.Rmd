@@ -1,0 +1,17 @@
+---
+title: "Hormonal and neural correlates of prosocial conformity in adolescents."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](static/pubs/24-2021-DCN/24.Duell-vanHoorn-McCormick-Prinstein-Telzer-2021-DCN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/24-2021-DCN/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/PDZHKDRI/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.dcn.2021.100936)
+
+### Abstract
+The dual hormone hypothesis, which centers on the interaction between testosterone and cortisol on social behavior, offers a compelling framework for examining the role of hormones on the neural correlates of adolescent peer conformity. Expanding on this hypothesis, the present study explored the interaction between testosterone and cortisol via hair concentrations on adolescents’ conformity to peers. During fMRI, 136 adolescents (51 % female) ages 11–14 years (*M* = 12.32; *SD* = 0.6) completed a prosocial decision-making task. Participants chose how much of their time to donate to charity before and after observing a low- or high prosocial peer. Conformity was measured as change in behavior pre- to post-observation. High testosterone with low cortisol was associated with greater conformity to high-prosocial peers but not low prosocial peers. Focusing on high prosocial peers, whole-brain analyses indicated greater activation post- vs. pre-observation as a function of high testosterone and low cortisol in regions implicated in social cognition, salience detection, and reward processing: pSTS/TPJ, insula, OFC, and caudate nucleus. Results highlight the relevance of hormones for understanding the neural correlates of adolescents’ conformity to prosocial peers.
+
+**Citation:** Duell, N., van Hoorn, J., McCormick, E. M., Prinstein, M. J., & Telzer, E. H. (2021). Hormonal and neural correlates of prosocial conformity in adolescents. *Developmental Cognitive Neuroscience, 48*, 100936.

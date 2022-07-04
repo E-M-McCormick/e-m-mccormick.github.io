@@ -1,0 +1,17 @@
+---
+title: "Neural sensitivity to conflicting attitudes supports greater conformity toward positive over negative influence in early adolescence."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](static/pubs/22-2020-DCN/22.Do-McCormick-Telzer-2020-DCN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/22-2020-DCN/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/QCNBXGZR/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.dcn.2020.100837)
+
+### Abstract
+Adolescents often need to reconcile discrepancies between their own attitudes and those of their parents and peers, but the social contexts under which adolescents conform to the attitudes of others, or the neurocognitive processes underlying decisions to conform, remain unexplored. This fMRI study assessed the extent to which early adolescents (*n* = 39, ages 12–14) conform to their parents’ and peers’ conflicting attitudes toward different types of behavior (unconstructive and constructive) and in response to different types of influence (negative and positive). Overall, adolescents exhibited low rates of conformity, sticking with their pre-existing attitudes 65 % of the time. When they did conform, adolescents were more likely to conform to their peers’ attitudes towards constructive than unconstructive behaviors, exhibiting decreased activation in the ventromedial prefrontal cortex, dorsal anterior cingulate cortex, insula, and inferior frontal gyrus during peer conformity toward constructive over unconstructive behaviors. Adolescents were also more likely to conform when their parents and peers endorsed relatively more positive influence than negative influence, exhibiting increased activation in the temporoparietal junction when considering conforming to negative over positive influence. These results highlight early adolescents’ ability to stick with their own opinions when confronted with opposing attitudes and conform selectively based on the social context.
+
+**Citation:** Do, K. T., McCormick, E. M., & Telzer, E. H. (2020). Neural sensitivity to conflicting attitudes supports greater conformity toward positive over negative influence in early adolescence. *Developmental Cognitive Neuroscience, 45*, 100837.
