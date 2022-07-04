@@ -152,7 +152,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-16. Do, K. T., **McCormick, E. M.**, & Telzer, E. H. (2019). The neural development of prosocial behavior from childhood to adolescence. *Social Cognitive and Affective Neuroscience, 14*(2), 129-139. DOI: [10.1093/scan/nsy117](https://doi.org/10.1093/scan/nsy117) | [<i class="fas fa-download"></i> PDF](static/pubs/16-2019-SCAN/16.Do-McCormick-Telzer-2019-SCAN.pdf)
+16. Do, K. T., **McCormick, E. M.**, & Telzer, E. H. (2019). [The neural development of prosocial behavior from childhood to adolescence.](static/pubs/16-2019-SCAN/16-2019-SCAN.html) *Social Cognitive and Affective Neuroscience, 14*(2), 129-139. DOI: [10.1093/scan/nsy117](https://doi.org/10.1093/scan/nsy117) | [<i class="fas fa-download"></i> PDF](static/pubs/16-2019-SCAN/16.Do-McCormick-Telzer-2019-SCAN.pdf)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1093/scan/nsy117" data-hide-no-mentions="true" class="altmetric-embed"></div>

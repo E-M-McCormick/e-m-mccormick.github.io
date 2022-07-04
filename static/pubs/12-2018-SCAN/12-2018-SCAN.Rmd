@@ -1,0 +1,21 @@
+---
+title: "Functional connectivity in the social brain across childhood and adolescence."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](static/pubs/12-2018-SCAN/12.McCormick-van-Hoorn-Cohen-Telzer-2018-SCAN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/12-2018-SCAN/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/XPPOFEMU/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1093/scan/nsy064)
+
+```{r, echo=FALSE, fig.align='left', out.width='80%'}
+knitr::include_graphics("../../../static/pubs/12-2018-SCAN/featured.png")
+```
+
+### Abstract
+Previous research has characterized a collection of neural regions which support social-cognitive processes. While this ‘social brain’ is often described as a cohesive unit, it has been largely assessed with univariate methodologies, which cannot account for functional relationships ‘between’ brain regions, and therefore cannot test the idea of the social brain as a network. In the present work, we utilized a multi-method approach to empirically assess the functional architecture of the social brain. Fifty participants (ages 8–16) completed a social evaluation task during an functional imaging scan. Results from three unique functional connectivity methodologies demonstrated that social brain regions show strong functional relationships, while also interfacing with non-social regions, suggesting that future work should consider network relationships between social brain regions in addition to traditional univariate approaches. We probed, but did not find age-related differences in social brain network organization, demonstrating that this functional  architecture is in place by late childhood.
+
+**Citation:** McCormick, E. M., van Hoorn, J., Cohen, J. R., & Telzer, E. H. (2018). Functional connectivity in the social brain across childhood and adolescence. *Social Cognitive and Affective Neuroscience, 13*(8), 819–830.

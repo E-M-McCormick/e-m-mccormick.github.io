@@ -1,0 +1,17 @@
+---
+title: "Methodological considerations for longitudinal fMRI research."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](static/pubs/08-2018-DCN/8.Telzer-McCormick-Peters-Cosme-Pfeifer-van-Duijvenvoorde-2018-DCN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/08-2018-DCN/cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.dcn.2018.02.004)
+
+### Abstract
+There has been a large spike in longitudinal fMRI studies in recent years, and so it is essential that researchers carefully assess the limitations and challenges afforded by longitudinal designs. In this article, we provide an overview of important considerations for longitudinal fMRI research in developmental samples, including task design, sampling strategies, and group-level analyses. We first discuss considerations for task designs, weighing the pros and cons of many commonly used tasks, as well as outlining how the tasks may be impacted by repeated exposure. Secondly, we review the types of group-level analyses that can be conducted on longitudinal fMRI data, analyses which must account for repeated measures. Finally, we review and critique recent longitudinal studies that have emerged in the past few years.
+
+**Citation:** Telzer, E. H., McCormick, E. M., Peters, S., Cosme, D., Pfeifer, P. H., & van Duijvenvoorde, A. C. K. (2018). Methodological considerations for longitudinal fMRI research. *Developmental Cognitive Neuroscience, 33*, 149–160.
