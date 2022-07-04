@@ -9,10 +9,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](static/pubs/25-2021-NeuroImage/25.McCormick-Peters-Crone-Telzer-2021-NeuroImage.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/25-2021-NeuroImage/cite.bib) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/62gwz/) | [<i class="ai ai-open-data"></i> Dataset](https://osf.io/62gwz/) | [<i class="fas fa-link"></i> DOI](https://doi-org/10.1016/j.neuroimage.2021.117784)
+[<i class="fas fa-file-download"></i> PDF](25.McCormick-Peters-Crone-Telzer-2021-NeuroImage.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/62gwz/) | [<i class="ai ai-open-data"></i> Dataset](https://osf.io/62gwz/) | [<i class="fas fa-link"></i> DOI](https://doi-org/10.1016/j.neuroimage.2021.117784)
 
 ```{r, echo=FALSE, fig.align='left', out.width='80%'}
-knitr::include_graphics("../../../static/pubs/25-2021-NeuroImage/featured.png")
+knitr::include_graphics("featured.png")
 ```
 
 ### Abstract
