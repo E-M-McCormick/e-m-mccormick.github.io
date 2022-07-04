@@ -1,5 +1,5 @@
 ---
-title: "Differential effects of parent and peer presence on neural correlates of risk taking in adolescence."
+title: "Functional connectivity in the social brain across childhood and adolescence."
 output:
   distill::distill_article:
     css: ../../../styles.css
@@ -9,9 +9,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](static/pubs/13-2018-SCAN/13.van-Hoorn-McCormick-Rogers-Ivory-Telzer-2018-SCAN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/13-2018-SCAN/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/XPPOFEMU/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1093/scan/nsy071)
+[<i class="fas fa-file-download"></i> PDF](static/pubs/12-2018-SCAN/12.McCormick-van-Hoorn-Cohen-Telzer-2018-SCAN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/12-2018-SCAN/cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/XPPOFEMU/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1093/scan/nsy064)
+
+```{r, echo=FALSE, fig.align='left', out.width='80%'}
+knitr::include_graphics("../../../static/pubs/12-2018-SCAN/featured.png")
+```
 
 ### Abstract
-Adolescence is a developmental period associated with increased health-risk behaviors and unique sensitivity to the input from the social context, paralleled by major changes in the developing brain. Peer presence increases adolescent risk taking, associated with greater reward-related activity, while parental presence decreases risk taking, associated with decreased reward-related activity and increased cognitive control. Yet the effects specific to peers and parents are still unknown. The current functional magnetic resonance imaging (fMRI) study compared within-person peer and parent influences on risky decision-making during adolescence (ages 12–15 years; N = 56). Participants completed the Yellow Light Game (YLG), a computerized driving task, during which they could make safe or risky decisions, in the presence of a peer and their parent. Behavioral findings revealed no effects of social context on risk taking. At the neural level, a collection of affective, social and cognitive regions [ventral striatum (VS), temporo-parietal junction (TPJ), and dorsolateral prefrontal cortex (dlPFC)] was more active during decision-making with peers than parents. Additionally, functional connectivity analyses showed greater coupling between affective, social and cognitive control regions (VS-insula, VS-TPJ) during decision-making with parents than peers. These findings highlight the complex nature of social influence processes in peer and parent contexts, and contribute to our understanding of the opportunities and vulnerabilities associated with adolescent social sensitivity.
+Previous research has characterized a collection of neural regions which support social-cognitive processes. While this ‘social brain’ is often described as a cohesive unit, it has been largely assessed with univariate methodologies, which cannot account for functional relationships ‘between’ brain regions, and therefore cannot test the idea of the social brain as a network. In the present work, we utilized a multi-method approach to empirically assess the functional architecture of the social brain. Fifty participants (ages 8–16) completed a social evaluation task during an functional imaging scan. Results from three unique functional connectivity methodologies demonstrated that social brain regions show strong functional relationships, while also interfacing with non-social regions, suggesting that future work should consider network relationships between social brain regions in addition to traditional univariate approaches. We probed, but did not find age-related differences in social brain network organization, demonstrating that this functional  architecture is in place by late childhood.
 
-**Citation:** van Hoorn, J., McCormick, E. M., Rogers, C. R., Ivory, S., & Telzer, E. H. (2018). Differential effects of parent and peer presence on neural correlates of risk taking in adolescence. *Social Cognitive and Affective Neuroscience, 13*(9), 945–955.
+**Citation:** McCormick, E. M., van Hoorn, J., Cohen, J. R., & Telzer, E. H. (2018). Functional connectivity in the social brain across childhood and adolescence. *Social Cognitive and Affective Neuroscience, 13*(8), 819–830.
