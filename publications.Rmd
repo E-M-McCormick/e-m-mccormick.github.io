@@ -125,7 +125,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ### 2019
-19. Perino, M. T., Guassi Moreira, J. F., **McCormick, E. M.**, & Telzer, E. H. (2019). [The neural development of prosocial behavior from childhood to adolescence.](static/pubs/19-2019-SCAN/19-2019-SCAN.html) *Social Cognitive and Affective Neuroscience, 14*(2), 129-139. DOI: [10.1093/scan/nsz063](https://doi.org/10.1093/scan/nsz063) | [<i class="fas fa-download"></i> PDF](static/pubs/19-2019-SCAN/19.Perino-Moreira-McCormick-Telzer-2019-SCAN.pdf)
+19. Perino, M. T., Guassi Moreira, J. F., **McCormick, E. M.**, & Telzer, E. H. (2019). [Apples to apples? Neural correlates of emotion regulation differences between high and low risk adolescents.](static/pubs/19-2019-SCAN/19-2019-SCAN.html) *Social Cognitive and Affective Neuroscience, 14*(2), 129-139. DOI: [10.1093/scan/nsz063](https://doi.org/10.1093/scan/nsz063) | [<i class="fas fa-download"></i> PDF](static/pubs/19-2019-SCAN/19.Perino-Moreira-McCormick-Telzer-2019-SCAN.pdf)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1093/scan/nsz063" data-hide-no-mentions="true" class="altmetric-embed"></div>
