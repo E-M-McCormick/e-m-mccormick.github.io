@@ -9,7 +9,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](static/pubs/05-2018-ChildDev/5.Qu-Pomerantz-McCormick-Telzer-2018-ChildDev.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/05-2018-ChildDev/cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1111/cdev.13017)
+[<i class="fas fa-file-download"></i> PDF](5.Qu-Pomerantz-McCormick-Telzer-2018-ChildDev.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1111/cdev.13017)
 
 ### Abstract
 The development of cognitive control during adolescence is paralleled by changes in the function of the lateral prefrontal cortex (PFC). Using a three-wave longitudinal neuroimaging design (N = 22, M<sub>age</sub> = 13.08 years at Wave 1), this study examined if youth’s stereotypes about teens modulate changes in their neural activation during cognitive control. Participants holding stereotypes of teens as irresponsible in the family context (i.e., ignoring family obligations) in middle school showed increases in bilateral ventrolateral PFC activation during cognitive control over the transition to high school, which was associated with increases in risk taking. These findings provide preliminary evidence that youth’s conceptions of adolescence play a role in neural plasticity over this phase of development.

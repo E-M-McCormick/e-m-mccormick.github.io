@@ -9,10 +9,10 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](static/pubs/04-2017-Frontiers/4.McCormick-Qu-Telzer-2017-Frontiers.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/04-2017-Frontiers/cite.bib)  | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/2411/)| [<i class="fas fa-link"></i> DOI](https://doi.org/10.3389/fnhum.2017.00141)
+[<i class="fas fa-file-download"></i> PDF](4.McCormick-Qu-Telzer-2017-Frontiers.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib)  | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/2411/)| [<i class="fas fa-link"></i> DOI](https://doi.org/10.3389/fnhum.2017.00141)
 
 ```{r, echo=FALSE, fig.align='left', out.width='80%'}
-knitr::include_graphics("../../../static/pubs/04-2017-Frontiers/featured.png")
+knitr::include_graphics("featured.png")
 ```
 
 ### Abstract
