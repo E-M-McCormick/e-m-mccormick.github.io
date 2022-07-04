@@ -10,7 +10,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-[<i class="fas fa-file-download"></i> PDF](static/pubs/27-2022-COPSYC/27.Kievit-McCormick-Fuhrmann-Deserno-Orben-2021-COPSYC.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](static/pubs/27-2022-COPSYC/cite.bib) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/xz7w2/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.copsyc.2021.10.003)
+[<i class="fas fa-file-download"></i> PDF](27.Kievit-McCormick-Fuhrmann-Deserno-Orben-2021-COPSYC.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/xz7w2/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.copsyc.2021.10.003)
 
 ### Abstract
 Adolescence is a period of rapid change, with cognitive, mental wellbeing, environmental biological factors interacting to shape lifelong outcomes. Large, longitudinal phenotypically rich data sets available for reuse (secondary data) have revolutionized the way we study adolescence, allowing the field to examine these unfolding processes across hundreds or even thousands of individuals. Here, we outline the opportunities and challenges associated with such secondary data sets, provide an overview of particularly valuable resources available to the field, and recommend best practices to improve the rigor and transparency of analyses conducted on large, secondary data sets.
