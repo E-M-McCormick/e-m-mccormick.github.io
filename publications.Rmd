@@ -161,7 +161,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ### 2018
-15. **McCormick, E. M.**, Gates, K. M., & Telzer, E. H. (2018). Model-based network discovery of developmental and performance-related differences during risky decision-making. *NeuroImage, 188*, 456-464. DOI: [10.1016/j.neuroimage.2018.12.042](https://doi.org/10.1016/j.neuroimage.2018.12.042) | [<i class="fas fa-download"></i> PDF](static/pubs/15-2019-NeuroImage/15.McCormick-Gates-Telzer-2019-NeuroImage.pdf)
+15. **McCormick, E. M.**, Gates, K. M., & Telzer, E. H. (2018). [Model-based network discovery of developmental and performance-related differences during risky decision-making.](static/pubs/15-2019-NeuroImage/15-2019-NeuroImage.html) *NeuroImage, 188*, 456-464. DOI: [10.1016/j.neuroimage.2018.12.042](https://doi.org/10.1016/j.neuroimage.2018.12.042) | [<i class="fas fa-download"></i> PDF](static/pubs/15-2019-NeuroImage/15.McCormick-Gates-Telzer-2019-NeuroImage.pdf)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1016/j.neuroimage.2018.12.042" data-hide-no-mentions="true" class="altmetric-embed"></div>
