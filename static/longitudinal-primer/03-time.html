@@ -413,8 +413,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb62-4"><a href="03-time.html#cb62-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> accelerated)</span></code></pre></div>
 <p>We can see the results of this model below.</p>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="03-time.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(accel)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: scale(modularity) ~ 1 + age + I(age^2) + (1 | id)
 ##    Data: accelerated
 ## 
@@ -466,8 +465,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb67-6"><a href="03-time.html#cb67-6" aria-hidden="true" tabindex="-1"></a>                         <span class="at">jnalpha =</span> <span class="fl">0.05</span>)</span></code></pre></div>
 <pre><code>## JOHNSON-NEYMAN INTERVAL 
 ## 
-## When age_temp is OUTSIDE the interval [18.79, 27.02], the slope of age is
-## p &lt; .05.
+## When age_temp is OUTSIDE the interval [18.79, 27.02], the slope of age is p &lt; .05.
 ## 
 ## Note: The range of observed values of age_temp is [8.01, 28.46]</code></pre>
 <p><img src="longitudinal_primer_files/figure-html/accelerated%2006-1.png" width="672" /></p>
@@ -1328,8 +1326,7 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 <span id="cb79-4"><a href="03-time.html#cb79-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">data =</span> accelerated)</span>
 <span id="cb79-5"><a href="03-time.html#cb79-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb79-6"><a href="03-time.html#cb79-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(accel, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: scale(modularity) ~ 1 + puberty + (1 | id)
 ##    Data: accelerated
 ## 
