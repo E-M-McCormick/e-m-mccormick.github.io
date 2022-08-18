@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Covariates and Distal Outcomes | The Hitchhiker’s Guide to Longitudinal Models</title>
   <meta name="description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Covariates and Distal Outcomes | The Hitchhiker’s Guide to Longitudinal Models" />
   <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://https://mccormickneuro.github.io/longitudinal-primer/" />
   
   <meta property="og:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   <meta name="github-repo" content="McCormickNeuro/longitudinal-primer" />
@@ -20,7 +21,7 @@
   <meta name="twitter:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   
 
-<meta name="author" content="Ethan M. McCormick, Michelle L. Byrne, John C. Flournoy, Kathryn L. Mills, &amp; Jennifer H. Pfiefer" />
+<meta name="author" content="Ethan M. McCormick, Michelle L. Byrne, John C. Flournoy, Kathryn L. Mills, &amp; Jennifer H. Pfeifer" />
 
 
 
@@ -31,6 +32,7 @@
   
 <link rel="prev" href="04-shape.html"/>
 <link rel="next" href="06-nesting.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -48,9 +50,8 @@
 
 
 
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/font-awesome-5.13.0/js/script.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
@@ -138,94 +139,94 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">The Hitchhiker’s Guide to Longitudinal Models</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
-<li class="chapter" data-level="" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html"><i class="fa fa-check"></i>Canonical Models</a>
+<li><a href="index.html#about" id="toc-about">About</a></li>
+<li><a href="01-introduction.html#intro" id="toc-intro">Introduction</a></li>
+<li><a href="02-canonical.html#canon" id="toc-canon">Canonical Models</a>
 <ul>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#multilevel-model"><i class="fa fa-check"></i>Multilevel Model</a>
+<li><a href="02-canonical.html#multilevel-model" id="toc-multilevel-model">Multilevel Model</a>
 <ul>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#nlme"><i class="fa fa-check"></i>nlme</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lme4"><i class="fa fa-check"></i>lme4</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lmertest"><i class="fa fa-check"></i>lmerTest</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-outputs"><i class="fa fa-check"></i>MLM Outputs</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>MLM Plotting Model-Implied Trajectories</a></li>
+<li><a href="02-canonical.html#nlme" id="toc-nlme">nlme</a></li>
+<li><a href="02-canonical.html#lme4" id="toc-lme4">lme4</a></li>
+<li><a href="02-canonical.html#lmertest" id="toc-lmertest">lmerTest</a></li>
+<li><a href="02-canonical.html#mlm-outputs" id="toc-mlm-outputs">MLM Outputs</a></li>
+<li><a href="02-canonical.html#mlm-plotting-model-implied-trajectories" id="toc-mlm-plotting-model-implied-trajectories">MLM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#generalized-additive-mixed-model"><i class="fa fa-check"></i>Generalized Additive Mixed Model</a>
+<li><a href="02-canonical.html#generalized-additive-mixed-model" id="toc-generalized-additive-mixed-model">Generalized Additive Mixed Model</a>
 <ul>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#gamm-outputs"><i class="fa fa-check"></i>GAMM Outputs</a></li>
+<li><a href="02-canonical.html#gamm-outputs" id="toc-gamm-outputs">GAMM Outputs</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-curve-model"><i class="fa fa-check"></i>Latent Curve Model</a>
+<li><a href="02-canonical.html#latent-curve-model" id="toc-latent-curve-model">Latent Curve Model</a>
 <ul>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-syntax-and-model-fitting"><i class="fa fa-check"></i>LCM Syntax and Model Fitting</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-outputs"><i class="fa fa-check"></i>LCM Outputs</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-path-diagrams"><i class="fa fa-check"></i>LCM Path Diagrams</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>LCM Plotting Model-Implied Trajectories</a></li>
+<li><a href="02-canonical.html#lcm-syntax-and-model-fitting" id="toc-lcm-syntax-and-model-fitting">LCM Syntax and Model Fitting</a></li>
+<li><a href="02-canonical.html#lcm-outputs" id="toc-lcm-outputs">LCM Outputs</a></li>
+<li><a href="02-canonical.html#lcm-path-diagrams" id="toc-lcm-path-diagrams">LCM Path Diagrams</a></li>
+<li><a href="02-canonical.html#lcm-plotting-model-implied-trajectories" id="toc-lcm-plotting-model-implied-trajectories">LCM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-change-score-model"><i class="fa fa-check"></i>Latent Change Score Model</a>
+<li><a href="02-canonical.html#latent-change-score-model" id="toc-latent-change-score-model">Latent Change Score Model</a>
 <ul>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm"><i class="fa fa-check"></i>Linear LCSM</a></li>
-<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm-with-proportional-change"><i class="fa fa-check"></i>Linear LCSM with Proportional Change</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html"><i class="fa fa-check"></i>Time Structure</a>
-<ul>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#assessment-schedules"><i class="fa fa-check"></i>Assessment Schedules</a>
-<ul>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#single-cohort-data"><i class="fa fa-check"></i>Single Cohort Data</a></li>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#multiple-cohort-data"><i class="fa fa-check"></i>Multiple Cohort Data</a></li>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#accelerated-design"><i class="fa fa-check"></i>Accelerated Design</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#time-coding"><i class="fa fa-check"></i>Time Coding</a></li>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#additional-considerations"><i class="fa fa-check"></i>Additional Considerations</a>
-<ul>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#alternative-metrics-of-time"><i class="fa fa-check"></i>Alternative Metrics of Time</a></li>
-<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#residual-estimates"><i class="fa fa-check"></i>Residual Estimates</a></li>
+<li><a href="02-canonical.html#linear-lcsm" id="toc-linear-lcsm">Linear LCSM</a></li>
+<li><a href="02-canonical.html#linear-lcsm-with-proportional-change" id="toc-linear-lcsm-with-proportional-change">Linear LCSM with Proportional Change</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html"><i class="fa fa-check"></i>The Shape of Development</a>
+<li><a href="03-time.html#time" id="toc-time">Time Structure</a>
 <ul>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#polynomial-trajectories"><i class="fa fa-check"></i>Polynomial Trajectories</a>
+<li><a href="03-time.html#assessment-schedules" id="toc-assessment-schedules">Assessment Schedules</a>
 <ul>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#intercept-only-model"><i class="fa fa-check"></i>Intercept-Only Model</a></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#linear-model"><i class="fa fa-check"></i>Linear Model</a></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#quadratic-model"><i class="fa fa-check"></i>Quadratic Model</a></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#inverse-model"><i class="fa fa-check"></i>Inverse Model</a></li>
+<li><a href="03-time.html#single-cohort-data" id="toc-single-cohort-data">Single Cohort Data</a></li>
+<li><a href="03-time.html#multiple-cohort-data" id="toc-multiple-cohort-data">Multiple Cohort Data</a></li>
+<li><a href="03-time.html#accelerated-design" id="toc-accelerated-design">Accelerated Design</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#piecewise-trajectories"><i class="fa fa-check"></i>Piecewise Trajectories</a></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#nonlinear-trajectories"><i class="fa fa-check"></i>Nonlinear Trajectories</a></li>
-<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#fixed-and-random-effects"><i class="fa fa-check"></i>Fixed and Random Effects</a></li>
+<li><a href="03-time.html#time-coding" id="toc-time-coding">Time Coding</a></li>
+<li><a href="03-time.html#additional-considerations" id="toc-additional-considerations">Additional Considerations</a>
+<ul>
+<li><a href="03-time.html#alternative-metrics-of-time" id="toc-alternative-metrics-of-time">Alternative Metrics of Time</a></li>
+<li><a href="03-time.html#residual-estimates" id="toc-residual-estimates">Residual Estimates</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html"><i class="fa fa-check"></i>Covariates and Distal Outcomes</a>
-<ul>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#covariates-1"><i class="fa fa-check"></i>Covariates</a>
-<ul>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-invariant-covariates"><i class="fa fa-check"></i>Time Invariant Covariates</a></li>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#cross-level-interactions"><i class="fa fa-check"></i>Cross-Level Interactions</a></li>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-varying-covariates"><i class="fa fa-check"></i>Time Varying Covariates</a></li>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#multivariate-models"><i class="fa fa-check"></i>Multivariate Models</a></li>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#within--and-betwen-person-variance"><i class="fa fa-check"></i>Within- and Betwen-Person Variance</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#distal-outcomes"><i class="fa fa-check"></i>Distal Outcomes</a></li>
+<li><a href="04-shape.html#shape" id="toc-shape">The Shape of Development</a>
+<ul>
+<li><a href="04-shape.html#polynomial-trajectories" id="toc-polynomial-trajectories">Polynomial Trajectories</a>
+<ul>
+<li><a href="04-shape.html#intercept-only-model" id="toc-intercept-only-model">Intercept-Only Model</a></li>
+<li><a href="04-shape.html#linear-model" id="toc-linear-model">Linear Model</a></li>
+<li><a href="04-shape.html#quadratic-model" id="toc-quadratic-model">Quadratic Model</a></li>
+<li><a href="04-shape.html#inverse-model" id="toc-inverse-model">Inverse Model</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html"><i class="fa fa-check"></i>Nested Data</a>
-<ul>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#unconditional-model"><i class="fa fa-check"></i>Unconditional Model</a></li>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#categorical-predictors"><i class="fa fa-check"></i>Categorical Predictors</a></li>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#multiple-groups-models"><i class="fa fa-check"></i>Multiple Groups Models</a></li>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#fixed-effect-approach"><i class="fa fa-check"></i>Fixed Effect Approach</a></li>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#random-effect-approach"><i class="fa fa-check"></i>Random Effect Approach</a></li>
-<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#cluster-correction"><i class="fa fa-check"></i>Cluster Correction</a></li>
+<li><a href="04-shape.html#piecewise-trajectories" id="toc-piecewise-trajectories">Piecewise Trajectories</a></li>
+<li><a href="04-shape.html#nonlinear-trajectories" id="toc-nonlinear-trajectories">Nonlinear Trajectories</a></li>
+<li><a href="04-shape.html#fixed-and-random-effects" id="toc-fixed-and-random-effects">Fixed and Random Effects</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html"><i class="fa fa-check"></i>Datasets</a>
+<li><a href="05-covariates.html#covariates" id="toc-covariates">Covariates and Distal Outcomes</a>
 <ul>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#descriptions"><i class="fa fa-check"></i>Descriptions</a>
+<li><a href="05-covariates.html#covariates-1" id="toc-covariates-1">Covariates</a>
 <ul>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#executive-function"><i class="fa fa-check"></i>Executive Function</a></li>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#feedback-learning"><i class="fa fa-check"></i>Feedback Learning</a></li>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#externalizing-and-math"><i class="fa fa-check"></i>Externalizing and Math</a></li>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#adversity"><i class="fa fa-check"></i>Adversity</a></li>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#trials"><i class="fa fa-check"></i>Trials</a></li>
-<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#achieve"><i class="fa fa-check"></i>Achieve</a></li>
+<li><a href="05-covariates.html#time-invariant-covariates" id="toc-time-invariant-covariates">Time Invariant Covariates</a></li>
+<li><a href="05-covariates.html#cross-level-interactions" id="toc-cross-level-interactions">Cross-Level Interactions</a></li>
+<li><a href="05-covariates.html#time-varying-covariates" id="toc-time-varying-covariates">Time Varying Covariates</a></li>
+<li><a href="05-covariates.html#multivariate-models" id="toc-multivariate-models">Multivariate Models</a></li>
+<li><a href="05-covariates.html#within--and-betwen-person-variance" id="toc-within--and-betwen-person-variance">Within- and Betwen-Person Variance</a></li>
+</ul></li>
+<li><a href="05-covariates.html#distal-outcomes" id="toc-distal-outcomes">Distal Outcomes</a></li>
+</ul></li>
+<li><a href="06-nesting.html#nesting" id="toc-nesting">Nested Data</a>
+<ul>
+<li><a href="06-nesting.html#unconditional-model" id="toc-unconditional-model">Unconditional Model</a></li>
+<li><a href="06-nesting.html#categorical-predictors" id="toc-categorical-predictors">Categorical Predictors</a></li>
+<li><a href="06-nesting.html#multiple-groups-models" id="toc-multiple-groups-models">Multiple Groups Models</a></li>
+<li><a href="06-nesting.html#fixed-effect-approach" id="toc-fixed-effect-approach">Fixed Effect Approach</a></li>
+<li><a href="06-nesting.html#random-effect-approach" id="toc-random-effect-approach">Random Effect Approach</a></li>
+<li><a href="06-nesting.html#cluster-correction" id="toc-cluster-correction">Cluster Correction</a></li>
+</ul></li>
+<li><a href="07-datasets.html#datasets" id="toc-datasets">Datasets</a>
+<ul>
+<li><a href="07-datasets.html#descriptions" id="toc-descriptions">Descriptions</a>
+<ul>
+<li><a href="07-datasets.html#executive-function" id="toc-executive-function">Executive Function</a></li>
+<li><a href="07-datasets.html#feedback-learning" id="toc-feedback-learning">Feedback Learning</a></li>
+<li><a href="07-datasets.html#externalizing-and-math" id="toc-externalizing-and-math">Externalizing and Math</a></li>
+<li><a href="07-datasets.html#adversity" id="toc-adversity">Adversity</a></li>
+<li><a href="07-datasets.html#trials" id="toc-trials">Trials</a></li>
+<li><a href="07-datasets.html#achieve" id="toc-achieve">Achieve</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -248,16 +249,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="covariates" class="section level1 hasAnchor">
-<h1>Covariates and Distal Outcomes<a href="05-covariates.html#covariates" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="covariates" class="section level1">
+<h1>Covariates and Distal Outcomes</h1>
 <p>Thus far, we have only considered <em>unconditional</em> growth models. This is somewhat of a misnomer because clearly time is included as a predictor, but that is considered integral to the growth model so we tend not to count it as a conditional model (as with many terminological things in quant: <strong>shrugs</strong>). What we will do in this section is bring in additional variables to our growth model as predictors. These covariates will either predict the parameters of the growth process (i.e., intercept and slope) or the individual repeated measures directly (some models will allow a single covariate to do both simultaneously). We will read in the relevant data sets below.</p>
 <div class="sourceCode" id="cb164"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb164-1"><a href="05-covariates.html#cb164-1" aria-hidden="true" tabindex="-1"></a>adversity <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/adversity.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb164-2"><a href="05-covariates.html#cb164-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb164-3"><a href="05-covariates.html#cb164-3" aria-hidden="true" tabindex="-1"></a>executive.function <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/executive-function.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<div id="covariates-1" class="section level2 hasAnchor">
-<h2>Covariates<a href="05-covariates.html#covariates-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="time-invariant-covariates" class="section level3 hasAnchor">
-<h3>Time Invariant Covariates<a href="05-covariates.html#time-invariant-covariates" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="covariates-1" class="section level2">
+<h2>Covariates</h2>
+<div id="time-invariant-covariates" class="section level3">
+<h3>Time Invariant Covariates</h3>
 <p>We will begin with the relatively straightforward time-invariant covariate (TIC). These covariates operate at the level of the growth process: meaning that they predict the random effects (MEMs) or latent factors (SEMs). As the name implies, we will have a single value of each TIC per individual. While we often obtain that value at the first observation, in theory we could have measured that variable at any time and we should get the same value (otherwise it isn’t time-invariant, is it?). One common misconception is that there is any temporal ordering inherent at this level of the model. The TIC and the intercept/slope parameters are time-invariant and so we cannot establish temporal precedence unless we bring other knowledge of the data to bear (e.g., the TIC measures something early in life and the growth parameters are fit to adolescent data). This is the same reason why regressing the slope of one outcome on the intercept of the other is very theoretically dubious unless the growth processes are truly separated in time. At this level, we essentially have cross-sectional regressions (again unless we know something extra about our variables temporally). As such, inclusion of TICs is relatively simple compared with what we will consider for the remainder of this section. We will demonstrate our examples in the MLM and LCM because of the relatively simple syntax, but the principles extend naturally to the GAMM and LCSM.</p>
 <p>Below we can expand our unconditional growth of <code>fmin</code> to include an early life experience variable. Here we will begin with the multilevel model. Including a TIC is trivially easy from a model syntax standpoint. We can add our early life experience variable (<code>neglect</code>) into the fixed effect just as we have done for <code>age</code>. Even though these variables operate at different levels of the model (<code>age</code> is a level 1 variable and <code>neglect</code> is a level 2 variable) there is no need to differentiate them in the model syntax. We will need to keep track of these different levels of effect in our <em>interpretation</em> but the model really operates at a single <strong>reduced-form</strong> level and our syntax reflects that fact.</p>
 <div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="05-covariates.html#cb165-1" aria-hidden="true" tabindex="-1"></a>adversity.long <span class="ot">&lt;-</span> adversity <span class="sc">%&gt;%</span> </span>
@@ -275,12 +276,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb165-13"><a href="05-covariates.html#cb165-13" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb165-14"><a href="05-covariates.html#cb165-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb165-15"><a href="05-covariates.html#cb165-15" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tic.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: fmin ~ 1 + age + neglect + (1 + age | id)
 ##    Data: adversity.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 3544
 ## 
@@ -290,16 +289,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev. Corr 
-##  id       (Intercept) 0.26612  0.5159        
+##  id       (Intercept) 0.26613  0.5159        
 ##           age         0.01086  0.1042   -0.31
 ##  Residual             0.62111  0.7881        
 ## Number of obs: 1240, groups:  id, 398
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)  -0.17524    0.08671 320.73004  -2.021   0.0441 *  
-## age           0.05101    0.01199 291.23230   4.256 2.81e-05 ***
-## neglect      -0.10133    0.01911 397.77938  -5.301 1.91e-07 ***
+## (Intercept)  -0.17524    0.08671 320.73547  -2.021   0.0441 *  
+## age           0.05101    0.01199 291.23548   4.256 2.81e-05 ***
+## neglect      -0.10133    0.01911 397.77909  -5.301 1.91e-07 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here we can see that there is a positive effect of <code>age</code>, reflecting general increases in FA values across age. Conversely, there is a negative <em>between-person</em> effect of <code>neglect</code>, with those experiencing greater levels of early childhood neglect showing reduced levels of white matter FA in the forceps minor (<code>fmin</code>). Note that this is a prediction of level, not of slopes. We will return to this in a bit when we consider cross-level interactions.</p>
@@ -318,15 +317,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb167-12"><a href="05-covariates.html#cb167-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb167-13"><a href="05-covariates.html#cb167-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tic.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb167-14"><a href="05-covariates.html#cb167-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 29 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 29 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        13
-##                                                       
+## 
 ##   Number of observations                           398
 ##   Number of missing patterns                        40
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                49.965
@@ -405,15 +404,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb169-12"><a href="05-covariates.html#cb169-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb169-13"><a href="05-covariates.html#cb169-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(joint.lik.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb169-14"><a href="05-covariates.html#cb169-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 27 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 27 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        13
-##                                                       
+## 
 ##   Number of observations                           398
 ##   Number of missing patterns                        40
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                55.165
@@ -437,15 +436,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb171-15"><a href="05-covariates.html#cb171-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb171-16"><a href="05-covariates.html#cb171-16" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(joint.lik.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb171-17"><a href="05-covariates.html#cb171-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 27 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 27 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        15
-##                                                       
+## 
 ##   Number of observations                           398
 ##   Number of missing patterns                        40
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                55.165
@@ -467,15 +466,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb173-13"><a href="05-covariates.html#cb173-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb173-14"><a href="05-covariates.html#cb173-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(joint.lik.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb173-15"><a href="05-covariates.html#cb173-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 27 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 27 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        14
-##                                                       
+## 
 ##   Number of observations                           398
 ##   Number of missing patterns                        40
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                56.625
@@ -501,15 +500,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb175-16"><a href="05-covariates.html#cb175-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb175-17"><a href="05-covariates.html#cb175-17" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(latent.tic.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb175-18"><a href="05-covariates.html#cb175-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 29 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 29 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        21
-##                                                       
+## 
 ##   Number of observations                           398
 ##   Number of missing patterns                        40
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                               133.445
@@ -611,15 +610,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb177-15"><a href="05-covariates.html#cb177-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb177-16"><a href="05-covariates.html#cb177-16" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(obs.tic.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb177-17"><a href="05-covariates.html#cb177-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 26 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 26 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        13
-##                                                       
+## 
 ##   Number of observations                           398
 ##   Number of missing patterns                        40
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                49.911
@@ -686,8 +685,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="05-covariates.html#cb179-1" aria-hidden="true" tabindex="-1"></a>adversity <span class="ot">&lt;-</span> adversity <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>cog)</span></code></pre></div>
 <p>Focusing one the regression of <code>int ~ cog</code> in both models, we can compare the standardized coefficients and see that the observed measure reduces the effect quite substantially (latent TIC: <span class="math inline">\(\beta = 0.466\)</span>, observed TIC: <span class="math inline">\(\beta = 0.296\)</span>). Since we simulated this measure a, we knew that the true standardized effect should be <span class="math inline">\(\beta_{population} = 0.500\)</span>, highlighting the utility of latent variables to attenuate the effects of measurement error that often bias effects downwards.</p>
 </div>
-<div id="cross-level-interactions" class="section level3 hasAnchor">
-<h3>Cross-Level Interactions<a href="05-covariates.html#cross-level-interactions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="cross-level-interactions" class="section level3">
+<h3>Cross-Level Interactions</h3>
 <p>Up until now, we have limited our discussion of TICs to include only those that predicted the intercept. This is because when we combine level 1 TVC variables with level 2 TIC variables, we can begin generating cross level interactions. We have not yet discussed TVCs in-depth (we do so below), in growth models the most common cross-level interactions are between TICs and our time variable (here <code>age</code>). As such, we will introuce these effects here before going on to explore TVCs in a more general way. Cross-level interactions are easier to see with the MLM, as the interaction is often not immediately apparent in SEMs. Below we will introduce a treatment TIC (<code>tx</code>) to our earlier TIC model. Here we will switch our TIC of interest to be the variable <code>abuse</code> for…reasons (it is a better demonstration). We will first only predict the intercept as we did previously and then we will fit a cross-level interaction model.</p>
 <div class="sourceCode" id="cb180"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb180-1"><a href="05-covariates.html#cb180-1" aria-hidden="true" tabindex="-1"></a>tic.mlm <span class="ot">&lt;-</span> <span class="fu">lmer</span>(fmin <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> age <span class="sc">+</span> abuse <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> age <span class="sc">|</span> id),</span>
 <span id="cb180-2"><a href="05-covariates.html#cb180-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">na.action =</span> na.omit,</span>
@@ -697,12 +696,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb180-6"><a href="05-covariates.html#cb180-6" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb180-7"><a href="05-covariates.html#cb180-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb180-8"><a href="05-covariates.html#cb180-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tic.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: fmin ~ 1 + age + abuse + (1 + age | id)
 ##    Data: adversity.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 3557.6
 ## 
@@ -719,9 +716,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)  -0.18075    0.08801 320.87213  -2.054 0.040824 *  
-## age           0.05129    0.01200 290.29486   4.273 2.62e-05 ***
-## abuse        -0.06501    0.01728 387.90436  -3.763 0.000194 ***
+## (Intercept)  -0.18075    0.08801 320.87068  -2.054 0.040824 *  
+## age           0.05129    0.01200 290.29406   4.273 2.62e-05 ***
+## abuse        -0.06501    0.01728 387.90442  -3.763 0.000194 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>When we add <code>abuse</code> as a predictor, we are really only estimating intercept differences across levels of experience of abuse (there is an negative effect here). If we want to know whether individuals with different experiences of abuse differ in their slopes, we need to explicitly create an interaction variable (<code>age:abuse</code>).</p>
@@ -733,12 +730,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb182-6"><a href="05-covariates.html#cb182-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb182-7"><a href="05-covariates.html#cb182-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb182-8"><a href="05-covariates.html#cb182-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cross.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: fmin ~ 1 + age + abuse + age:abuse + (1 + age | id)
 ##    Data: adversity.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 3562.1
 ## 
@@ -748,17 +743,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev. Corr 
-##  id       (Intercept) 0.303871 0.55125       
-##           age         0.009977 0.09988  -0.27
-##  Residual             0.622592 0.78905       
+##  id       (Intercept) 0.303868 0.55124       
+##           age         0.009976 0.09988  -0.27
+##  Residual             0.622593 0.78905       
 ## Number of obs: 1240, groups:  id, 398
 ## 
 ## Fixed effects:
 ##               Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)  -0.180119   0.087311 316.427211  -2.063   0.0399 *  
-## age           0.051237   0.011889 284.132644   4.309 2.26e-05 ***
-## abuse        -0.004256   0.033426 308.487723  -0.127   0.8988    
-## age:abuse    -0.009689   0.004569 276.108013  -2.121   0.0348 *  
+## (Intercept)  -0.180119   0.087311 316.426367  -2.063   0.0399 *  
+## age           0.051237   0.011889 284.132355   4.309 2.26e-05 ***
+## abuse        -0.004256   0.033426 308.486988  -0.127   0.8988    
+## age:abuse    -0.009689   0.004569 276.107835  -2.121   0.0348 *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>The interaction nature of the second effect is immediately apparent given the construction of the syntax. We can even plot these effects using the <code>interact_plot()</code> function from the <strong>interactions</strong> package.</p>
@@ -790,17 +785,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb185-16"><a href="05-covariates.html#cb185-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb185-17"><a href="05-covariates.html#cb185-17" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cross.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb185-18"><a href="05-covariates.html#cb185-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 33 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 33 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        15
 ##   Number of equality constraints                     2
-##                                                       
+## 
 ##                                                   Used       Total
 ##   Number of observations                           296         342
 ##   Number of missing patterns                         7            
-##                                                                   
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                18.561
@@ -865,8 +860,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .slp               0.026    0.008    3.290    0.001</code></pre>
 <p>Unlike with the MLM, there is no product variable that we enter explicitly into the model. However, we can think about how the slope factor links the TIC and the individual repeated measures. The factor loadings are increasing integers and so the effect of the TIC on each successive repeated measure gets moderated by the numerical value of the factor loading. This serves the same function as an interaction for the SEM approaches.</p>
 </div>
-<div id="time-varying-covariates" class="section level3 hasAnchor">
-<h3>Time Varying Covariates<a href="05-covariates.html#time-varying-covariates" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="time-varying-covariates" class="section level3">
+<h3>Time Varying Covariates</h3>
 <p>While TICs can provide important insights into what factors might contribute to individual differences in the growth trajectories, they fundamentally represent cross-sectional regressions of the latent factors on a set of exogenous variables. However, if we want to test the effects of variables that themselves change over time, we can instead move the TVC model. While TICs predict the growth components (and therefore the repeated measures <em>indirectly</em>; hence cross-level interactions), a TVC directly predicts the individual repeated observations. In this section, we will return to our <code>executive.function</code> dataset. Here we can model the impact of DLPFC activation on executive function scores. As with the TIC model, we will first consider the MLM specification of this approach.</p>
 <div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="05-covariates.html#cb187-1" aria-hidden="true" tabindex="-1"></a>executive.function.long <span class="ot">&lt;-</span> executive.function <span class="sc">%&gt;%</span> </span>
 <span id="cb187-2"><a href="05-covariates.html#cb187-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="fu">c</span>(<span class="st">&quot;dlpfc&quot;</span>,<span class="st">&quot;ef&quot;</span>,<span class="st">&quot;age&quot;</span>)), </span>
@@ -883,12 +878,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb187-13"><a href="05-covariates.html#cb187-13" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb187-14"><a href="05-covariates.html#cb187-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb187-15"><a href="05-covariates.html#cb187-15" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2550
 ## 
@@ -919,12 +912,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb189-6"><a href="05-covariates.html#cb189-6" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb189-7"><a href="05-covariates.html#cb189-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb189-8"><a href="05-covariates.html#cb189-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(rtvc.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc + (1 + age + dlpfc | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2547.9
 ## 
@@ -942,13 +933,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   2.36832    0.04568 307.54713  51.842  &lt; 2e-16 ***
-## age           0.04646    0.01498 296.52048   3.102  0.00211 ** 
-## dlpfc         0.05560    0.02092 714.79091   2.658  0.00803 ** 
+## (Intercept)   2.36832    0.04568 307.54702  51.842  &lt; 2e-16 ***
+## age           0.04646    0.01498 296.52049   3.102  0.00211 ** 
+## dlpfc         0.05560    0.02092 714.79021   2.658  0.00803 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## optimizer (bobyqa) convergence code: 0 (OK)
-## boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
+## boundary (singular) fit: see ?isSingular</code></pre>
 <p>Here we’ve added <span class="math inline">\(3\)</span> additional elements in our random effects covariance matrix, one additional variance, and two additional covariances with the effects we had in the prior model. We can see that the correlation between the random slope (<code>age</code>) and DLPFC activation (<code>dlpfc</code>) is quite high. This can lead to estimation issues if this correlation gets too high, and generally reflects redundancy among the random effects.</p>
 <p>While the model above already gives us the effect of DLPFC on executive funciton scores above and beyond the growth trajectory, the effects are all contemporaneous. That is, predicting executive function at a given time with DLPFC activation from that same time. A more interesting model is one in which we used activation from one time point to predict executive function at a <em>later</em> time point. While relatively rare, these lagged-effect models really represent a more exciting use of the trouble we went to in order to collect these variables over time. Because of the long format used in MLM, including lagged effects necessitates the creation of a new DLFPC variable with values offset one time point. Fortunately <strong>dplyr</strong> provides a convenient function to accomplish this data management step. It is; however, important to remember to group by <code>id</code> before creating this new variable so the last value of <code>dlpfc</code> for one person does not shift to the next person’s data rows. In this model, we will drop the random effect of <code>dlpfc</code> for simplicity (and it’s redundancy in the prior model).</p>
 <div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="05-covariates.html#cb191-1" aria-hidden="true" tabindex="-1"></a>executive.function.long <span class="ot">&lt;-</span> executive.function.long <span class="sc">%&gt;%</span> </span>
@@ -963,12 +954,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb191-10"><a href="05-covariates.html#cb191-10" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb191-11"><a href="05-covariates.html#cb191-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb191-12"><a href="05-covariates.html#cb191-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lag.tvc.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc + dlpfc.lag + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 1888.8
 ## 
@@ -985,9 +974,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   2.31372    0.06229 323.33800  37.142  &lt; 2e-16 ***
-## age           0.06044    0.02116 281.03078   2.856  0.00461 ** 
-## dlpfc         0.07326    0.02378 814.70967   3.081  0.00213 ** 
+## (Intercept)   2.31372    0.06229 323.33710  37.142  &lt; 2e-16 ***
+## age           0.06044    0.02116 281.02897   2.856  0.00461 ** 
+## dlpfc         0.07326    0.02378 814.70968   3.081  0.00213 ** 
 ## dlpfc.lag     0.04651    0.02455 823.26058   1.895  0.05850 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -1672,12 +1661,10 @@ NA
 <span id="cb194-8"><a href="05-covariates.html#cb194-8" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb194-9"><a href="05-covariates.html#cb194-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb194-10"><a href="05-covariates.html#cb194-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lag.tvc.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc + dlpfc.lag + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2523.4
 ## 
@@ -1710,12 +1697,10 @@ NA
 <span id="cb196-6"><a href="05-covariates.html#cb196-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb196-7"><a href="05-covariates.html#cb196-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb196-8"><a href="05-covariates.html#cb196-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cross.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc + tx + dlpfc:tx + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2554.8
 ## 
@@ -1765,16 +1750,16 @@ NA
 <span id="cb199-13"><a href="05-covariates.html#cb199-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb199-14"><a href="05-covariates.html#cb199-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb199-15"><a href="05-covariates.html#cb199-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 37 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 37 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        13
-##                                                       
+## 
 ##                                                   Used       Total
 ##   Number of observations                           296         342
 ##   Number of missing patterns                         7            
-##                                                                   
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                16.183
@@ -1849,17 +1834,17 @@ NA
 <span id="cb201-13"><a href="05-covariates.html#cb201-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb201-14"><a href="05-covariates.html#cb201-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb201-15"><a href="05-covariates.html#cb201-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 30 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 30 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        13
 ##   Number of equality constraints                     3
-##                                                       
+## 
 ##                                                   Used       Total
 ##   Number of observations                           296         342
 ##   Number of missing patterns                         7            
-##                                                                   
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                19.768
@@ -1936,16 +1921,16 @@ NA
 <span id="cb203-13"><a href="05-covariates.html#cb203-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb203-14"><a href="05-covariates.html#cb203-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lag.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb203-15"><a href="05-covariates.html#cb203-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 36 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 36 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        16
-##                                                       
+## 
 ##                                                   Used       Total
 ##   Number of observations                           296         342
 ##   Number of missing patterns                         7            
-##                                                                   
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                 9.699
@@ -2023,17 +2008,17 @@ NA
 <span id="cb205-13"><a href="05-covariates.html#cb205-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb205-14"><a href="05-covariates.html#cb205-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lag.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb205-15"><a href="05-covariates.html#cb205-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 29 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 29 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        16
 ##   Number of equality constraints                     5
-##                                                       
+## 
 ##                                                   Used       Total
 ##   Number of observations                           296         342
 ##   Number of missing patterns                         7            
-##                                                                   
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                16.245
@@ -2098,8 +2083,8 @@ NA
 <p>This aggregation of course cuts both ways. Now we have no significant lagged effect (although we only had one out of three before so did we really have it to begin with?), but we do have a significant contemporaneous effect where we had no individual one before.</p>
 <p>The examples we have included thus far are relatively simple, with a single TVC. Of course all of these models can be expanded to include multiple TVCs, and potentially interactions if we have the sample size to support them.</p>
 </div>
-<div id="multivariate-models" class="section level3 hasAnchor">
-<h3>Multivariate Models<a href="05-covariates.html#multivariate-models" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="multivariate-models" class="section level3">
+<h3>Multivariate Models</h3>
 <p>Those paying close attention (and at this point all the kudos to you) might have been a bit perturbed by the fact that in our <a href="02-canonical.html#canon">Canonical</a> chapter, we fit a growth model to the <code>dlpfc</code> variable, but here we have used it as our TVC. This is indeed of great concern and something we should always be thinking about when including a repeated measure as a TVC. The standard TVC model assumes that there are no systematic changes in the covariate across time. The values obviously change, but not systematically. Rather, the traditional TVC model is well suited for covariates that fluctuates from time point to time point. Weather over short intervals is often a canonical example in more-intensive applications, but we can think also the time of day that testing occurs as one that might be of interest for our purposes. From our earlier model fitting, we know that our <code>dlpfc</code> TVC does not meet this criteria. This is an issue because we essentially have an unmodeled age effect on the TVC, which will introduce bias into our model results.</p>
 <p>The other issue is that of true exogeneity. Do we really believe that the causal effect in our model <em>only</em> runs from DLPFC activation to executive function, and that there are no reciprocal relationships over time? With something like the weather this is totally plausible; however, with our data this assumption seems unlikely to hold. As such, we might wish to treat both <code>ef</code> and <code>dlpfc</code> as outcomes in a multivariate model. This will involve some difficulty in the MLM, but will be a completely natural extension of the SEM. We will flip our usual order of considering the MLM first and demonstrate the SEM specifications so it’s easier to see where we will run into difficulty with the MLMs. We will first re-fit the TVC model we ended with earlier</p>
 <div class="sourceCode" id="cb207"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb207-1"><a href="05-covariates.html#cb207-1" aria-hidden="true" tabindex="-1"></a>tvc.lcm <span class="ot">&lt;-</span> <span class="st">&quot;int =~ 1*ef1 + 1*ef2 + 1*ef3 + 1*ef4</span></span>
@@ -2117,17 +2102,17 @@ NA
 <span id="cb207-13"><a href="05-covariates.html#cb207-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb207-14"><a href="05-covariates.html#cb207-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb207-15"><a href="05-covariates.html#cb207-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 30 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 30 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        13
 ##   Number of equality constraints                     3
-##                                                       
+## 
 ##                                                   Used       Total
 ##   Number of observations                           296         342
 ##   Number of missing patterns                         7            
-##                                                                   
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                19.768
@@ -2214,15 +2199,15 @@ NA
 <span id="cb209-25"><a href="05-covariates.html#cb209-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb209-26"><a href="05-covariates.html#cb209-26" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(multivar.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb209-27"><a href="05-covariates.html#cb209-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 50 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 50 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        26
-##                                                       
+## 
 ##   Number of observations                           342
 ##   Number of missing patterns                        28
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                11.574
@@ -2340,15 +2325,15 @@ NA
 <span id="cb211-29"><a href="05-covariates.html#cb211-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb211-30"><a href="05-covariates.html#cb211-30" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(riclpm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb211-31"><a href="05-covariates.html#cb211-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 44 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 44 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        29
-##                                                       
+## 
 ##   Number of observations                           342
 ##   Number of missing patterns                        28
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                30.269
@@ -2469,15 +2454,15 @@ NA
 <span id="cb213-33"><a href="05-covariates.html#cb213-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb213-34"><a href="05-covariates.html#cb213-34" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcmsr.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb213-35"><a href="05-covariates.html#cb213-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 72 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 72 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        38
-##                                                       
+## 
 ##   Number of observations                           342
 ##   Number of missing patterns                        28
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                 1.299
@@ -2619,16 +2604,16 @@ NA
 <span id="cb215-33"><a href="05-covariates.html#cb215-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb215-34"><a href="05-covariates.html#cb215-34" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcmsr.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb215-35"><a href="05-covariates.html#cb215-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 57 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 57 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        38
 ##   Number of equality constraints                     8
-##                                                       
+## 
 ##   Number of observations                           342
 ##   Number of missing patterns                        28
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                 9.555
@@ -2800,16 +2785,16 @@ NA
 <span id="cb217-62"><a href="05-covariates.html#cb217-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb217-63"><a href="05-covariates.html#cb217-63" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(multivar.dualchange, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb217-64"><a href="05-covariates.html#cb217-64" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-10 ended normally after 119 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 122 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
 ##   Number of model parameters                        34
 ##   Number of equality constraints                     8
-##                                                       
+## 
 ##   Number of observations                           342
 ##   Number of missing patterns                        28
-##                                                       
+## 
 ## Model Test User Model:
 ##                                                       
 ##   Test statistic                                14.490
@@ -2924,7 +2909,7 @@ NA
 ##     int.ef            2.417    0.043   56.656    0.000
 ##     slp.ef           -0.600    1.414   -0.424    0.671
 ##     int.dlpfc         0.541    0.054    9.978    0.000
-##     slp.dlpfc         0.007    0.901    0.008    0.994
+##     slp.dlpfc         0.007    0.900    0.008    0.994
 ##    .pef1              0.000                           
 ##    .pef2              0.000                           
 ##    .pef3              0.000                           
@@ -4070,8 +4055,8 @@ DLPFC
 ## Number of Groups: 342</code></pre>
 <p>With this specification we do allow the residuals to correlate, but they are constrained to be equal across all of the time points in our model. Freeing this residual constraint to allow for unique correlations is possible, but requires us to fit the model in <strong>SAS</strong>. This model syntax will be provided in the downloadable files.</p>
 </div>
-<div id="within--and-betwen-person-variance" class="section level3 hasAnchor">
-<h3>Within- and Betwen-Person Variance<a href="05-covariates.html#within--and-betwen-person-variance" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="within--and-betwen-person-variance" class="section level3">
+<h3>Within- and Betwen-Person Variance</h3>
 <p>In longitudinal models, we are deeply interested in understanding within-person processes (i.e., how individuals change over time). However, we need to be on guard against <em>between</em>-person differences masquerading as these within-person effects. For instance, there is a substantively different understanding of adolescent substance use if it is guided by within-person effects (e.g., adolescent are more likely to use illicit drugs when they are with their peers) versus between-person effects (e.g., adolescents with more friends are more likely to use illicit drugs). Unfortunately, we can often unintentionally conflate these two types of effects in our models. This happens because variables at level <span class="math inline">\(1\)</span> (e.g., TVCs) contain information about both within- (level <span class="math inline">\(1\)</span>) and between- (level <span class="math inline">\(2\)</span>) person differences. To take our example thus far, individuals might show higher or lower DLPFC activation relative to the last time they played the task (i.e., within-person differences) but also some individuals might consistently show higher (or lower) than average DLFPC activation relative to other individuals in the sample (i.e., between-person differences). We can return to our contemporaneous TVC model to demonstrate this principle. Below is the model we fit before.</p>
 <div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb225-1"><a href="05-covariates.html#cb225-1" aria-hidden="true" tabindex="-1"></a>uncens.mlm <span class="ot">&lt;-</span> <span class="fu">lmer</span>(ef <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> age <span class="sc">+</span> dlpfc <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> age <span class="sc">|</span> id),</span>
 <span id="cb225-2"><a href="05-covariates.html#cb225-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">na.action =</span> na.omit,</span>
@@ -4081,12 +4066,10 @@ DLPFC
 <span id="cb225-6"><a href="05-covariates.html#cb225-6" aria-hidden="true" tabindex="-1"></a>                                         <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb225-7"><a href="05-covariates.html#cb225-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb225-8"><a href="05-covariates.html#cb225-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(uncens.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2550
 ## 
@@ -4121,12 +4104,10 @@ DLPFC
 <span id="cb227-10"><a href="05-covariates.html#cb227-10" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb227-11"><a href="05-covariates.html#cb227-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb227-12"><a href="05-covariates.html#cb227-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(grdcent.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc.grdcent + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2550
 ## 
@@ -4161,12 +4142,10 @@ DLPFC
 <span id="cb229-10"><a href="05-covariates.html#cb229-10" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb229-11"><a href="05-covariates.html#cb229-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb229-12"><a href="05-covariates.html#cb229-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(grdcent.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc.grdcent + dlpfc.mean + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2551.5
 ## 
@@ -4185,7 +4164,7 @@ DLPFC
 ##                Estimate Std. Error        df t value Pr(&gt;|t|)    
 ## (Intercept)     2.34839    0.05851 472.22497  40.136  &lt; 2e-16 ***
 ## age             0.04825    0.01522 295.72959   3.171  0.00168 ** 
-## dlpfc.grdcent   0.03965    0.02308 889.69638   1.718  0.08613 .  
+## dlpfc.grdcent   0.03965    0.02308 889.69637   1.718  0.08613 .  
 ## dlpfc.mean      0.08332    0.05105 507.67410   1.632  0.10328    
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -4207,12 +4186,10 @@ DLPFC
 <span id="cb233-9"><a href="05-covariates.html#cb233-9" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb233-10"><a href="05-covariates.html#cb233-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb233-11"><a href="05-covariates.html#cb233-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(grpcent.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc.grpcent + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2554.3
 ## 
@@ -4230,7 +4207,7 @@ DLPFC
 ## Fixed effects:
 ##                Estimate Std. Error        df t value Pr(&gt;|t|)    
 ## (Intercept)     2.40789    0.04407 338.52746  54.639  &lt; 2e-16 ***
-## age             0.04769    0.01521 296.02311   3.136  0.00188 ** 
+## age             0.04769    0.01521 296.02312   3.136  0.00188 ** 
 ## dlpfc.grpcent   0.03948    0.02305 888.90401   1.713  0.08710 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -4243,12 +4220,10 @@ DLPFC
 <span id="cb235-6"><a href="05-covariates.html#cb235-6" aria-hidden="true" tabindex="-1"></a>                                          <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb235-7"><a href="05-covariates.html#cb235-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb235-8"><a href="05-covariates.html#cb235-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(grpcent.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
 ## Formula: ef ~ 1 + age + dlpfc.grpcent + dlpfc.mean + (1 + age | id)
 ##    Data: executive.function.long
-## Control: 
-## lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
+## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
 ## 
 ## REML criterion at convergence: 2551.5
 ## 
@@ -4265,21 +4240,21 @@ DLPFC
 ## 
 ## Fixed effects:
 ##                Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)     2.31971    0.05478 377.98612  42.345  &lt; 2e-16 ***
+## (Intercept)     2.31971    0.05478 377.98608  42.345  &lt; 2e-16 ***
 ## age             0.04825    0.01522 295.72959   3.171  0.00168 ** 
-## dlpfc.grpcent   0.03965    0.02308 889.69638   1.718  0.08613 .  
-## dlpfc.mean      0.12297    0.04560 330.81571   2.696  0.00737 ** 
+## dlpfc.grpcent   0.03965    0.02308 889.69639   1.718  0.08613 .  
+## dlpfc.mean      0.12297    0.04560 330.81567   2.696  0.00737 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Of course, if we wished to get the difference in effects, we can compute it from this model (essentially the inverse of what we did previously). Here we subtract the within-person effect from the between-person effect.</p>
 <div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="05-covariates.html#cb237-1" aria-hidden="true" tabindex="-1"></a><span class="fu">contest1D</span>(grpcent.mlm, <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>))</span></code></pre></div>
-<pre><code>##    Estimate Std. Error       df  t value Pr(&gt;|t|)
-## 1 0.0833236 0.05105262 507.6741 1.632112 0.103276</code></pre>
+<pre><code>##     Estimate Std. Error      df  t value Pr(&gt;|t|)
+## 1 0.08332361 0.05105263 507.674 1.632112 0.103276</code></pre>
 <p>Fortunately for us, we have already seen one of the primary methods for separating within- versus between-person effects in the SEM: the LCM-SR. In these models, all of the between-person effects are isolated to the level of the latent factors, while the within-person effects are isolated to the residuals of the repeated measures. If we have a TVC model, our grand- or group-mean centered variables enter as preditors of the repeated measure residuals, while the person-specific means enter as predictors of the latent factors. While this is equivalent to the MLM in the case of TVCs, the expanded capacity of the SEM allows us to include multiple outcomes and reciprocal effects between different constructs traveling together across time. With the growth factors isolating the between-person effects, these reciprocal effects represent pure estimates of within-person effects.</p>
 </div>
 </div>
-<div id="distal-outcomes" class="section level2 hasAnchor">
-<h2>Distal Outcomes<a href="05-covariates.html#distal-outcomes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="distal-outcomes" class="section level2">
+<h2>Distal Outcomes</h2>
 <p>Up until this point, we have considered how to include predictors in our growth models to explain individual differences in patterns of change over time. However, if we think that these differences in developmental trajectories <em>mean anything</em> (and we’d like to think they do), we might wish to predict some future outcome that is meaningful for our theoretical question of interest. For instance, do greater increases in executive function scores during adolescence predict greater education attainment, lifetime earnings, or reduced contact with criminal-legal institutions? Such questions are uncomfortably rare in developmental cognitive neuroscience, leaving a big opening for questions of “<strong>so what?</strong>” for our programs of research. Commensurate with their relative scarcity in substantive research, much less work has gone into the development of quantitative methods and best-practices for distal outcome prediction. As such, readers should take the methods presented in this section as a work-in-progress, awaiting further developments (some of which we can confidently say are in the works).</p>
 <p>For this section, we will draw the <code>externalizing</code> data from our <code>external.math</code> data set. However, here we have included data from a follow-up study on lifetime incarceration as of age <span class="math inline">\(35\)</span>. As such, we can predict the likelihood of an individual experiencing incarceration as an adult based on trajectory information from when they were in early adolescence.</p>
 <div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="05-covariates.html#cb239-1" aria-hidden="true" tabindex="-1"></a>externalizing <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/externalizing-outcome.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
@@ -4318,7 +4293,7 @@ DLPFC
 ## Coefficients:
 ##             Estimate Std. Error z value Pr(&gt;|z|)    
 ## (Intercept)   -3.391      0.318 -10.666   &lt;2e-16 ***
-## int            2.875      1.270   2.264   0.0236 *  
+## int            2.875      1.270   2.263   0.0236 *  
 ## slp            5.710      3.274   1.744   0.0811 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
@@ -4334,9 +4309,9 @@ DLPFC
 <p>We can see that while the intercept of the trajectory has a significant positive prospective effect on the propensity for individuals to experience lifetime incarceration, the slope is not significant (so close; more on that in a bit). Essentially, those adolescents who show higher initial levels of antisocial behavior are more likely to report being incarcerated at some point in their lifetime. The coefficients we see in this model represent the log-odds parameters. You might see these reported in the odds scale, which just involves the exponentiation of these parameters. We can see this below and generate confidence intervals on the odds parameters.</p>
 <div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="05-covariates.html#cb244-1" aria-hidden="true" tabindex="-1"></a><span class="fu">exp</span>(<span class="fu">cbind</span>(<span class="fu">coef</span>(distal.glm), <span class="fu">confint</span>(distal.glm)))</span></code></pre></div>
 <pre><code>##                               2.5 %       97.5 %
-## (Intercept)   0.03366191 0.01685404 5.927968e-02
-## int          17.72184608 1.49558354 2.248666e+02
-## slp         301.88241025 0.51763779 2.085305e+05</code></pre>
+## (Intercept)   0.03366191 0.01685404 5.927967e-02
+## int          17.72246349 1.49556757 2.248848e+02
+## slp         301.85964003 0.51755237 2.085331e+05</code></pre>
 <p>So for a one unit increase in the trajectory intercept, we expect a 17.72 change in the odds of being incarcerated, and a substantial increase of 301.85 in the odds for a per-unit change in the slope of the trajectory (again not significant but we can play out this exercise). One reason we often need to be careful about these “per one unit” changes in the trajectory parameters, especially for the slope, is that often the parameters do not have large ranges. Indeed, often the full range of the slope parameter will not extend over an entire unit because of the way it is scaled (in per time-unit change). We can see this when we plot the predicted probabilities of incarceration against the trajectory parameters. Note that to get the predicted probabilities, we simply divide the odds by <span class="math inline">\(1\)</span> plus the odds. So <span class="math inline">\(P(incarc_{i} = 1) = e^{log-odds} / 1 + e^{log-odds}\)</span>. We can see this below.</p>
 <div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="05-covariates.html#cb246-1" aria-hidden="true" tabindex="-1"></a>random.effs <span class="ot">&lt;-</span> random.effs <span class="sc">%&gt;%</span></span>
 <span id="cb246-2"><a href="05-covariates.html#cb246-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">incarc =</span> externalizing<span class="sc">$</span>incarc,</span>
@@ -4344,12 +4319,12 @@ DLPFC
 <span id="cb246-4"><a href="05-covariates.html#cb246-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pred.prob =</span> <span class="fu">exp</span>(pred) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(pred)))</span>
 <span id="cb246-5"><a href="05-covariates.html#cb246-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(random.effs)</span></code></pre></div>
 <pre><code>##           int         slp incarc      pred   pred.prob
-## 1 -0.08707094 -0.10376317      0 -4.234191 0.014284519
-## 2 -0.10130195 -0.03397101      0 -3.876587 0.020300770
-## 3 -0.29188769 -0.08666438      0 -4.725363 0.008789549
-## 4  0.42109933  0.13725132      0 -1.397103 0.198276284
-## 5  0.26379753  0.20359076      1 -1.470513 0.186864675
-## 6  0.21702003  0.10030031      0 -2.194781 0.100220129</code></pre>
+## 1 -0.08707305 -0.10376294      0 -4.234191 0.014284520
+## 2 -0.10130152 -0.03397105      0 -3.876587 0.020300771
+## 3 -0.29188615 -0.08666453      0 -4.725364 0.008789548
+## 4  0.42109753  0.13725150      0 -1.397103 0.198276302
+## 5  0.26380031  0.20359046      1 -1.470513 0.186864687
+## 6  0.21702008  0.10030029      0 -2.194781 0.100220132</code></pre>
 <div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="05-covariates.html#cb248-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(random.effs, <span class="fu">aes</span>(<span class="at">x =</span> int, <span class="at">y =</span> incarc)) <span class="sc">+</span></span>
 <span id="cb248-2"><a href="05-covariates.html#cb248-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="fu">factor</span>(incarc)), <span class="at">shape =</span> <span class="st">&quot;|&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span>  </span>
 <span id="cb248-3"><a href="05-covariates.html#cb248-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> random.effs, </span>
@@ -4376,7 +4351,7 @@ DLPFC
 <p>Of course, it was a bit of a bummer that the slope term wasn’t quite significant (and yes of course we shouldn’t care, but <strong>of course</strong> we do). Slope effects are often very interesting from an intervention perspective, with the idea that if we could just bend those curves down during adolescence, perhaps we could avoid some of these negative life outcomes. Well tough cookies in this model, but one of the reasons that we do not get a slope effect for this data in particular is because of the high degree of correlation between the EB estimates of the random effects, which is quite high (<span class="math inline">\(r =\)</span> 0.847). Similar to the ideas outlined in <a href="https://mccormickneuro.github.io/publication/2021-multilevel-multigrowth/">multi-growth models</a>, the correlation in predictors here isn’t doing us any favors. We can check the variance inflation factor for this model below using the <code>vif()</code> function from the <a href="https://cran.r-project.org/web/packages/car/index.html"><strong>car</strong></a> package.</p>
 <div class="sourceCode" id="cb250"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb250-1"><a href="05-covariates.html#cb250-1" aria-hidden="true" tabindex="-1"></a>car<span class="sc">::</span><span class="fu">vif</span>(distal.glm)</span></code></pre></div>
 <pre><code>##      int      slp 
-## 2.772184 2.772184</code></pre>
+## 2.772259 2.772259</code></pre>
 <p>Which indicates that our standard errors are approximately <span class="math inline">\(2.77\)</span> larger than if we had uncorrelated predictors. While this isn’t enormous, it likely contributes to a non-significant slope effect. This type of correlation between the random effects is not uncommon and is one of the challenges associated with these kinds of questions (although there are some developments that I am currently working on that might help with this, so stay tuned if interested).</p>
 <p>We can do a very similar 2-step approach with the LCM by generating factor scores. Here we will use the <code>lavPredict()</code> function from <strong>lavaan</strong> with <code>method = "regression"</code>. The other option is to use <code>method = "Bartlett"</code>. In general, regression factor scores perform better as predictors (which is what we want here), while Bartlett scores are better as outcomes (<a href="https://psycnet.apa.org/record/2001-10245-007">Skrondal &amp; Laak, 2001</a>).</p>
 <div class="sourceCode" id="cb252"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb252-1"><a href="05-covariates.html#cb252-1" aria-hidden="true" tabindex="-1"></a>lin.lcm <span class="ot">&lt;-</span> <span class="st">&quot;int =~ 1*ext6 + 1*ext8 + 1*ext10 + 1*ext12 + 1*ext14</span></span>

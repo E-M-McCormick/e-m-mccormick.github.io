@@ -45,4 +45,4 @@ Download my [<i class="fas fa-file-download"></i> current CV](static/McCormick_C
 ----------------------------------------------------------------------------------
 ### News
 
-**Now Available:** Our R-based code companion to the preprint [McCormick, Byrne, Flournoy, Mills, & Pfiefer, (*preprint*)](https://doi.org/10.31234/osf.io/ga4qz). Here we provide the syntax to accomplish the models we discussed in the main text. Sprinkled in are tips and tricks for the best way to fit various model options! Check it out [here](static/longitudinal-primer/index.html)!
+**Now Available:** Our R-based code companion to the preprint [McCormick, Byrne, Flournoy, Mills, & Pfeifer, (*preprint*)](https://doi.org/10.31234/osf.io/ga4qz). Here we provide the syntax to accomplish the models we discussed in the main text. Sprinkled in are tips and tricks for the best way to fit various model options! Check it out [here](static/longitudinal-primer/index.html)!
