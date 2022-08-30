@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Canonical Models | The Hitchhiker’s Guide to Longitudinal Models</title>
   <meta name="description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Canonical Models | The Hitchhiker’s Guide to Longitudinal Models" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://https://mccormickneuro.github.io/longitudinal-primer/" />
   
   <meta property="og:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   <meta name="github-repo" content="McCormickNeuro/longitudinal-primer" />
@@ -21,7 +20,7 @@
   <meta name="twitter:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   
 
-<meta name="author" content="Ethan M. McCormick, Michelle L. Byrne, John C. Flournoy, Kathryn L. Mills, &amp; Jennifer H. Pfeifer" />
+<meta name="author" content="Ethan M. McCormick" />
 
 
 
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="01-introduction.html"/>
 <link rel="next" href="03-time.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/font-awesome-5.13.0/js/script.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
@@ -139,94 +138,94 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">The Hitchhiker’s Guide to Longitudinal Models</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#about" id="toc-about">About</a></li>
-<li><a href="01-introduction.html#intro" id="toc-intro">Introduction</a></li>
-<li><a href="02-canonical.html#canon" id="toc-canon">Canonical Models</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html"><i class="fa fa-check"></i>Canonical Models</a>
 <ul>
-<li><a href="02-canonical.html#multilevel-model" id="toc-multilevel-model">Multilevel Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#multilevel-model"><i class="fa fa-check"></i>Multilevel Model</a>
 <ul>
-<li><a href="02-canonical.html#nlme" id="toc-nlme">nlme</a></li>
-<li><a href="02-canonical.html#lme4" id="toc-lme4">lme4</a></li>
-<li><a href="02-canonical.html#lmertest" id="toc-lmertest">lmerTest</a></li>
-<li><a href="02-canonical.html#mlm-outputs" id="toc-mlm-outputs">MLM Outputs</a></li>
-<li><a href="02-canonical.html#mlm-plotting-model-implied-trajectories" id="toc-mlm-plotting-model-implied-trajectories">MLM Plotting Model-Implied Trajectories</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#nlme"><i class="fa fa-check"></i>nlme</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lme4"><i class="fa fa-check"></i>lme4</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lmertest"><i class="fa fa-check"></i>lmerTest</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-outputs"><i class="fa fa-check"></i>MLM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>MLM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li><a href="02-canonical.html#generalized-additive-mixed-model" id="toc-generalized-additive-mixed-model">Generalized Additive Mixed Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#generalized-additive-mixed-model"><i class="fa fa-check"></i>Generalized Additive Mixed Model</a>
 <ul>
-<li><a href="02-canonical.html#gamm-outputs" id="toc-gamm-outputs">GAMM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#gamm-outputs"><i class="fa fa-check"></i>GAMM Outputs</a></li>
 </ul></li>
-<li><a href="02-canonical.html#latent-curve-model" id="toc-latent-curve-model">Latent Curve Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-curve-model"><i class="fa fa-check"></i>Latent Curve Model</a>
 <ul>
-<li><a href="02-canonical.html#lcm-syntax-and-model-fitting" id="toc-lcm-syntax-and-model-fitting">LCM Syntax and Model Fitting</a></li>
-<li><a href="02-canonical.html#lcm-outputs" id="toc-lcm-outputs">LCM Outputs</a></li>
-<li><a href="02-canonical.html#lcm-path-diagrams" id="toc-lcm-path-diagrams">LCM Path Diagrams</a></li>
-<li><a href="02-canonical.html#lcm-plotting-model-implied-trajectories" id="toc-lcm-plotting-model-implied-trajectories">LCM Plotting Model-Implied Trajectories</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-syntax-and-model-fitting"><i class="fa fa-check"></i>LCM Syntax and Model Fitting</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-outputs"><i class="fa fa-check"></i>LCM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-path-diagrams"><i class="fa fa-check"></i>LCM Path Diagrams</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>LCM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li><a href="02-canonical.html#latent-change-score-model" id="toc-latent-change-score-model">Latent Change Score Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-change-score-model"><i class="fa fa-check"></i>Latent Change Score Model</a>
 <ul>
-<li><a href="02-canonical.html#linear-lcsm" id="toc-linear-lcsm">Linear LCSM</a></li>
-<li><a href="02-canonical.html#linear-lcsm-with-proportional-change" id="toc-linear-lcsm-with-proportional-change">Linear LCSM with Proportional Change</a></li>
-</ul></li>
-</ul></li>
-<li><a href="03-time.html#time" id="toc-time">Time Structure</a>
-<ul>
-<li><a href="03-time.html#assessment-schedules" id="toc-assessment-schedules">Assessment Schedules</a>
-<ul>
-<li><a href="03-time.html#single-cohort-data" id="toc-single-cohort-data">Single Cohort Data</a></li>
-<li><a href="03-time.html#multiple-cohort-data" id="toc-multiple-cohort-data">Multiple Cohort Data</a></li>
-<li><a href="03-time.html#accelerated-design" id="toc-accelerated-design">Accelerated Design</a></li>
-</ul></li>
-<li><a href="03-time.html#time-coding" id="toc-time-coding">Time Coding</a></li>
-<li><a href="03-time.html#additional-considerations" id="toc-additional-considerations">Additional Considerations</a>
-<ul>
-<li><a href="03-time.html#alternative-metrics-of-time" id="toc-alternative-metrics-of-time">Alternative Metrics of Time</a></li>
-<li><a href="03-time.html#residual-estimates" id="toc-residual-estimates">Residual Estimates</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm"><i class="fa fa-check"></i>Linear LCSM</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm-with-proportional-change"><i class="fa fa-check"></i>Linear LCSM with Proportional Change</a></li>
 </ul></li>
 </ul></li>
-<li><a href="04-shape.html#shape" id="toc-shape">The Shape of Development</a>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html"><i class="fa fa-check"></i>Time Structure</a>
 <ul>
-<li><a href="04-shape.html#polynomial-trajectories" id="toc-polynomial-trajectories">Polynomial Trajectories</a>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#assessment-schedules"><i class="fa fa-check"></i>Assessment Schedules</a>
 <ul>
-<li><a href="04-shape.html#intercept-only-model" id="toc-intercept-only-model">Intercept-Only Model</a></li>
-<li><a href="04-shape.html#linear-model" id="toc-linear-model">Linear Model</a></li>
-<li><a href="04-shape.html#quadratic-model" id="toc-quadratic-model">Quadratic Model</a></li>
-<li><a href="04-shape.html#inverse-model" id="toc-inverse-model">Inverse Model</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#single-cohort-data"><i class="fa fa-check"></i>Single Cohort Data</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#multiple-cohort-data"><i class="fa fa-check"></i>Multiple Cohort Data</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#accelerated-design"><i class="fa fa-check"></i>Accelerated Design</a></li>
 </ul></li>
-<li><a href="04-shape.html#piecewise-trajectories" id="toc-piecewise-trajectories">Piecewise Trajectories</a></li>
-<li><a href="04-shape.html#nonlinear-trajectories" id="toc-nonlinear-trajectories">Nonlinear Trajectories</a></li>
-<li><a href="04-shape.html#fixed-and-random-effects" id="toc-fixed-and-random-effects">Fixed and Random Effects</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#time-coding"><i class="fa fa-check"></i>Time Coding</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#additional-considerations"><i class="fa fa-check"></i>Additional Considerations</a>
+<ul>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#alternative-metrics-of-time"><i class="fa fa-check"></i>Alternative Metrics of Time</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#residual-estimates"><i class="fa fa-check"></i>Residual Estimates</a></li>
 </ul></li>
-<li><a href="05-covariates.html#covariates" id="toc-covariates">Covariates and Distal Outcomes</a>
-<ul>
-<li><a href="05-covariates.html#covariates-1" id="toc-covariates-1">Covariates</a>
-<ul>
-<li><a href="05-covariates.html#time-invariant-covariates" id="toc-time-invariant-covariates">Time Invariant Covariates</a></li>
-<li><a href="05-covariates.html#cross-level-interactions" id="toc-cross-level-interactions">Cross-Level Interactions</a></li>
-<li><a href="05-covariates.html#time-varying-covariates" id="toc-time-varying-covariates">Time Varying Covariates</a></li>
-<li><a href="05-covariates.html#multivariate-models" id="toc-multivariate-models">Multivariate Models</a></li>
-<li><a href="05-covariates.html#within--and-betwen-person-variance" id="toc-within--and-betwen-person-variance">Within- and Betwen-Person Variance</a></li>
 </ul></li>
-<li><a href="05-covariates.html#distal-outcomes" id="toc-distal-outcomes">Distal Outcomes</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html"><i class="fa fa-check"></i>The Shape of Development</a>
+<ul>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#polynomial-trajectories"><i class="fa fa-check"></i>Polynomial Trajectories</a>
+<ul>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#intercept-only-model"><i class="fa fa-check"></i>Intercept-Only Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#linear-model"><i class="fa fa-check"></i>Linear Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#quadratic-model"><i class="fa fa-check"></i>Quadratic Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#inverse-model"><i class="fa fa-check"></i>Inverse Model</a></li>
 </ul></li>
-<li><a href="06-nesting.html#nesting" id="toc-nesting">Nested Data</a>
-<ul>
-<li><a href="06-nesting.html#unconditional-model" id="toc-unconditional-model">Unconditional Model</a></li>
-<li><a href="06-nesting.html#categorical-predictors" id="toc-categorical-predictors">Categorical Predictors</a></li>
-<li><a href="06-nesting.html#multiple-groups-models" id="toc-multiple-groups-models">Multiple Groups Models</a></li>
-<li><a href="06-nesting.html#fixed-effect-approach" id="toc-fixed-effect-approach">Fixed Effect Approach</a></li>
-<li><a href="06-nesting.html#random-effect-approach" id="toc-random-effect-approach">Random Effect Approach</a></li>
-<li><a href="06-nesting.html#cluster-correction" id="toc-cluster-correction">Cluster Correction</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#piecewise-trajectories"><i class="fa fa-check"></i>Piecewise Trajectories</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#nonlinear-trajectories"><i class="fa fa-check"></i>Nonlinear Trajectories</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#fixed-and-random-effects"><i class="fa fa-check"></i>Fixed and Random Effects</a></li>
 </ul></li>
-<li><a href="07-datasets.html#datasets" id="toc-datasets">Datasets</a>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html"><i class="fa fa-check"></i>Covariates and Distal Outcomes</a>
 <ul>
-<li><a href="07-datasets.html#descriptions" id="toc-descriptions">Descriptions</a>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#covariates-1"><i class="fa fa-check"></i>Covariates</a>
 <ul>
-<li><a href="07-datasets.html#executive-function" id="toc-executive-function">Executive Function</a></li>
-<li><a href="07-datasets.html#feedback-learning" id="toc-feedback-learning">Feedback Learning</a></li>
-<li><a href="07-datasets.html#externalizing-and-math" id="toc-externalizing-and-math">Externalizing and Math</a></li>
-<li><a href="07-datasets.html#adversity" id="toc-adversity">Adversity</a></li>
-<li><a href="07-datasets.html#trials" id="toc-trials">Trials</a></li>
-<li><a href="07-datasets.html#achieve" id="toc-achieve">Achieve</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-invariant-covariates"><i class="fa fa-check"></i>Time Invariant Covariates</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#cross-level-interactions"><i class="fa fa-check"></i>Cross-Level Interactions</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-varying-covariates"><i class="fa fa-check"></i>Time Varying Covariates</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#multivariate-models"><i class="fa fa-check"></i>Multivariate Models</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#within--and-betwen-person-variance"><i class="fa fa-check"></i>Within- and Betwen-Person Variance</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#distal-outcomes"><i class="fa fa-check"></i>Distal Outcomes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html"><i class="fa fa-check"></i>Nested Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#unconditional-model"><i class="fa fa-check"></i>Unconditional Model</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#categorical-predictors"><i class="fa fa-check"></i>Categorical Predictors</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#multiple-groups-models"><i class="fa fa-check"></i>Multiple Groups Models</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#fixed-effect-approach"><i class="fa fa-check"></i>Fixed Effect Approach</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#random-effect-approach"><i class="fa fa-check"></i>Random Effect Approach</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#cluster-correction"><i class="fa fa-check"></i>Cluster Correction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html"><i class="fa fa-check"></i>Datasets</a>
+<ul>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#descriptions"><i class="fa fa-check"></i>Descriptions</a>
+<ul>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#executive-function"><i class="fa fa-check"></i>Executive Function</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#feedback-learning"><i class="fa fa-check"></i>Feedback Learning</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#externalizing-and-math"><i class="fa fa-check"></i>Externalizing and Math</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#adversity"><i class="fa fa-check"></i>Adversity</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#trials"><i class="fa fa-check"></i>Trials</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#achieve"><i class="fa fa-check"></i>Achieve</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -249,8 +248,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="canon" class="section level1">
-<h1>Canonical Models</h1>
+<div id="canon" class="section level1 hasAnchor">
+<h1>Canonical Models<a href="02-canonical.html#canon" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>What follows are canonical versions of growth models in each of the four different frameworks. These models represent basic implementations of a linear growth trajectory with random effects for both the intercept and slope, with the exception of the GAMM, where a non-linear spline model is implemented (otherwise it would just re-capitulate the MLM results). This will be the longest chapter of the codebook since we will cover syntax and model output more in-depth than in later chapters. Remain calm and clutch your towel as necessary.</p>
 <p>First, we need to read in the datasets we will use in this chapter.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="02-canonical.html#cb3-1" aria-hidden="true" tabindex="-1"></a>executive.function <span class="ot">&lt;-</span> utils<span class="sc">::</span><span class="fu">read.csv</span>(<span class="st">&quot;data/executive-function.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
@@ -819,7 +818,7 @@ modularity
 <span id="cb7-4"><a href="02-canonical.html#cb7-4" aria-hidden="true" tabindex="-1"></a>                                    <span class="fu">paste0</span>(<span class="st">&quot;external/&quot;</span>,filename,<span class="st">&quot;.dat&quot;</span>)),</span>
 <span id="cb7-5"><a href="02-canonical.html#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">file=</span><span class="fu">paste0</span>(<span class="st">&quot;external/&quot;</span>,filename,<span class="st">&quot;_MplusAutomation.txt&quot;</span>))</span></code></pre></div>
 <p>Although we do not show the running and output of these models in-depth, all the <strong>Mplus</strong> files needed to recreate the MLM and SEM models are available to be downloaded below.</p>
-<a href="data:application/zip;base64,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" download="02-canonical-mpluscode.zip">
+<a onclick="fetch(&#39;data:application/zip;base64,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&#39;).then(res =&gt; res.blob()).then(blob =&gt; {&#10;      const downloadURL = window.URL.createObjectURL(blob);&#10;      const a = document.createElement(&#39;a&#39;);&#10;      document.body.appendChild(a);&#10;      a.href = downloadURL;&#10;      a.download = &#39;02-canonical-mpluscode.zip&#39;; a.click();&#10;      window.URL.revokeObjectURL(downloadURL);&#10;      document.body.removeChild(a);&#10;    });">
 <button class="btn btn-default"><i class="fa fa-save"></i> Download Mplus files</button>
 </a>
 <p>For readers interested in how to automate running <strong>Mplus</strong> models through <strong>R</strong>, please consult the extrememly useful functions in <a href="https://michaelhallquist.github.io/MplusAutomation/articles/vignette.html"><strong>MplusAutomation</strong></a> that allow you to generate syntax, run saved input files, and re-import <strong>Mplus</strong> models into the R environment. Please note that a local <strong>Mplus</strong> license is still necessary to run these models.</p>
@@ -829,14 +828,14 @@ modularity
 <span id="cb8-3"><a href="02-canonical.html#cb8-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">codefile =</span> <span class="fu">paste0</span>(<span class="st">&quot;external/import_&quot;</span>,filename,<span class="st">&quot;.sas&quot;</span>), </span>
 <span id="cb8-4"><a href="02-canonical.html#cb8-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">package=</span><span class="st">&quot;SAS&quot;</span>)</span></code></pre></div>
 <p>For convenience, all the <strong>SAS</strong> files needed to recreate the MLM analyses are available for download below.</p>
-<a href="data:application/zip;base64,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" download="02-canonical-sascode.zip">
+<a onclick="fetch(&#39;data:application/zip;base64,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&#39;).then(res =&gt; res.blob()).then(blob =&gt; {&#10;      const downloadURL = window.URL.createObjectURL(blob);&#10;      const a = document.createElement(&#39;a&#39;);&#10;      document.body.appendChild(a);&#10;      a.href = downloadURL;&#10;      a.download = &#39;02-canonical-sascode.zip&#39;; a.click();&#10;      window.URL.revokeObjectURL(downloadURL);&#10;      document.body.removeChild(a);&#10;    });">
 <button class="btn btn-default"><i class="fa fa-save"></i> Download SAS files</button>
 </a>
-<div id="multilevel-model" class="section level2">
-<h2>Multilevel Model</h2>
+<div id="multilevel-model" class="section level2 hasAnchor">
+<h2>Multilevel Model<a href="02-canonical.html#multilevel-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will start with the multilevel growth model using our <code>executive.function</code> data. There are a number of package options to fit multilevel models, but we will focus here on two of the most popular: <a href="https://cran.r-project.org/web/packages/nlme/index.html"><strong>nlme</strong></a> and <a href="https://cran.r-project.org/web/packages/lme4/index.html"><strong>lme4</strong></a>. We will also use the <a href="https://cran.r-project.org/web/packages/lmerTest/index.html"><strong>lmerTest</strong></a> package which outputs <em>p</em>-values for the tests, which are not included in the <strong>lme4</strong> package. We will fit a very simple linear model with a random intercept and slope for the DLPFC activation data using all of these packages. For these initial models, we will mostly use <code>wave</code> as our metric of time rather than <code>age</code> for simplicity. We will return to models which use different time variables in later sections.</p>
-<div id="nlme" class="section level3">
-<h3>nlme</h3>
+<div id="nlme" class="section level3 hasAnchor">
+<h3>nlme<a href="02-canonical.html#nlme" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <strong>nlme</strong> function <code>lme()</code> separates its syntax into a <code>fixed</code> and <code>random</code> argument using the standard <code>glm()</code> syntax common to <strong>R</strong>. In the <code>random</code> argument, we indicate that the random intercept (<code>1</code>) and random slope (<code>wave</code>) are nested within <code>id</code> using the pipe (<code>|</code>) character. We will indicate that rows with missing data will be omitted using <code>na.action = na.omit</code> and set the estimator to REstricted Maximum Likelihood (REML). For a discussion of REML versus Full Information Maximum Likelihood (FIML; set <code>method = "ML"</code>), see more information <a href="https://www.tandfonline.com/doi/abs/10.1080/00273171.2017.1344538">here</a>. Once the model is finished running, we can print the model output to the console using the <code>summary()</code> function. Here we use the argument <code>correlation=FALSE</code> to suppress the correlation of fixed effects output, which is unlikely to be of interest to applied researchers.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="02-canonical.html#cb9-1" aria-hidden="true" tabindex="-1"></a>mlm.nlme <span class="ot">&lt;-</span> nlme<span class="sc">::</span><span class="fu">lme</span>(dlpfc <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave,</span>
 <span id="cb9-2"><a href="02-canonical.html#cb9-2" aria-hidden="true" tabindex="-1"></a>                      <span class="at">random =</span> <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id,</span>
@@ -854,13 +853,13 @@ modularity
 ##  Formula: ~1 + wave | id
 ##  Structure: General positive-definite, Log-Cholesky parametrization
 ##             StdDev    Corr  
-## (Intercept) 0.8120176 (Intr)
+## (Intercept) 0.8120177 (Intr)
 ## wave        0.2231279 -0.354
 ## Residual    0.7024454       
 ## 
 ## Fixed effects:  dlpfc ~ 1 + wave 
 ##                 Value  Std.Error  DF   t-value p-value
-## (Intercept) 0.5458598 0.05440921 961 10.032490       0
+## (Intercept) 0.5458598 0.05440921 961 10.032489       0
 ## wave        0.1185110 0.02132837 961  5.556492       0
 ##  Correlation: 
 ##      (Intr)
@@ -876,8 +875,8 @@ modularity
 <p>The <code>Fixed effects</code> section contains the regression estimates of our fixed effects. Here we can see that the average value of DLPFC activation at the intercept is <span class="math inline">\(0.546\)</span>. Because we coded the <code>wave</code> predictor to have values of <span class="math inline">\(0\)</span> at the first measurement occasion, this means that the intercept corresponds to initial DLPFC activation. Of course, the units here aren”t meaningful, but initial status is often (but not always) the desired interpretation of the intercept term. Here the slope is positive and significant (<span class="math inline">\(\gamma_{wave} = .199, SE = 0.021, p &lt; .001\)</span>).</p>
 <p>The final section contains information about the number of observations and number of groups, which are good values to check to ensure that the nesting of the data in the model corresponds to expectations.</p>
 </div>
-<div id="lme4" class="section level3">
-<h3>lme4</h3>
+<div id="lme4" class="section level3 hasAnchor">
+<h3>lme4<a href="02-canonical.html#lme4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <code>lmer()</code> function has largely supplanted <code>lme()</code> in most applications of multilevel models. Here, the formula is contained within a single line but is largely the same format. Additionally, the <code>method = "REML"</code> argument has been changed to <code>REML = TRUE</code> (<code>REML = FALSE</code> gives us FIML).</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="02-canonical.html#cb11-1" aria-hidden="true" tabindex="-1"></a>mlm.lme4 <span class="ot">&lt;-</span> lme4<span class="sc">::</span><span class="fu">lmer</span>(dlpfc <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id), </span>
 <span id="cb11-2"><a href="02-canonical.html#cb11-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">na.action =</span> na.omit,</span>
@@ -910,9 +909,9 @@ modularity
 <p>If we wish to extract significance information on the random effect components, we can calculate confidence intervals using the <code>confint()</code> function from the <a href=""><strong>stats</strong></a> package.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="02-canonical.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(mlm.lme4)</span></code></pre></div>
 <pre><code>##                   2.5 %     97.5 %
-## .sig01       0.71618630  0.9100304
-## .sig02      -0.52328047 -0.1152876
-## .sig03       0.15905056  0.2773230
+## .sig01       0.71618624  0.9100304
+## .sig02      -0.52328042 -0.1152877
+## .sig03       0.15905057  0.2773231
 ## .sigma       0.66537145  0.7430663
 ## (Intercept)  0.43908311  0.6526543
 ## wave         0.07667863  0.1604106</code></pre>
@@ -921,16 +920,16 @@ modularity
 <span id="cb15-2"><a href="02-canonical.html#cb15-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">oldNames =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## Computing profile confidence intervals ...</code></pre>
 <pre><code>##                   2.5 %     97.5 %
-## .sig01       0.71618630  0.9100304
-## .sig02      -0.52328047 -0.1152876
-## .sig03       0.15905056  0.2773230
+## .sig01       0.71618624  0.9100304
+## .sig02      -0.52328042 -0.1152877
+## .sig03       0.15905057  0.2773231
 ## .sigma       0.66537145  0.7430663
 ## (Intercept)  0.43908311  0.6526543
 ## wave         0.07667863  0.1604106</code></pre>
 <p>As we can see, these labels are much more informative to ensure we are interpreting the correct parameter. Note: <code>sigma</code> will always be the level <span class="math inline">\(1\)</span> residual variance and will not have an informative label. The corresponding command for computing confidence intervals in <strong>nlme</strong> is <code>intervals()</code>.</p>
 </div>
-<div id="lmertest" class="section level3">
-<h3>lmerTest</h3>
+<div id="lmertest" class="section level3 hasAnchor">
+<h3>lmerTest<a href="02-canonical.html#lmertest" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If we wish to retain <em>p</em>-values in our solution, we can load the package <strong>lmerTest</strong> and use its version of <code>lmer()</code> to fit the model. The syntax is identical to what we used above, and the parameter estimates are as well.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="02-canonical.html#cb18-1" aria-hidden="true" tabindex="-1"></a>mlm.lmerTest <span class="ot">&lt;-</span> lmerTest<span class="sc">::</span><span class="fu">lmer</span>(dlpfc <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id),</span>
 <span id="cb18-2"><a href="02-canonical.html#cb18-2" aria-hidden="true" tabindex="-1"></a>                               <span class="at">na.action =</span> na.omit,</span>
@@ -938,7 +937,8 @@ modularity
 <span id="cb18-4"><a href="02-canonical.html#cb18-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">data =</span> executive.function.long)</span>
 <span id="cb18-5"><a href="02-canonical.html#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-6"><a href="02-canonical.html#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mlm.lmerTest, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: dlpfc ~ 1 + wave + (1 + wave | id)
 ##    Data: executive.function.long
 ## 
@@ -962,8 +962,8 @@ modularity
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 </div>
-<div id="mlm-outputs" class="section level3">
-<h3>MLM Outputs</h3>
+<div id="mlm-outputs" class="section level3 hasAnchor">
+<h3>MLM Outputs<a href="02-canonical.html#mlm-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <code>summary()</code> function output, while extensive, is not formatted for publication. However, we can use a great function <code>tab_model()</code> from the <a href="https://strengejacke.github.io/sjPlot/"><strong>sjPlot</strong></a> package to generate publication-quality tables from the MLM output. Here we will merge the results from the <strong>nlme</strong> and <strong>lmerTest</strong> packages.</p>
 <div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="02-canonical.html#cb20-1" aria-hidden="true" tabindex="-1"></a>sjPlot<span class="sc">::</span><span class="fu">tab_model</span>(mlm.nlme, mlm.lmerTest,</span>
 <span id="cb20-2"><a href="02-canonical.html#cb20-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">show.se =</span> <span class="cn">TRUE</span>,</span>
@@ -1070,6 +1070,7 @@ Random Effects
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; padding-top:0.1cm; padding-bottom:0.1cm; text-align:left;" colspan="3">
 0.49
 </td>
+</tr>
 <tr>
 <td style=" padding:0.2cm; text-align:left; vertical-align:top; text-align:left; padding-top:0.1cm; padding-bottom:0.1cm;">
 τ<sub>00</sub>
@@ -1145,8 +1146,8 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 </table>
 <p>If we wish, we can output the table into a file that we can use to incorporate it into a document using the argument <code>file = "/path/to/output/sjPlot_table.html"</code>.</p>
 </div>
-<div id="mlm-plotting-model-implied-trajectories" class="section level3">
-<h3>MLM Plotting Model-Implied Trajectories</h3>
+<div id="mlm-plotting-model-implied-trajectories" class="section level3 hasAnchor">
+<h3>MLM Plotting Model-Implied Trajectories<a href="02-canonical.html#mlm-plotting-model-implied-trajectories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If we want to plot the model-implied trajectories for each individual, we can use the <a href="https://ggplot2.tidyverse.org/"><strong>ggplot2</strong></a> package. To plot data, we need to have it in long format. Fortunately this is the format used in the MLM model so we don”t need to do anything additional. We will plot predicted values generated from the <code>predict()</code> function. While we could append these values to our <code>executive.function.long</code> dataframe in a separate step, we will instead generate the values locally within the <code>ggplot()</code> function. This will save us a step and we won”t have to deal with merging the predicted values into our dataframe or having to remove those values later. Because MLMs drop <code>NA</code> values, our predicted values will not match up to the original dataframe unless we also drop thos <code>NA</code> values, so we will use the <code>drop_na()</code> function from <strong>tidyr</strong>.</p>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="02-canonical.html#cb21-1" aria-hidden="true" tabindex="-1"></a>ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(tidyr<span class="sc">::</span><span class="fu">drop_na</span>(executive.function.long), </span>
 <span id="cb21-2"><a href="02-canonical.html#cb21-2" aria-hidden="true" tabindex="-1"></a>                <span class="fu">aes</span>(<span class="at">x =</span> wave <span class="sc">+</span> <span class="dv">1</span>, </span>
@@ -1162,8 +1163,8 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 <p>We can see that there is quite a bit of individual differences both in the initial level, but also in slopes across time, with some individuals showing increases but other showing no change or even decreases across waves. A quick tip is to always use the <code>theme(legend.position = "none")</code> function in this kind of plot unless you want the plot to try to show you each individual with the color of their trajectory line.</p>
 </div>
 </div>
-<div id="generalized-additive-mixed-model" class="section level2">
-<h2>Generalized Additive Mixed Model</h2>
+<div id="generalized-additive-mixed-model" class="section level2 hasAnchor">
+<h2>Generalized Additive Mixed Model<a href="02-canonical.html#generalized-additive-mixed-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We can move on to fitting a GAMM model. Unlike the other frameworks, we will use the <code>feedbacklearn</code> data with continuous age across 2 decades in this model. We could, in theory, fit the <code>executive.function</code> data, but that would largely be a waste of the GAMM framework”s potential for longitudinal analysis. Here we will utilize the <a href="https://cran.r-project.org/web/packages/gamm4/index.html"><strong>gamm4</strong></a> package for fitting GAMMs with the <code>gamm4()</code> function, although other options (e.g., <code>gamm()</code> or <code>gam()</code> from the <a href="https://cran.r-project.org/web/packages/mgcv/index.html"><strong>mgcv</strong></a> package). Fortunately, the <code>gamm4()</code> uses syntax that we are largely familiar with from fitting the MLMs in the prior section. Here we will begin by fitting a simple smooth function for values of network modularity across age. Note here that we standardize the modularity values since the natural scale results in very small variance components, and the units of modularity are not naturally meaningful anyways. To invoke the smoothing function, we wrap the <code>age</code> predictor with the <code>s()</code> function in the formula. Note that the random effects argument resembles the <strong>nlme</strong> syntax. For now we will allow many of the defaults to kick in, but will investigate them in turn.</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="02-canonical.html#cb22-1" aria-hidden="true" tabindex="-1"></a>gamm <span class="ot">&lt;-</span> gamm4<span class="sc">::</span><span class="fu">gamm4</span>(<span class="fu">scale</span>(modularity) <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> <span class="fu">s</span>(age),</span>
 <span id="cb22-2"><a href="02-canonical.html#cb22-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">random =</span> <span class="sc">~</span> (<span class="dv">1</span> <span class="sc">|</span> id),</span>
@@ -1212,14 +1213,14 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 ## R-sq.(adj) =  0.162   
 ## lmer.REML = 1838.4  Scale est. = 0.37624   n = 754</code></pre>
 <p>As before, we will mostly ignore the <code>Parametric coefficients:</code> portion (although see that the <code>(Intercept)</code> estimate is identical; this should be of concern if this wasn’t the case). The <code>Approximate significance of smooth terms:</code> portion shows that we have a significant effect of age with a estimated degrees of freedom (EDF) of <span class="math inline">\(4.65\)</span>. The EDF give us a shrunken estimate of the smooth complexity (higher values indicate greater complexity). However, this isn’t incredibly helpful to understand the nature of the developmental effect. Instead, let’s turn to the output options and see what we can find there.</p>
-<div id="gamm-outputs" class="section level3">
-<h3>GAMM Outputs</h3>
+<div id="gamm-outputs" class="section level3 hasAnchor">
+<h3>GAMM Outputs<a href="02-canonical.html#gamm-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Just like with MLMs, we can generate pretty tables instead of just manually typing out the console output into a word processor. We can use the <code>tab_model()</code> for the <code>mer</code> part of the output, but we need to call the <code>gamtabs()</code> function from the <a href="https://cran.r-project.org/web/packages/itsadug/index.html"><strong>itsadug</strong></a> package for the <code>gam</code> section.</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="02-canonical.html#cb27-1" aria-hidden="true" tabindex="-1"></a>itsadug<span class="sc">::</span><span class="fu">gamtabs</span>(gamm<span class="sc">$</span>gam, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,</span>
 <span id="cb27-2"><a href="02-canonical.html#cb27-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">pnames =</span> <span class="fu">c</span>(<span class="st">&quot;Intercept&quot;</span>), <span class="at">snames =</span> <span class="fu">c</span>(<span class="st">&quot;s(Age)&quot;</span>),</span>
 <span id="cb27-3"><a href="02-canonical.html#cb27-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">caption =</span> <span class="st">&quot;Modularity as a Function of Age&quot;</span>)</span></code></pre></div>
-<!-- html table generated in R 4.1.1 by xtable 1.8-4 package -->
-<!-- Thu Aug 18 18:24:53 2022 -->
+<!-- html table generated in R 4.1.3 by xtable 1.8-4 package -->
+<!-- Tue Aug 30 10:43:13 2022 -->
 <table border="1">
 <caption align="bottom">
 Modularity as a Function of Age
@@ -1301,11 +1302,11 @@ s(Age)
 <p>The resulting plot tells a rather interesting story about the developmental trajectory of modularity, with initial increases across early adolescence, a plateauing in mid-adolescence, and then slow declines into young adulthood. However, we can see there is a lot more uncertainty at the later ages (indicated by the sparsity in the hashes in the rug plot).</p>
 </div>
 </div>
-<div id="latent-curve-model" class="section level2">
-<h2>Latent Curve Model</h2>
+<div id="latent-curve-model" class="section level2 hasAnchor">
+<h2>Latent Curve Model<a href="02-canonical.html#latent-curve-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We will now turn to the longitudinal modeling within the SEM framework, beginning with the latent curve model (or latent growth model; quantitative people aren”t the best with consistent terminology sometimes). Unlike with the mixed-effects models, we will focus on a single package, <a href="https://lavaan.ugent.be/"><strong>lavaan</strong></a>, which has become the workhorse of structural equation modeling natively in <strong>R</strong> (for running SEMs in <strong>Mplus</strong> using <strong>R</strong> commands, see the <strong>MplusAutomation</strong> package). Like with the MLM, we will fit a simple linear growth model using <code>wave</code> as our metric of time. However, unlike with the MLM, time will not appear as a specific variable in the model; rather we code time measurements directly into the factor loadings.</p>
-<div id="lcm-syntax-and-model-fitting" class="section level3">
-<h3>LCM Syntax and Model Fitting</h3>
+<div id="lcm-syntax-and-model-fitting" class="section level3 hasAnchor">
+<h3>LCM Syntax and Model Fitting<a href="02-canonical.html#lcm-syntax-and-model-fitting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>First we will define a model syntax object that specifies the model. While we will cover the basics here, consult the <a href="https://lavaan.ugent.be/tutorial/syntax1.html"><strong>lavaan website</strong></a> for a more complete syntax tutorial.</p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="02-canonical.html#cb29-1" aria-hidden="true" tabindex="-1"></a>linear.lcm <span class="ot">&lt;-</span> <span class="st">&quot;</span></span>
 <span id="cb29-2"><a href="02-canonical.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="st">              # Define the Latent Variables</span></span>
@@ -1335,8 +1336,8 @@ s(Age)
 <span id="cb30-3"><a href="02-canonical.html#cb30-3" aria-hidden="true" tabindex="-1"></a>                      <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
 <span id="cb30-4"><a href="02-canonical.html#cb30-4" aria-hidden="true" tabindex="-1"></a>                      <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span></code></pre></div>
 </div>
-<div id="lcm-outputs" class="section level3">
-<h3>LCM Outputs</h3>
+<div id="lcm-outputs" class="section level3 hasAnchor">
+<h3>LCM Outputs<a href="02-canonical.html#lcm-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We can then summarize the model output using <code>summary()</code> with some optional arguments. While we will mostly output all of the available information, including <code>fit.measures</code>, raw (<code>estimates</code>) and standardized (<code>standardize</code>) parameter estimates, and <code>rsquare</code>, there might be cases where we are only interested in some subsection of the output. For instance, if we are building a sequence of models, we might only consult fit measures without viewing the parameters and associated inference tests so that our model selection isn”t driven by “peeking” at effects of interest.</p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="02-canonical.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcm, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb31-2"><a href="02-canonical.html#cb31-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
@@ -2103,8 +2104,8 @@ NA
 </tbody>
 </table>
 </div>
-<div id="lcm-path-diagrams" class="section level3">
-<h3>LCM Path Diagrams</h3>
+<div id="lcm-path-diagrams" class="section level3 hasAnchor">
+<h3>LCM Path Diagrams<a href="02-canonical.html#lcm-path-diagrams" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We might also wish to generate a diagram visualization of the LCM model, either for model checking or for presenting results. We can use the <code>semPaths()</code> function from the <a href="http://sachaepskamp.com/semPlot/examples"><strong>semPlot</strong></a> package to do just that. Here we will plot the model results including the intercepts and with black paths. The <code>what</code> argument we will set to <code>"est"</code> to scale the size of the paths to the parameter estimate.</p>
 <div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="02-canonical.html#cb38-1" aria-hidden="true" tabindex="-1"></a>semPlot<span class="sc">::</span><span class="fu">semPaths</span>(lcm,</span>
 <span id="cb38-2"><a href="02-canonical.html#cb38-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">what =</span> <span class="st">&quot;est&quot;</span>,</span>
@@ -2120,8 +2121,8 @@ NA
 <p><img src="longitudinal_primer_files/figure-html/canonical%20LCM%2008-1.png" width="672" /></p>
 <p>Much better… By standard convention, latent variables are represented as circles, observed variables as squares, regression paths as straight single-headed arrows, and (co)variances as curved double-headed arrows. Parameters that are set to particular values rather than estimated (e.g., factor loadings here and indicator intercepts) are displayed with dashed lines.</p>
 </div>
-<div id="lcm-plotting-model-implied-trajectories" class="section level3">
-<h3>LCM Plotting Model-Implied Trajectories</h3>
+<div id="lcm-plotting-model-implied-trajectories" class="section level3 hasAnchor">
+<h3>LCM Plotting Model-Implied Trajectories<a href="02-canonical.html#lcm-plotting-model-implied-trajectories" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Finally, like with the MLM, we might want to plot model-implied individual trajectories of DLPFC activation. We have to do a little data management song and dance to get the predicted values and then convert to long format (which we do within the <code>ggplot()</code> function directly instead of creating a new dataframe to store in memory), but the results are the same as before.</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="02-canonical.html#cb40-1" aria-hidden="true" tabindex="-1"></a>ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">id=</span>lcm<span class="sc">@</span>Data<span class="sc">@</span>case.idx[[<span class="dv">1</span>]], </span>
 <span id="cb40-2"><a href="02-canonical.html#cb40-2" aria-hidden="true" tabindex="-1"></a>                           <span class="fu">lavPredict</span>(lcm,<span class="at">type=</span><span class="st">&quot;ov&quot;</span>)) <span class="sc">%&gt;%</span> </span>
@@ -2141,11 +2142,11 @@ NA
 <p><img src="longitudinal_primer_files/figure-html/canonical%20LCM%2009-1.png" width="672" /></p>
 </div>
 </div>
-<div id="latent-change-score-model" class="section level2">
-<h2>Latent Change Score Model</h2>
+<div id="latent-change-score-model" class="section level2 hasAnchor">
+<h2>Latent Change Score Model<a href="02-canonical.html#latent-change-score-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Finally, we can turn the LCSM parameterization of the linear growth model. Like the LCM, the time predictor will not appear in our model syntax, but even more strangely (at first), neither will <em>any</em> values of time. Rather we will sum across latent change factors to estimate the slope across time.</p>
-<div id="linear-lcsm" class="section level3">
-<h3>Linear LCSM</h3>
+<div id="linear-lcsm" class="section level3 hasAnchor">
+<h3>Linear LCSM<a href="02-canonical.html#linear-lcsm" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The main complication of the LCSM syntax relative to what we saw with the LCM is that we need to generate phantom variables from the indicators and then relate them with fixed path coefficients to the latent change factors.</p>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="02-canonical.html#cb41-1" aria-hidden="true" tabindex="-1"></a>linear.lcsm <span class="ot">&lt;-</span> <span class="st">&quot;</span></span>
 <span id="cb41-2"><a href="02-canonical.html#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Phantom Variables (p = phantom)</span></span>
@@ -3313,8 +3314,8 @@ NA
 <span id="cb45-4"><a href="02-canonical.html#cb45-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">edge.color =</span> <span class="st">&quot;black&quot;</span>)</span></code></pre></div>
 <p><img src="longitudinal_primer_files/figure-html/canonical%20LCSM%2002-1.png" width="672" /></p>
 </div>
-<div id="linear-lcsm-with-proportional-change" class="section level3">
-<h3>Linear LCSM with Proportional Change</h3>
+<div id="linear-lcsm-with-proportional-change" class="section level3 hasAnchor">
+<h3>Linear LCSM with Proportional Change<a href="02-canonical.html#linear-lcsm-with-proportional-change" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To a first approximation, the model above is an overly complicated method for estimating the same model we could do with two lines in the LCM. However, this parameterization allows us to include effects that are <em>not</em> possible to include in the LCM. To model proportional change, we regression the latent change factor on the prior timepoint phantom variable (<code>delta21 ~ pdlpfc1</code>). This effect tests how change between timepoints depends on prior level on the outcome of interest, and can be used to model interesting non-linearities (especially exponential trends). While not strictly necessary, it is common practice to create an equality constraint across all proportional effects. Here we accomplish this constraint by pre-multiplying all of these regressions with the same label (<code>beta</code>). The rest of the syntax remains the same as above.</p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="02-canonical.html#cb46-1" aria-hidden="true" tabindex="-1"></a>proportional.lcsm <span class="ot">&lt;-</span> <span class="st">&quot;</span></span>
 <span id="cb46-2"><a href="02-canonical.html#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Phantom Variables (p = phantom)</span></span>

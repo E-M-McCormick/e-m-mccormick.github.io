@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Nested Data | The Hitchhiker’s Guide to Longitudinal Models</title>
   <meta name="description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Nested Data | The Hitchhiker’s Guide to Longitudinal Models" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://https://mccormickneuro.github.io/longitudinal-primer/" />
   
   <meta property="og:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   <meta name="github-repo" content="McCormickNeuro/longitudinal-primer" />
@@ -21,7 +20,7 @@
   <meta name="twitter:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   
 
-<meta name="author" content="Ethan M. McCormick, Michelle L. Byrne, John C. Flournoy, Kathryn L. Mills, &amp; Jennifer H. Pfeifer" />
+<meta name="author" content="Ethan M. McCormick" />
 
 
 
@@ -32,7 +31,6 @@
   
 <link rel="prev" href="05-covariates.html"/>
 <link rel="next" href="07-datasets.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/font-awesome-5.13.0/js/script.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
@@ -139,94 +138,94 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">The Hitchhiker’s Guide to Longitudinal Models</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#about" id="toc-about">About</a></li>
-<li><a href="01-introduction.html#intro" id="toc-intro">Introduction</a></li>
-<li><a href="02-canonical.html#canon" id="toc-canon">Canonical Models</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html"><i class="fa fa-check"></i>Canonical Models</a>
 <ul>
-<li><a href="02-canonical.html#multilevel-model" id="toc-multilevel-model">Multilevel Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#multilevel-model"><i class="fa fa-check"></i>Multilevel Model</a>
 <ul>
-<li><a href="02-canonical.html#nlme" id="toc-nlme">nlme</a></li>
-<li><a href="02-canonical.html#lme4" id="toc-lme4">lme4</a></li>
-<li><a href="02-canonical.html#lmertest" id="toc-lmertest">lmerTest</a></li>
-<li><a href="02-canonical.html#mlm-outputs" id="toc-mlm-outputs">MLM Outputs</a></li>
-<li><a href="02-canonical.html#mlm-plotting-model-implied-trajectories" id="toc-mlm-plotting-model-implied-trajectories">MLM Plotting Model-Implied Trajectories</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#nlme"><i class="fa fa-check"></i>nlme</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lme4"><i class="fa fa-check"></i>lme4</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lmertest"><i class="fa fa-check"></i>lmerTest</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-outputs"><i class="fa fa-check"></i>MLM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>MLM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li><a href="02-canonical.html#generalized-additive-mixed-model" id="toc-generalized-additive-mixed-model">Generalized Additive Mixed Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#generalized-additive-mixed-model"><i class="fa fa-check"></i>Generalized Additive Mixed Model</a>
 <ul>
-<li><a href="02-canonical.html#gamm-outputs" id="toc-gamm-outputs">GAMM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#gamm-outputs"><i class="fa fa-check"></i>GAMM Outputs</a></li>
 </ul></li>
-<li><a href="02-canonical.html#latent-curve-model" id="toc-latent-curve-model">Latent Curve Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-curve-model"><i class="fa fa-check"></i>Latent Curve Model</a>
 <ul>
-<li><a href="02-canonical.html#lcm-syntax-and-model-fitting" id="toc-lcm-syntax-and-model-fitting">LCM Syntax and Model Fitting</a></li>
-<li><a href="02-canonical.html#lcm-outputs" id="toc-lcm-outputs">LCM Outputs</a></li>
-<li><a href="02-canonical.html#lcm-path-diagrams" id="toc-lcm-path-diagrams">LCM Path Diagrams</a></li>
-<li><a href="02-canonical.html#lcm-plotting-model-implied-trajectories" id="toc-lcm-plotting-model-implied-trajectories">LCM Plotting Model-Implied Trajectories</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-syntax-and-model-fitting"><i class="fa fa-check"></i>LCM Syntax and Model Fitting</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-outputs"><i class="fa fa-check"></i>LCM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-path-diagrams"><i class="fa fa-check"></i>LCM Path Diagrams</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>LCM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li><a href="02-canonical.html#latent-change-score-model" id="toc-latent-change-score-model">Latent Change Score Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-change-score-model"><i class="fa fa-check"></i>Latent Change Score Model</a>
 <ul>
-<li><a href="02-canonical.html#linear-lcsm" id="toc-linear-lcsm">Linear LCSM</a></li>
-<li><a href="02-canonical.html#linear-lcsm-with-proportional-change" id="toc-linear-lcsm-with-proportional-change">Linear LCSM with Proportional Change</a></li>
-</ul></li>
-</ul></li>
-<li><a href="03-time.html#time" id="toc-time">Time Structure</a>
-<ul>
-<li><a href="03-time.html#assessment-schedules" id="toc-assessment-schedules">Assessment Schedules</a>
-<ul>
-<li><a href="03-time.html#single-cohort-data" id="toc-single-cohort-data">Single Cohort Data</a></li>
-<li><a href="03-time.html#multiple-cohort-data" id="toc-multiple-cohort-data">Multiple Cohort Data</a></li>
-<li><a href="03-time.html#accelerated-design" id="toc-accelerated-design">Accelerated Design</a></li>
-</ul></li>
-<li><a href="03-time.html#time-coding" id="toc-time-coding">Time Coding</a></li>
-<li><a href="03-time.html#additional-considerations" id="toc-additional-considerations">Additional Considerations</a>
-<ul>
-<li><a href="03-time.html#alternative-metrics-of-time" id="toc-alternative-metrics-of-time">Alternative Metrics of Time</a></li>
-<li><a href="03-time.html#residual-estimates" id="toc-residual-estimates">Residual Estimates</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm"><i class="fa fa-check"></i>Linear LCSM</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm-with-proportional-change"><i class="fa fa-check"></i>Linear LCSM with Proportional Change</a></li>
 </ul></li>
 </ul></li>
-<li><a href="04-shape.html#shape" id="toc-shape">The Shape of Development</a>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html"><i class="fa fa-check"></i>Time Structure</a>
 <ul>
-<li><a href="04-shape.html#polynomial-trajectories" id="toc-polynomial-trajectories">Polynomial Trajectories</a>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#assessment-schedules"><i class="fa fa-check"></i>Assessment Schedules</a>
 <ul>
-<li><a href="04-shape.html#intercept-only-model" id="toc-intercept-only-model">Intercept-Only Model</a></li>
-<li><a href="04-shape.html#linear-model" id="toc-linear-model">Linear Model</a></li>
-<li><a href="04-shape.html#quadratic-model" id="toc-quadratic-model">Quadratic Model</a></li>
-<li><a href="04-shape.html#inverse-model" id="toc-inverse-model">Inverse Model</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#single-cohort-data"><i class="fa fa-check"></i>Single Cohort Data</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#multiple-cohort-data"><i class="fa fa-check"></i>Multiple Cohort Data</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#accelerated-design"><i class="fa fa-check"></i>Accelerated Design</a></li>
 </ul></li>
-<li><a href="04-shape.html#piecewise-trajectories" id="toc-piecewise-trajectories">Piecewise Trajectories</a></li>
-<li><a href="04-shape.html#nonlinear-trajectories" id="toc-nonlinear-trajectories">Nonlinear Trajectories</a></li>
-<li><a href="04-shape.html#fixed-and-random-effects" id="toc-fixed-and-random-effects">Fixed and Random Effects</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#time-coding"><i class="fa fa-check"></i>Time Coding</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#additional-considerations"><i class="fa fa-check"></i>Additional Considerations</a>
+<ul>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#alternative-metrics-of-time"><i class="fa fa-check"></i>Alternative Metrics of Time</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#residual-estimates"><i class="fa fa-check"></i>Residual Estimates</a></li>
 </ul></li>
-<li><a href="05-covariates.html#covariates" id="toc-covariates">Covariates and Distal Outcomes</a>
-<ul>
-<li><a href="05-covariates.html#covariates-1" id="toc-covariates-1">Covariates</a>
-<ul>
-<li><a href="05-covariates.html#time-invariant-covariates" id="toc-time-invariant-covariates">Time Invariant Covariates</a></li>
-<li><a href="05-covariates.html#cross-level-interactions" id="toc-cross-level-interactions">Cross-Level Interactions</a></li>
-<li><a href="05-covariates.html#time-varying-covariates" id="toc-time-varying-covariates">Time Varying Covariates</a></li>
-<li><a href="05-covariates.html#multivariate-models" id="toc-multivariate-models">Multivariate Models</a></li>
-<li><a href="05-covariates.html#within--and-betwen-person-variance" id="toc-within--and-betwen-person-variance">Within- and Betwen-Person Variance</a></li>
 </ul></li>
-<li><a href="05-covariates.html#distal-outcomes" id="toc-distal-outcomes">Distal Outcomes</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html"><i class="fa fa-check"></i>The Shape of Development</a>
+<ul>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#polynomial-trajectories"><i class="fa fa-check"></i>Polynomial Trajectories</a>
+<ul>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#intercept-only-model"><i class="fa fa-check"></i>Intercept-Only Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#linear-model"><i class="fa fa-check"></i>Linear Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#quadratic-model"><i class="fa fa-check"></i>Quadratic Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#inverse-model"><i class="fa fa-check"></i>Inverse Model</a></li>
 </ul></li>
-<li><a href="06-nesting.html#nesting" id="toc-nesting">Nested Data</a>
-<ul>
-<li><a href="06-nesting.html#unconditional-model" id="toc-unconditional-model">Unconditional Model</a></li>
-<li><a href="06-nesting.html#categorical-predictors" id="toc-categorical-predictors">Categorical Predictors</a></li>
-<li><a href="06-nesting.html#multiple-groups-models" id="toc-multiple-groups-models">Multiple Groups Models</a></li>
-<li><a href="06-nesting.html#fixed-effect-approach" id="toc-fixed-effect-approach">Fixed Effect Approach</a></li>
-<li><a href="06-nesting.html#random-effect-approach" id="toc-random-effect-approach">Random Effect Approach</a></li>
-<li><a href="06-nesting.html#cluster-correction" id="toc-cluster-correction">Cluster Correction</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#piecewise-trajectories"><i class="fa fa-check"></i>Piecewise Trajectories</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#nonlinear-trajectories"><i class="fa fa-check"></i>Nonlinear Trajectories</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#fixed-and-random-effects"><i class="fa fa-check"></i>Fixed and Random Effects</a></li>
 </ul></li>
-<li><a href="07-datasets.html#datasets" id="toc-datasets">Datasets</a>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html"><i class="fa fa-check"></i>Covariates and Distal Outcomes</a>
 <ul>
-<li><a href="07-datasets.html#descriptions" id="toc-descriptions">Descriptions</a>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#covariates-1"><i class="fa fa-check"></i>Covariates</a>
 <ul>
-<li><a href="07-datasets.html#executive-function" id="toc-executive-function">Executive Function</a></li>
-<li><a href="07-datasets.html#feedback-learning" id="toc-feedback-learning">Feedback Learning</a></li>
-<li><a href="07-datasets.html#externalizing-and-math" id="toc-externalizing-and-math">Externalizing and Math</a></li>
-<li><a href="07-datasets.html#adversity" id="toc-adversity">Adversity</a></li>
-<li><a href="07-datasets.html#trials" id="toc-trials">Trials</a></li>
-<li><a href="07-datasets.html#achieve" id="toc-achieve">Achieve</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-invariant-covariates"><i class="fa fa-check"></i>Time Invariant Covariates</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#cross-level-interactions"><i class="fa fa-check"></i>Cross-Level Interactions</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-varying-covariates"><i class="fa fa-check"></i>Time Varying Covariates</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#multivariate-models"><i class="fa fa-check"></i>Multivariate Models</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#within--and-betwen-person-variance"><i class="fa fa-check"></i>Within- and Betwen-Person Variance</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#distal-outcomes"><i class="fa fa-check"></i>Distal Outcomes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html"><i class="fa fa-check"></i>Nested Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#unconditional-model"><i class="fa fa-check"></i>Unconditional Model</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#categorical-predictors"><i class="fa fa-check"></i>Categorical Predictors</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#multiple-groups-models"><i class="fa fa-check"></i>Multiple Groups Models</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#fixed-effect-approach"><i class="fa fa-check"></i>Fixed Effect Approach</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#random-effect-approach"><i class="fa fa-check"></i>Random Effect Approach</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#cluster-correction"><i class="fa fa-check"></i>Cluster Correction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html"><i class="fa fa-check"></i>Datasets</a>
+<ul>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#descriptions"><i class="fa fa-check"></i>Descriptions</a>
+<ul>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#executive-function"><i class="fa fa-check"></i>Executive Function</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#feedback-learning"><i class="fa fa-check"></i>Feedback Learning</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#externalizing-and-math"><i class="fa fa-check"></i>Externalizing and Math</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#adversity"><i class="fa fa-check"></i>Adversity</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#trials"><i class="fa fa-check"></i>Trials</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#achieve"><i class="fa fa-check"></i>Achieve</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -249,8 +248,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="nesting" class="section level1">
-<h1>Nested Data</h1>
+<div id="nesting" class="section level1 hasAnchor">
+<h1>Nested Data<a href="06-nesting.html#nesting" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The final topic we will consider is the way we account for nesting within longitudinal data. While technically all of longitudinal modeling involves nested data (i.e., multiple observations nested within the same individual), here we focus more on between-person nesting groups (e.g., classroom, family, data collection sites). As we will see, there are several forms of the models that we have already used that deal with nesting. The <code>achieve</code> dataset we will work with here are from a 4-wave school-based assessment of math and science achievement across ages <span class="math inline">\(12\)</span> - <span class="math inline">\(17\)</span>. Schools were drawn from <span class="math inline">\(5\)</span> different metropolitan areas and assessments were conducted by separate research teams in each city. Here we will mostly focus on the science achievement data, but may draw examples from math achievement if they differ in interesting ways.</p>
 <div class="sourceCode" id="cb257"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb257-1"><a href="06-nesting.html#cb257-1" aria-hidden="true" tabindex="-1"></a>achieve <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/achieve.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb257-2"><a href="06-nesting.html#cb257-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -261,15 +260,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb257-7"><a href="06-nesting.html#cb257-7" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_sep =</span> <span class="st">&quot;.&quot;</span>,</span>
 <span id="cb257-8"><a href="06-nesting.html#cb257-8" aria-hidden="true" tabindex="-1"></a>              <span class="at">values_fill =</span> <span class="cn">NA</span>)</span></code></pre></div>
 <p>As always, we can fit an unconditional growth model to give us a baseline of expectations for the effects we will in subsequent models. Here we will fit the MLM and LCM versions as they are the simplest representations.</p>
-<div id="unconditional-model" class="section level2">
-<h2>Unconditional Model</h2>
+<div id="unconditional-model" class="section level2 hasAnchor">
+<h2>Unconditional Model<a href="06-nesting.html#unconditional-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="sourceCode" id="cb258"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb258-1"><a href="06-nesting.html#cb258-1" aria-hidden="true" tabindex="-1"></a>unc.mlm <span class="ot">&lt;-</span> <span class="fu">lmer</span>(sci <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id),</span>
 <span id="cb258-2"><a href="06-nesting.html#cb258-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">na.action =</span> na.omit,</span>
 <span id="cb258-3"><a href="06-nesting.html#cb258-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">REML =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb258-4"><a href="06-nesting.html#cb258-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> achieve)</span>
 <span id="cb258-5"><a href="06-nesting.html#cb258-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb258-6"><a href="06-nesting.html#cb258-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(unc.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: sci ~ 1 + wave + (1 + wave | id)
 ##    Data: achieve
 ## 
@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb260-8"><a href="06-nesting.html#cb260-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb260-9"><a href="06-nesting.html#cb260-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(unc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb260-10"><a href="06-nesting.html#cb260-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 138 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 147 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -399,8 +399,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     sci.4             0.888</code></pre>
 <p>As a general takeaway, we have an average science achievement of around <span class="math inline">\(60\)</span> (these scores are arbitrarily scaled so that isn’t incredibly informative) but more of interest, science achievement is increasing over time approximately <span class="math inline">\(2\)</span> points per year of school.</p>
 </div>
-<div id="categorical-predictors" class="section level2">
-<h2>Categorical Predictors</h2>
+<div id="categorical-predictors" class="section level2 hasAnchor">
+<h2>Categorical Predictors<a href="06-nesting.html#categorical-predictors" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Nesting induces correlations between observations because members of the same group are more similar to one another than members of other groups. The practical upshot of these models is that we obtain different values of parameters across group (although the methods for this will vary). Perhaps the simplest method for doing so, and therefore accounting for group differences, is to predict the mean of the outcome variable using a categorical predictor. In longitudinal modeling, this most often occurs at the level of the individual as a TIC. As such, we already know how to fit this kind of model from the last chapter. We can show this syntax again below. Here we predict the intercept and slope random effects with <code>male</code> to examine differences between self-reported males and females. In the MLM syntax, we simply include <code>male</code> in the regression equation if we want to predict mean differences in science achievement.</p>
 <div class="sourceCode" id="cb262"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb262-1"><a href="06-nesting.html#cb262-1" aria-hidden="true" tabindex="-1"></a>cat.mlm<span class="fl">.1</span> <span class="ot">&lt;-</span> <span class="fu">lmer</span>(sci <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> male <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id),</span>
 <span id="cb262-2"><a href="06-nesting.html#cb262-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">na.action =</span> na.omit,</span>
@@ -408,7 +408,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb262-4"><a href="06-nesting.html#cb262-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> achieve)</span>
 <span id="cb262-5"><a href="06-nesting.html#cb262-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb262-6"><a href="06-nesting.html#cb262-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cat.mlm<span class="fl">.1</span>, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: sci ~ 1 + wave + male + (1 + wave | id)
 ##    Data: achieve
 ## 
@@ -427,9 +428,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   58.0466     0.4255 1235.3629 136.425  &lt; 2e-16 ***
-## wave           1.9866     0.0872  862.4361  22.783  &lt; 2e-16 ***
-## male           1.5965     0.5918 1190.5962   2.698  0.00708 ** 
+## (Intercept)   58.0466     0.4255 1235.3628 136.425  &lt; 2e-16 ***
+## wave           1.9866     0.0872  862.4359  22.783  &lt; 2e-16 ***
+## male           1.5965     0.5918 1190.5963   2.698  0.00708 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here we see that males show <span class="math inline">\(1.6\)</span> units higher science achievement compared with females (the reference category). It is possible to predict other parameters in the model, although the options in mixed-effects models tend to be more limited compared with SEM approaches. For instance, if we thought error variance might differ across groups, we could include this in our MLM syntax through the variance identity (<code>varIdent</code>) function. The <code>form</code> equation, <code>~ 1 | male</code>, mimics the regression equation where we have a separate “intercept” (here just read this as estimate) nested within group (<code>male</code>). We can then go through the procedure we covered in Chapter 3 to recover the different estimates for males and females (here in standard deviations, but we can easily square these values to obtain variances).</p>
@@ -450,7 +451,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Formula: ~1 + wave | id
 ##  Structure: General positive-definite, Log-Cholesky parametrization
 ##             StdDev   Corr  
-## (Intercept) 9.705310 (Intr)
+## (Intercept) 9.705309 (Intr)
 ## wave        2.004751 -0.091
 ## Residual    3.278687       
 ## 
@@ -471,8 +472,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## male -0.660 -0.019
 ## 
 ## Standardized Within-Group Residuals:
-##        Min         Q1        Med         Q3        Max 
-## -4.3578043 -0.4226075  0.0073624  0.4638169  3.9981046 
+##          Min           Q1          Med           Q3          Max 
+## -4.357804935 -0.422607606  0.007362749  0.463816949  3.998105364 
 ## 
 ## Number of Observations: 3643
 ## Number of Groups: 1200</code></pre>
@@ -495,7 +496,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb268-13"><a href="06-nesting.html#cb268-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb268-14"><a href="06-nesting.html#cb268-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cat.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb268-15"><a href="06-nesting.html#cb268-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 149 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 143 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -562,8 +563,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .slp               3.749    0.440    8.517    0.000    0.995    0.995</code></pre>
 <p>These approaches are relatively simple ways to incorporate nesting information into the model, but highlight the continuity with more complex approaches we will discuss as we move forward in this chapter.</p>
 </div>
-<div id="multiple-groups-models" class="section level2">
-<h2>Multiple Groups Models</h2>
+<div id="multiple-groups-models" class="section level2 hasAnchor">
+<h2>Multiple Groups Models<a href="06-nesting.html#multiple-groups-models" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>While the categorical predictor allows us to vary some parameters across groups, a unique power of the SEM is the multiple group model, where we can estimate unique parameters of essentially any type across any number of groups (although the number of groups tends to be small in practice). The reason for a small number of groups tends to be due to sample size requirements within-group. SEM is still a large-sample estimator in the multiple groups model, so we have to be careful we aren’t under-powering the model at the group level, even if the overall sample size is large. Below we can see how the multiple-group LCM is specified. Nothing changes about the syntax object <code>mult.g1</code> from what we have seen before, however, now we include the argument <code>group = "male"</code> to indicate that we want to obtain unique estimates for females and males. Typically, these models require setting some small set of parameters equal in the model just to identify the model, so here we conveniently achieve this through having the same set factor loadings for the growth model. We can see the results below.</p>
 <div class="sourceCode" id="cb270"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb270-1"><a href="06-nesting.html#cb270-1" aria-hidden="true" tabindex="-1"></a>mult.g1 <span class="ot">&lt;-</span> <span class="st">&quot;int =~ 1*sci.1 + 1*sci.2 + 1*sci.3 + 1*sci.4</span></span>
 <span id="cb270-2"><a href="06-nesting.html#cb270-2" aria-hidden="true" tabindex="-1"></a><span class="st">            slp =~ 0*sci.1 + 1*sci.2 + 2*sci.3 + 3*sci.4&quot;</span></span>
@@ -576,7 +577,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb270-9"><a href="06-nesting.html#cb270-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb270-10"><a href="06-nesting.html#cb270-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mult.g1.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb270-11"><a href="06-nesting.html#cb270-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 226 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 222 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -734,7 +735,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb272-18"><a href="06-nesting.html#cb272-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb272-19"><a href="06-nesting.html#cb272-19" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mult.g2.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb272-20"><a href="06-nesting.html#cb272-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 215 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 224 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -859,7 +860,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb274-10"><a href="06-nesting.html#cb274-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb274-11"><a href="06-nesting.html#cb274-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mult.g3.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb274-12"><a href="06-nesting.html#cb274-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 163 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 162 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1007,15 +1008,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here it appears that constraining the factor means does significantly decrease model fit, so we wouldn’t conclude that this constraint is appropriate. We could do this kind of testing with other parameters if we chose, although we won’t here for space and simplicity. The complexity and utility of the multiple groups models is not something we can explore fully here, and interested readers can find a much larger literature on these kinds of models if they wish to implement them in their own research (see the manuscript for a general starting point).</p>
 </div>
-<div id="fixed-effect-approach" class="section level2">
-<h2>Fixed Effect Approach</h2>
+<div id="fixed-effect-approach" class="section level2 hasAnchor">
+<h2>Fixed Effect Approach<a href="06-nesting.html#fixed-effect-approach" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The fixed effect approach is (rarely for quantitative methods) exactly what it sounds like in the context of mixed-effect models, we simply include our grouping variable as a fixed effect in the model. This has the convenience of account for unmeasured or otherwise unmodeled differences between groups that might bias the effects. In the most common use of the fixed-effects approach, we account for intercept differences by including a main effect of the group. In the context of our data example, we will model the effect of <code>site</code> on science achievement using a fixed approach. Within the <code>lmer()</code> syntax, we can use the short-cute of <code>factor(site)</code> to generate a series of dummy-codes, where <code>site == 1</code> is the reference category. We can see the results of this below.</p>
 <div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="06-nesting.html#cb278-1" aria-hidden="true" tabindex="-1"></a>fixed.mlm1 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(sci <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> <span class="fu">factor</span>(site) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id),</span>
 <span id="cb278-2"><a href="06-nesting.html#cb278-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">na.action =</span> na.omit,</span>
 <span id="cb278-3"><a href="06-nesting.html#cb278-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">REML =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb278-4"><a href="06-nesting.html#cb278-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> achieve)</span>
 <span id="cb278-5"><a href="06-nesting.html#cb278-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fixed.mlm1, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: sci ~ 1 + wave + factor(site) + (1 + wave | id)
 ##    Data: achieve
 ## 
@@ -1034,12 +1036,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##                 Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)     58.59757    0.56691 1247.30166 103.363   &lt;2e-16 ***
-## wave             1.98858    0.08722  861.42604  22.800   &lt;2e-16 ***
-## factor(site)2    1.58400    0.86061 1183.63741   1.841   0.0659 .  
-## factor(site)3    0.40383    0.89404 1189.48204   0.452   0.6516    
-## factor(site)4    0.25571    0.83030 1186.72499   0.308   0.7582    
-## factor(site)5   -2.21401    1.05705 1193.40188  -2.095   0.0364 *  
+## (Intercept)     58.59757    0.56691 1247.30204 103.363   &lt;2e-16 ***
+## wave             1.98858    0.08722  861.42609  22.800   &lt;2e-16 ***
+## factor(site)2    1.58400    0.86061 1183.63740   1.841   0.0659 .  
+## factor(site)3    0.40383    0.89404 1189.48203   0.452   0.6516    
+## factor(site)4    0.25571    0.83030 1186.72497   0.308   0.7582    
+## factor(site)5   -2.21401    1.05705 1193.40187  -2.095   0.0364 *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Note that the <code>(Intercept)</code> term is the intercept for Site 1 and each of the effects <code>factor(site)*</code> indicate the relative difference from that term for the other sites. If we wished to use an absolute coding scheme, we change the <code>1</code> to a <code>0</code> (indicating that we don’t wish to estimate a reference intercept) and re-estimate the model.</p>
@@ -1048,7 +1050,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb280-3"><a href="06-nesting.html#cb280-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">REML =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb280-4"><a href="06-nesting.html#cb280-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> achieve)</span>
 <span id="cb280-5"><a href="06-nesting.html#cb280-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fixed.mlm2, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: sci ~ 0 + wave + factor(site) + (1 + wave | id)
 ##    Data: achieve
 ## 
@@ -1082,8 +1085,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb282-3"><a href="06-nesting.html#cb282-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">REML =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb282-4"><a href="06-nesting.html#cb282-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> achieve)</span>
 <span id="cb282-5"><a href="06-nesting.html#cb282-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fixed.mlm3, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
-## Formula: sci ~ 1 + wave + factor(site) + wave:factor(site) + (1 + wave |      id)
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
+## Formula: sci ~ 1 + wave + factor(site) + wave:factor(site) + (1 + wave |  
+##     id)
 ##    Data: achieve
 ## 
 ## REML criterion at convergence: 24076.6
@@ -1101,22 +1106,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##                      Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)          58.40288    0.59914 1154.84398  97.477   &lt;2e-16 ***
-## wave                  2.13593    0.17030  972.01926  12.542   &lt;2e-16 ***
-## factor(site)2         1.74603    0.92295 1120.17539   1.892   0.0588 .  
-## factor(site)3         1.10856    0.96191 1134.56798   1.152   0.2494    
-## factor(site)4         0.03638    0.89457 1141.90715   0.041   0.9676    
-## factor(site)5        -1.45252    1.13802 1139.05117  -1.276   0.2021    
-## wave:factor(site)2   -0.12248    0.25311  860.24892  -0.484   0.6286    
-## wave:factor(site)3   -0.52808    0.26582  877.36603  -1.987   0.0473 *  
-## wave:factor(site)4    0.15811    0.24806  912.54273   0.637   0.5240    
-## wave:factor(site)5   -0.56471    0.31249  860.82676  -1.807   0.0711 .  
+## (Intercept)          58.40288    0.59914 1154.84387  97.477   &lt;2e-16 ***
+## wave                  2.13593    0.17030  972.01896  12.542   &lt;2e-16 ***
+## factor(site)2         1.74603    0.92295 1120.17538   1.892   0.0588 .  
+## factor(site)3         1.10856    0.96191 1134.56799   1.152   0.2494    
+## factor(site)4         0.03638    0.89457 1141.90712   0.041   0.9676    
+## factor(site)5        -1.45252    1.13802 1139.05119  -1.276   0.2021    
+## wave:factor(site)2   -0.12248    0.25311  860.24886  -0.484   0.6286    
+## wave:factor(site)3   -0.52808    0.26582  877.36598  -1.987   0.0473 *  
+## wave:factor(site)4    0.15811    0.24806  912.54265   0.637   0.5240    
+## wave:factor(site)5   -0.56471    0.31249  860.82672  -1.807   0.0711 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here we return to the reference coding to test whether the effect of wave differs across sites from the reference. We can see how parameter do tend to multiply rapidly, however, with a relatively small set of grouping levels (here we only have 5 site), this is manageable. With larger numbers of groups (e.g., families), this approach would become less tenable. Note that we still have our random effect across individuals, but we’ve removed site-level differences from those estimates through the use of the fixed effects approach. Very often we will not interpret the associated parameters, but include them to de-confound our estimates of interest. Another thing to mention is that this isn’t a “pure” form of the fixed-effects approach, since we still include the random effect of individual. The purely fixed-effect approach is more common/appropriate for group-based clustered (e.g., site, country) rather than individual-based clustering (as we always have in longitudinal data) since we cannot include individual level fixed-effects without breaking the model (it isn’t identified).</p>
 </div>
-<div id="random-effect-approach" class="section level2">
-<h2>Random Effect Approach</h2>
+<div id="random-effect-approach" class="section level2 hasAnchor">
+<h2>Random Effect Approach<a href="06-nesting.html#random-effect-approach" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If we want to move into accounting for grouping variables with many levels, the random effects framework provides a nice and ready solution. Indeed, we have been using it for the nesting of repeated measures within individuals this whole time. Within MEMs, we can include higher levels of nesting by expanding the structure of the random effects in our model syntax. Here we expand our classic <code>(1 + wave | id)</code> to include the higher level of nesting individuals within schools <code>(1 + wave | school/id)</code>.</p>
 <div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="06-nesting.html#cb284-1" aria-hidden="true" tabindex="-1"></a>rand.mlm <span class="ot">&lt;-</span> <span class="fu">lmer</span>(sci <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> school<span class="sc">/</span>id),</span>
 <span id="cb284-2"><a href="06-nesting.html#cb284-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">na.action =</span> na.omit,</span>
@@ -1124,7 +1129,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb284-4"><a href="06-nesting.html#cb284-4" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> achieve)</span>
 <span id="cb284-5"><a href="06-nesting.html#cb284-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb284-6"><a href="06-nesting.html#cb284-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(rand.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [&#39;lmerModLmerTest&#39;]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: sci ~ 1 + wave + (1 + wave | school/id)
 ##    Data: achieve
 ## 
@@ -1132,21 +1138,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Scaled residuals: 
 ##     Min      1Q  Median      3Q     Max 
-## -4.4223 -0.4199  0.0095  0.4600  4.3843 
+## -4.4223 -0.4199  0.0095  0.4600  4.3844 
 ## 
 ## Random effects:
 ##  Groups    Name        Variance Std.Dev. Corr 
-##  id:school (Intercept) 84.8326  9.2105        
-##            wave         3.5757  1.8909   -0.10
-##  school    (Intercept) 12.8283  3.5817        
-##            wave         0.5724  0.7566   -0.14
-##  Residual              12.3154  3.5093        
+##  id:school (Intercept) 84.8280  9.2102        
+##            wave         3.5754  1.8909   -0.10
+##  school    (Intercept) 12.8267  3.5814        
+##            wave         0.5727  0.7568   -0.14
+##  Residual              12.3157  3.5094        
 ## Number of obs: 3643, groups:  id:school, 1200; school, 41
 ## 
 ## Fixed effects:
 ##             Estimate Std. Error      df t value Pr(&gt;|t|)    
-## (Intercept)  58.4281     0.6514 35.6571   89.70  &lt; 2e-16 ***
-## wave          1.9598     0.1516 34.9520   12.93 7.07e-15 ***
+## (Intercept)  58.4281     0.6513 35.6623   89.71  &lt; 2e-16 ***
+## wave          1.9598     0.1516 34.9412   12.92 7.14e-15 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>The ordering of <code>school/id</code> is important otherwise we have schools nested within individual which will make the model sad (it’s true). We can check that we’ve done this in the model summary where we have <span class="math inline">\(1200\)</span> individuals nested within schools (<code>id:school</code>) and <span class="math inline">\(41\)</span> schools. If we compare this model to the model where we ignore nesting within school, we will notice that the fixed effects have not changed that much, but that our estimate of individual-level variance has been broken up into individual- and school-level variability. This situation is fairly common (although not guaranteed), with fixed effects that are relatively robust to omitting higher levels of nesting, but mis-attributed variance estimates at lower levels of nesting that over-estimate inter-individual variance.</p>
@@ -1180,7 +1186,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb286-27"><a href="06-nesting.html#cb286-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb286-28"><a href="06-nesting.html#cb286-28" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mlsem.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb286-29"><a href="06-nesting.html#cb286-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 41 iterations
+<pre><code>## lavaan 0.6-12 ended normally after 40 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                               EM
@@ -1298,7 +1304,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .sci.2             0.000                               0.000    0.000
 ##    .sci.3             0.000                               0.000    0.000
 ##    .sci.4             0.000                               0.000    0.000
-##     int.b            59.767    0.427  139.929    0.000   14.639   14.639
+##     int.b            59.767    0.427  139.930    0.000   14.639   14.639
 ## 
 ## Variances:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
@@ -1316,8 +1322,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     sci.4             0.939</code></pre>
 <p>Here we get a similar layout for the results as the multiple groups model, with the within estimates first, and then the school-level estimates next. We needed to set the residuals to be homoscedastic to achieve convergence here, but in principle these can be allowed to vary.</p>
 </div>
-<div id="cluster-correction" class="section level2">
-<h2>Cluster Correction</h2>
+<div id="cluster-correction" class="section level2 hasAnchor">
+<h2>Cluster Correction<a href="06-nesting.html#cluster-correction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The fixed effects point estimates within the model tend to be robust to the omission of higher levels of nesting, however, their standard errors do tend to be inaccurate. As such, sometimes we might wish to simply not interpret the variance components and focus on regression coefficients or other parts of our model. This might be less frequent in growth modeling, but for completeness we will consider this type of application. In this instance, we can simply implement a cluster-correction to our standard errors and then proceed as usual to interpret the model parameters. To our knowledge, this is not currently an option in R, so we provide the <strong>Mplus</strong> syntax to do so below.</p>
 
 </div>
