@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>The Hitchhiker’s Guide to Longitudinal Models</title>
   <meta name="description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="The Hitchhiker’s Guide to Longitudinal Models" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://https://mccormickneuro.github.io/longitudinal-primer/" />
   
   <meta property="og:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   <meta name="github-repo" content="McCormickNeuro/longitudinal-primer" />
@@ -21,7 +20,7 @@
   <meta name="twitter:description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
   
 
-<meta name="author" content="Ethan M. McCormick, Michelle L. Byrne, John C. Flournoy, Kathryn L. Mills, &amp; Jennifer H. Pfeifer" />
+<meta name="author" content="Ethan M. McCormick" />
 
 
 
@@ -32,7 +31,6 @@
   
 
 <link rel="next" href="01-introduction.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,8 +48,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="libs/font-awesome-5.13.0/js/script.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
@@ -139,94 +138,94 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">The Hitchhiker’s Guide to Longitudinal Models</a></li>
 
 <li class="divider"></li>
-<li><a href="index.html#about" id="toc-about">About</a></li>
-<li><a href="01-introduction.html#intro" id="toc-intro">Introduction</a></li>
-<li><a href="02-canonical.html#canon" id="toc-canon">Canonical Models</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="" data-path="01-introduction.html"><a href="01-introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html"><i class="fa fa-check"></i>Canonical Models</a>
 <ul>
-<li><a href="02-canonical.html#multilevel-model" id="toc-multilevel-model">Multilevel Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#multilevel-model"><i class="fa fa-check"></i>Multilevel Model</a>
 <ul>
-<li><a href="02-canonical.html#nlme" id="toc-nlme">nlme</a></li>
-<li><a href="02-canonical.html#lme4" id="toc-lme4">lme4</a></li>
-<li><a href="02-canonical.html#lmertest" id="toc-lmertest">lmerTest</a></li>
-<li><a href="02-canonical.html#mlm-outputs" id="toc-mlm-outputs">MLM Outputs</a></li>
-<li><a href="02-canonical.html#mlm-plotting-model-implied-trajectories" id="toc-mlm-plotting-model-implied-trajectories">MLM Plotting Model-Implied Trajectories</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#nlme"><i class="fa fa-check"></i>nlme</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lme4"><i class="fa fa-check"></i>lme4</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lmertest"><i class="fa fa-check"></i>lmerTest</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-outputs"><i class="fa fa-check"></i>MLM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#mlm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>MLM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li><a href="02-canonical.html#generalized-additive-mixed-model" id="toc-generalized-additive-mixed-model">Generalized Additive Mixed Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#generalized-additive-mixed-model"><i class="fa fa-check"></i>Generalized Additive Mixed Model</a>
 <ul>
-<li><a href="02-canonical.html#gamm-outputs" id="toc-gamm-outputs">GAMM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#gamm-outputs"><i class="fa fa-check"></i>GAMM Outputs</a></li>
 </ul></li>
-<li><a href="02-canonical.html#latent-curve-model" id="toc-latent-curve-model">Latent Curve Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-curve-model"><i class="fa fa-check"></i>Latent Curve Model</a>
 <ul>
-<li><a href="02-canonical.html#lcm-syntax-and-model-fitting" id="toc-lcm-syntax-and-model-fitting">LCM Syntax and Model Fitting</a></li>
-<li><a href="02-canonical.html#lcm-outputs" id="toc-lcm-outputs">LCM Outputs</a></li>
-<li><a href="02-canonical.html#lcm-path-diagrams" id="toc-lcm-path-diagrams">LCM Path Diagrams</a></li>
-<li><a href="02-canonical.html#lcm-plotting-model-implied-trajectories" id="toc-lcm-plotting-model-implied-trajectories">LCM Plotting Model-Implied Trajectories</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-syntax-and-model-fitting"><i class="fa fa-check"></i>LCM Syntax and Model Fitting</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-outputs"><i class="fa fa-check"></i>LCM Outputs</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-path-diagrams"><i class="fa fa-check"></i>LCM Path Diagrams</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#lcm-plotting-model-implied-trajectories"><i class="fa fa-check"></i>LCM Plotting Model-Implied Trajectories</a></li>
 </ul></li>
-<li><a href="02-canonical.html#latent-change-score-model" id="toc-latent-change-score-model">Latent Change Score Model</a>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#latent-change-score-model"><i class="fa fa-check"></i>Latent Change Score Model</a>
 <ul>
-<li><a href="02-canonical.html#linear-lcsm" id="toc-linear-lcsm">Linear LCSM</a></li>
-<li><a href="02-canonical.html#linear-lcsm-with-proportional-change" id="toc-linear-lcsm-with-proportional-change">Linear LCSM with Proportional Change</a></li>
-</ul></li>
-</ul></li>
-<li><a href="03-time.html#time" id="toc-time">Time Structure</a>
-<ul>
-<li><a href="03-time.html#assessment-schedules" id="toc-assessment-schedules">Assessment Schedules</a>
-<ul>
-<li><a href="03-time.html#single-cohort-data" id="toc-single-cohort-data">Single Cohort Data</a></li>
-<li><a href="03-time.html#multiple-cohort-data" id="toc-multiple-cohort-data">Multiple Cohort Data</a></li>
-<li><a href="03-time.html#accelerated-design" id="toc-accelerated-design">Accelerated Design</a></li>
-</ul></li>
-<li><a href="03-time.html#time-coding" id="toc-time-coding">Time Coding</a></li>
-<li><a href="03-time.html#additional-considerations" id="toc-additional-considerations">Additional Considerations</a>
-<ul>
-<li><a href="03-time.html#alternative-metrics-of-time" id="toc-alternative-metrics-of-time">Alternative Metrics of Time</a></li>
-<li><a href="03-time.html#residual-estimates" id="toc-residual-estimates">Residual Estimates</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm"><i class="fa fa-check"></i>Linear LCSM</a></li>
+<li class="chapter" data-level="" data-path="02-canonical.html"><a href="02-canonical.html#linear-lcsm-with-proportional-change"><i class="fa fa-check"></i>Linear LCSM with Proportional Change</a></li>
 </ul></li>
 </ul></li>
-<li><a href="04-shape.html#shape" id="toc-shape">The Shape of Development</a>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html"><i class="fa fa-check"></i>Time Structure</a>
 <ul>
-<li><a href="04-shape.html#polynomial-trajectories" id="toc-polynomial-trajectories">Polynomial Trajectories</a>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#assessment-schedules"><i class="fa fa-check"></i>Assessment Schedules</a>
 <ul>
-<li><a href="04-shape.html#intercept-only-model" id="toc-intercept-only-model">Intercept-Only Model</a></li>
-<li><a href="04-shape.html#linear-model" id="toc-linear-model">Linear Model</a></li>
-<li><a href="04-shape.html#quadratic-model" id="toc-quadratic-model">Quadratic Model</a></li>
-<li><a href="04-shape.html#inverse-model" id="toc-inverse-model">Inverse Model</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#single-cohort-data"><i class="fa fa-check"></i>Single Cohort Data</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#multiple-cohort-data"><i class="fa fa-check"></i>Multiple Cohort Data</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#accelerated-design"><i class="fa fa-check"></i>Accelerated Design</a></li>
 </ul></li>
-<li><a href="04-shape.html#piecewise-trajectories" id="toc-piecewise-trajectories">Piecewise Trajectories</a></li>
-<li><a href="04-shape.html#nonlinear-trajectories" id="toc-nonlinear-trajectories">Nonlinear Trajectories</a></li>
-<li><a href="04-shape.html#fixed-and-random-effects" id="toc-fixed-and-random-effects">Fixed and Random Effects</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#time-coding"><i class="fa fa-check"></i>Time Coding</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#additional-considerations"><i class="fa fa-check"></i>Additional Considerations</a>
+<ul>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#alternative-metrics-of-time"><i class="fa fa-check"></i>Alternative Metrics of Time</a></li>
+<li class="chapter" data-level="" data-path="03-time.html"><a href="03-time.html#residual-estimates"><i class="fa fa-check"></i>Residual Estimates</a></li>
 </ul></li>
-<li><a href="05-covariates.html#covariates" id="toc-covariates">Covariates and Distal Outcomes</a>
-<ul>
-<li><a href="05-covariates.html#covariates-1" id="toc-covariates-1">Covariates</a>
-<ul>
-<li><a href="05-covariates.html#time-invariant-covariates" id="toc-time-invariant-covariates">Time Invariant Covariates</a></li>
-<li><a href="05-covariates.html#cross-level-interactions" id="toc-cross-level-interactions">Cross-Level Interactions</a></li>
-<li><a href="05-covariates.html#time-varying-covariates" id="toc-time-varying-covariates">Time Varying Covariates</a></li>
-<li><a href="05-covariates.html#multivariate-models" id="toc-multivariate-models">Multivariate Models</a></li>
-<li><a href="05-covariates.html#within--and-betwen-person-variance" id="toc-within--and-betwen-person-variance">Within- and Betwen-Person Variance</a></li>
 </ul></li>
-<li><a href="05-covariates.html#distal-outcomes" id="toc-distal-outcomes">Distal Outcomes</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html"><i class="fa fa-check"></i>The Shape of Development</a>
+<ul>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#polynomial-trajectories"><i class="fa fa-check"></i>Polynomial Trajectories</a>
+<ul>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#intercept-only-model"><i class="fa fa-check"></i>Intercept-Only Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#linear-model"><i class="fa fa-check"></i>Linear Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#quadratic-model"><i class="fa fa-check"></i>Quadratic Model</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#inverse-model"><i class="fa fa-check"></i>Inverse Model</a></li>
 </ul></li>
-<li><a href="06-nesting.html#nesting" id="toc-nesting">Nested Data</a>
-<ul>
-<li><a href="06-nesting.html#unconditional-model" id="toc-unconditional-model">Unconditional Model</a></li>
-<li><a href="06-nesting.html#categorical-predictors" id="toc-categorical-predictors">Categorical Predictors</a></li>
-<li><a href="06-nesting.html#multiple-groups-models" id="toc-multiple-groups-models">Multiple Groups Models</a></li>
-<li><a href="06-nesting.html#fixed-effect-approach" id="toc-fixed-effect-approach">Fixed Effect Approach</a></li>
-<li><a href="06-nesting.html#random-effect-approach" id="toc-random-effect-approach">Random Effect Approach</a></li>
-<li><a href="06-nesting.html#cluster-correction" id="toc-cluster-correction">Cluster Correction</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#piecewise-trajectories"><i class="fa fa-check"></i>Piecewise Trajectories</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#nonlinear-trajectories"><i class="fa fa-check"></i>Nonlinear Trajectories</a></li>
+<li class="chapter" data-level="" data-path="04-shape.html"><a href="04-shape.html#fixed-and-random-effects"><i class="fa fa-check"></i>Fixed and Random Effects</a></li>
 </ul></li>
-<li><a href="07-datasets.html#datasets" id="toc-datasets">Datasets</a>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html"><i class="fa fa-check"></i>Covariates and Distal Outcomes</a>
 <ul>
-<li><a href="07-datasets.html#descriptions" id="toc-descriptions">Descriptions</a>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#covariates-1"><i class="fa fa-check"></i>Covariates</a>
 <ul>
-<li><a href="07-datasets.html#executive-function" id="toc-executive-function">Executive Function</a></li>
-<li><a href="07-datasets.html#feedback-learning" id="toc-feedback-learning">Feedback Learning</a></li>
-<li><a href="07-datasets.html#externalizing-and-math" id="toc-externalizing-and-math">Externalizing and Math</a></li>
-<li><a href="07-datasets.html#adversity" id="toc-adversity">Adversity</a></li>
-<li><a href="07-datasets.html#trials" id="toc-trials">Trials</a></li>
-<li><a href="07-datasets.html#achieve" id="toc-achieve">Achieve</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-invariant-covariates"><i class="fa fa-check"></i>Time Invariant Covariates</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#cross-level-interactions"><i class="fa fa-check"></i>Cross-Level Interactions</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#time-varying-covariates"><i class="fa fa-check"></i>Time Varying Covariates</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#multivariate-models"><i class="fa fa-check"></i>Multivariate Models</a></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#within--and-betwen-person-variance"><i class="fa fa-check"></i>Within- and Betwen-Person Variance</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="05-covariates.html"><a href="05-covariates.html#distal-outcomes"><i class="fa fa-check"></i>Distal Outcomes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html"><i class="fa fa-check"></i>Nested Data</a>
+<ul>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#unconditional-model"><i class="fa fa-check"></i>Unconditional Model</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#categorical-predictors"><i class="fa fa-check"></i>Categorical Predictors</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#multiple-groups-models"><i class="fa fa-check"></i>Multiple Groups Models</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#fixed-effect-approach"><i class="fa fa-check"></i>Fixed Effect Approach</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#random-effect-approach"><i class="fa fa-check"></i>Random Effect Approach</a></li>
+<li class="chapter" data-level="" data-path="06-nesting.html"><a href="06-nesting.html#cluster-correction"><i class="fa fa-check"></i>Cluster Correction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html"><i class="fa fa-check"></i>Datasets</a>
+<ul>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#descriptions"><i class="fa fa-check"></i>Descriptions</a>
+<ul>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#executive-function"><i class="fa fa-check"></i>Executive Function</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#feedback-learning"><i class="fa fa-check"></i>Feedback Learning</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#externalizing-and-math"><i class="fa fa-check"></i>Externalizing and Math</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#adversity"><i class="fa fa-check"></i>Adversity</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#trials"><i class="fa fa-check"></i>Trials</a></li>
+<li class="chapter" data-level="" data-path="07-datasets.html"><a href="07-datasets.html#achieve"><i class="fa fa-check"></i>Achieve</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -252,11 +251,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">The Hitchhiker’s Guide to Longitudinal Models</h1>
 <h2 class="subtitle"><em>Code Companion</em></h2>
-<p class="author"><em><a href="https://mccormickneuro.github.io/">Ethan M. McCormick</a>, <a href="https://research.monash.edu/en/persons/michelle-byrne">Michelle L. Byrne</a>, <a href="https://johnflournoy.science/">John C. Flournoy</a>, <a href="http://devbrainlab.org/">Kathryn L. Mills</a>, &amp; <a href="https://dsn.uoregon.edu/">Jennifer H. Pfeifer</a></em></p>
-<p class="date"><em>Published: 18 August, 2022</em></p>
+<p class="author"><em><a href="https://mccormickneuro.github.io/">Ethan M. McCormick</a></em></p>
+<p class="date"><em>Published: 30 August, 2022</em></p>
 </div>
-<div id="about" class="section level1">
-<h1>About</h1>
+<div id="about" class="section level1 hasAnchor">
+<h1>About<a href="index.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>The following document is a code companion to <a href="https://psyarxiv.com/ga4qz">The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods</a>, <a href="https://osf.io/bn6yu/">https://osf.io/bn6yu/</a>.</p>
 <p>Some general notes about this code companion:</p>
 <ul>
@@ -264,7 +263,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Given the nature of R, there are likely several ways to accomplish what we outline here. This code should not be taken as the <em>definitive</em> one way that data manipulation or model fitting can be accomplished, but rather as a standard pipeline that should hopefully be accessible to new users of R and longitudinal methods more generally.</p></li>
 <li><p>In general, we will include the code used to generate the results. However, in the interest of spending more time on the models and associated syntax, we may not include an in-depth explanation of every function or syntax option. The rmarkdown source files are available in a public <a href="https://github.com/McCormickNeuro/longitudinal-primer">github repository</a> for those interested.</p></li>
 <li><p>While the contents of this primer and code companion will focus on implementation in the R environment, links will be provided to other programs where possible. <strong>A fair warning: code in other languages will be provided in an arbitrary and capricious manner. This policy should be familiar to the reader, given their experience with the text of the manuscript (and if very unlucky, the first author).</strong></p></li>
-<li><p>In general, precision beyond the third decimal place is as real as <a href="https://psycnet.apa.org/record/1989-14214-001">unicorns</a> and so we will round our numbers to that level when we discuss them.</p></li>
+<li><p>In general, precision beyond the third decimal place is as real as <a href="https://psycnet.apa.org/record/1989-14214-001">unicorns</a> and so we will round our numbers to that level when discussing them.</p></li>
 </ul>
 
 </div>
