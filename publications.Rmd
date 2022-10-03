@@ -14,6 +14,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
+3. **McCormick, E. M.**, Borgeest, G.S., & Kievit, R. A. (*preprint*). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/48xj5)
+
+
+
 3. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*preprint*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53)
 
 <aside>
