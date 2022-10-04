@@ -14,7 +14,12 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
-3. **McCormick, E. M.**, Borgeest, G.S., & Kievit, R. A. (*preprint*). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/48xj5)
+4. **McCormick, E. M.**, Borgeest, G.S., & Kievit, R. A. (*preprint*). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/48xj5)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.31234/osf.io/48xj5" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
 
 
 
