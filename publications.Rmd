@@ -51,6 +51,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2022
+29. Do, K. T., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms. *Scientific Reports, 12*, 17463. DOI: [10.1038/s41598-022-17780-1](https://doi.org/10.1038/s41598-022-17780-1) | [<i class="fas fa-download"></i> PDF](static/pubs/29-2022-SciRep/29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.1038/s41598-022-17780-1" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
+
 28. **McCormick, E. M.**, Arnemann, K. L., Ito, T., Hanson, S. J., & Cole, M. W. (2022). [Latent functional connectivity underlying multiple brain states.](static/pubs/28-2022-NETNEURO/28-2022-NETNEURO.html) *Network Neuroscience, 6*(2), 570-590. DOI: [10.1162/netn_a_00234](https://doi.org/10.1162/netn_a_00234) | [<i class="fas fa-download"></i> PDF](static/pubs/28-2022-NETNEURO/28.McCormick-Arnemann-Ito-Hanson-Cole-2022-NETNEURO.pdf) | [<i class="ai ai-biorxiv"></i> Preprint](https://www.biorxiv.org/content/10.1101/2021.04.05.438534v4)
 
 <aside>

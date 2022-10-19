@@ -1,0 +1,20 @@
+---
+title: "Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1038/s41598-022-17780-1)
+
+<!-- | [<i class="ai ai-open-materials"></i> Code](https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-022-17780-1/MediaObjects/41598_2022_17780_MOESM1_ESM.docx) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/SISNGRAB/) -->
+
+
+### Abstract
+Not all adolescents are equally susceptible to peer influence, and for some, peer influence exerts positive rather than negative effects. Using resting-state functional magnetic resonance imaging, the current study examined how intrinsic functional connectivity networks associated with processing social cognitive and affective stimuli predict adolescents’ (n=87, ages 11–14 years) prosocial tendencies and risky behaviors in the context of positive and negative peer norms. We tested the moderating role of four candidate intrinsic brain networks—associated with mentalizing, cognitive control, motivational relevance, and affective salience—in peer influence susceptibility. Only intrinsic connectivity within the affective salience network significantly moderated the association between peer norms and adolescent behavior above and beyond the other networks. Adolescents with high intrinsic connectivity within the affective salience network reported greater prosocial tendencies in contexts with more positive peer norms but greater risk-taking behavior in contexts with more negative peer norms. In contrast, peer norms were not associated with adolescent behavior for individuals with low affective salience within-network intrinsic connectivity. The mentalizing network, cognitive control network, and motivational relevance network were not associated with individual differences in peer influence susceptibility. This study identifies key neural mechanisms underlying differential susceptibility to positive and negative peer influence in early adolescence, with a particular emphasis on the role of affective salience over traditional mentalizing, regulatory, and motivational processes.
+
+**Citation:** Do, K. T., McCormick, E. M., Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms. *Scientific Reports, 12*, 17463.
