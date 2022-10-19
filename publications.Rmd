@@ -51,6 +51,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2022
+30. Jorgensen, N. A., Muscatell, K. A., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Neighborhood Disadvantage, Race/Ethnicity, and Neural Sensitivity to Social Threat and Reward among Adolescents. *Social Cognitive and Affective Neuroscience*. Advanced Online Publication, September 2022. DOI: [10.1093/scan/nsac053](https://doi.org/10.1093/scan/nsac053)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.1093/scan/nsac053" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
+
 29. Do, K. T., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms. *Scientific Reports, 12*, 17463. DOI: [10.1038/s41598-022-17780-1](https://doi.org/10.1038/s41598-022-17780-1) | [<i class="fas fa-download"></i> PDF](static/pubs/29-2022-SciRep/29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf)
 
 <aside>
