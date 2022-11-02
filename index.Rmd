@@ -43,7 +43,8 @@ Download my [<i class="fas fa-file-download"></i> current CV](static/McCormick_C
 
 ----------------------------------------------------------------------------------
 ### News
+**New Preprint:** With co-author Sam Parsons, I have a new preprint Quantifying the poor recovery of individual trajectory parameters using two time point models. Interested readers can find the newly-posted preprint [here](https://doi.org/10.31234/osf.io/96ph3).
 
-**New Preprint:** With co-authors Sophia Borgeest and Rogier Kievit, I have a new preprint tackling the issue of interrupted mediation with composite mediatiors. Interested readers can find the newly-posted preprint [here](https://doi.org/10.31234/osf.io/48xj5).
+**New Preprint:** With co-authors Sophia Borgeest and Rogier Kievit, I have a new preprint tackling the issue of interrupted mediation with composite mediatiors. Interested readers can find the posted preprint [here](https://doi.org/10.31234/osf.io/48xj5).
 
 **Now Available:** Our R-based code companion to the preprint [McCormick, Byrne, Flournoy, Mills, & Pfeifer, (*preprint*)](https://doi.org/10.31234/osf.io/ga4qz). Here we provide the syntax to accomplish the models we discussed in the main text. Sprinkled in are tips and tricks for the best way to fit various model options! Check it out [here](static/longitudinal-primer/index.html)!

@@ -14,6 +14,15 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
+5. Parsons, S. & **McCormick, E. M.** (*preprint*). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/96ph3)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.31234/osf.io/96ph3" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
+
 4. **McCormick, E. M.**, Borgeest, G.S., & Kievit, R. A. (*preprint*). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/48xj5)
 
 <aside>
