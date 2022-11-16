@@ -1,0 +1,18 @@
+---
+title: "Digital access constraints predict worse mental health among adolescents during COVID-19."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1038/s41598-022-23899-y) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/qhtbj/)
+
+
+### Abstract
+The COVID-19 pandemic and ensuing social restrictions disrupted young people’s social interactions and resulted in several periods during which school closures necessitated online learning. We hypothesised that digitally excluded young people would demonstrate greater deterioration in their mental health than their digitally connected peers during this time. We analysed representative mental health data from a sample of UK 10–15-year-olds (N = 1387) who completed a mental health inventory in 2017–2019 and thrice during the pandemic (July 2020, November 2020 and March 2021). We employed longitudinal modelling to describe trajectories of adolescent mental health for participants with and without access to a computer or a good internet connection for schoolwork. Adolescent mental health symptoms rose early in the COVID-19 pandemic, with the highest mean Total Difficulties score around December 2020. The worsening and subsequent recovery of mental health during the pandemic was greatly pronounced among those without access to a computer, although we did not find evidence for a similar effect among those without a good internet connection. We conclude that lack of access to a computer is a tractable risk factor that likely compounds other adversities facing children and young people during periods of social isolation or educational disruption.
+
+**Citation:** Metherell, T. E., Ghai, S., McCormick, E. M., Ford, T. J., & Orben, A. (2022). Digital access constraints predict worse mental health among adolescents during COVID-19. *Scientific Reports, 12*, 19088.
