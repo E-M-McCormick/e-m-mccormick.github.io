@@ -529,6 +529,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1601,15 +1602,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2061,7 +2068,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2108,45 +2115,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Talks</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Stable PDF versions of my presentation slides can be downloaded
-from here, as well as links to vidoes where available.</p></p>
+<p><p>Stable PDF versions of my presentation slides can be downloaded from here, as well as links to vidoes where available.</p></p>
 </div>
 
 
 <div class="d-article">
 <h3 id="fitng-together">FIT’NG Together</h3>
-<p>Presentation to the FIT’NG Trainee Committee on selecting the right
-model for analyzing already-collected longitudinal data. (March 15,
-2022)</p>
+<p>Presentation to the FIT’NG Trainee Committee on selecting the right model for analyzing already-collected longitudinal data. (March 15, 2022)</p>
 <aside>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="static/talks/2022-FITNG/featured.jpeg" width="800" /></p>
+<p><img src="static/talks/2022-FITNG/featured.jpeg" /><!-- --></p>
 </div>
 </aside>
-<p><a href="static/talks/2022-FITNG/FIT&#39;NG-Practical.pdf">Slides</a>
-| <a href="https://vimeo.com/691030727/2fdbfdcf2f">Video</a></p>
+<p><a href="static/talks/2022-FITNG/FIT&#39;NG-Practical.pdf">Slides</a> | <a href="https://vimeo.com/691030727/2fdbfdcf2f">Video</a></p>
 <h3 id="mellenbergh-lecture">Mellenbergh Lecture</h3>
-<p>A talk on using DSEM to model behavioral variability and WM
-integrity. (Feb 3, 2022)</p>
+<p>A talk on using DSEM to model behavioral variability and WM integrity. (Feb 3, 2022)</p>
 <aside>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="static/talks/2022-Mellenbergh/featured.png" width="614" /></p>
 </div>
 </aside>
-<p><a href="static/talks/2022-Mellenbergh/PML_meeting.pdf">Slides</a> |
-<a
-href="https://www.youtube.com/watch?v=5TRDkFtpxCU&amp;ab_channel=PMLStudentFactionUniversityofAmsterdam">Video</a></p>
+<p><a href="static/talks/2022-Mellenbergh/PML_meeting.pdf">Slides</a> | <a href="https://www.youtube.com/watch?v=5TRDkFtpxCU&amp;ab_channel=PMLStudentFactionUniversityofAmsterdam">Video</a></p>
 <h3 id="flux-2021">Flux 2021</h3>
-<p>A talk on using multigrowth models in developmental neuroscience.
-(Sept 17, 2021)</p>
+<p>A talk on using multigrowth models in developmental neuroscience. (Sept 17, 2021)</p>
 <aside>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="static/talks/2021-Flux/featured.png" width="30%" /></p>
 </div>
 </aside>
 <p><a href="static/talks/2021-Flux/fluxcongress_2021.pdf">Slides</a></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

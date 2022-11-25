@@ -3,7 +3,7 @@ title: "Ethan McCormick"
 description: |
   Postdoctoral Researcher
 output_dir: "docs"
-base_url: https://McCormickNeruo.github.io/
+base_url: https://e-m-mccormick.github.io/
 theme: styles.css
 comments: true
 navbar:

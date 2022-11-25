@@ -529,6 +529,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1601,15 +1602,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2061,7 +2068,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2108,8 +2115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Publications</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Stable PDF versions of all papers can be downloaded from here.
-Select article titles for additional information.</p></p>
+<p><p>Stable PDF versions of all papers can be downloaded from here. Select article titles for additional information.</p></p>
 </div>
 
 
@@ -2134,61 +2140,37 @@ Select article titles for additional information.</p></p>
 </div>
 <h2 id="preprints">Preprints</h2>
 <ol start="4" type="1">
-<li>Parsons, S. &amp; <strong>McCormick, E. M.</strong>
-(<em>preprint</em>). “Don’t peek at your data” applies to longitudinal
-studies too: two time points poorly capture trajectories of change. <a
-href="https://doi.org/10.31234/osf.io/96ph3"><i class="ai ai-psyarxiv"></i>
-Preprint</a></li>
+<li>Parsons, S. &amp; <strong>McCormick, E. M.</strong> (<em>preprint</em>). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. <a href="https://doi.org/10.31234/osf.io/96ph3"><i class="ai ai-psyarxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.31234/osf.io/96ph3" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.31234/osf.io/96ph3" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="3" type="1">
-<li><strong>McCormick, E. M.</strong>, Borgeest, G.S., &amp; Kievit, R.
-A. (<em>preprint</em>). Interrupted mediation: A cautionary note on
-using derived metrics as intervening variables in path models. <a
-href="https://doi.org/10.31234/osf.io/48xj5"><i class="ai ai-psyarxiv"></i>
-Preprint</a></li>
+<li><strong>McCormick, E. M.</strong>, Borgeest, G.S., &amp; Kievit, R. A. (<em>preprint</em>). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. <a href="https://doi.org/10.31234/osf.io/48xj5"><i class="ai ai-psyarxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.31234/osf.io/48xj5" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.31234/osf.io/48xj5" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="2" type="1">
-<li><strong>McCormick, E. M.</strong>, Cam-CAN, &amp; Kievit, R. A.
-(<em>preprint</em>). Poorer white matter microstructure predicts slower
-and more variable reaction time performance: evidence for the neural
-noise hypothesis in a large lifespan cohort. <a
-href="https://doi.org/10.31234/osf.io/8xf53"><i class="ai ai-psyarxiv"></i>
-Preprint</a></li>
+<li><strong>McCormick, E. M.</strong>, Cam-CAN, &amp; Kievit, R. A. (<em>preprint</em>). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. <a href="https://doi.org/10.31234/osf.io/8xf53"><i class="ai ai-psyarxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.31234/osf.io/8xf53" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.31234/osf.io/8xf53" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol type="1">
-<li><strong>McCormick, E. M.</strong>, Byrne, M. L., Flournoy, J. C.,
-Mills, K. L., &amp; Pfeifer, J. H. (<em>preprint</em>). The Hitchhiker’s
-Guide to Longitudinal Models: A Primer on Model Selection for
-Repeated-Measures Methods. <a
-href="https://doi.org/10.31234/osf.io/ga4qz"><i class="ai ai-psyarxiv"></i>
-Preprint</a> | <a
-href="https://mccormickneuro.github.io/static/longitudinal-primer/index.html"><i class="fas fa-book"></i>
-Codebook Companion</a></li>
+<li><strong>McCormick, E. M.</strong>, Byrne, M. L., Flournoy, J. C., Mills, K. L., &amp; Pfeifer, J. H. (<em>preprint</em>). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. <a href="https://doi.org/10.31234/osf.io/ga4qz"><i class="ai ai-psyarxiv"></i> Preprint</a> | <a href="static/longitudinal-primer/index.html"><i class="fas fa-book"></i> Codebook Companion</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -2196,582 +2178,291 @@ data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true">
 <h2 id="peer-reviewed">Peer-reviewed</h2>
 <h3 id="section">2022</h3>
 <ol start="31" type="1">
-<li>Metherell, T.E., Ghai, S., <strong>McCormick, E.M.</strong>, Ford
-T.J., &amp; Orben, A. (<em>preprint</em>). Digital exclusion predicts
-worse mental health among adolescents during COVID-19. <em>Scientific
-Reports, 12</em>, 19088. DOI: <a
-href="https://doi.org/10.1038/s41598-022-23899-y">10.1038/s41598-022-23899-y</a>
-| <a
-href="static/pubs/31-2022-SciRep/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf"><i class="fas fa-download"></i>
-PDF</a> | <a
-href="https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1"><i class="ai ai-biorxiv"></i>
-Preprint</a></li>
+<li>Metherell, T.E., Ghai, S., <strong>McCormick, E.M.</strong>, Ford T.J., &amp; Orben, A. (2022). Digital exclusion predicts worse mental health among adolescents during COVID-19. <em>Scientific Reports, 12</em>, 19088. DOI: <a href="https://doi.org/10.1038/s41598-022-23899-y">10.1038/s41598-022-23899-y</a> | <a href="static/pubs/31-2022-SciRep/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1101/2021.11.25.21266853" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1101/2021.11.25.21266853" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="30" type="1">
-<li>Jorgensen, N. A., Muscatell, K. A., <strong>McCormick, E.
-M.</strong>, Prinstein, M. J., Lindquist, K. A., &amp; Telzer, E. H.
-(2022). Neighborhood Disadvantage, Race/Ethnicity, and Neural
-Sensitivity to Social Threat and Reward among Adolescents. <em>Social
-Cognitive and Affective Neuroscience</em>. Advanced Online Publication,
-September 2022. DOI: <a
-href="https://doi.org/10.1093/scan/nsac053">10.1093/scan/nsac053</a></li>
+<li>Jorgensen, N. A., Muscatell, K. A., <strong>McCormick, E. M.</strong>, Prinstein, M. J., Lindquist, K. A., &amp; Telzer, E. H. (2022). Neighborhood Disadvantage, Race/Ethnicity, and Neural Sensitivity to Social Threat and Reward among Adolescents. <em>Social Cognitive and Affective Neuroscience</em>. Advanced Online Publication, September 2022. DOI: <a href="https://doi.org/10.1093/scan/nsac053">10.1093/scan/nsac053</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsac053" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsac053" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="29" type="1">
-<li>Do, K. T., <strong>McCormick, E. M.</strong>, Prinstein, M. J.,
-Lindquist, K. A., &amp; Telzer, E. H. (2022). Intrinsic connectivity
-within the affective salience network moderates adolescent
-susceptibility to negative and positive peer norms. <em>Scientific
-Reports, 12</em>, 17463. DOI: <a
-href="https://doi.org/10.1038/s41598-022-17780-1">10.1038/s41598-022-17780-1</a>
-| <a
-href="static/pubs/29-2022-SciRep/29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Do, K. T., <strong>McCormick, E. M.</strong>, Prinstein, M. J., Lindquist, K. A., &amp; Telzer, E. H. (2022). Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms. <em>Scientific Reports, 12</em>, 17463. DOI: <a href="https://doi.org/10.1038/s41598-022-17780-1">10.1038/s41598-022-17780-1</a> | <a href="static/pubs/29-2022-SciRep/29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1038/s41598-022-17780-1" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41598-022-17780-1" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="28" type="1">
-<li><strong>McCormick, E. M.</strong>, Arnemann, K. L., Ito, T., Hanson,
-S. J., &amp; Cole, M. W. (2022). <a
-href="static/pubs/28-2022-NETNEURO/28-2022-NETNEURO.html">Latent
-functional connectivity underlying multiple brain states.</a>
-<em>Network Neuroscience, 6</em>(2), 570-590. DOI: <a
-href="https://doi.org/10.1162/netn_a_00234">10.1162/netn_a_00234</a> |
-<a
-href="static/pubs/28-2022-NETNEURO/28.McCormick-Arnemann-Ito-Hanson-Cole-2022-NETNEURO.pdf"><i class="fas fa-download"></i>
-PDF</a> | <a
-href="https://www.biorxiv.org/content/10.1101/2021.04.05.438534v4"><i class="ai ai-biorxiv"></i>
-Preprint</a></li>
+<li><strong>McCormick, E. M.</strong>, Arnemann, K. L., Ito, T., Hanson, S. J., &amp; Cole, M. W. (2022). <a href="static/pubs/28-2022-NETNEURO/28-2022-NETNEURO.html">Latent functional connectivity underlying multiple brain states.</a> <em>Network Neuroscience, 6</em>(2), 570-590. DOI: <a href="https://doi.org/10.1162/netn_a_00234">10.1162/netn_a_00234</a> | <a href="static/pubs/28-2022-NETNEURO/28.McCormick-Arnemann-Ito-Hanson-Cole-2022-NETNEURO.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://www.biorxiv.org/content/10.1101/2021.04.05.438534v4"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1101/2021.04.05.438534" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1101/2021.04.05.438534" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="27" type="1">
-<li>Kievit, R. A., <strong>McCormick, E. M.</strong>, Fuhrmann, D.,
-Deserno, M. K., &amp; Orben, A. (2022). <a
-href="static/pubs/27-2022-COPSYC/27-2022-COPSYC.html">Using large,
-publically available datasets to study adolescent development:
-Opportunities and challenges.</a> <em>Current Opinion in Psychology,
-44</em>, 303-308. DOI: <a
-href="https://doi.org/10.1016/j.copsyc.2021.10.003">10.1016/j.copsyc.2021.10.003</a>
-| <a
-href="static/pubs/27-2022-COPSYC/27.Kievit-McCormick-Fuhrmann-Deserno-Orben-2021-COPSYC.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Kievit, R. A., <strong>McCormick, E. M.</strong>, Fuhrmann, D., Deserno, M. K., &amp; Orben, A. (2022). <a href="static/pubs/27-2022-COPSYC/27-2022-COPSYC.html">Using large, publically available datasets to study adolescent development: Opportunities and challenges.</a> <em>Current Opinion in Psychology, 44</em>, 303-308. DOI: <a href="https://doi.org/10.1016/j.copsyc.2021.10.003">10.1016/j.copsyc.2021.10.003</a> | <a href="static/pubs/27-2022-COPSYC/27.Kievit-McCormick-Fuhrmann-Deserno-Orben-2021-COPSYC.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.copsyc.2021.10.003" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.copsyc.2021.10.003" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h3 id="section-1">2021</h3>
 <ol start="26" type="1">
-<li><strong>McCormick, E. M.</strong> (2021). <a
-href="static/pubs/26-2021-DCN/26-2021-DCN.html">Multi-Level Multi-Growth
-Models: New opportunities for addressing developmental theory using
-advanced longitudinal designs with planned missingness.</a>
-<em>Developmental Cognitive Neuroscience, 51</em>, 101001. DOI: <a
-href="https://doi.org/10.1016/j.dcn.2021.101001">10.1016/j.dcn.2021.101001</a>
-| <a
-href="static/pubs/26-2021-DCN/26.McCormick-2021-DCN.pdf"><i class="fas fa-download"></i>
-PDF</a> | <a
-href="https://www.biorxiv.org/content/10.1101/2020.10.21.349274v1"><i class="ai ai-biorxiv"></i>
-Preprint</a></li>
+<li><strong>McCormick, E. M.</strong> (2021). <a href="static/pubs/26-2021-DCN/26-2021-DCN.html">Multi-Level Multi-Growth Models: New opportunities for addressing developmental theory using advanced longitudinal designs with planned missingness.</a> <em>Developmental Cognitive Neuroscience, 51</em>, 101001. DOI: <a href="https://doi.org/10.1016/j.dcn.2021.101001">10.1016/j.dcn.2021.101001</a> | <a href="static/pubs/26-2021-DCN/26.McCormick-2021-DCN.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://www.biorxiv.org/content/10.1101/2020.10.21.349274v1"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1101/2020.10.21.349274" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1101/2020.10.21.349274" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="25" type="1">
-<li><strong>McCormick, E. M.</strong>, Peters, S., Crone, E. A., &amp;
-Telzer, E. H. (2021). <a
-href="static/pubs/25-2021-NeuroImage/25-2021-NeuroImage.html">Longitudinal
-Network Re-organization Across Learning and Development.</a>
-<em>NeuroImage, 229</em>, 117784. DOI: <a
-href="https://doi.org/https://doi.org/10.1016/j.neuroimage.2021.117784">10.1016/j.neuroimage.2021.117784</a>
-| <a
-href="static/pubs/25-2021-NeuroImage/25.McCormick-Peters-Crone-Telzer-2021-NeuroImage.pdf"><i class="fas fa-download"></i>
-PDF</a> | <a
-href="https://www.biorxiv.org/content/10.1101/2020.10.23.353094v2"><i class="ai ai-biorxiv"></i>
-Preprint</a></li>
+<li><strong>McCormick, E. M.</strong>, Peters, S., Crone, E. A., &amp; Telzer, E. H. (2021). <a href="static/pubs/25-2021-NeuroImage/25-2021-NeuroImage.html">Longitudinal Network Re-organization Across Learning and Development.</a> <em>NeuroImage, 229</em>, 117784. DOI: <a href="https://doi.org/https://doi.org/10.1016/j.neuroimage.2021.117784">10.1016/j.neuroimage.2021.117784</a> | <a href="static/pubs/25-2021-NeuroImage/25.McCormick-Peters-Crone-Telzer-2021-NeuroImage.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://www.biorxiv.org/content/10.1101/2020.10.23.353094v2"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1101/2020.10.23.353094" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1101/2020.10.23.353094" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="24" type="1">
-<li>Duell, N., van Hoorn, J., <strong>McCormick, E. M.</strong>,
-Prinstein, M. J., &amp; Telzer, E. H. (2021). <a
-href="static/pubs/24-2021-DCN/24-2021-DCN.html">Hormonal and neural
-correlates of prosocial conformity in adolescents.</a> <em>Developmental
-Cognitive Neuroscience, 48</em>, 100936. DOI: <a
-href="https://doi.org/https://doi.org/10.1016/j.dcn.2021.100936">10.1016/j.dcn.2021.100936</a>
-| <a
-href="static/pubs/24-2021-DCN/24.Duell-vanHoorn-McCormick-Prinstein-Telzer-2021-DCN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Duell, N., van Hoorn, J., <strong>McCormick, E. M.</strong>, Prinstein, M. J., &amp; Telzer, E. H. (2021). <a href="static/pubs/24-2021-DCN/24-2021-DCN.html">Hormonal and neural correlates of prosocial conformity in adolescents.</a> <em>Developmental Cognitive Neuroscience, 48</em>, 100936. DOI: <a href="https://doi.org/https://doi.org/10.1016/j.dcn.2021.100936">10.1016/j.dcn.2021.100936</a> | <a href="static/pubs/24-2021-DCN/24.Duell-vanHoorn-McCormick-Prinstein-Telzer-2021-DCN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.dcn.2021.100936" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.dcn.2021.100936" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h3 id="section-2">2020</h3>
 <ol start="23" type="1">
-<li>Kwon, S-J., Do, K. T., <strong>McCormick, E. M.</strong>, &amp;
-Telzer, E. H. (2020). <a
-href="static/pubs/23-2020-JRA/23-2020-JRA.html">Neural correlates of
-conflicting social influence on adolescent risk-taking.</a> <em>Journal
-of Research on Adolescence, 31</em>(1), 139-152. DOI: <a
-href="https://doi.org/https://doi.org/10.1111/jora.12587">10.1111/jora.12587</a>
-| <a
-href="static/pubs/23-2020-JRA/23.Kwon-Do-McCormick-Telzer-2020-JRA.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Kwon, S-J., Do, K. T., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2020). <a href="static/pubs/23-2020-JRA/23-2020-JRA.html">Neural correlates of conflicting social influence on adolescent risk-taking.</a> <em>Journal of Research on Adolescence, 31</em>(1), 139-152. DOI: <a href="https://doi.org/https://doi.org/10.1111/jora.12587">10.1111/jora.12587</a> | <a href="static/pubs/23-2020-JRA/23.Kwon-Do-McCormick-Telzer-2020-JRA.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1111/jora.12587" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1111/jora.12587" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="22" type="1">
-<li>Do, K. T., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H.
-(2020). <a href="static/pubs/22-2020-DCN/22-2020-DCN.html">Neural
-sensitivity to conflicting attitudes supports greater conformity toward
-positive over negative influence in early adolescence.</a>
-<em>Developmental Cognitive Neuroscience, 45</em>, 100837. DOI: <a
-href="https://doi.org/10.1016/j.dcn.2020.100837">10.1016/j.dcn.2020.100837</a>
-| <a
-href="static/pubs/22-2020-DCN/22.Do-McCormick-Telzer-2020-DCN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Do, K. T., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2020). <a href="static/pubs/22-2020-DCN/22-2020-DCN.html">Neural sensitivity to conflicting attitudes supports greater conformity toward positive over negative influence in early adolescence.</a> <em>Developmental Cognitive Neuroscience, 45</em>, 100837. DOI: <a href="https://doi.org/10.1016/j.dcn.2020.100837">10.1016/j.dcn.2020.100837</a> | <a href="static/pubs/22-2020-DCN/22.Do-McCormick-Telzer-2020-DCN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.dcn.2020.100837" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.dcn.2020.100837" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="21" type="1">
-<li>van Hoorn, J., <strong>McCormick, E. M.</strong>, Perino, M. T.,
-Rogers, C. R., &amp; Telzer, E. H. (2020). <a
-href="static/pubs/21-2020-JRA/21-2020-JRA.html">Differential behavioral
-and neural profiles in youth with conduct problems during risky
-decision-making.</a> <em>Journal of Research on Adolescence, 30</em>(3),
-599-615. DOI: <a
-href="https://doi.org/10.1111/jora.12546">10.1111/jora.12546</a> | <a
-href="static/pubs/21-2020-JRA/21.vanHoorn-McCormick-Perino-Rogers-Telzer-2020-JRA.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>van Hoorn, J., <strong>McCormick, E. M.</strong>, Perino, M. T., Rogers, C. R., &amp; Telzer, E. H. (2020). <a href="static/pubs/21-2020-JRA/21-2020-JRA.html">Differential behavioral and neural profiles in youth with conduct problems during risky decision-making.</a> <em>Journal of Research on Adolescence, 30</em>(3), 599-615. DOI: <a href="https://doi.org/10.1111/jora.12546">10.1111/jora.12546</a> | <a href="static/pubs/21-2020-JRA/21.vanHoorn-McCormick-Perino-Rogers-Telzer-2020-JRA.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1111/jora.12546" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1111/jora.12546" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="20" type="1">
-<li>Chen, X., <strong>McCormick, E. M.</strong>, Ravindran, N.,
-McElwain, N. L., &amp; Telzer, E. H. (2020). <a
-href="static/pubs/20-2020-DevPsych/20-2020-DevPsych.html">Maternal
-emotion socialization in early childhood predicts adolescents’
-amygdala-vmPFC functional connectivity to emotion faces.</a>
-<em>Developmental Psychology, 56</em>(3), 503-515. DOI: <a
-href="https://doi.org/10.1037/dev0000852">10.1037/dev0000852</a> | <a
-href="static/pubs/20-2020-DevPsych/20.Chen-McCormick-Ravindran-McElwain-Telzer-2020-DevPsych.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Chen, X., <strong>McCormick, E. M.</strong>, Ravindran, N., McElwain, N. L., &amp; Telzer, E. H. (2020). <a href="static/pubs/20-2020-DevPsych/20-2020-DevPsych.html">Maternal emotion socialization in early childhood predicts adolescents’ amygdala-vmPFC functional connectivity to emotion faces.</a> <em>Developmental Psychology, 56</em>(3), 503-515. DOI: <a href="https://doi.org/10.1037/dev0000852">10.1037/dev0000852</a> | <a href="static/pubs/20-2020-DevPsych/20.Chen-McCormick-Ravindran-McElwain-Telzer-2020-DevPsych.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1037/dev0000852" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1037/dev0000852" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h3 id="section-3">2019</h3>
 <ol start="19" type="1">
-<li>Perino, M. T., Guassi Moreira, J. F., <strong>McCormick, E.
-M.</strong>, &amp; Telzer, E. H. (2019). <a
-href="static/pubs/19-2019-SCAN/19-2019-SCAN.html">Apples to apples?
-Neural correlates of emotion regulation differences between high and low
-risk adolescents.</a> <em>Social Cognitive and Affective Neuroscience,
-14</em>(2), 129-139. DOI: <a
-href="https://doi.org/10.1093/scan/nsz063">10.1093/scan/nsz063</a> | <a
-href="static/pubs/19-2019-SCAN/19.Perino-Moreira-McCormick-Telzer-2019-SCAN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Perino, M. T., Guassi Moreira, J. F., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2019). <a href="static/pubs/19-2019-SCAN/19-2019-SCAN.html">Apples to apples? Neural correlates of emotion regulation differences between high and low risk adolescents.</a> <em>Social Cognitive and Affective Neuroscience, 14</em>(2), 129-139. DOI: <a href="https://doi.org/10.1093/scan/nsz063">10.1093/scan/nsz063</a> | <a href="static/pubs/19-2019-SCAN/19.Perino-Moreira-McCormick-Telzer-2019-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsz063" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsz063" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="18" type="1">
-<li>Kwon, S-J., Ivory, S. L., <strong>McCormick, E. M.</strong>, &amp;
-Telzer, E. H. (2019). <a
-href="static/pubs/18-2019-Frontiers/18-2019-Frontiers.html">Behavioral
-and neural dysregulation to social rewards and links to internalizing
-symptoms in adolescents.</a> <em>Frontiers in Behavioral Neuroscience,
-13</em>, 158. DOI: <a
-href="https://doi.org/10.3389/fnbeh.2019.00158">10.3389/fnbeh.2019.00158</a>
-| <a
-href="static/pubs/18-2019-Frontiers/18.Kwon-Ivory-McCormick-Telzer-2019-Frontiers.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Kwon, S-J., Ivory, S. L., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2019). <a href="static/pubs/18-2019-Frontiers/18-2019-Frontiers.html">Behavioral and neural dysregulation to social rewards and links to internalizing symptoms in adolescents.</a> <em>Frontiers in Behavioral Neuroscience, 13</em>, 158. DOI: <a href="https://doi.org/10.3389/fnbeh.2019.00158">10.3389/fnbeh.2019.00158</a> | <a href="static/pubs/18-2019-Frontiers/18.Kwon-Ivory-McCormick-Telzer-2019-Frontiers.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.3389/fnbeh.2019.00158" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.3389/fnbeh.2019.00158" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="17" type="1">
-<li><strong>McCormick, E. M.</strong>, McElwain, N. A., &amp; Telzer, E.
-H. (2019). <a
-href="static/pubs/17-2019-IJDN/17-2019-IJDN.html">Alterations in
-adolescent dopaminergic systems as a function of early mother-toddler
-attachment: a prospective longitudinal examination.</a>
-<em>International Journal of Developmental Neuroscience, 78</em>,
-122-129. DOI: <a
-href="https://doi.org/10.1016/j.ijdevneu.2019.06.010">10.1016/j.ijdevneu.2019.06.010</a>
-| <a
-href="static/pubs/17-2019-IJDN/17.McCormick-McElwain-Telzer-2019-InternationalDevNeuro.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, McElwain, N. A., &amp; Telzer, E. H. (2019). <a href="static/pubs/17-2019-IJDN/17-2019-IJDN.html">Alterations in adolescent dopaminergic systems as a function of early mother-toddler attachment: a prospective longitudinal examination.</a> <em>International Journal of Developmental Neuroscience, 78</em>, 122-129. DOI: <a href="https://doi.org/10.1016/j.ijdevneu.2019.06.010">10.1016/j.ijdevneu.2019.06.010</a> | <a href="static/pubs/17-2019-IJDN/17.McCormick-McElwain-Telzer-2019-InternationalDevNeuro.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.ijdevneu.2019.06.010" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.ijdevneu.2019.06.010" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="16" type="1">
-<li>Do, K. T., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H.
-(2019). <a href="static/pubs/16-2019-SCAN/16-2019-SCAN.html">The neural
-development of prosocial behavior from childhood to adolescence.</a>
-<em>Social Cognitive and Affective Neuroscience, 14</em>(2), 129-139.
-DOI: <a
-href="https://doi.org/10.1093/scan/nsy117">10.1093/scan/nsy117</a> | <a
-href="static/pubs/16-2019-SCAN/16.Do-McCormick-Telzer-2019-SCAN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Do, K. T., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2019). <a href="static/pubs/16-2019-SCAN/16-2019-SCAN.html">The neural development of prosocial behavior from childhood to adolescence.</a> <em>Social Cognitive and Affective Neuroscience, 14</em>(2), 129-139. DOI: <a href="https://doi.org/10.1093/scan/nsy117">10.1093/scan/nsy117</a> | <a href="static/pubs/16-2019-SCAN/16.Do-McCormick-Telzer-2019-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsy117" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsy117" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h3 id="section-4">2018</h3>
 <ol start="15" type="1">
-<li><strong>McCormick, E. M.</strong>, Gates, K. M., &amp; Telzer, E. H.
-(2018). <a
-href="static/pubs/15-2019-NeuroImage/15-2019-NeuroImage.html">Model-based
-network discovery of developmental and performance-related differences
-during risky decision-making.</a> <em>NeuroImage, 188</em>, 456-464.
-DOI: <a
-href="https://doi.org/10.1016/j.neuroimage.2018.12.042">10.1016/j.neuroimage.2018.12.042</a>
-| <a
-href="static/pubs/15-2019-NeuroImage/15.McCormick-Gates-Telzer-2019-NeuroImage.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, Gates, K. M., &amp; Telzer, E. H. (2018). <a href="static/pubs/15-2019-NeuroImage/15-2019-NeuroImage.html">Model-based network discovery of developmental and performance-related differences during risky decision-making.</a> <em>NeuroImage, 188</em>, 456-464. DOI: <a href="https://doi.org/10.1016/j.neuroimage.2018.12.042">10.1016/j.neuroimage.2018.12.042</a> | <a href="static/pubs/15-2019-NeuroImage/15.McCormick-Gates-Telzer-2019-NeuroImage.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.neuroimage.2018.12.042"
-data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.neuroimage.2018.12.042" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="14" type="1">
-<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a
-href="static/pubs/14-2018-SciRep/14-2018-SciRep.html">Contributions of
-default mode network stability and deactivation to adolescent task
-engagement.</a> <em>Scientific Reports, 8</em>, 18049. DOI: <a
-href="https://doi.org/10.1038/s41598-018-36269-4">10.1038/s41598-018-36269-4</a>
-| <a
-href="static/pubs/14-2018-SciRep/14.McCormick-Telzer-2018-ScientificReports.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a href="static/pubs/14-2018-SciRep/14-2018-SciRep.html">Contributions of default mode network stability and deactivation to adolescent task engagement.</a> <em>Scientific Reports, 8</em>, 18049. DOI: <a href="https://doi.org/10.1038/s41598-018-36269-4">10.1038/s41598-018-36269-4</a> | <a href="static/pubs/14-2018-SciRep/14.McCormick-Telzer-2018-ScientificReports.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1038/s41598-018-36269-4" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1038/s41598-018-36269-4" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="13" type="1">
-<li>van Hoorn, J., <strong>McCormick, E. M.</strong>, Rogers, C. R.,
-Ivory, S., &amp; Telzer, E. H. (2018). <a
-href="static/pubs/13-2018-SCAN/13-2018-SCAN.html">Differential effects
-of parent and peer presence on neural correlates of risk taking in
-adolescence.</a> <em>Social Cognitive and Affective Neuroscience,
-13</em>(9), 945–955. DOI: <a
-href="https://doi.org/10.1093/scan/nsy071">10.1093/scan/nsy071</a> | <a
-href="static/pubs/13-2018-SCAN/13.van-Hoorn-McCormick-Rogers-Ivory-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>van Hoorn, J., <strong>McCormick, E. M.</strong>, Rogers, C. R., Ivory, S., &amp; Telzer, E. H. (2018). <a href="static/pubs/13-2018-SCAN/13-2018-SCAN.html">Differential effects of parent and peer presence on neural correlates of risk taking in adolescence.</a> <em>Social Cognitive and Affective Neuroscience, 13</em>(9), 945–955. DOI: <a href="https://doi.org/10.1093/scan/nsy071">10.1093/scan/nsy071</a> | <a href="static/pubs/13-2018-SCAN/13.van-Hoorn-McCormick-Rogers-Ivory-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsy071" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsy071" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="12" type="1">
-<li><strong>McCormick, E. M.</strong>, van Hoorn, J., Cohen, J. R.,
-&amp; Telzer, E. H. (2018). <a
-href="static/pubs/12-2018-SCAN/12-2018-SCAN.html">Functional
-connectivity in the social brain across childhood and adolescence.</a>
-<em>Social Cognitive and Affective Neuroscience, 13</em>(8), 819–830.
-DOI: <a
-href="https://doi.org/10.1093/scan/nsy064">10.1093/scan/nsy064</a> | <a
-href="static/pubs/12-2018-SCAN/12.McCormick-van-Hoorn-Cohen-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, van Hoorn, J., Cohen, J. R., &amp; Telzer, E. H. (2018). <a href="static/pubs/12-2018-SCAN/12-2018-SCAN.html">Functional connectivity in the social brain across childhood and adolescence.</a> <em>Social Cognitive and Affective Neuroscience, 13</em>(8), 819–830. DOI: <a href="https://doi.org/10.1093/scan/nsy064">10.1093/scan/nsy064</a> | <a href="static/pubs/12-2018-SCAN/12.McCormick-van-Hoorn-Cohen-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsy064" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsy064" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="11" type="1">
-<li>Rogers, C. R., <strong>McCormick, E. M.</strong>, van Hoorn, J.,
-Ivory, S., &amp; Telzer, E. H. (2018). <a
-href="static/pubs/11-2018-SCAN/11-2018-SCAN.html">Neural correlates of
-sibling closeness and association with externalizing behavior in
-adolescence.</a> <em>Social Cognitive and Affective Neuroscience,
-13</em>, 977–988. DOI: <a
-href="https://doi.org/10.1093/scan/nsy063">10.1093/scan/nsy063</a> | <a
-href="static/pubs/11-2018-SCAN/11.Rogers-McCormick-van-Hoorn-Ivory-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Rogers, C. R., <strong>McCormick, E. M.</strong>, van Hoorn, J., Ivory, S., &amp; Telzer, E. H. (2018). <a href="static/pubs/11-2018-SCAN/11-2018-SCAN.html">Neural correlates of sibling closeness and association with externalizing behavior in adolescence.</a> <em>Social Cognitive and Affective Neuroscience, 13</em>, 977–988. DOI: <a href="https://doi.org/10.1093/scan/nsy063">10.1093/scan/nsy063</a> | <a href="static/pubs/11-2018-SCAN/11.Rogers-McCormick-van-Hoorn-Ivory-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsy063" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsy063" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="10" type="1">
-<li>Muscatell, K. A., <strong>McCormick, E. M.</strong>, &amp; Telzer,
-E. H. (2018). <a
-href="static/pubs/10-2018-DevPsychop/10-2018-DevPsychop.html">Subjective
-social status and neural processing of race in Mexican-American
-adolescents.</a> <em>Development and Psychopathology, 30</em>(5),
-1837-1848. DOI: <a
-href="https://doi.org/10.1017/S0954579418000949">10.1017/S0954579418000949</a>
-| <a
-href="static/pubs/10-2018-DevPsychop/10.Muscatell-McCormick-Telzer-2018-DevPsychopathol.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Muscatell, K. A., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a href="static/pubs/10-2018-DevPsychop/10-2018-DevPsychop.html">Subjective social status and neural processing of race in Mexican-American adolescents.</a> <em>Development and Psychopathology, 30</em>(5), 1837-1848. DOI: <a href="https://doi.org/10.1017/S0954579418000949">10.1017/S0954579418000949</a> | <a href="static/pubs/10-2018-DevPsychop/10.Muscatell-McCormick-Telzer-2018-DevPsychopathol.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1017/S0954579418000949" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1017/S0954579418000949" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="9" type="1">
-<li>van Hoorn, J., <strong>McCormick, E. M.</strong>, &amp; Telzer, E.
-H. (2018). <a href="static/pubs/09-2018-SCAN/09-2018-SCAN.html">Moderate
-social sensitivity in a risky context supports adaptive decision-making
-in adolescence: Evidence from brain and behavior.</a> <em>Social
-Cognitive and Affective Neuroscience, 13</em>(5), 546–556. DOI: <a
-href="https://doi.org/10.1093/scan/nsy016">10.1093/scan/nsy016</a> | <a
-href="static/pubs/09-2018-SCAN/9.van-Hoorn-McCormick-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>van Hoorn, J., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a href="static/pubs/09-2018-SCAN/09-2018-SCAN.html">Moderate social sensitivity in a risky context supports adaptive decision-making in adolescence: Evidence from brain and behavior.</a> <em>Social Cognitive and Affective Neuroscience, 13</em>(5), 546–556. DOI: <a href="https://doi.org/10.1093/scan/nsy016">10.1093/scan/nsy016</a> | <a href="static/pubs/09-2018-SCAN/9.van-Hoorn-McCormick-Telzer-2018-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1093/scan/nsy016" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1093/scan/nsy016" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="8" type="1">
-<li>Telzer, E. H., <strong>McCormick, E. M.</strong>, Peters, S., Cosme,
-D., Pfeifer, P. H., &amp; van Duijvenvoorde, A. C. K. (2018). <a
-href="static/pubs/08-2018-DCN/08-2018-DCN.html">Methodological
-considerations for longitudinal fMRI research.</a> <em>Developmental
-Cognitive Neuroscience, 33</em>, 149–160. DOI: <a
-href="https://doi.org/10.1016/j.dcn.2018.02.004">10.1016/j.dcn.2018.02.004</a>
-| <a
-href="static/pubs/08-2018-DCN/8.Telzer-McCormick-Peters-Cosme-Pfeifer-van-Duijvenvoorde-2018-DCN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Telzer, E. H., <strong>McCormick, E. M.</strong>, Peters, S., Cosme, D., Pfeifer, P. H., &amp; van Duijvenvoorde, A. C. K. (2018). <a href="static/pubs/08-2018-DCN/08-2018-DCN.html">Methodological considerations for longitudinal fMRI research.</a> <em>Developmental Cognitive Neuroscience, 33</em>, 149–160. DOI: <a href="https://doi.org/10.1016/j.dcn.2018.02.004">10.1016/j.dcn.2018.02.004</a> | <a href="static/pubs/08-2018-DCN/8.Telzer-McCormick-Peters-Cosme-Pfeifer-van-Duijvenvoorde-2018-DCN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.dcn.2018.02.004" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.dcn.2018.02.004" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="7" type="1">
-<li><strong>McCormick, E. M.</strong>, Perino, M. T., &amp; Telzer, E.
-H. (2018). <a href="static/pubs/07-2018-DCN/07-2018-DCN.html">Not just
-social sensitivity: Adolescent neural suppression of social feedback
-during risk taking.</a> <em>Developmental Cognitive Neuroscience,
-30</em>, 134–141. DOI: <a
-href="https://doi.org/10.1016/j.dcn.2018.01.012">10.1016/j.dcn.2018.01.012</a>
-| <a
-href="static/pubs/07-2018-DCN/7.McCormick-Perino-Telzer-2018-DCN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, Perino, M. T., &amp; Telzer, E. H. (2018). <a href="static/pubs/07-2018-DCN/07-2018-DCN.html">Not just social sensitivity: Adolescent neural suppression of social feedback during risk taking.</a> <em>Developmental Cognitive Neuroscience, 30</em>, 134–141. DOI: <a href="https://doi.org/10.1016/j.dcn.2018.01.012">10.1016/j.dcn.2018.01.012</a> | <a href="static/pubs/07-2018-DCN/7.McCormick-Perino-Telzer-2018-DCN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.dcn.2018.01.012" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.dcn.2018.01.012" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="6" type="1">
-<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a
-href="static/pubs/06-2018-JOCN/06-2018-JOCN.html">Not doomed to repeat:
-Enhanced mPFC tracking of errors promotes adaptive behavior during
-adolescence.</a> <em>Journal of Cognitive Neuroscience, 30</em>(3),
-281–289. DOI: <a
-href="https://doi.org/10.1162/jocn_a_01206">10.1162/jocn_a_01206</a> |
-<a
-href="static/pubs/06-2018-JOCN/6.McCormick-Telzer-2018-JOCN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a href="static/pubs/06-2018-JOCN/06-2018-JOCN.html">Not doomed to repeat: Enhanced mPFC tracking of errors promotes adaptive behavior during adolescence.</a> <em>Journal of Cognitive Neuroscience, 30</em>(3), 281–289. DOI: <a href="https://doi.org/10.1162/jocn_a_01206">10.1162/jocn_a_01206</a> | <a href="static/pubs/06-2018-JOCN/6.McCormick-Telzer-2018-JOCN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1162/jocn_a_01206" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1162/jocn_a_01206" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="5" type="1">
-<li>Qu, Y., Pomerantz, E. M., <strong>McCormick, E. M.</strong>, &amp;
-Telzer, E. H. (2018). <a
-href="static/pubs/05-2018-ChildDev/05-2018-ChildDev.html">Youth’s
-conceptions of adolescence predict longitudinal changes in prefrontal
-cortex activation and risk taking.</a> <em>Child Development, 89</em>,
-773-783. DOI: <a
-href="https://doi.org/10.1111/cdev.13017">10.1111/cdev.13017</a> | <a
-href="static/pubs/05-2018-ChildDev/5.Qu-Pomerantz-McCormick-Telzer-2018-ChildDev.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li>Qu, Y., Pomerantz, E. M., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a href="static/pubs/05-2018-ChildDev/05-2018-ChildDev.html">Youth’s conceptions of adolescence predict longitudinal changes in prefrontal cortex activation and risk taking.</a> <em>Child Development, 89</em>, 773-783. DOI: <a href="https://doi.org/10.1111/cdev.13017">10.1111/cdev.13017</a> | <a href="static/pubs/05-2018-ChildDev/5.Qu-Pomerantz-McCormick-Telzer-2018-ChildDev.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1111/cdev.13017" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1111/cdev.13017" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h3 id="section-5">2017</h3>
 <ol start="4" type="1">
-<li><strong>McCormick, E. M.</strong>, Qu, Y., &amp; Telzer, E. H.
-(2017). <a
-href="static/pubs/04-2017-Frontiers/04-2017-Frontiers.html">Activation
-in context: Differential conclusions drawn from cross-sectional and
-longitudinal analyses of adolescents’ cognitive control-related neural
-activity.</a> <em>Frontiers in Human Neuroscience, 11</em>, 141. DOI: <a
-href="https://doi.org/10.3389/fnhum.2017.00141">10.3389/fnhum.2017.00141</a>
-| <a
-href="static/pubs/04-2017-Frontiers/4.McCormick-Qu-Telzer-2017-Frontiers.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, Qu, Y., &amp; Telzer, E. H. (2017). <a href="static/pubs/04-2017-Frontiers/04-2017-Frontiers.html">Activation in context: Differential conclusions drawn from cross-sectional and longitudinal analyses of adolescents’ cognitive control-related neural activity.</a> <em>Frontiers in Human Neuroscience, 11</em>, 141. DOI: <a href="https://doi.org/10.3389/fnhum.2017.00141">10.3389/fnhum.2017.00141</a> | <a href="static/pubs/04-2017-Frontiers/4.McCormick-Qu-Telzer-2017-Frontiers.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.3389/fnhum.2017.00141" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.3389/fnhum.2017.00141" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="3" type="1">
-<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2017). <a
-href="static/pubs/03-2017-NeuroImage/03-2017-NeuroImage.html">Failure to
-retreat: Blunted sensitivity to negative feedback supports risky
-behavior in adolescents.</a> <em>NeuroImage, 147</em>, 381-389. DOI: <a
-href="https://doi.org/10.1016/j.neuroimage.2016.12.041">10.1016/j.neuroimage.2016.12.041</a>
-| <a
-href="static/pubs/03-2017-NeuroImage/3.McCormick-Telzer-2017-NeuroImage.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2017). <a href="static/pubs/03-2017-NeuroImage/03-2017-NeuroImage.html">Failure to retreat: Blunted sensitivity to negative feedback supports risky behavior in adolescents.</a> <em>NeuroImage, 147</em>, 381-389. DOI: <a href="https://doi.org/10.1016/j.neuroimage.2016.12.041">10.1016/j.neuroimage.2016.12.041</a> | <a href="static/pubs/03-2017-NeuroImage/3.McCormick-Telzer-2017-NeuroImage.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.neuroimage.2016.12.041"
-data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.neuroimage.2016.12.041" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <ol start="2" type="1">
-<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2017). <a
-href="static/pubs/02-2017-JOCN/02-2017-JOCN.html">Adaptive adolescent
-flexibility: Neurodevelopment of decision-making and learning in a risky
-context.</a> <em>Journal of Cognitive Neuroscience, 29</em>(3), 413-423.
-DOI: <a
-href="https://doi.org/10.1162/jocn_a_01061">10.1162/jocn_a_01061</a> |
-<a
-href="static/pubs/02-2017-JOCN/2.McCormick-Telzer-2017-JOCN.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2017). <a href="static/pubs/02-2017-JOCN/02-2017-JOCN.html">Adaptive adolescent flexibility: Neurodevelopment of decision-making and learning in a risky context.</a> <em>Journal of Cognitive Neuroscience, 29</em>(3), 413-423. DOI: <a href="https://doi.org/10.1162/jocn_a_01061">10.1162/jocn_a_01061</a> | <a href="static/pubs/02-2017-JOCN/2.McCormick-Telzer-2017-JOCN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1162/jocn_a_01061" data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1162/jocn_a_01061" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h3 id="section-6">2016</h3>
 <ol type="1">
-<li><strong>McCormick, E. M.</strong>, Qu, Y., &amp; Telzer, E. H.
-(2016). <a
-href="static/pubs/01-2016-NeuroImage/01-2016-NeuroImage.html">Adolescent
-neurodevelopment of cognitive control and risk-taking in negative family
-contexts.</a> <em>NeuroImage, 124</em>, 989-996. DOI: <a
-href="https://doi.org/10.1016/j.neuroimage.2015.09.063">10.1016/j.neuroimage.2015.09.063</a>
-| <a
-href="static/pubs/01-2016-NeuroImage/1.McCormick-Qu-Telzer-2016-NeuroImage.pdf"><i class="fas fa-download"></i>
-PDF</a></li>
+<li><strong>McCormick, E. M.</strong>, Qu, Y., &amp; Telzer, E. H. (2016). <a href="static/pubs/01-2016-NeuroImage/01-2016-NeuroImage.html">Adolescent neurodevelopment of cognitive control and risk-taking in negative family contexts.</a> <em>NeuroImage, 124</em>, 989-996. DOI: <a href="https://doi.org/10.1016/j.neuroimage.2015.09.063">10.1016/j.neuroimage.2015.09.063</a> | <a href="static/pubs/01-2016-NeuroImage/1.McCormick-Qu-Telzer-2016-NeuroImage.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
 <aside>
-<div class="altmetric-embed" data-badge-type="donut"
-data-doi="10.1016/j.neuroimage.2015.09.063"
-data-hide-no-mentions="true">
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.neuroimage.2015.09.063" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

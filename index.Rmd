@@ -4,13 +4,13 @@ image: "static/images/avatar.jpg"
 preview: "static/images/avatar.jpg"
 links:
   - label: '<i class="fas fa-envelope"></i> Email'
-    url: "mailto:ethan.mccormick@radboudumc.nl"
+    url: "mailto:e.m.mccormick@fsw.leidenuniv.nl"
   - label: '<i class="fas fa-graduation-cap"></i> Google Scholar'
     url: "https://scholar.google.com/citations?user=hiua2E8AAAAJ&hl=en"
   - label: '<i class="fab fa-twitter"></i> Twitter'
-    url: "https://twitter.com/McCormickNeuro"
+    url: "https://twitter.com/E_M_McCormick"
   - label: '<i class="fab fa-github"></i> GitHub'
-    url: "https://github.com/McCormickNeuro"
+    url: "https://github.com/E-M-McCormick"
   - label: '<i class="ai ai-orcid"></i> ORCID'
     url: "https://orcid.org/0000-0002-7919-4340"
   - label: '<i class="ai ai-osf"></i> OSF'
