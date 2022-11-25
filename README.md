@@ -1,4 +1,4 @@
-# McCormickNeuro.github.io
+# e-m-mccormick.github.io
 
 Code to generate the personal website [https://e-m-mccormick.github.io/](https://e-m-mccormick.github.io/).
 
