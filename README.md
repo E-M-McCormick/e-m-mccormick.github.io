@@ -1,6 +1,6 @@
 # McCormickNeuro.github.io
 
-Code to generate the personal website [https://mccormickneuro.github.io/](https://mccormickneuro.github.io/).
+Code to generate the personal website [https://e-m-mccormick.github.io/](https://e-m-mccormick.github.io/).
 
 Created with [Distill](https://rstudio.github.io/distill/) in [R](https://www.r-project.org/). 
 
