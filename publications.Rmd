@@ -52,7 +52,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2022
-31. Metherell, T.E., Ghai, S., **McCormick, E.M.**, Ford T.J., & Orben, A. (2022). Digital exclusion predicts worse mental health among adolescents during COVID-19. *Scientific Reports, 12*, 19088. DOI: [10.1038/s41598-022-23899-y](https://doi.org/10.1038/s41598-022-23899-y) | [<i class="fas fa-download"></i> PDF](static/pubs/31-2022-SciRep/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf) | [<i class="ai ai-biorxiv"></i> Preprint](https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1) 
+31. Metherell, T.E., Ghai, S., **McCormick, E.M.**, Ford T.J., & Orben, A. (2022). [Digital exclusion predicts worse mental health among adolescents during COVID-19.](static/pubs/31-2022-SciRep/31-2022-SciRep.html) *Scientific Reports, 12*, 19088. DOI: [10.1038/s41598-022-23899-y](https://doi.org/10.1038/s41598-022-23899-y) | [<i class="fas fa-download"></i> PDF](static/pubs/31-2022-SciRep/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf) | [<i class="ai ai-biorxiv"></i> Preprint](https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1) 
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1101/2021.11.25.21266853" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -61,7 +61,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-30. Jorgensen, N. A., Muscatell, K. A., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Neighborhood Disadvantage, Race/Ethnicity, and Neural Sensitivity to Social Threat and Reward among Adolescents. *Social Cognitive and Affective Neuroscience*. Advanced Online Publication, September 2022. DOI: [10.1093/scan/nsac053](https://doi.org/10.1093/scan/nsac053)
+30. Jorgensen, N. A., Muscatell, K. A., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). [Neighborhood Disadvantage, Race/Ethnicity, and Neural Sensitivity to Social Threat and Reward among Adolescents.](static/pubs/30-2022-SCAN/30-2022-SCAN.html) *Social Cognitive and Affective Neuroscience*. Advanced Online Publication, September 2022. DOI: [10.1093/scan/nsac053](https://doi.org/10.1093/scan/nsac053) | [<i class="fas fa-download"></i> PDF](static/pubs/30-2022-SCAN/30.Jorgensen-Muscatell-McCormick-Prinstein-Lindquist-Telzer-2022-SCAN.pdf)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1093/scan/nsac053" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -70,7 +70,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-29. Do, K. T., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms. *Scientific Reports, 12*, 17463. DOI: [10.1038/s41598-022-17780-1](https://doi.org/10.1038/s41598-022-17780-1) | [<i class="fas fa-download"></i> PDF](static/pubs/29-2022-SciRep/29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf)
+29. Do, K. T., **McCormick, E. M.**, Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). [Intrinsic connectivity within the affective salience network moderates adolescent susceptibility to negative and positive peer norms.](static/pubs/29-2022-SciRep/29-2022-SciRep.html) *Scientific Reports, 12*, 17463. DOI: [10.1038/s41598-022-17780-1](https://doi.org/10.1038/s41598-022-17780-1) | [<i class="fas fa-download"></i> PDF](static/pubs/29-2022-SciRep/29.Do-McCormick-Prinstein-Lindquist-Telzer-2022-ScientificReports.pdf)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1038/s41598-022-17780-1" data-hide-no-mentions="true" class="altmetric-embed"></div>

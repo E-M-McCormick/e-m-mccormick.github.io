@@ -1,0 +1,20 @@
+---
+title: "Neighborhood Disadvantage, Race/Ethnicity, and Neural Sensitivity to Social Threat and Reward among Adolescents."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](30.Jorgensen-Muscatell-McCormick-Prinstein-Lindquist-Telzer-2022-SCAN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1093/scan/nsac053)
+
+<!-- | [<i class="ai ai-open-materials"></i> Code](https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-022-17780-1/MediaObjects/41598_2022_17780_MOESM1_ESM.docx) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/SISNGRAB/) -->
+
+
+### Abstract
+Experiences within one’s social environment shape neural sensitivity to threatening and rewarding social cues. However, in racialized societies like the USA, youth from minoritized racial/ethnic backgrounds can have different experiences and perceptions within neighborhoods that share similar characteristics. The current study examined how neighborhood disadvantage intersects with racial/ethnic background in relation to neural sensitivity to social cues. A racially diverse (59 Hispanic/Latine, 48 White, 37 Black/African American, 15 multi-racial and 6 other) and primarily low to middle socioeconomic status sample of 165 adolescents (88 female; M~age~ = 12.89) completed a social incentive delay task while undergoing functional magnetic resonance imaging (fMRI) scanning. We tested for differences in the association between neighborhood disadvantage and neural responses to social threat and reward cues across racial/ethnic groups. For threat processing, compared to White youth, neighborhood disadvantage was related to greater neural activation in regions involved in salience detection (e.g. anterior cingulate cortex) for Black youth and regions involved in mentalizing (e.g. temporoparietal junction) for Latine youth. For reward processing, neighborhood disadvantage was related to greater brain activation in reward, salience and mentalizing regions for Black youth only. This study offers a novel exploration of diversity within adolescent neural development and important insights into our understanding of how social environments may ‘get under the skull’ differentially across racial/ethnic groups.
+
+**Citation:** Jorgensen, N. A., Muscatell, K. A., McCormick, E. M., Prinstein, M. J., Lindquist, K. A., & Telzer, E. H. (2022). Neighborhood Disadvantage, Race/Ethnicity, and Neural Sensitivity to Social Threat and Reward among Adolescents. Social Cognitive and Affective Neuroscience. Advanced Online Publication, September 2022.
