@@ -332,7 +332,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb99-10"><a href="04-shape.html#cb99-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> external.math.long)</span>
 <span id="cb99-11"><a href="04-shape.html#cb99-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb99-12"><a href="04-shape.html#cb99-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(int.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: ext ~ 1 + (1 | id)
 ##    Data: external.math.long
 ## 
@@ -543,7 +544,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb109-8"><a href="04-shape.html#cb109-8" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb109-9"><a href="04-shape.html#cb109-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb109-10"><a href="04-shape.html#cb109-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lin.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: ext ~ 1 + age + (1 + age | id)
 ##    Data: external.math.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -822,7 +824,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb119-6"><a href="04-shape.html#cb119-6" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb119-7"><a href="04-shape.html#cb119-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb119-8"><a href="04-shape.html#cb119-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(quad.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: ext ~ 1 + age + I(age^2) + (1 + age + I(age^2) | id)
 ##    Data: external.math.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -1120,7 +1123,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb130-8"><a href="04-shape.html#cb130-8" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb130-9"><a href="04-shape.html#cb130-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb130-10"><a href="04-shape.html#cb130-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(inv.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: ext ~ 1 + age + age_inv + (1 + age + age_inv | id)
 ##    Data: external.math.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -1695,7 +1699,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb146-14"><a href="04-shape.html#cb146-14" aria-hidden="true" tabindex="-1"></a>                     <span class="at">control =</span> <span class="fu">lmerControl</span>(<span class="at">optimizer =</span> <span class="st">&quot;bobyqa&quot;</span>,</span>
 <span id="cb146-15"><a href="04-shape.html#cb146-15" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb146-16"><a href="04-shape.html#cb146-16" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(two.rate.mlm)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: fmin ~ 1 + slp1 + slp2 + (1 + slp1 + slp2 | id)
 ##    Data: adversity.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -2198,7 +2203,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb152-6"><a href="04-shape.html#cb152-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">pnames =</span> <span class="fu">c</span>(<span class="st">&quot;Intercept&quot;</span>), <span class="at">snames =</span> <span class="fu">c</span>(<span class="st">&quot;s(Age)&quot;</span>),</span>
 <span id="cb152-7"><a href="04-shape.html#cb152-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">caption =</span> <span class="st">&quot;Modularity as a Function of Age&quot;</span>)</span></code></pre></div>
 <!-- html table generated in R 4.2.2 by xtable 1.8-4 package -->
-<!-- Mon Feb 13 13:18:53 2023 -->
+<!-- Mon Feb 13 13:36:54 2023 -->
 <table border="1">
 <caption align="bottom">
 Modularity as a Function of Age
@@ -2622,7 +2627,8 @@ s(Age)
 <span id="cb161-8"><a href="04-shape.html#cb161-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> feedback.learning)</span>
 <span id="cb161-9"><a href="04-shape.html#cb161-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb161-10"><a href="04-shape.html#cb161-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fixrand, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
+## lmerModLmerTest]
 ## Formula: scale(modularity) ~ 1 + wave + age + I(age^2) + (1 + wave | id)
 ##    Data: feedback.learning
 ## 
