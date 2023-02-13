@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>The Shape of Development | The Hitchhiker’s Guide to Longitudinal Models</title>
   <meta name="description" content="This is a code companion for The Hitchhiker’s Guide to Longitudinal Models." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.30 and GitBook 2.6.7" />
 
   <meta property="og:title" content="The Shape of Development | The Hitchhiker’s Guide to Longitudinal Models" />
   <meta property="og:type" content="book" />
@@ -94,7 +94,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -107,7 +107,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -332,8 +332,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb99-10"><a href="04-shape.html#cb99-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> external.math.long)</span>
 <span id="cb99-11"><a href="04-shape.html#cb99-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb99-12"><a href="04-shape.html#cb99-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(int.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: ext ~ 1 + (1 | id)
 ##    Data: external.math.long
 ## 
@@ -544,8 +543,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb109-8"><a href="04-shape.html#cb109-8" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb109-9"><a href="04-shape.html#cb109-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb109-10"><a href="04-shape.html#cb109-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lin.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: ext ~ 1 + age + (1 + age | id)
 ##    Data: external.math.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -824,8 +822,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb119-6"><a href="04-shape.html#cb119-6" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb119-7"><a href="04-shape.html#cb119-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb119-8"><a href="04-shape.html#cb119-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(quad.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: ext ~ 1 + age + I(age^2) + (1 + age + I(age^2) | id)
 ##    Data: external.math.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -1123,8 +1120,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb130-8"><a href="04-shape.html#cb130-8" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb130-9"><a href="04-shape.html#cb130-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb130-10"><a href="04-shape.html#cb130-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(inv.mlm, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: ext ~ 1 + age + age_inv + (1 + age + age_inv | id)
 ##    Data: external.math.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -1671,7 +1667,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb145-3"><a href="04-shape.html#cb145-3" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;trial&quot;</span>), </span>
 <span id="cb145-4"><a href="04-shape.html#cb145-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">&quot;.value&quot;</span>, <span class="st">&quot;num&quot;</span>), </span>
 <span id="cb145-5"><a href="04-shape.html#cb145-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">names_pattern =</span> <span class="st">&quot;(trial).(.)&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb145-6"><a href="04-shape.html#cb145-6" aria-hidden="true" tabindex="-1"></a>                  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">trial =</span> <span class="fu">as.numeric</span>(trial)), </span>
+<span id="cb145-6"><a href="04-shape.html#cb145-6" aria-hidden="true" tabindex="-1"></a>                  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">num =</span> <span class="fu">as.numeric</span>(num)), </span>
 <span id="cb145-7"><a href="04-shape.html#cb145-7" aria-hidden="true" tabindex="-1"></a>                <span class="fu">aes</span>(<span class="at">x =</span> num, </span>
 <span id="cb145-8"><a href="04-shape.html#cb145-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> trial, </span>
 <span id="cb145-9"><a href="04-shape.html#cb145-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">group =</span> id, </span>
@@ -1699,8 +1695,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb146-14"><a href="04-shape.html#cb146-14" aria-hidden="true" tabindex="-1"></a>                     <span class="at">control =</span> <span class="fu">lmerControl</span>(<span class="at">optimizer =</span> <span class="st">&quot;bobyqa&quot;</span>,</span>
 <span id="cb146-15"><a href="04-shape.html#cb146-15" aria-hidden="true" tabindex="-1"></a>                                           <span class="at">optCtrl =</span> <span class="fu">list</span>(<span class="at">maxfun =</span> <span class="fl">2e5</span>)))</span>
 <span id="cb146-16"><a href="04-shape.html#cb146-16" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(two.rate.mlm)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: fmin ~ 1 + slp1 + slp2 + (1 + slp1 + slp2 | id)
 ##    Data: adversity.long
 ## Control: lmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 2e+05))
@@ -2202,63 +2197,129 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb152-5"><a href="04-shape.html#cb152-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gamtabs</span>(gamm<span class="sc">$</span>gam, <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,</span>
 <span id="cb152-6"><a href="04-shape.html#cb152-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">pnames =</span> <span class="fu">c</span>(<span class="st">&quot;Intercept&quot;</span>), <span class="at">snames =</span> <span class="fu">c</span>(<span class="st">&quot;s(Age)&quot;</span>),</span>
 <span id="cb152-7"><a href="04-shape.html#cb152-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">caption =</span> <span class="st">&quot;Modularity as a Function of Age&quot;</span>)</span></code></pre></div>
-<pre><code>## &lt;!-- html table generated in R 4.1.3 by xtable 1.8-4 package --&gt;
-## &lt;!-- Tue Aug 30 10:43:46 2022 --&gt;
-## &lt;table border=1&gt;
-## &lt;caption align=&quot;bottom&quot;&gt; Modularity as a Function of Age &lt;/caption&gt;
-##   &lt;tr&gt; &lt;td&gt; A. parametric coefficients &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; Estimate &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; Std. Error &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; t-value &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; p-value &lt;/td&gt; &lt;/tr&gt;
-##   &lt;tr&gt; &lt;td&gt; Intercept &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; -0.0095 &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; 0.0464 &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; -0.2052 &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; 0.8375 &lt;/td&gt; &lt;/tr&gt;
-##    &lt;tr&gt; &lt;td&gt; B. smooth terms &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; edf &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; Ref.df &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; F-value &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; p-value &lt;/td&gt; &lt;/tr&gt;
-##   &lt;tr&gt; &lt;td&gt; s(Age) &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; 4.6471 &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; 4.6471 &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; 28.1838 &lt;/td&gt; &lt;td align=&quot;right&quot;&gt; &amp;lt; 0.0001 &lt;/td&gt; &lt;/tr&gt;
-##    &lt;a name=tab.gam&gt;&lt;/a&gt;
-## &lt;/table&gt;</code></pre>
-<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="04-shape.html#cb154-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.gam</span>(gamm<span class="sc">$</span>gam, <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">rug =</span> <span class="cn">TRUE</span>, <span class="at">shade =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb154-2"><a href="04-shape.html#cb154-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Age&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Fitted Modularity Values&quot;</span>)</span></code></pre></div>
+<!-- html table generated in R 4.2.2 by xtable 1.8-4 package -->
+<!-- Mon Feb 13 13:18:53 2023 -->
+<table border="1">
+<caption align="bottom">
+Modularity as a Function of Age
+</caption>
+<tr>
+<td>
+A. parametric coefficients
+</td>
+<td align="right">
+Estimate
+</td>
+<td align="right">
+Std. Error
+</td>
+<td align="right">
+t-value
+</td>
+<td align="right">
+p-value
+</td>
+</tr>
+<tr>
+<td>
+Intercept
+</td>
+<td align="right">
+-0.0095
+</td>
+<td align="right">
+0.0464
+</td>
+<td align="right">
+-0.2052
+</td>
+<td align="right">
+0.8375
+</td>
+</tr>
+<tr>
+<td>
+B. smooth terms
+</td>
+<td align="right">
+edf
+</td>
+<td align="right">
+Ref.df
+</td>
+<td align="right">
+F-value
+</td>
+<td align="right">
+p-value
+</td>
+</tr>
+<tr>
+<td>
+s(Age)
+</td>
+<td align="right">
+4.6471
+</td>
+<td align="right">
+4.6471
+</td>
+<td align="right">
+28.1838
+</td>
+<td align="right">
+&lt; 0.0001
+</td>
+</tr>
+<a name=tab.gam></a>
+</table>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="04-shape.html#cb153-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot.gam</span>(gamm<span class="sc">$</span>gam, <span class="at">se =</span> <span class="cn">TRUE</span>, <span class="at">rug =</span> <span class="cn">TRUE</span>, <span class="at">shade =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb153-2"><a href="04-shape.html#cb153-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Age&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Fitted Modularity Values&quot;</span>)</span></code></pre></div>
 <p><img src="longitudinal_primer_files/figure-html/nonlinear%2001-1.png" width="672" /></p>
 <p>Nothing as changed about this model from what we have seen previously because the GAMM intrinsically captures non-linearities through the use of the splines. In principle, given the functional form that is revealed, these data might also be fit with a quadratic polynomial (indeed in McCormick et al., 2021, <em>NeuroImage</em>: see main analyses versus supplemental GAMMs as a sensitivity check). Indeed these models might be a nice tool for this purpose to check the reasonableness of the functional form specified in more restrictive polynomial models, even if we retain the polynomials for interpretability. With expanding age ranges, this type of sensitivity check becomes increasingly important, since the non-linearities of the GAMM are a better theoretical match for the complex patterns of growth across the lifespan. While deceptively simple in their implementation (indeed this is the exact same model we keep fitting), GAMMS are a powerful and flexible tool for fitting developmental trajectories.</p>
 <p>The SEMs also allow for the inclusion of some nonlinear terms. Like the GAMM, we have already seen the most common nonlinearity through the proportional change parameter of the LCSM. We include the code and output for this model below but otherwise will not explore it further here.</p>
-<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="04-shape.html#cb155-1" aria-hidden="true" tabindex="-1"></a>executive.function <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/executive-function.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb155-2"><a href="04-shape.html#cb155-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, dlpfc1<span class="sc">:</span>dlpfc4)</span>
-<span id="cb155-3"><a href="04-shape.html#cb155-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb155-4"><a href="04-shape.html#cb155-4" aria-hidden="true" tabindex="-1"></a>proportional.lcsm <span class="ot">&lt;-</span> <span class="st">&quot;</span></span>
-<span id="cb155-5"><a href="04-shape.html#cb155-5" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Phantom Variables (p = phantom)</span></span>
-<span id="cb155-6"><a href="04-shape.html#cb155-6" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc1 =~ 1*dlpfc1; dlpfc1 ~ 0; dlpfc1 ~~ dlpfc1; pdlpfc1 ~~ 0*pdlpfc1</span></span>
-<span id="cb155-7"><a href="04-shape.html#cb155-7" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc2 =~ 1*dlpfc2; dlpfc2 ~ 0; dlpfc2 ~~ dlpfc2; pdlpfc2 ~~ 0*pdlpfc2</span></span>
-<span id="cb155-8"><a href="04-shape.html#cb155-8" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc3 =~ 1*dlpfc3; dlpfc3 ~ 0; dlpfc3 ~~ dlpfc3; pdlpfc3 ~~ 0*pdlpfc3</span></span>
-<span id="cb155-9"><a href="04-shape.html#cb155-9" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc4 =~ 1*dlpfc4; dlpfc4 ~ 0; dlpfc4 ~~ dlpfc4; pdlpfc4 ~~ 0*pdlpfc4</span></span>
-<span id="cb155-10"><a href="04-shape.html#cb155-10" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
-<span id="cb155-11"><a href="04-shape.html#cb155-11" aria-hidden="true" tabindex="-1"></a><span class="st">               # Regressions Between Adjacent Observations</span></span>
-<span id="cb155-12"><a href="04-shape.html#cb155-12" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc2 ~ 1*pdlpfc1</span></span>
-<span id="cb155-13"><a href="04-shape.html#cb155-13" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc3 ~ 1*pdlpfc2</span></span>
-<span id="cb155-14"><a href="04-shape.html#cb155-14" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc4 ~ 1*pdlpfc3</span></span>
-<span id="cb155-15"><a href="04-shape.html#cb155-15" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
-<span id="cb155-16"><a href="04-shape.html#cb155-16" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Change Latent Variables (delta)</span></span>
-<span id="cb155-17"><a href="04-shape.html#cb155-17" aria-hidden="true" tabindex="-1"></a><span class="st">               delta21 =~ 1*pdlpfc2; delta21 ~~ 0*delta21</span></span>
-<span id="cb155-18"><a href="04-shape.html#cb155-18" aria-hidden="true" tabindex="-1"></a><span class="st">               delta32 =~ 1*pdlpfc3; delta32 ~~ 0*delta32</span></span>
-<span id="cb155-19"><a href="04-shape.html#cb155-19" aria-hidden="true" tabindex="-1"></a><span class="st">               delta43 =~ 1*pdlpfc4; delta43 ~~ 0*delta43</span></span>
-<span id="cb155-20"><a href="04-shape.html#cb155-20" aria-hidden="true" tabindex="-1"></a><span class="st">               </span></span>
-<span id="cb155-21"><a href="04-shape.html#cb155-21" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Proportional Change Regressions (beta = equality constraint)</span></span>
-<span id="cb155-22"><a href="04-shape.html#cb155-22" aria-hidden="true" tabindex="-1"></a><span class="st">               delta21 ~ beta*pdlpfc1</span></span>
-<span id="cb155-23"><a href="04-shape.html#cb155-23" aria-hidden="true" tabindex="-1"></a><span class="st">               delta32 ~ beta*pdlpfc2</span></span>
-<span id="cb155-24"><a href="04-shape.html#cb155-24" aria-hidden="true" tabindex="-1"></a><span class="st">               delta43 ~ beta*pdlpfc3</span></span>
-<span id="cb155-25"><a href="04-shape.html#cb155-25" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
-<span id="cb155-26"><a href="04-shape.html#cb155-26" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Intercept and Slope</span></span>
-<span id="cb155-27"><a href="04-shape.html#cb155-27" aria-hidden="true" tabindex="-1"></a><span class="st">               int =~ 1*pdlpfc1</span></span>
-<span id="cb155-28"><a href="04-shape.html#cb155-28" aria-hidden="true" tabindex="-1"></a><span class="st">               slp =~ 1*delta21 + 1*delta32 + 1*delta43</span></span>
-<span id="cb155-29"><a href="04-shape.html#cb155-29" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
-<span id="cb155-30"><a href="04-shape.html#cb155-30" aria-hidden="true" tabindex="-1"></a><span class="st">               int ~ 1</span></span>
-<span id="cb155-31"><a href="04-shape.html#cb155-31" aria-hidden="true" tabindex="-1"></a><span class="st">               slp ~ 1</span></span>
-<span id="cb155-32"><a href="04-shape.html#cb155-32" aria-hidden="true" tabindex="-1"></a><span class="st">               </span></span>
-<span id="cb155-33"><a href="04-shape.html#cb155-33" aria-hidden="true" tabindex="-1"></a><span class="st">               int ~~ slp</span></span>
-<span id="cb155-34"><a href="04-shape.html#cb155-34" aria-hidden="true" tabindex="-1"></a><span class="st">               slp ~~ slp</span></span>
-<span id="cb155-35"><a href="04-shape.html#cb155-35" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
-<span id="cb155-36"><a href="04-shape.html#cb155-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb155-37"><a href="04-shape.html#cb155-37" aria-hidden="true" tabindex="-1"></a>lcsm.proportional <span class="ot">&lt;-</span> <span class="fu">sem</span>(proportional.lcsm, </span>
-<span id="cb155-38"><a href="04-shape.html#cb155-38" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data =</span> executive.function, </span>
-<span id="cb155-39"><a href="04-shape.html#cb155-39" aria-hidden="true" tabindex="-1"></a>                         <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
-<span id="cb155-40"><a href="04-shape.html#cb155-40" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
-<span id="cb155-41"><a href="04-shape.html#cb155-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb155-42"><a href="04-shape.html#cb155-42" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcsm.proportional)</span></code></pre></div>
+<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="04-shape.html#cb154-1" aria-hidden="true" tabindex="-1"></a>executive.function <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/executive-function.csv&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb154-2"><a href="04-shape.html#cb154-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, dlpfc1<span class="sc">:</span>dlpfc4)</span>
+<span id="cb154-3"><a href="04-shape.html#cb154-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb154-4"><a href="04-shape.html#cb154-4" aria-hidden="true" tabindex="-1"></a>proportional.lcsm <span class="ot">&lt;-</span> <span class="st">&quot;</span></span>
+<span id="cb154-5"><a href="04-shape.html#cb154-5" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Phantom Variables (p = phantom)</span></span>
+<span id="cb154-6"><a href="04-shape.html#cb154-6" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc1 =~ 1*dlpfc1; dlpfc1 ~ 0; dlpfc1 ~~ dlpfc1; pdlpfc1 ~~ 0*pdlpfc1</span></span>
+<span id="cb154-7"><a href="04-shape.html#cb154-7" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc2 =~ 1*dlpfc2; dlpfc2 ~ 0; dlpfc2 ~~ dlpfc2; pdlpfc2 ~~ 0*pdlpfc2</span></span>
+<span id="cb154-8"><a href="04-shape.html#cb154-8" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc3 =~ 1*dlpfc3; dlpfc3 ~ 0; dlpfc3 ~~ dlpfc3; pdlpfc3 ~~ 0*pdlpfc3</span></span>
+<span id="cb154-9"><a href="04-shape.html#cb154-9" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc4 =~ 1*dlpfc4; dlpfc4 ~ 0; dlpfc4 ~~ dlpfc4; pdlpfc4 ~~ 0*pdlpfc4</span></span>
+<span id="cb154-10"><a href="04-shape.html#cb154-10" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
+<span id="cb154-11"><a href="04-shape.html#cb154-11" aria-hidden="true" tabindex="-1"></a><span class="st">               # Regressions Between Adjacent Observations</span></span>
+<span id="cb154-12"><a href="04-shape.html#cb154-12" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc2 ~ 1*pdlpfc1</span></span>
+<span id="cb154-13"><a href="04-shape.html#cb154-13" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc3 ~ 1*pdlpfc2</span></span>
+<span id="cb154-14"><a href="04-shape.html#cb154-14" aria-hidden="true" tabindex="-1"></a><span class="st">               pdlpfc4 ~ 1*pdlpfc3</span></span>
+<span id="cb154-15"><a href="04-shape.html#cb154-15" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
+<span id="cb154-16"><a href="04-shape.html#cb154-16" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Change Latent Variables (delta)</span></span>
+<span id="cb154-17"><a href="04-shape.html#cb154-17" aria-hidden="true" tabindex="-1"></a><span class="st">               delta21 =~ 1*pdlpfc2; delta21 ~~ 0*delta21</span></span>
+<span id="cb154-18"><a href="04-shape.html#cb154-18" aria-hidden="true" tabindex="-1"></a><span class="st">               delta32 =~ 1*pdlpfc3; delta32 ~~ 0*delta32</span></span>
+<span id="cb154-19"><a href="04-shape.html#cb154-19" aria-hidden="true" tabindex="-1"></a><span class="st">               delta43 =~ 1*pdlpfc4; delta43 ~~ 0*delta43</span></span>
+<span id="cb154-20"><a href="04-shape.html#cb154-20" aria-hidden="true" tabindex="-1"></a><span class="st">               </span></span>
+<span id="cb154-21"><a href="04-shape.html#cb154-21" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Proportional Change Regressions (beta = equality constraint)</span></span>
+<span id="cb154-22"><a href="04-shape.html#cb154-22" aria-hidden="true" tabindex="-1"></a><span class="st">               delta21 ~ beta*pdlpfc1</span></span>
+<span id="cb154-23"><a href="04-shape.html#cb154-23" aria-hidden="true" tabindex="-1"></a><span class="st">               delta32 ~ beta*pdlpfc2</span></span>
+<span id="cb154-24"><a href="04-shape.html#cb154-24" aria-hidden="true" tabindex="-1"></a><span class="st">               delta43 ~ beta*pdlpfc3</span></span>
+<span id="cb154-25"><a href="04-shape.html#cb154-25" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
+<span id="cb154-26"><a href="04-shape.html#cb154-26" aria-hidden="true" tabindex="-1"></a><span class="st">               # Define Intercept and Slope</span></span>
+<span id="cb154-27"><a href="04-shape.html#cb154-27" aria-hidden="true" tabindex="-1"></a><span class="st">               int =~ 1*pdlpfc1</span></span>
+<span id="cb154-28"><a href="04-shape.html#cb154-28" aria-hidden="true" tabindex="-1"></a><span class="st">               slp =~ 1*delta21 + 1*delta32 + 1*delta43</span></span>
+<span id="cb154-29"><a href="04-shape.html#cb154-29" aria-hidden="true" tabindex="-1"></a><span class="st">        </span></span>
+<span id="cb154-30"><a href="04-shape.html#cb154-30" aria-hidden="true" tabindex="-1"></a><span class="st">               int ~ 1</span></span>
+<span id="cb154-31"><a href="04-shape.html#cb154-31" aria-hidden="true" tabindex="-1"></a><span class="st">               slp ~ 1</span></span>
+<span id="cb154-32"><a href="04-shape.html#cb154-32" aria-hidden="true" tabindex="-1"></a><span class="st">               </span></span>
+<span id="cb154-33"><a href="04-shape.html#cb154-33" aria-hidden="true" tabindex="-1"></a><span class="st">               int ~~ slp</span></span>
+<span id="cb154-34"><a href="04-shape.html#cb154-34" aria-hidden="true" tabindex="-1"></a><span class="st">               slp ~~ slp</span></span>
+<span id="cb154-35"><a href="04-shape.html#cb154-35" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
+<span id="cb154-36"><a href="04-shape.html#cb154-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb154-37"><a href="04-shape.html#cb154-37" aria-hidden="true" tabindex="-1"></a>lcsm.proportional <span class="ot">&lt;-</span> <span class="fu">sem</span>(proportional.lcsm, </span>
+<span id="cb154-38"><a href="04-shape.html#cb154-38" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data =</span> executive.function, </span>
+<span id="cb154-39"><a href="04-shape.html#cb154-39" aria-hidden="true" tabindex="-1"></a>                         <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
+<span id="cb154-40"><a href="04-shape.html#cb154-40" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
+<span id="cb154-41"><a href="04-shape.html#cb154-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb154-42"><a href="04-shape.html#cb154-42" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcsm.proportional)</span></code></pre></div>
 <pre><code>## lavaan 0.6-12 ended normally after 32 iterations
 ## 
 ##   Estimator                                         ML
@@ -2356,19 +2417,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     slp               0.079    0.016    4.970    0.000
 ##     int               0.796    0.115    6.925    0.000</code></pre>
 <p>However, the LCM offers an unique opportunity to model non-linear trends by throwing back to its roots in confirmatory factor analysis. Instead of specifying factor loadings, as we have done up to this point, we can allow a subset of them to be freely-estimated. This means that equal change is estimated between each timepoint, growth can accelerate and decelerate across different increments. However, to identify the growth model, we have to set at least two of the factor loadings to pre-specified values (<span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>) to set the scale for the other factor loadings. In general, there are two reasonable specifications. In the first, we set the first loading to <span class="math inline">\(0\)</span> and the second to <span class="math inline">\(1\)</span>. This means that the other factor loadings are proportional to the amount of change that occurs between the first and second time point. We can see this specification below.</p>
-<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="04-shape.html#cb157-1" aria-hidden="true" tabindex="-1"></a>free.load1 <span class="ot">&lt;-</span> <span class="st">&quot;int   =~ 1*fmin4 + 1*fmin5 + 1*fmin6 + 1*fmin7 + </span></span>
-<span id="cb157-2"><a href="04-shape.html#cb157-2" aria-hidden="true" tabindex="-1"></a><span class="st">                        1*fmin8 + 1*fmin9 + 1*fmin10 + 1*fmin11</span></span>
-<span id="cb157-3"><a href="04-shape.html#cb157-3" aria-hidden="true" tabindex="-1"></a><span class="st">               basis =~ 0*fmin4 + 1*fmin5 + l3*fmin6 + l4*fmin7 + </span></span>
-<span id="cb157-4"><a href="04-shape.html#cb157-4" aria-hidden="true" tabindex="-1"></a><span class="st">                        l5*fmin8 + l6*fmin9 + l7*fmin10 + l8*fmin11</span></span>
-<span id="cb157-5"><a href="04-shape.html#cb157-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
-<span id="cb157-6"><a href="04-shape.html#cb157-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb157-7"><a href="04-shape.html#cb157-7" aria-hidden="true" tabindex="-1"></a>free.load1.fit <span class="ot">&lt;-</span> <span class="fu">growth</span>(free.load1,</span>
-<span id="cb157-8"><a href="04-shape.html#cb157-8" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data =</span> adversity,</span>
-<span id="cb157-9"><a href="04-shape.html#cb157-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
-<span id="cb157-10"><a href="04-shape.html#cb157-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
-<span id="cb157-11"><a href="04-shape.html#cb157-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb157-12"><a href="04-shape.html#cb157-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(free.load1.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb157-13"><a href="04-shape.html#cb157-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="04-shape.html#cb156-1" aria-hidden="true" tabindex="-1"></a>free.load1 <span class="ot">&lt;-</span> <span class="st">&quot;int   =~ 1*fmin4 + 1*fmin5 + 1*fmin6 + 1*fmin7 + </span></span>
+<span id="cb156-2"><a href="04-shape.html#cb156-2" aria-hidden="true" tabindex="-1"></a><span class="st">                        1*fmin8 + 1*fmin9 + 1*fmin10 + 1*fmin11</span></span>
+<span id="cb156-3"><a href="04-shape.html#cb156-3" aria-hidden="true" tabindex="-1"></a><span class="st">               basis =~ 0*fmin4 + 1*fmin5 + l3*fmin6 + l4*fmin7 + </span></span>
+<span id="cb156-4"><a href="04-shape.html#cb156-4" aria-hidden="true" tabindex="-1"></a><span class="st">                        l5*fmin8 + l6*fmin9 + l7*fmin10 + l8*fmin11</span></span>
+<span id="cb156-5"><a href="04-shape.html#cb156-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
+<span id="cb156-6"><a href="04-shape.html#cb156-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb156-7"><a href="04-shape.html#cb156-7" aria-hidden="true" tabindex="-1"></a>free.load1.fit <span class="ot">&lt;-</span> <span class="fu">growth</span>(free.load1,</span>
+<span id="cb156-8"><a href="04-shape.html#cb156-8" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data =</span> adversity,</span>
+<span id="cb156-9"><a href="04-shape.html#cb156-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
+<span id="cb156-10"><a href="04-shape.html#cb156-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
+<span id="cb156-11"><a href="04-shape.html#cb156-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb156-12"><a href="04-shape.html#cb156-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(free.load1.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb156-13"><a href="04-shape.html#cb156-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## lavaan 0.6-12 ended normally after 166 iterations
 ## 
 ##   Estimator                                         ML
@@ -2442,37 +2503,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     int               0.360    0.109    3.292    0.001    1.000    1.000
 ##     basis             0.002    0.011    0.167    0.867    1.000    1.000</code></pre>
 <p>Here we label the freely-estimated factor loadings for convenient reference. We also specify the second factor as a basis (or sometimes “shape”) rather than a “slope” factor to reflect the non-linearity inherent in this model. When we examine the model results, we can see a pretty striking pattern of factor loadings. The third loading (<code>l3</code>) is <span class="math inline">\(10.43\)</span>, which suggests that more than <span class="math inline">\(9\)</span> times the amount of change occurs between the second and third timepoints as does between the first two (remember we take the difference between adjacent loadings). However, <code>l4</code> suggests that then there is a sharp deceleration in growth between the next timepoints. At <code>l6</code>, we can see that the factor loading actuall <em>decreases</em>, which is how this model fits a negative trend between adjacent timepoints. Finally, <code>l8</code> suggests a large increase at the final timepoint, reversing the earlier decreases. One thing to highlight is the increase in complexity just in describing the factor loadings and interpreting adjacent timepoints that do not follow some monotonic trend. Like many non-linear models, visualization of the model-implied trajectories is key for interpreting the effects. We can do so below.</p>
-<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="04-shape.html#cb159-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">id=</span>free.load1.fit<span class="sc">@</span>Data<span class="sc">@</span>case.idx[[<span class="dv">1</span>]], </span>
-<span id="cb159-2"><a href="04-shape.html#cb159-2" aria-hidden="true" tabindex="-1"></a>                           <span class="fu">lavPredict</span>(free.load1.fit,<span class="at">type=</span><span class="st">&quot;ov&quot;</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb159-3"><a href="04-shape.html#cb159-3" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;fmin&quot;</span>), </span>
-<span id="cb159-4"><a href="04-shape.html#cb159-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">&quot;.value&quot;</span>, <span class="st">&quot;age&quot;</span>), </span>
-<span id="cb159-5"><a href="04-shape.html#cb159-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">names_pattern =</span> <span class="st">&quot;(fmin)(.+)&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb159-6"><a href="04-shape.html#cb159-6" aria-hidden="true" tabindex="-1"></a>                  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">age =</span> <span class="fu">as.numeric</span>(age)), </span>
-<span id="cb159-7"><a href="04-shape.html#cb159-7" aria-hidden="true" tabindex="-1"></a>                <span class="fu">aes</span>(<span class="at">x =</span> age, </span>
-<span id="cb159-8"><a href="04-shape.html#cb159-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> fmin, </span>
-<span id="cb159-9"><a href="04-shape.html#cb159-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">group =</span> id, </span>
-<span id="cb159-10"><a href="04-shape.html#cb159-10" aria-hidden="true" tabindex="-1"></a>                    <span class="at">color =</span> <span class="fu">factor</span>(id))) <span class="sc">+</span></span>
-<span id="cb159-11"><a href="04-shape.html#cb159-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
-<span id="cb159-12"><a href="04-shape.html#cb159-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Free-loading Model 1 Trajectories&quot;</span>,</span>
-<span id="cb159-13"><a href="04-shape.html#cb159-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age&quot;</span>,</span>
-<span id="cb159-14"><a href="04-shape.html#cb159-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Predicted Forceps Minor Microstructure&quot;</span>) <span class="sc">+</span></span>
-<span id="cb159-15"><a href="04-shape.html#cb159-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb158"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb158-1"><a href="04-shape.html#cb158-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">id=</span>free.load1.fit<span class="sc">@</span>Data<span class="sc">@</span>case.idx[[<span class="dv">1</span>]], </span>
+<span id="cb158-2"><a href="04-shape.html#cb158-2" aria-hidden="true" tabindex="-1"></a>                           <span class="fu">lavPredict</span>(free.load1.fit,<span class="at">type=</span><span class="st">&quot;ov&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb158-3"><a href="04-shape.html#cb158-3" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="st">&quot;fmin&quot;</span>), </span>
+<span id="cb158-4"><a href="04-shape.html#cb158-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">&quot;.value&quot;</span>, <span class="st">&quot;age&quot;</span>), </span>
+<span id="cb158-5"><a href="04-shape.html#cb158-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">names_pattern =</span> <span class="st">&quot;(fmin)(.+)&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb158-6"><a href="04-shape.html#cb158-6" aria-hidden="true" tabindex="-1"></a>                  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">age =</span> <span class="fu">as.numeric</span>(age)), </span>
+<span id="cb158-7"><a href="04-shape.html#cb158-7" aria-hidden="true" tabindex="-1"></a>                <span class="fu">aes</span>(<span class="at">x =</span> age, </span>
+<span id="cb158-8"><a href="04-shape.html#cb158-8" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> fmin, </span>
+<span id="cb158-9"><a href="04-shape.html#cb158-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">group =</span> id, </span>
+<span id="cb158-10"><a href="04-shape.html#cb158-10" aria-hidden="true" tabindex="-1"></a>                    <span class="at">color =</span> <span class="fu">factor</span>(id))) <span class="sc">+</span></span>
+<span id="cb158-11"><a href="04-shape.html#cb158-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span> </span>
+<span id="cb158-12"><a href="04-shape.html#cb158-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Free-loading Model 1 Trajectories&quot;</span>,</span>
+<span id="cb158-13"><a href="04-shape.html#cb158-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">&quot;Age&quot;</span>,</span>
+<span id="cb158-14"><a href="04-shape.html#cb158-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">&quot;Predicted Forceps Minor Microstructure&quot;</span>) <span class="sc">+</span></span>
+<span id="cb158-15"><a href="04-shape.html#cb158-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) </span></code></pre></div>
 <p><img src="longitudinal_primer_files/figure-html/nonlinear%2004-1.png" width="672" /></p>
 <p>Here we can see the power, and danger, of these free-loading model. Like a GAMM, we can have complex, localized change, with reversals and highly variable slopes. However, in looking at the first couple of timepoints, we have to wonder if we are overfitting noise in the data when some simpler functional form would (e.g., a line) would describe this trend in a more replicable/generalizable way. Very often, these free-loading models will fit the data better than many alternatives we have discussed elsewhere in this primer, but then be very sample-depenedent in an unsatisfying fashion. Like with the GAMM, one potential use for this model is as a sensitivity check for a more-constrained LCM to ensure we are not completely botching the functional form.</p>
 <p>We can refit this model using a different specification where we set the first loading to <span class="math inline">\(0\)</span> and the <em>last</em> loading to <span class="math inline">\(1\)</span>. This scales the estimated loadings to be proportions of the total growth realized by that point. We can see this model below.</p>
-<div class="sourceCode" id="cb160"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb160-1"><a href="04-shape.html#cb160-1" aria-hidden="true" tabindex="-1"></a>free.load2 <span class="ot">&lt;-</span> <span class="st">&quot;int   =~ 1*fmin4 + 1*fmin5 + 1*fmin6 + 1*fmin7 + </span></span>
-<span id="cb160-2"><a href="04-shape.html#cb160-2" aria-hidden="true" tabindex="-1"></a><span class="st">                        1*fmin8 + 1*fmin9 + 1*fmin10 + 1*fmin11</span></span>
-<span id="cb160-3"><a href="04-shape.html#cb160-3" aria-hidden="true" tabindex="-1"></a><span class="st">               basis =~ 0*fmin4 + l2*fmin5 + l3*fmin6 + l4*fmin7 + </span></span>
-<span id="cb160-4"><a href="04-shape.html#cb160-4" aria-hidden="true" tabindex="-1"></a><span class="st">                        l5*fmin8 + l6*fmin9 + l7*fmin10 + 1*fmin11</span></span>
-<span id="cb160-5"><a href="04-shape.html#cb160-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
-<span id="cb160-6"><a href="04-shape.html#cb160-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb160-7"><a href="04-shape.html#cb160-7" aria-hidden="true" tabindex="-1"></a>free.load2.fit <span class="ot">&lt;-</span> <span class="fu">growth</span>(free.load2,</span>
-<span id="cb160-8"><a href="04-shape.html#cb160-8" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data =</span> adversity,</span>
-<span id="cb160-9"><a href="04-shape.html#cb160-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
-<span id="cb160-10"><a href="04-shape.html#cb160-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
-<span id="cb160-11"><a href="04-shape.html#cb160-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb160-12"><a href="04-shape.html#cb160-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(free.load2.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb160-13"><a href="04-shape.html#cb160-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="04-shape.html#cb159-1" aria-hidden="true" tabindex="-1"></a>free.load2 <span class="ot">&lt;-</span> <span class="st">&quot;int   =~ 1*fmin4 + 1*fmin5 + 1*fmin6 + 1*fmin7 + </span></span>
+<span id="cb159-2"><a href="04-shape.html#cb159-2" aria-hidden="true" tabindex="-1"></a><span class="st">                        1*fmin8 + 1*fmin9 + 1*fmin10 + 1*fmin11</span></span>
+<span id="cb159-3"><a href="04-shape.html#cb159-3" aria-hidden="true" tabindex="-1"></a><span class="st">               basis =~ 0*fmin4 + l2*fmin5 + l3*fmin6 + l4*fmin7 + </span></span>
+<span id="cb159-4"><a href="04-shape.html#cb159-4" aria-hidden="true" tabindex="-1"></a><span class="st">                        l5*fmin8 + l6*fmin9 + l7*fmin10 + 1*fmin11</span></span>
+<span id="cb159-5"><a href="04-shape.html#cb159-5" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;</span></span>
+<span id="cb159-6"><a href="04-shape.html#cb159-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb159-7"><a href="04-shape.html#cb159-7" aria-hidden="true" tabindex="-1"></a>free.load2.fit <span class="ot">&lt;-</span> <span class="fu">growth</span>(free.load2,</span>
+<span id="cb159-8"><a href="04-shape.html#cb159-8" aria-hidden="true" tabindex="-1"></a>                         <span class="at">data =</span> adversity,</span>
+<span id="cb159-9"><a href="04-shape.html#cb159-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">estimator =</span> <span class="st">&quot;ML&quot;</span>,</span>
+<span id="cb159-10"><a href="04-shape.html#cb159-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
+<span id="cb159-11"><a href="04-shape.html#cb159-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb159-12"><a href="04-shape.html#cb159-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(free.load2.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb159-13"><a href="04-shape.html#cb159-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
 <pre><code>## lavaan 0.6-12 ended normally after 50 iterations
 ## 
 ##   Estimator                                         ML
@@ -2551,18 +2612,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>Fixed and Random Effects<a href="04-shape.html#fixed-and-random-effects" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Before we move on, we want to highlight the distinction we make between fixed and random effects when we talk about the limitations of the functional form with respect to the number of repeated measures, per person. The oft-repeated mantra is that you need <span class="math inline">\(3\)</span> timepoints for a line, <span class="math inline">\(4\)</span> for a quadratic, and so on ad infinitum. <em>But</em>, on the other hand, we can fit a highly complex non-linear developmental trajectory to data where each individual contributes <strong>at most</strong> <span class="math inline">\(2\)</span> timepoints. How do we reconcile these two things? Well it has to do with whether we treat the effect in question as fixed or random. When we treat a parameter as fixed, we obtain a single value that describes all indiviudals in our sample (barring pesky things like interactions), but when we treat an effect as random, we also model individual differences in that “fixed” parameter (note that we estimate a single variance per random effect, not individual effects, but that’s a longer discussion and we can calculate individual effects with some well-developed methods). So to estimate these individually-varying random effects, we need more repeated measures <em>within-person</em>. However, we can still estimate an overall fixed effect trajectory that takes advantage of greater timepoints <em>between</em> individuals than exist for any given individual. This is how we might estimate a GAMM with some highly complex surface, even though we could never estimate a random effect for any individual since they only contribute up to two observations.</p>
 <p>We can demonstrate this with our <code>feedback.learning</code> data where we can model both the effect of <code>wave</code>, which is a fully within-person measure, as well as linear and quadratic <code>age</code>. These latter two effects are specified as fixed effects because while <code>age</code> between-person ranges from <span class="math inline">\(8 - 29\)</span>, no one person contributes more than <span class="math inline">\(3\)</span> time points, so the quadratic random effect would not be estimable. However, we can estimate a random effect of <code>wave</code>. We can see these effects below. This distinction highlights some of the advantages of having measurement timing heterogeneity for estimating more complex effect than one could do with single-cohort data with fully consistent assessment schedules.</p>
-<div class="sourceCode" id="cb162"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb162-1"><a href="04-shape.html#cb162-1" aria-hidden="true" tabindex="-1"></a>feedback.learning <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/feedback-learning.csv&quot;</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb162-2"><a href="04-shape.html#cb162-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, wave, age, modularity, learning.rate)</span>
-<span id="cb162-3"><a href="04-shape.html#cb162-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-4"><a href="04-shape.html#cb162-4" aria-hidden="true" tabindex="-1"></a>fixrand <span class="ot">&lt;-</span> <span class="fu">lmer</span>(<span class="fu">scale</span>(modularity) <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> age <span class="sc">+</span> <span class="fu">I</span>(age<span class="sc">^</span><span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb162-5"><a href="04-shape.html#cb162-5" aria-hidden="true" tabindex="-1"></a>                  (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id),</span>
-<span id="cb162-6"><a href="04-shape.html#cb162-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">na.action =</span> na.omit,</span>
-<span id="cb162-7"><a href="04-shape.html#cb162-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">REML =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb162-8"><a href="04-shape.html#cb162-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> feedback.learning)</span>
-<span id="cb162-9"><a href="04-shape.html#cb162-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-10"><a href="04-shape.html#cb162-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fixrand, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [
-## lmerModLmerTest]
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="04-shape.html#cb161-1" aria-hidden="true" tabindex="-1"></a>feedback.learning <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/feedback-learning.csv&quot;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb161-2"><a href="04-shape.html#cb161-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(id, wave, age, modularity, learning.rate)</span>
+<span id="cb161-3"><a href="04-shape.html#cb161-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb161-4"><a href="04-shape.html#cb161-4" aria-hidden="true" tabindex="-1"></a>fixrand <span class="ot">&lt;-</span> <span class="fu">lmer</span>(<span class="fu">scale</span>(modularity) <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">+</span> age <span class="sc">+</span> <span class="fu">I</span>(age<span class="sc">^</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb161-5"><a href="04-shape.html#cb161-5" aria-hidden="true" tabindex="-1"></a>                  (<span class="dv">1</span> <span class="sc">+</span> wave <span class="sc">|</span> id),</span>
+<span id="cb161-6"><a href="04-shape.html#cb161-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">na.action =</span> na.omit,</span>
+<span id="cb161-7"><a href="04-shape.html#cb161-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">REML =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb161-8"><a href="04-shape.html#cb161-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">data =</span> feedback.learning)</span>
+<span id="cb161-9"><a href="04-shape.html#cb161-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb161-10"><a href="04-shape.html#cb161-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fixrand, <span class="at">correlation =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<pre><code>## Linear mixed model fit by REML. t-tests use Satterthwaite&#39;s method [lmerModLmerTest]
 ## Formula: scale(modularity) ~ 1 + wave + age + I(age^2) + (1 + wave | id)
 ##    Data: feedback.learning
 ## 
@@ -2660,7 +2720,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:")
       if (/^https?:/.test(src))
         src = src.replace(/^https?:/, '');
