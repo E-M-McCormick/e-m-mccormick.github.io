@@ -289,16 +289,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev. Corr 
-##  id       (Intercept) 0.26612  0.5159        
+##  id       (Intercept) 0.26613  0.5159        
 ##           age         0.01086  0.1042   -0.31
 ##  Residual             0.62111  0.7881        
 ## Number of obs: 1240, groups:  id, 398
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)  -0.17524    0.08671 320.73004  -2.021   0.0441 *  
-## age           0.05101    0.01199 291.23230   4.256 2.81e-05 ***
-## neglect      -0.10133    0.01911 397.77938  -5.301 1.91e-07 ***
+## (Intercept)  -0.17524    0.08671 320.73547  -2.021   0.0441 *  
+## age           0.05101    0.01199 291.23548   4.256 2.81e-05 ***
+## neglect      -0.10133    0.01911 397.77909  -5.301 1.91e-07 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here we can see that there is a positive effect of <code>age</code>, reflecting general increases in FA values across age. Conversely, there is a negative <em>between-person</em> effect of <code>neglect</code>, with those experiencing greater levels of early childhood neglect showing reduced levels of white matter FA in the forceps minor (<code>fmin</code>). Note that this is a prediction of level, not of slopes. We will return to this in a bit when we consider cross-level interactions.</p>
@@ -317,7 +317,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb166-12"><a href="05-covariates.html#cb166-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb166-13"><a href="05-covariates.html#cb166-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tic.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb166-14"><a href="05-covariates.html#cb166-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 29 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 29 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -404,7 +404,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb168-12"><a href="05-covariates.html#cb168-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb168-13"><a href="05-covariates.html#cb168-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(joint.lik.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb168-14"><a href="05-covariates.html#cb168-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 27 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 27 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -436,7 +436,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb170-15"><a href="05-covariates.html#cb170-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb170-16"><a href="05-covariates.html#cb170-16" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(joint.lik.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb170-17"><a href="05-covariates.html#cb170-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 27 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 27 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -466,7 +466,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb172-13"><a href="05-covariates.html#cb172-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb172-14"><a href="05-covariates.html#cb172-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(joint.lik.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb172-15"><a href="05-covariates.html#cb172-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 27 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 27 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -500,7 +500,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb174-16"><a href="05-covariates.html#cb174-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb174-17"><a href="05-covariates.html#cb174-17" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(latent.tic.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb174-18"><a href="05-covariates.html#cb174-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 29 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 29 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -610,7 +610,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb176-15"><a href="05-covariates.html#cb176-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb176-16"><a href="05-covariates.html#cb176-16" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(obs.tic.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb176-17"><a href="05-covariates.html#cb176-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 26 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 26 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -717,9 +717,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)  -0.18075    0.08801 320.87213  -2.054 0.040824 *  
-## age           0.05129    0.01200 290.29486   4.273 2.62e-05 ***
-## abuse        -0.06501    0.01728 387.90436  -3.763 0.000194 ***
+## (Intercept)  -0.18075    0.08801 320.87068  -2.054 0.040824 *  
+## age           0.05129    0.01200 290.29406   4.273 2.62e-05 ***
+## abuse        -0.06501    0.01728 387.90442  -3.763 0.000194 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>When we add <code>abuse</code> as a predictor, we are really only estimating intercept differences across levels of experience of abuse (there is an negative effect here). If we want to know whether individuals with different experiences of abuse differ in their slopes, we need to explicitly create an interaction variable (<code>age:abuse</code>).</p>
@@ -745,17 +745,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev. Corr 
-##  id       (Intercept) 0.303871 0.55125       
-##           age         0.009977 0.09988  -0.27
-##  Residual             0.622592 0.78905       
+##  id       (Intercept) 0.303868 0.55124       
+##           age         0.009976 0.09988  -0.27
+##  Residual             0.622593 0.78905       
 ## Number of obs: 1240, groups:  id, 398
 ## 
 ## Fixed effects:
 ##               Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)  -0.180119   0.087311 316.427211  -2.063   0.0399 *  
-## age           0.051237   0.011889 284.132644   4.309 2.26e-05 ***
-## abuse        -0.004256   0.033426 308.487723  -0.127   0.8988    
-## age:abuse    -0.009689   0.004569 276.108013  -2.121   0.0348 *  
+## (Intercept)  -0.180119   0.087311 316.426367  -2.063   0.0399 *  
+## age           0.051237   0.011889 284.132355   4.309 2.26e-05 ***
+## abuse        -0.004256   0.033426 308.486988  -0.127   0.8988    
+## age:abuse    -0.009689   0.004569 276.107835  -2.121   0.0348 *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>The interaction nature of the second effect is immediately apparent given the construction of the syntax. We can even plot these effects using the <code>interact_plot()</code> function from the <strong>interactions</strong> package.</p>
@@ -787,7 +787,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb184-16"><a href="05-covariates.html#cb184-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb184-17"><a href="05-covariates.html#cb184-17" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cross.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb184-18"><a href="05-covariates.html#cb184-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 33 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 33 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -937,9 +937,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   2.36832    0.04568 307.54713  51.842  &lt; 2e-16 ***
-## age           0.04646    0.01498 296.52048   3.102  0.00211 ** 
-## dlpfc         0.05560    0.02092 714.79091   2.658  0.00803 ** 
+## (Intercept)   2.36832    0.04568 307.54702  51.842  &lt; 2e-16 ***
+## age           0.04646    0.01498 296.52049   3.102  0.00211 ** 
+## dlpfc         0.05560    0.02092 714.79021   2.658  0.00803 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## optimizer (bobyqa) convergence code: 0 (OK)
@@ -979,9 +979,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   2.31372    0.06229 323.33800  37.142  &lt; 2e-16 ***
-## age           0.06044    0.02116 281.03078   2.856  0.00461 ** 
-## dlpfc         0.07326    0.02378 814.70967   3.081  0.00213 ** 
+## (Intercept)   2.31372    0.06229 323.33710  37.142  &lt; 2e-16 ***
+## age           0.06044    0.02116 281.02897   2.856  0.00461 ** 
+## dlpfc         0.07326    0.02378 814.70968   3.081  0.00213 ** 
 ## dlpfc.lag     0.04651    0.02455 823.26058   1.895  0.05850 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -1757,7 +1757,7 @@ NA
 <span id="cb198-13"><a href="05-covariates.html#cb198-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb198-14"><a href="05-covariates.html#cb198-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb198-15"><a href="05-covariates.html#cb198-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 37 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 37 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1841,7 +1841,7 @@ NA
 <span id="cb200-13"><a href="05-covariates.html#cb200-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb200-14"><a href="05-covariates.html#cb200-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb200-15"><a href="05-covariates.html#cb200-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 30 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 30 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1928,7 +1928,7 @@ NA
 <span id="cb202-13"><a href="05-covariates.html#cb202-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb202-14"><a href="05-covariates.html#cb202-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lag.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb202-15"><a href="05-covariates.html#cb202-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 36 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 36 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2015,7 +2015,7 @@ NA
 <span id="cb204-13"><a href="05-covariates.html#cb204-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb204-14"><a href="05-covariates.html#cb204-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lag.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb204-15"><a href="05-covariates.html#cb204-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 29 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 29 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2109,7 +2109,7 @@ NA
 <span id="cb206-13"><a href="05-covariates.html#cb206-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb206-14"><a href="05-covariates.html#cb206-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tvc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb206-15"><a href="05-covariates.html#cb206-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 30 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 30 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2206,7 +2206,7 @@ NA
 <span id="cb208-25"><a href="05-covariates.html#cb208-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb208-26"><a href="05-covariates.html#cb208-26" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(multivar.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb208-27"><a href="05-covariates.html#cb208-27" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 50 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 50 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2332,7 +2332,7 @@ NA
 <span id="cb210-29"><a href="05-covariates.html#cb210-29" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb210-30"><a href="05-covariates.html#cb210-30" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(riclpm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb210-31"><a href="05-covariates.html#cb210-31" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 44 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 44 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2461,7 +2461,7 @@ NA
 <span id="cb212-33"><a href="05-covariates.html#cb212-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb212-34"><a href="05-covariates.html#cb212-34" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcmsr.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb212-35"><a href="05-covariates.html#cb212-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 72 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 72 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2611,7 +2611,7 @@ NA
 <span id="cb214-33"><a href="05-covariates.html#cb214-33" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb214-34"><a href="05-covariates.html#cb214-34" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcmsr.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb214-35"><a href="05-covariates.html#cb214-35" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 57 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 57 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2792,7 +2792,7 @@ NA
 <span id="cb216-62"><a href="05-covariates.html#cb216-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb216-63"><a href="05-covariates.html#cb216-63" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(multivar.dualchange, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb216-64"><a href="05-covariates.html#cb216-64" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 120 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 122 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2916,7 +2916,7 @@ NA
 ##     int.ef            2.417    0.043   56.656    0.000
 ##     slp.ef           -0.600    1.414   -0.424    0.671
 ##     int.dlpfc         0.541    0.054    9.978    0.000
-##     slp.dlpfc         0.007    0.901    0.008    0.994
+##     slp.dlpfc         0.007    0.900    0.008    0.994
 ##    .pef1              0.000                           
 ##    .pef2              0.000                           
 ##    .pef3              0.000                           
@@ -4174,7 +4174,7 @@ DLPFC
 ##                Estimate Std. Error        df t value Pr(&gt;|t|)    
 ## (Intercept)     2.34839    0.05851 472.22497  40.136  &lt; 2e-16 ***
 ## age             0.04825    0.01522 295.72959   3.171  0.00168 ** 
-## dlpfc.grdcent   0.03965    0.02308 889.69638   1.718  0.08613 .  
+## dlpfc.grdcent   0.03965    0.02308 889.69637   1.718  0.08613 .  
 ## dlpfc.mean      0.08332    0.05105 507.67410   1.632  0.10328    
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -4218,7 +4218,7 @@ DLPFC
 ## Fixed effects:
 ##                Estimate Std. Error        df t value Pr(&gt;|t|)    
 ## (Intercept)     2.40789    0.04407 338.52746  54.639  &lt; 2e-16 ***
-## age             0.04769    0.01521 296.02311   3.136  0.00188 ** 
+## age             0.04769    0.01521 296.02312   3.136  0.00188 ** 
 ## dlpfc.grpcent   0.03948    0.02305 888.90401   1.713  0.08710 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
@@ -4252,16 +4252,16 @@ DLPFC
 ## 
 ## Fixed effects:
 ##                Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)     2.31971    0.05478 377.98612  42.345  &lt; 2e-16 ***
+## (Intercept)     2.31971    0.05478 377.98608  42.345  &lt; 2e-16 ***
 ## age             0.04825    0.01522 295.72959   3.171  0.00168 ** 
-## dlpfc.grpcent   0.03965    0.02308 889.69638   1.718  0.08613 .  
-## dlpfc.mean      0.12297    0.04560 330.81571   2.696  0.00737 ** 
+## dlpfc.grpcent   0.03965    0.02308 889.69639   1.718  0.08613 .  
+## dlpfc.mean      0.12297    0.04560 330.81567   2.696  0.00737 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Of course, if we wished to get the difference in effects, we can compute it from this model (essentially the inverse of what we did previously). Here we subtract the within-person effect from the between-person effect.</p>
 <div class="sourceCode" id="cb236"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb236-1"><a href="05-covariates.html#cb236-1" aria-hidden="true" tabindex="-1"></a><span class="fu">contest1D</span>(grpcent.mlm, <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>))</span></code></pre></div>
-<pre><code>##    Estimate Std. Error       df  t value Pr(&gt;|t|)
-## 1 0.0833236 0.05105262 507.6741 1.632112 0.103276</code></pre>
+<pre><code>##     Estimate Std. Error      df  t value Pr(&gt;|t|)
+## 1 0.08332361 0.05105263 507.674 1.632112 0.103276</code></pre>
 <p>Fortunately for us, we have already seen one of the primary methods for separating within- versus between-person effects in the SEM: the LCM-SR. In these models, all of the between-person effects are isolated to the level of the latent factors, while the within-person effects are isolated to the residuals of the repeated measures. If we have a TVC model, our grand- or group-mean centered variables enter as preditors of the repeated measure residuals, while the person-specific means enter as predictors of the latent factors. While this is equivalent to the MLM in the case of TVCs, the expanded capacity of the SEM allows us to include multiple outcomes and reciprocal effects between different constructs traveling together across time. With the growth factors isolating the between-person effects, these reciprocal effects represent pure estimates of within-person effects.</p>
 </div>
 </div>
@@ -4305,7 +4305,7 @@ DLPFC
 ## Coefficients:
 ##             Estimate Std. Error z value Pr(&gt;|z|)    
 ## (Intercept)   -3.391      0.318 -10.666   &lt;2e-16 ***
-## int            2.875      1.270   2.264   0.0236 *  
+## int            2.875      1.270   2.263   0.0236 *  
 ## slp            5.710      3.274   1.744   0.0811 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
@@ -4321,9 +4321,9 @@ DLPFC
 <p>We can see that while the intercept of the trajectory has a significant positive prospective effect on the propensity for individuals to experience lifetime incarceration, the slope is not significant (so close; more on that in a bit). Essentially, those adolescents who show higher initial levels of antisocial behavior are more likely to report being incarcerated at some point in their lifetime. The coefficients we see in this model represent the log-odds parameters. You might see these reported in the odds scale, which just involves the exponentiation of these parameters. We can see this below and generate confidence intervals on the odds parameters.</p>
 <div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="05-covariates.html#cb243-1" aria-hidden="true" tabindex="-1"></a><span class="fu">exp</span>(<span class="fu">cbind</span>(<span class="fu">coef</span>(distal.glm), <span class="fu">confint</span>(distal.glm)))</span></code></pre></div>
 <pre><code>##                               2.5 %       97.5 %
-## (Intercept)   0.03366191 0.01685404 5.927968e-02
-## int          17.72184608 1.49558354 2.248666e+02
-## slp         301.88241025 0.51763779 2.085305e+05</code></pre>
+## (Intercept)   0.03366191 0.01685404 5.927967e-02
+## int          17.72246349 1.49556757 2.248848e+02
+## slp         301.85964003 0.51755237 2.085331e+05</code></pre>
 <p>So for a one unit increase in the trajectory intercept, we expect a 17.72 change in the odds of being incarcerated, and a substantial increase of 301.85 in the odds for a per-unit change in the slope of the trajectory (again not significant but we can play out this exercise). One reason we often need to be careful about these “per one unit” changes in the trajectory parameters, especially for the slope, is that often the parameters do not have large ranges. Indeed, often the full range of the slope parameter will not extend over an entire unit because of the way it is scaled (in per time-unit change). We can see this when we plot the predicted probabilities of incarceration against the trajectory parameters. Note that to get the predicted probabilities, we simply divide the odds by <span class="math inline">\(1\)</span> plus the odds. So <span class="math inline">\(P(incarc_{i} = 1) = e^{log-odds} / 1 + e^{log-odds}\)</span>. We can see this below.</p>
 <div class="sourceCode" id="cb245"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb245-1"><a href="05-covariates.html#cb245-1" aria-hidden="true" tabindex="-1"></a>random.effs <span class="ot">&lt;-</span> random.effs <span class="sc">%&gt;%</span></span>
 <span id="cb245-2"><a href="05-covariates.html#cb245-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">incarc =</span> externalizing<span class="sc">$</span>incarc,</span>
@@ -4331,12 +4331,12 @@ DLPFC
 <span id="cb245-4"><a href="05-covariates.html#cb245-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pred.prob =</span> <span class="fu">exp</span>(pred) <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(pred)))</span>
 <span id="cb245-5"><a href="05-covariates.html#cb245-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(random.effs)</span></code></pre></div>
 <pre><code>##           int         slp incarc      pred   pred.prob
-## 1 -0.08707094 -0.10376317      0 -4.234191 0.014284519
-## 2 -0.10130195 -0.03397101      0 -3.876587 0.020300770
-## 3 -0.29188769 -0.08666438      0 -4.725363 0.008789549
-## 4  0.42109933  0.13725132      0 -1.397103 0.198276284
-## 5  0.26379753  0.20359076      1 -1.470513 0.186864675
-## 6  0.21702003  0.10030031      0 -2.194781 0.100220129</code></pre>
+## 1 -0.08707305 -0.10376294      0 -4.234191 0.014284520
+## 2 -0.10130152 -0.03397105      0 -3.876587 0.020300771
+## 3 -0.29188615 -0.08666453      0 -4.725364 0.008789548
+## 4  0.42109753  0.13725150      0 -1.397103 0.198276302
+## 5  0.26380031  0.20359046      1 -1.470513 0.186864687
+## 6  0.21702008  0.10030029      0 -2.194781 0.100220132</code></pre>
 <div class="sourceCode" id="cb247"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb247-1"><a href="05-covariates.html#cb247-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(random.effs, <span class="fu">aes</span>(<span class="at">x =</span> int, <span class="at">y =</span> incarc)) <span class="sc">+</span></span>
 <span id="cb247-2"><a href="05-covariates.html#cb247-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="fu">factor</span>(incarc)), <span class="at">shape =</span> <span class="st">&quot;|&quot;</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span>  </span>
 <span id="cb247-3"><a href="05-covariates.html#cb247-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> random.effs, </span>
@@ -4363,7 +4363,7 @@ DLPFC
 <p>Of course, it was a bit of a bummer that the slope term wasn’t quite significant (and yes of course we shouldn’t care, but <strong>of course</strong> we do). Slope effects are often very interesting from an intervention perspective, with the idea that if we could just bend those curves down during adolescence, perhaps we could avoid some of these negative life outcomes. Well tough cookies in this model, but one of the reasons that we do not get a slope effect for this data in particular is because of the high degree of correlation between the EB estimates of the random effects, which is quite high (<span class="math inline">\(r =\)</span> 0.847). Similar to the ideas outlined in <a href="https://mccormickneuro.github.io/publication/2021-multilevel-multigrowth/">multi-growth models</a>, the correlation in predictors here isn’t doing us any favors. We can check the variance inflation factor for this model below using the <code>vif()</code> function from the <a href="https://cran.r-project.org/web/packages/car/index.html"><strong>car</strong></a> package.</p>
 <div class="sourceCode" id="cb249"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb249-1"><a href="05-covariates.html#cb249-1" aria-hidden="true" tabindex="-1"></a>car<span class="sc">::</span><span class="fu">vif</span>(distal.glm)</span></code></pre></div>
 <pre><code>##      int      slp 
-## 2.772184 2.772184</code></pre>
+## 2.772259 2.772259</code></pre>
 <p>Which indicates that our standard errors are approximately <span class="math inline">\(2.77\)</span> larger than if we had uncorrelated predictors. While this isn’t enormous, it likely contributes to a non-significant slope effect. This type of correlation between the random effects is not uncommon and is one of the challenges associated with these kinds of questions (although there are some developments that I am currently working on that might help with this, so stay tuned if interested).</p>
 <p>We can do a very similar 2-step approach with the LCM by generating factor scores. Here we will use the <code>lavPredict()</code> function from <strong>lavaan</strong> with <code>method = "regression"</code>. The other option is to use <code>method = "Bartlett"</code>. In general, regression factor scores perform better as predictors (which is what we want here), while Bartlett scores are better as outcomes (<a href="https://psycnet.apa.org/record/2001-10245-007">Skrondal &amp; Laak, 2001</a>).</p>
 <div class="sourceCode" id="cb251"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb251-1"><a href="05-covariates.html#cb251-1" aria-hidden="true" tabindex="-1"></a>lin.lcm <span class="ot">&lt;-</span> <span class="st">&quot;int =~ 1*ext6 + 1*ext8 + 1*ext10 + 1*ext12 + 1*ext14</span></span>
@@ -4421,7 +4421,7 @@ DLPFC
 <span id="cb255-8"><a href="05-covariates.html#cb255-8" aria-hidden="true" tabindex="-1"></a>                      <span class="at">data =</span> externalizing,</span>
 <span id="cb255-9"><a href="05-covariates.html#cb255-9" aria-hidden="true" tabindex="-1"></a>                      <span class="at">estimator =</span> <span class="st">&quot;WLSMV&quot;</span>,</span>
 <span id="cb255-10"><a href="05-covariates.html#cb255-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">ordered =</span> <span class="st">&quot;incarc&quot;</span>)</span></code></pre></div>
-<p>Unfortunately, when we try to estimate this model, we get an error message <code>lavaan ERROR: data contains no observations</code>, which should be slighly concerning… What is happening here is that in this dataset, because no one person is observed on adjacent measures (e.g., <code>ext6</code> &amp; <code>ext7</code>), everyone has missing data. This was not an issue in the linear versions of the model because we could use Maximum Likelihood, however, currently <strong>lavaan</strong> does not support categorical ML, and WLSMV will listwise delete individuals with missing data. Unfortunately for us, that’s <span class="math inline">\(100\)</span> percent of adolescents in our sample. We would need to turn to <strong>Mplus</strong> or another program for results from this model.</p>
+<p>Unfortunately, when we try to estimate this model, we get an error message <code>lavaan ERROR: data contains no observations</code>, which should be slightly concerning… What is happening here is that in this dataset, because no one person is observed on adjacent measures (e.g., <code>ext6</code> &amp; <code>ext7</code>), everyone has missing data. This was not an issue in the linear versions of the model because we could use Maximum Likelihood, however, currently <strong>lavaan</strong> does not support categorical ML, and WLSMV will listwise delete individuals with missing data. Unfortunately for us, that’s <span class="math inline">\(100\)</span> percent of adolescents in our sample. We would need to turn to <strong>Mplus</strong> or another program for results from this model.</p>
 <p>As we mentioned, this area of methodological research is still relatively under-developed and awaits solutions to many of the limitations we have run into here.</p>
 
 </div>

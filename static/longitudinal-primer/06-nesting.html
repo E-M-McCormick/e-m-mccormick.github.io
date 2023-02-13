@@ -302,7 +302,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb259-8"><a href="06-nesting.html#cb259-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb259-9"><a href="06-nesting.html#cb259-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(unc.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb259-10"><a href="06-nesting.html#cb259-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 147 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 138 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -328,6 +328,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.987
 ##   Tucker-Lewis Index (TLI)                       0.984
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.984
+##   Robust Tucker-Lewis Index (TLI)                0.980
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -336,14 +339,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                               24095.304
 ##   Bayesian (BIC)                             24141.115
-##   Sample-size adjusted Bayesian (BIC)        24112.527
+##   Sample-size adjusted Bayesian (SABIC)      24112.527
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.092
 ##   90 Percent confidence interval - lower         0.071
 ##   90 Percent confidence interval - upper         0.114
-##   P-value RMSEA &lt;= 0.05                          0.001
+##   P-value H_0: RMSEA &lt;= 0.050                    0.001
+##   P-value H_0: RMSEA &gt;= 0.080                    0.829
+##                                                       
+##   Robust RMSEA                                   0.127
+##   90 Percent confidence interval - lower         0.097
+##   90 Percent confidence interval - upper         0.160
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.000
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.994
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
@@ -428,9 +438,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   58.0466     0.4255 1235.3628 136.425  &lt; 2e-16 ***
-## wave           1.9866     0.0872  862.4359  22.783  &lt; 2e-16 ***
-## male           1.5965     0.5918 1190.5963   2.698  0.00708 ** 
+## (Intercept)   58.0466     0.4255 1235.3629 136.425  &lt; 2e-16 ***
+## wave           1.9866     0.0872  862.4361  22.783  &lt; 2e-16 ***
+## male           1.5965     0.5918 1190.5962   2.698  0.00708 ** 
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here we see that males show <span class="math inline">\(1.6\)</span> units higher science achievement compared with females (the reference category). It is possible to predict other parameters in the model, although the options in mixed-effects models tend to be more limited compared with SEM approaches. For instance, if we thought error variance might differ across groups, we could include this in our MLM syntax through the variance identity (<code>varIdent</code>) function. The <code>form</code> equation, <code>~ 1 | male</code>, mimics the regression equation where we have a separate “intercept” (here just read this as estimate) nested within group (<code>male</code>). We can then go through the procedure we covered in Chapter 3 to recover the different estimates for males and females (here in standard deviations, but we can easily square these values to obtain variances).</p>
@@ -451,7 +461,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Formula: ~1 + wave | id
 ##  Structure: General positive-definite, Log-Cholesky parametrization
 ##             StdDev   Corr  
-## (Intercept) 9.705309 (Intr)
+## (Intercept) 9.705310 (Intr)
 ## wave        2.004751 -0.091
 ## Residual    3.278687       
 ## 
@@ -472,8 +482,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## male -0.660 -0.019
 ## 
 ## Standardized Within-Group Residuals:
-##          Min           Q1          Med           Q3          Max 
-## -4.357804935 -0.422607606  0.007362749  0.463816949  3.998105364 
+##        Min         Q1        Med         Q3        Max 
+## -4.3578043 -0.4226075  0.0073624  0.4638169  3.9981046 
 ## 
 ## Number of Observations: 3643
 ## Number of Groups: 1200</code></pre>
@@ -496,7 +506,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb267-13"><a href="06-nesting.html#cb267-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb267-14"><a href="06-nesting.html#cb267-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cat.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb267-15"><a href="06-nesting.html#cb267-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 143 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 149 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -577,7 +587,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb269-9"><a href="06-nesting.html#cb269-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb269-10"><a href="06-nesting.html#cb269-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mult.g1.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb269-11"><a href="06-nesting.html#cb269-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 222 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 226 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -609,6 +619,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.986
 ##   Tucker-Lewis Index (TLI)                       0.984
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.983
+##   Robust Tucker-Lewis Index (TLI)                0.979
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -617,14 +630,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                               24063.489
 ##   Bayesian (BIC)                             24155.111
-##   Sample-size adjusted Bayesian (BIC)        24097.936
+##   Sample-size adjusted Bayesian (SABIC)      24097.936
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.093
 ##   90 Percent confidence interval - lower         0.071
 ##   90 Percent confidence interval - upper         0.115
-##   P-value RMSEA &lt;= 0.05                          0.001
+##   P-value H_0: RMSEA &lt;= 0.050                    0.001
+##   P-value H_0: RMSEA &gt;= 0.080                    0.841
+##                                                       
+##   Robust RMSEA                                   0.130
+##   90 Percent confidence interval - lower         0.098
+##   90 Percent confidence interval - upper         0.164
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.000
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.994
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
@@ -735,7 +755,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb271-18"><a href="06-nesting.html#cb271-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb271-19"><a href="06-nesting.html#cb271-19" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mult.g2.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb271-20"><a href="06-nesting.html#cb271-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 224 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 215 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -860,7 +880,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb273-10"><a href="06-nesting.html#cb273-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb273-11"><a href="06-nesting.html#cb273-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mult.g3.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb273-12"><a href="06-nesting.html#cb273-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 162 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 163 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -893,6 +913,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.984
 ##   Tucker-Lewis Index (TLI)                       0.984
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.981
+##   Robust Tucker-Lewis Index (TLI)                0.981
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -901,14 +924,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                               24069.886
 ##   Bayesian (BIC)                             24151.327
-##   Sample-size adjusted Bayesian (BIC)        24100.505
+##   Sample-size adjusted Bayesian (SABIC)      24100.505
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.091
 ##   90 Percent confidence interval - lower         0.072
 ##   90 Percent confidence interval - upper         0.112
-##   P-value RMSEA &lt;= 0.05                          0.000
+##   P-value H_0: RMSEA &lt;= 0.050                    0.000
+##   P-value H_0: RMSEA &gt;= 0.080                    0.832
+##                                                       
+##   Robust RMSEA                                   0.123
+##   90 Percent confidence interval - lower         0.095
+##   90 Percent confidence interval - upper         0.152
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.000
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.993
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
@@ -999,11 +1029,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     slp               3.899    0.550    7.086    0.000    1.000    1.000</code></pre>
 <p>Now note that the factor means (labels <code>.20.</code> and <code>.21.</code>) are equal across males and females. We could mix and match syntax and argument constraints if we like; like many things in SEM, we can have full control as long as we keep things organized. We can test whether this more constrained model fits significantly worse than the maximally-different model using a likelihood ratio test.</p>
 <div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="06-nesting.html#cb275-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lavTestLRT</span>(mult.g1.fit, mult.g3.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##             Df   AIC   BIC  Chisq Chisq diff Df diff Pr(&gt;Chisq)   
-## mult.g1.fit 10 24064 24155 61.451                                 
-## mult.g3.fit 12 24070 24151 71.847     10.397       2   0.005526 **
+##             Df   AIC   BIC  Chisq Chisq diff    RMSEA Df diff Pr(&gt;Chisq)   
+## mult.g1.fit 10 24064 24155 61.451                                          
+## mult.g3.fit 12 24070 24151 71.847     10.397 0.083649       2   0.005526 **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here it appears that constraining the factor means does significantly decrease model fit, so we wouldn’t conclude that this constraint is appropriate. We could do this kind of testing with other parameters if we chose, although we won’t here for space and simplicity. The complexity and utility of the multiple groups models is not something we can explore fully here, and interested readers can find a much larger literature on these kinds of models if they wish to implement them in their own research (see the manuscript for a general starting point).</p>
@@ -1036,12 +1067,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##                 Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)     58.59757    0.56691 1247.30204 103.363   &lt;2e-16 ***
-## wave             1.98858    0.08722  861.42609  22.800   &lt;2e-16 ***
-## factor(site)2    1.58400    0.86061 1183.63740   1.841   0.0659 .  
-## factor(site)3    0.40383    0.89404 1189.48203   0.452   0.6516    
-## factor(site)4    0.25571    0.83030 1186.72497   0.308   0.7582    
-## factor(site)5   -2.21401    1.05705 1193.40187  -2.095   0.0364 *  
+## (Intercept)     58.59757    0.56691 1247.30166 103.363   &lt;2e-16 ***
+## wave             1.98858    0.08722  861.42604  22.800   &lt;2e-16 ***
+## factor(site)2    1.58400    0.86061 1183.63741   1.841   0.0659 .  
+## factor(site)3    0.40383    0.89404 1189.48204   0.452   0.6516    
+## factor(site)4    0.25571    0.83030 1186.72499   0.308   0.7582    
+## factor(site)5   -2.21401    1.05705 1193.40188  -2.095   0.0364 *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Note that the <code>(Intercept)</code> term is the intercept for Site 1 and each of the effects <code>factor(site)*</code> indicate the relative difference from that term for the other sites. If we wished to use an absolute coding scheme, we change the <code>1</code> to a <code>0</code> (indicating that we don’t wish to estimate a reference intercept) and re-estimate the model.</p>
@@ -1106,16 +1137,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##                      Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)          58.40288    0.59914 1154.84387  97.477   &lt;2e-16 ***
-## wave                  2.13593    0.17030  972.01896  12.542   &lt;2e-16 ***
-## factor(site)2         1.74603    0.92295 1120.17538   1.892   0.0588 .  
-## factor(site)3         1.10856    0.96191 1134.56799   1.152   0.2494    
-## factor(site)4         0.03638    0.89457 1141.90712   0.041   0.9676    
-## factor(site)5        -1.45252    1.13802 1139.05119  -1.276   0.2021    
-## wave:factor(site)2   -0.12248    0.25311  860.24886  -0.484   0.6286    
-## wave:factor(site)3   -0.52808    0.26582  877.36598  -1.987   0.0473 *  
-## wave:factor(site)4    0.15811    0.24806  912.54265   0.637   0.5240    
-## wave:factor(site)5   -0.56471    0.31249  860.82672  -1.807   0.0711 .  
+## (Intercept)          58.40288    0.59914 1154.84398  97.477   &lt;2e-16 ***
+## wave                  2.13593    0.17030  972.01926  12.542   &lt;2e-16 ***
+## factor(site)2         1.74603    0.92295 1120.17539   1.892   0.0588 .  
+## factor(site)3         1.10856    0.96191 1134.56798   1.152   0.2494    
+## factor(site)4         0.03638    0.89457 1141.90715   0.041   0.9676    
+## factor(site)5        -1.45252    1.13802 1139.05117  -1.276   0.2021    
+## wave:factor(site)2   -0.12248    0.25311  860.24892  -0.484   0.6286    
+## wave:factor(site)3   -0.52808    0.26582  877.36603  -1.987   0.0473 *  
+## wave:factor(site)4    0.15811    0.24806  912.54273   0.637   0.5240    
+## wave:factor(site)5   -0.56471    0.31249  860.82676  -1.807   0.0711 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Here we return to the reference coding to test whether the effect of wave differs across sites from the reference. We can see how parameter do tend to multiply rapidly, however, with a relatively small set of grouping levels (here we only have 5 site), this is manageable. With larger numbers of groups (e.g., families), this approach would become less tenable. Note that we still have our random effect across individuals, but we’ve removed site-level differences from those estimates through the use of the fixed effects approach. Very often we will not interpret the associated parameters, but include them to de-confound our estimates of interest. Another thing to mention is that this isn’t a “pure” form of the fixed-effects approach, since we still include the random effect of individual. The purely fixed-effect approach is more common/appropriate for group-based clustered (e.g., site, country) rather than individual-based clustering (as we always have in longitudinal data) since we cannot include individual level fixed-effects without breaking the model (it isn’t identified).</p>
@@ -1138,21 +1169,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Scaled residuals: 
 ##     Min      1Q  Median      3Q     Max 
-## -4.4223 -0.4199  0.0095  0.4600  4.3844 
+## -4.4223 -0.4199  0.0095  0.4600  4.3843 
 ## 
 ## Random effects:
 ##  Groups    Name        Variance Std.Dev. Corr 
-##  id:school (Intercept) 84.8280  9.2102        
-##            wave         3.5754  1.8909   -0.10
-##  school    (Intercept) 12.8267  3.5814        
-##            wave         0.5727  0.7568   -0.14
-##  Residual              12.3157  3.5094        
+##  id:school (Intercept) 84.8326  9.2105        
+##            wave         3.5757  1.8909   -0.10
+##  school    (Intercept) 12.8283  3.5817        
+##            wave         0.5724  0.7566   -0.14
+##  Residual              12.3154  3.5093        
 ## Number of obs: 3643, groups:  id:school, 1200; school, 41
 ## 
 ## Fixed effects:
 ##             Estimate Std. Error      df t value Pr(&gt;|t|)    
-## (Intercept)  58.4281     0.6513 35.6623   89.71  &lt; 2e-16 ***
-## wave          1.9598     0.1516 34.9412   12.92 7.14e-15 ***
+## (Intercept)  58.4281     0.6514 35.6571   89.70  &lt; 2e-16 ***
+## wave          1.9598     0.1516 34.9520   12.93 7.07e-15 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>The ordering of <code>school/id</code> is important otherwise we have schools nested within individual which will make the model sad (it’s true). We can check that we’ve done this in the model summary where we have <span class="math inline">\(1200\)</span> individuals nested within schools (<code>id:school</code>) and <span class="math inline">\(41\)</span> schools. If we compare this model to the model where we ignore nesting within school, we will notice that the fixed effects have not changed that much, but that our estimate of individual-level variance has been broken up into individual- and school-level variability. This situation is fairly common (although not guaranteed), with fixed effects that are relatively robust to omitting higher levels of nesting, but mis-attributed variance estimates at lower levels of nesting that over-estimate inter-individual variance.</p>
@@ -1186,7 +1217,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb285-27"><a href="06-nesting.html#cb285-27" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb285-28"><a href="06-nesting.html#cb285-28" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mlsem.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb285-29"><a href="06-nesting.html#cb285-29" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 40 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 41 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                               EM
@@ -1221,14 +1252,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                               11957.390
 ##   Bayesian (BIC)                             11994.991
-##   Sample-size adjusted Bayesian (BIC)        11966.426
+##   Sample-size adjusted Bayesian (SABIC)      11966.426
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.086
 ##   90 Percent confidence interval - lower         0.066
 ##   90 Percent confidence interval - upper         0.107
-##   P-value RMSEA &lt;= 0.05                          0.002
+##   P-value H_0: RMSEA &lt;= 0.050                    0.002
+##   P-value H_0: RMSEA &gt;= 0.080                    0.700
 ## 
 ## Standardized Root Mean Square Residual (corr metric):
 ## 
@@ -1304,7 +1336,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .sci.2             0.000                               0.000    0.000
 ##    .sci.3             0.000                               0.000    0.000
 ##    .sci.4             0.000                               0.000    0.000
-##     int.b            59.767    0.427  139.930    0.000   14.639   14.639
+##     int.b            59.767    0.427  139.929    0.000   14.639   14.639
 ## 
 ## Variances:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all

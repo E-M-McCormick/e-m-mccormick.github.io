@@ -272,7 +272,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb97-7"><a href="04-shape.html#cb97-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb97-8"><a href="04-shape.html#cb97-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(int.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb97-9"><a href="04-shape.html#cb97-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 25 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 25 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -369,7 +369,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb101-8"><a href="04-shape.html#cb101-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb101-9"><a href="04-shape.html#cb101-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lin.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb101-10"><a href="04-shape.html#cb101-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 36 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 36 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -431,17 +431,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     slp               0.024    0.011    2.066    0.039</code></pre>
 <p>While we have ignored model fit for most models, one nice thing about many of these models, is that they are nested and allow for formal model comparison with likelihood ratio tests, similar to those we saw with hetero- vs. homoscedastic residuals. For instance, we can compare the intercept-only with a linear model.</p>
 <div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="04-shape.html#cb103-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lavTestLRT</span>(int.lcm.fit, lin.lcm.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##             Df    AIC    BIC  Chisq Chisq diff Df diff Pr(&gt;Chisq)    
-## lin.lcm.fit 10 5278.2 5318.3 19.506                                  
-## int.lcm.fit 13 5324.0 5352.0 71.246      51.74       3  3.403e-11 ***
+##             Df    AIC    BIC  Chisq Chisq diff   RMSEA Df diff Pr(&gt;Chisq)    
+## lin.lcm.fit 10 5278.2 5318.3 19.506                                          
+## int.lcm.fit 13 5324.0 5352.0 71.246      51.74 0.20029       3  3.403e-11 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Remember that we compare whether the more constrained model (here the intercept-only) induces a significant <em>decrease</em> in model fit. Here this is true, suggesting that we should retain the linear model over the intercept-only model. If we take a peak at the model fit, this is because the linear model fits the data reasonably well, while the intercept-only model is quite poor in terms of fit.</p>
 <div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="04-shape.html#cb105-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(int.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb105-2"><a href="04-shape.html#cb105-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 25 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 25 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -466,6 +467,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.834
 ##   Tucker-Lewis Index (TLI)                       0.872
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.854
+##   Robust Tucker-Lewis Index (TLI)                0.888
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -474,21 +478,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                                5323.980
 ##   Bayesian (BIC)                              5352.007
-##   Sample-size adjusted Bayesian (BIC)         5329.795
+##   Sample-size adjusted Bayesian (SABIC)       5329.795
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.105
 ##   90 Percent confidence interval - lower         0.082
 ##   90 Percent confidence interval - upper         0.130
-##   P-value RMSEA &lt;= 0.05                          0.000
+##   P-value H_0: RMSEA &lt;= 0.050                    0.000
+##   P-value H_0: RMSEA &gt;= 0.080                    0.963
+##                                                       
+##   Robust RMSEA                                   0.144
+##   90 Percent confidence interval - lower         0.099
+##   90 Percent confidence interval - upper         0.191
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.001
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.989
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
 ##   SRMR                                           0.156</code></pre>
 <div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="04-shape.html#cb107-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lin.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb107-2"><a href="04-shape.html#cb107-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 36 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 36 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -513,6 +524,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.973
 ##   Tucker-Lewis Index (TLI)                       0.973
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.946
+##   Robust Tucker-Lewis Index (TLI)                0.946
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -521,14 +535,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                                5278.240
 ##   Bayesian (BIC)                              5318.279
-##   Sample-size adjusted Bayesian (BIC)         5286.547
+##   Sample-size adjusted Bayesian (SABIC)       5286.547
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.048
 ##   90 Percent confidence interval - lower         0.013
 ##   90 Percent confidence interval - upper         0.080
-##   P-value RMSEA &lt;= 0.05                          0.486
+##   P-value H_0: RMSEA &lt;= 0.050                    0.486
+##   P-value H_0: RMSEA &gt;= 0.080                    0.052
+##                                                       
+##   Robust RMSEA                                   0.100
+##   90 Percent confidence interval - lower         0.042
+##   90 Percent confidence interval - upper         0.157
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.072
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.753
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
@@ -565,8 +586,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   1.66939    0.08114 372.83569  20.574  &lt; 2e-16 ***
-## age           0.07235    0.01758 288.52755   4.116 5.03e-05 ***
+## (Intercept)   1.66939    0.08114 372.83468  20.574  &lt; 2e-16 ***
+## age           0.07235    0.01758 288.52536   4.116 5.03e-05 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>And the model comparison reveals the same preference for the linear model. Note that the model is re-estimated with ML [FIML] because the two models contain different fixed effects. REML models can be compared when the models differ only in the variance structure. Fortunately this will be done automatically so we don’t have to “manually” re-estimate the models.</p>
@@ -619,7 +640,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb113-36"><a href="04-shape.html#cb113-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb113-37"><a href="04-shape.html#cb113-37" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lin.lcsm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb113-38"><a href="04-shape.html#cb113-38" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 36 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 36 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -736,7 +757,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb115-9"><a href="04-shape.html#cb115-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb115-10"><a href="04-shape.html#cb115-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(quad.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb115-11"><a href="04-shape.html#cb115-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 95 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 95 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -808,11 +829,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     slp               0.270    0.124    2.175    0.030    1.000    1.000
 ##     quad              0.003    0.002    1.705    0.088    1.000    1.000</code></pre>
 <div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="04-shape.html#cb117-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lavTestLRT</span>(lin.lcm.fit, quad.lcm.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##              Df    AIC    BIC   Chisq Chisq diff Df diff Pr(&gt;Chisq)   
-## quad.lcm.fit  6 5272.2 5328.2  5.4373                                 
-## lin.lcm.fit  10 5278.2 5318.3 19.5065     14.069       4   0.007077 **
+##              Df    AIC    BIC   Chisq Chisq diff    RMSEA Df diff Pr(&gt;Chisq)   
+## quad.lcm.fit  6 5272.2 5328.2  5.4373                                          
+## lin.lcm.fit  10 5278.2 5318.3 19.5065     14.069 0.078839       4   0.007077 **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>The MLM syntax is similarly straightforward. To add a powered term, we can use the <code>I()</code> function, or the <code>poly()</code> function if we wished to use orthogonal polynomials.</p>
@@ -838,17 +860,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev. Corr       
-##  id       (Intercept) 0.942815 0.97099             
-##           age         0.162809 0.40350   0.27      
-##           I(age^2)    0.001871 0.04326  -0.12 -0.96
-##  Residual             1.684812 1.29800             
+##  id       (Intercept) 0.942787 0.97097             
+##           age         0.162793 0.40348   0.27      
+##           I(age^2)    0.001871 0.04325  -0.12 -0.96
+##  Residual             1.684821 1.29801             
 ## Number of obs: 1357, groups:  id, 405
 ## 
 ## Fixed effects:
 ##               Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)   1.574441   0.087961 345.812177  17.899  &lt; 2e-16 ***
-## age           0.178332   0.051186 357.023423   3.484 0.000555 ***
-## I(age^2)     -0.015107   0.006678 299.946134  -2.262 0.024398 *  
+## (Intercept)   1.574442   0.087961 345.809227  17.899  &lt; 2e-16 ***
+## age           0.178331   0.051186 357.020201   3.484 0.000555 ***
+## I(age^2)     -0.015107   0.006678 299.946299  -2.262 0.024398 *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>While these models converge without too much issue here, note the strong correlation between the linear and quadratic terms, suggesting that the quadratic term is largely redundant. This is often the case with low numbers of repeated measures. We can technically fit some non-linearities, but they may not be particularly well-specified.</p>
@@ -896,7 +918,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb122-5"><a href="04-shape.html#cb122-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb122-6"><a href="04-shape.html#cb122-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(quad.lcsm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb122-7"><a href="04-shape.html#cb122-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 95 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 95 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1009,11 +1031,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     quad              0.003    0.002    1.705    0.088    1.000    1.000
 ##     int               1.360    0.431    3.159    0.002    1.000    1.000</code></pre>
 <div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="04-shape.html#cb124-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lavTestLRT</span>(lin.lcsm.fit, quad.lcsm.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##               Df    AIC    BIC   Chisq Chisq diff Df diff Pr(&gt;Chisq)   
-## quad.lcsm.fit  6 5272.2 5328.2  5.4373                                 
-## lin.lcsm.fit  10 5278.2 5318.3 19.5065     14.069       4   0.007077 **
+##               Df    AIC    BIC   Chisq Chisq diff    RMSEA Df diff Pr(&gt;Chisq)
+## quad.lcsm.fit  6 5272.2 5328.2  5.4373                                       
+## lin.lcsm.fit  10 5278.2 5318.3 19.5065     14.069 0.078839       4   0.007077
+##                 
+## quad.lcsm.fit   
+## lin.lcsm.fit  **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 </div>
@@ -1031,7 +1057,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb126-9"><a href="04-shape.html#cb126-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb126-10"><a href="04-shape.html#cb126-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(inv.lcm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb126-11"><a href="04-shape.html#cb126-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 64 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 64 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1103,11 +1129,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     slp               0.032    0.033    0.978    0.328    1.000    1.000
 ##     inv               7.422    5.288    1.404    0.160    1.000    1.000</code></pre>
 <div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="04-shape.html#cb128-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lavTestLRT</span>(lin.lcm.fit, inv.lcm.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##             Df    AIC    BIC   Chisq Chisq diff Df diff Pr(&gt;Chisq)   
-## inv.lcm.fit  6 5272.6 5328.6  5.8386                                 
-## lin.lcm.fit 10 5278.2 5318.3 19.5065     13.668       4   0.008434 **
+##             Df    AIC    BIC   Chisq Chisq diff    RMSEA Df diff Pr(&gt;Chisq)   
+## inv.lcm.fit  6 5272.6 5328.6  5.8386                                          
+## lin.lcm.fit 10 5278.2 5318.3 19.5065     13.668 0.077252       4   0.008434 **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <p>Note that we are comparing the inverse and linear models, not the inverse and quadratic. This is because while the linear model is nested within both quadratic and inverse models, the two are not nested with respect to one another. However, we might graphically examine the trends implied by the model for a moment.</p>
@@ -1139,15 +1166,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  Groups   Name        Variance Std.Dev. Corr       
 ##  id       (Intercept) 0.83374  0.9131              
 ##           age         0.01219  0.1104    0.20      
-##           age_inv     0.90851  0.9532    0.51 -0.17
-##  Residual             1.72231  1.3124              
+##           age_inv     0.90843  0.9531    0.51 -0.17
+##  Residual             1.72232  1.3124              
 ## Number of obs: 1357, groups:  id, 405
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   1.56085    0.09081 319.40910  17.188   &lt;2e-16 ***
-## age           0.01432    0.02980 283.40395   0.480   0.6313    
-## age_inv       0.49152    0.21733 353.11560   2.262   0.0243 *  
+## (Intercept)   1.56085    0.09081 319.40873  17.188   &lt;2e-16 ***
+## age           0.01432    0.02980 283.39325   0.480   0.6313    
+## age_inv       0.49152    0.21733 353.09910   2.262   0.0243 *  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 <div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="04-shape.html#cb132-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(lin.mlm, inv.mlm)</span></code></pre></div>
@@ -1204,7 +1231,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb134-41"><a href="04-shape.html#cb134-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb134-42"><a href="04-shape.html#cb134-42" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(inv.lcsm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb134-43"><a href="04-shape.html#cb134-43" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 64 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 64 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1317,11 +1344,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##     inv               7.422    5.288    1.404    0.160    1.000    1.000
 ##     int               3.052    1.850    1.650    0.099    1.000    1.000</code></pre>
 <div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="04-shape.html#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lavTestLRT</span>(lin.lcsm.fit, inv.lcsm.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##              Df    AIC    BIC   Chisq Chisq diff Df diff Pr(&gt;Chisq)   
-## inv.lcsm.fit  6 5272.6 5328.6  5.8386                                 
-## lin.lcsm.fit 10 5278.2 5318.3 19.5065     13.668       4   0.008434 **
+##              Df    AIC    BIC   Chisq Chisq diff    RMSEA Df diff Pr(&gt;Chisq)   
+## inv.lcsm.fit  6 5272.6 5328.6  5.8386                                          
+## lin.lcsm.fit 10 5278.2 5318.3 19.5065     13.668 0.077252       4   0.008434 **
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 </div>
@@ -1345,7 +1373,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb138-13"><a href="04-shape.html#cb138-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb138-14"><a href="04-shape.html#cb138-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(two.rate.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb138-15"><a href="04-shape.html#cb138-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 50 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 50 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1463,7 +1491,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb141-13"><a href="04-shape.html#cb141-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb141-14"><a href="04-shape.html#cb141-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(add.rate.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb141-15"><a href="04-shape.html#cb141-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 44 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 44 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1571,7 +1599,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb143-18"><a href="04-shape.html#cb143-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb143-19"><a href="04-shape.html#cb143-19" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(quad.rate.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb143-20"><a href="04-shape.html#cb143-20" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 55 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 55 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1713,7 +1741,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Random effects:
 ##  Groups   Name        Variance Std.Dev. Corr     
-##  id       (Intercept) 0.766247 0.8754            
+##  id       (Intercept) 0.766249 0.8754            
 ##           slp1        0.020429 0.1429   1.00     
 ##           slp2        0.006305 0.0794   0.42 0.42
 ##  Residual             0.635271 0.7970            
@@ -1721,9 +1749,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##              Estimate Std. Error        df t value Pr(&gt;|t|)    
-## (Intercept)   0.21114    0.06180 403.54795   3.417 0.000698 ***
-## slp1          0.07239    0.02774 556.14662   2.610 0.009304 ** 
-## slp2          0.03752    0.01968 335.61477   1.907 0.057417 .  
+## (Intercept)   0.21114    0.06180 403.53944   3.417 0.000698 ***
+## slp1          0.07239    0.02774 555.66344   2.610 0.009304 ** 
+## slp2          0.03752    0.01968 335.58079   1.907 0.057417 .  
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
@@ -1785,7 +1813,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb148-49"><a href="04-shape.html#cb148-49" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb148-50"><a href="04-shape.html#cb148-50" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(two.rate.lcsm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb148-51"><a href="04-shape.html#cb148-51" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 50 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 50 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2012,7 +2040,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb150-61"><a href="04-shape.html#cb150-61" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb150-62"><a href="04-shape.html#cb150-62" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(two.rate.prop.lcsm.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb150-63"><a href="04-shape.html#cb150-63" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 781 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 773 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2049,7 +2077,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   pfmin9 =~                                                             
 ##     fmin9             1.000                               0.919    0.757
 ##   pfmin10 =~                                                            
-##     fmin10            1.000                               0.973    0.820
+##     fmin10            1.000                               0.974    0.820
 ##   pfmin11 =~                                                            
 ##     fmin11            1.000                               1.070    0.779
 ##   delta21 =~                                                            
@@ -2069,8 +2097,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   int =~                                                                
 ##     pfmin7            1.000                               1.000    1.000
 ##   slp1 =~                                                               
-##     delta21           1.000                              12.920   12.920
-##     delta32           1.000                               5.619    5.619
+##     delta21           1.000                              12.917   12.917
+##     delta32           1.000                               5.618    5.618
 ##     delta43           1.000                               2.444    2.444
 ##   slp2 =~                                                               
 ##     delta54           1.000                                  NA       NA
@@ -2087,7 +2115,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   pfmin6 ~                                                              
 ##     pfmin7            1.000                               1.189    1.189
 ##   pfmin8 ~                                                              
-##     pfmin7            1.000                               0.987    0.987
+##     pfmin7            1.000                               0.986    0.986
 ##   pfmin9 ~                                                              
 ##     pfmin8            1.000                               0.971    0.971
 ##   pfmin10 ~                                                             
@@ -2095,19 +2123,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   pfmin11 ~                                                             
 ##     pfmin10           1.000                               0.910    0.910
 ##   delta21 ~                                                             
-##     pfmin4  (beta)    1.299    1.593    0.815    0.415   12.630   12.630
+##     pfmin4  (beta)    1.299    1.790    0.725    0.468   12.627   12.627
 ##   delta32 ~                                                             
-##     pfmin5  (beta)    1.299    1.593    0.815    0.415    5.378    5.378
+##     pfmin5  (beta)    1.299    1.790    0.725    0.468    5.377    5.377
 ##   delta43 ~                                                             
-##     pfmin6  (beta)    1.299    1.593    0.815    0.415    2.320    2.320
+##     pfmin6  (beta)    1.299    1.790    0.725    0.468    2.320    2.320
 ##   delta54 ~                                                             
-##     pfmin7  (beta)    1.299    1.593    0.815    0.415       NA       NA
+##     pfmin7  (beta)    1.299    1.790    0.725    0.468       NA       NA
 ##   delta65 ~                                                             
-##     pfmin8  (beta)    1.299    1.593    0.815    0.415       NA       NA
+##     pfmin8  (beta)    1.299    1.790    0.725    0.468       NA       NA
 ##   delta76 ~                                                             
-##     pfmin9  (beta)    1.299    1.593    0.815    0.415       NA       NA
+##     pfmin9  (beta)    1.299    1.790    0.725    0.468       NA       NA
 ##   delta87 ~                                                             
-##     pfmin10 (beta)    1.299    1.593    0.815    0.415       NA       NA
+##     pfmin10 (beta)    1.299    1.790    0.725    0.468       NA       NA
 ## 
 ## Covariances:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
@@ -2128,10 +2156,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##  .pfmin11 ~~                                                            
 ##    .fmin11            0.000                                 NaN      NaN
 ##   int ~~                                                                
-##     slp1             -0.550    0.824   -0.667    0.505   -0.615   -0.615
-##     slp2             -0.997    1.287   -0.775    0.438   -1.000   -1.000
+##     slp1             -0.550    0.925   -0.594    0.552   -0.615   -0.615
+##     slp2             -0.997    1.445   -0.690    0.490   -1.000   -1.000
 ##   slp1 ~~                                                               
-##     slp2              0.713    1.938    0.368    0.713    0.621    0.621
+##     slp2              0.713    2.177    0.327    0.743    0.621    0.621
 ## 
 ## Intercepts:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
@@ -2143,9 +2171,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .fmin9             0.000                               0.000    0.000
 ##    .fmin10            0.000                               0.000    0.000
 ##    .fmin11            0.000                               0.000    0.000
-##     int               0.212    0.058    3.629    0.000    0.241    0.241
-##     slp1             -0.026    0.143   -0.180    0.857   -0.025   -0.025
-##     slp2             -0.265    0.366   -0.724    0.469   -0.234   -0.234
+##     int               0.212    0.058    3.626    0.000    0.241    0.241
+##     slp1             -0.026    0.156   -0.165    0.869   -0.025   -0.025
+##     slp2             -0.265    0.410   -0.647    0.518   -0.234   -0.234
 ##    .pfmin4            0.000                               0.000    0.000
 ##    .pfmin5            0.000                               0.000    0.000
 ##    .pfmin6            0.000                               0.000    0.000
@@ -2164,14 +2192,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Variances:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
-##    .fmin4             0.478    0.272    1.758    0.079    0.478    0.451
-##    .fmin5             0.315    0.200    1.574    0.116    0.315    0.361
-##    .fmin6             0.555    0.112    4.948    0.000    0.555    0.502
-##    .fmin7             0.613    0.118    5.191    0.000    0.613    0.441
-##    .fmin8             0.743    0.135    5.482    0.000    0.743    0.482
-##    .fmin9             0.630    0.101    6.248    0.000    0.630    0.427
-##    .fmin10            0.463    0.120    3.846    0.000    0.463    0.328
-##    .fmin11            0.742    0.500    1.484    0.138    0.742    0.393
+##    .fmin4             0.478    0.284    1.685    0.092    0.478    0.451
+##    .fmin5             0.315    0.203    1.550    0.121    0.315    0.361
+##    .fmin6             0.555    0.112    4.945    0.000    0.555    0.502
+##    .fmin7             0.613    0.118    5.190    0.000    0.613    0.441
+##    .fmin8             0.743    0.136    5.478    0.000    0.743    0.482
+##    .fmin9             0.630    0.102    6.191    0.000    0.630    0.427
+##    .fmin10            0.463    0.121    3.840    0.000    0.463    0.328
+##    .fmin11            0.742    0.500    1.483    0.138    0.742    0.393
 ##    .delta21           0.000                               0.000    0.000
 ##    .delta32           0.000                               0.000    0.000
 ##    .delta43           0.000                               0.000    0.000
@@ -2179,8 +2207,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .delta65           0.000                                  NA       NA
 ##    .delta76           0.000                                  NA       NA
 ##    .delta87           0.000                                  NA       NA
-##     slp1              1.029    2.207    0.466    0.641    1.000    1.000
-##     slp2              1.282    3.261    0.393    0.694    1.000    1.000
+##     slp1              1.029    2.469    0.417    0.677    1.000    1.000
+##     slp2              1.281    3.663    0.350    0.726    1.000    1.000
 ##    .pfmin4            0.000                               0.000    0.000
 ##    .pfmin5            0.000                               0.000    0.000
 ##    .pfmin6            0.000                               0.000    0.000
@@ -2189,7 +2217,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##    .pfmin9            0.000                               0.000    0.000
 ##    .pfmin10           0.000                               0.000    0.000
 ##    .pfmin11           0.000                               0.000    0.000
-##     int               0.776    0.113    6.844    0.000    1.000    1.000</code></pre>
+##     int               0.776    0.114    6.816    0.000    1.000    1.000</code></pre>
 </div>
 <div id="nonlinear-trajectories" class="section level2 hasAnchor">
 <h2>Nonlinear Trajectories<a href="04-shape.html#nonlinear-trajectories" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -2203,7 +2231,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb152-6"><a href="04-shape.html#cb152-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">pnames =</span> <span class="fu">c</span>(<span class="st">&quot;Intercept&quot;</span>), <span class="at">snames =</span> <span class="fu">c</span>(<span class="st">&quot;s(Age)&quot;</span>),</span>
 <span id="cb152-7"><a href="04-shape.html#cb152-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">caption =</span> <span class="st">&quot;Modularity as a Function of Age&quot;</span>)</span></code></pre></div>
 <!-- html table generated in R 4.2.2 by xtable 1.8-4 package -->
-<!-- Mon Feb 13 13:36:54 2023 -->
+<!-- Mon Feb 13 21:23:24 2023 -->
 <table border="1">
 <caption align="bottom">
 Modularity as a Function of Age
@@ -2325,7 +2353,7 @@ s(Age)
 <span id="cb154-40"><a href="04-shape.html#cb154-40" aria-hidden="true" tabindex="-1"></a>                         <span class="at">missing =</span> <span class="st">&quot;FIML&quot;</span>)</span>
 <span id="cb154-41"><a href="04-shape.html#cb154-41" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb154-42"><a href="04-shape.html#cb154-42" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcsm.proportional)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 32 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 32 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2435,7 +2463,7 @@ s(Age)
 <span id="cb156-11"><a href="04-shape.html#cb156-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb156-12"><a href="04-shape.html#cb156-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(free.load1.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb156-13"><a href="04-shape.html#cb156-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 166 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 167 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2473,9 +2501,9 @@ s(Age)
 ##     fmin6     (l3)   10.433   29.658    0.352    0.725    0.446    0.408
 ##     fmin7     (l4)   10.668   29.930    0.356    0.722    0.456    0.393
 ##     fmin8     (l5)   14.511   41.748    0.348    0.728    0.621    0.484
-##     fmin9     (l6)   10.347   28.954    0.357    0.721    0.443    0.377
+##     fmin9     (l6)   10.347   28.955    0.357    0.721    0.443    0.377
 ##     fmin10    (l7)   10.041   28.272    0.355    0.722    0.429    0.380
-##     fmin11    (l8)   22.493   65.844    0.342    0.733    0.962    0.691
+##     fmin11    (l8)   22.493   65.845    0.342    0.733    0.962    0.691
 ## 
 ## Covariances:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
@@ -2539,7 +2567,7 @@ s(Age)
 <span id="cb159-11"><a href="04-shape.html#cb159-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb159-12"><a href="04-shape.html#cb159-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(free.load2.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>,</span>
 <span id="cb159-13"><a href="04-shape.html#cb159-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 50 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 50 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -2647,10 +2675,10 @@ s(Age)
 ## 
 ## Fixed effects:
 ##               Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)  -4.653017   0.450546 425.247375 -10.328  &lt; 2e-16 ***
-## wave         -0.021516   0.038502 499.542055  -0.559    0.577    
-## age           0.517778   0.055054 451.886893   9.405  &lt; 2e-16 ***
-## I(age^2)     -0.013251   0.001576 468.353795  -8.410 4.97e-16 ***
+## (Intercept)  -4.653017   0.450546 424.620702 -10.328  &lt; 2e-16 ***
+## wave         -0.021516   0.038502 499.253403  -0.559    0.577    
+## age           0.517778   0.055054 451.217127   9.405  &lt; 2e-16 ***
+## I(age^2)     -0.013251   0.001576 467.828242  -8.410 4.99e-16 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
 

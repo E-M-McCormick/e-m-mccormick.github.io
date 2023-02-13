@@ -303,7 +303,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The real leverage that FIML gives us is apparent using this model. We can measure across <span class="math inline">\(8\)</span> ages despite no individual having more than <span class="math inline">\(4\)</span> observations. We can see the abbreviated results below.</p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="03-time.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mc.wm, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb56-2"><a href="03-time.html#cb56-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">TRUE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 33 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 33 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -384,8 +384,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## fmin7  0.209 0.264 0.000 0.472                          
 ## fmin8  0.030 0.123 0.239 0.008 0.372                    
 ## fmin9  0.196 0.204 0.070 0.342 0.003 0.430              
-## fmin10 0.070 0.113 0.198 0.040 0.244 0.035 0.334        
-## fmin11 0.151 0.239 0.055 0.342 0.040 0.359 0.030  0.430</code></pre>
+## fmin10 0.070 0.113 0.198 0.040 0.244 0.035  0.334       
+## fmin11 0.151 0.239 0.055 0.342 0.040 0.359  0.030  0.430</code></pre>
 <p>Finally, we can generate a path diagram, highlighting that the intercept and slope are estimated from all ages even though no individual is measured across all of those ages.</p>
 <div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="03-time.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">semPaths</span>(mc.wm, </span>
 <span id="cb60-2"><a href="03-time.html#cb60-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">intercepts =</span> <span class="cn">TRUE</span>,</span>
@@ -431,9 +431,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ## Fixed effects:
 ##               Estimate Std. Error         df t value Pr(&gt;|t|)    
-## (Intercept)  -4.229027   0.928266 239.194454  -4.556 8.32e-06 ***
-## age           0.460537   0.105741 239.506339   4.355 1.97e-05 ***
-## I(age^2)     -0.011828   0.002949 238.656616  -4.011 8.10e-05 ***
+## (Intercept)  -4.229027   0.928266 239.194448  -4.556 8.32e-06 ***
+## age           0.460537   0.105741 239.506334   4.355 1.97e-05 ***
+## I(age^2)     -0.011828   0.002949 238.656609  -4.011 8.10e-05 ***
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
 ## 
@@ -506,7 +506,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb70-8"><a href="03-time.html#cb70-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb70-9"><a href="03-time.html#cb70-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(initial.status.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb70-10"><a href="03-time.html#cb70-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 22 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 22 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -531,6 +531,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.893
 ##   Tucker-Lewis Index (TLI)                       0.872
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.905
+##   Robust Tucker-Lewis Index (TLI)                0.886
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -539,14 +542,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                                 514.347
 ##   Bayesian (BIC)                               531.555
-##   Sample-size adjusted Bayesian (BIC)          503.306
+##   Sample-size adjusted Bayesian (SABIC)        503.306
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.169
 ##   90 Percent confidence interval - lower         0.045
 ##   90 Percent confidence interval - upper         0.293
-##   P-value RMSEA &lt;= 0.05                          0.055
+##   P-value H_0: RMSEA &lt;= 0.050                    0.055
+##   P-value H_0: RMSEA &gt;= 0.080                    0.903
+##                                                       
+##   Robust RMSEA                                   0.173
+##   90 Percent confidence interval - lower         0.034
+##   90 Percent confidence interval - upper         0.305
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.062
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.897
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
@@ -562,7 +572,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb72-8"><a href="03-time.html#cb72-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb72-9"><a href="03-time.html#cb72-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(final.status.fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">estimates =</span> <span class="cn">FALSE</span>, </span>
 <span id="cb72-10"><a href="03-time.html#cb72-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 25 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 25 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -587,6 +597,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 
 ##   Comparative Fit Index (CFI)                    0.893
 ##   Tucker-Lewis Index (TLI)                       0.872
+##                                                       
+##   Robust Comparative Fit Index (CFI)             0.905
+##   Robust Tucker-Lewis Index (TLI)                0.886
 ## 
 ## Loglikelihood and Information Criteria:
 ## 
@@ -595,14 +608,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##                                                       
 ##   Akaike (AIC)                                 514.347
 ##   Bayesian (BIC)                               531.555
-##   Sample-size adjusted Bayesian (BIC)          503.306
+##   Sample-size adjusted Bayesian (SABIC)        503.306
 ## 
 ## Root Mean Square Error of Approximation:
 ## 
 ##   RMSEA                                          0.169
 ##   90 Percent confidence interval - lower         0.045
 ##   90 Percent confidence interval - upper         0.293
-##   P-value RMSEA &lt;= 0.05                          0.055
+##   P-value H_0: RMSEA &lt;= 0.050                    0.055
+##   P-value H_0: RMSEA &gt;= 0.080                    0.903
+##                                                       
+##   Robust RMSEA                                   0.173
+##   90 Percent confidence interval - lower         0.034
+##   90 Percent confidence interval - upper         0.305
+##   P-value H_0: Robust RMSEA &lt;= 0.050             0.062
+##   P-value H_0: Robust RMSEA &gt;= 0.080             0.897
 ## 
 ## Standardized Root Mean Square Residual:
 ## 
@@ -1367,7 +1387,7 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 <span id="cb81-8"><a href="03-time.html#cb81-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb81-9"><a href="03-time.html#cb81-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcm.het.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb81-10"><a href="03-time.html#cb81-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 22 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 22 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1439,7 +1459,7 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 <span id="cb84-5"><a href="03-time.html#cb84-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb84-6"><a href="03-time.html#cb84-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lcm.hom.fit, <span class="at">fit.measures =</span> <span class="cn">FALSE</span>, <span class="at">estimates =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb84-7"><a href="03-time.html#cb84-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">standardize =</span> <span class="cn">FALSE</span>, <span class="at">rsquare =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
-<pre><code>## lavaan 0.6-12 ended normally after 19 iterations
+<pre><code>## lavaan 0.6.13 ended normally after 19 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -1498,11 +1518,12 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 ##     slp               0.059    0.032    1.838    0.066</code></pre>
 <p><strong>Lavaan</strong> conveniently includes the labels in the output and we can see that now all of the residuals obtain the <em>exact</em> same value, and <em>exact</em> same inferential test (note how that changes the inference on the residual of <code>dlpfc1</code> from above). However, note how other parameter estimates (namely the factor means and variances) change as well. These changes are small (for reasons we will see) but it is important to note we are making real changes to the model with the introduction of this constraint. We can then get a likelihood-ratio test of difference in fit, using the <code>lavTestLRT()</code> function, because the simplified homoscedastic model is nested within the more complex heteroscedastic model. Note that we list the homoscedastic model first.</p>
 <div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="03-time.html#cb86-1" aria-hidden="true" tabindex="-1"></a>lavaan<span class="sc">::</span><span class="fu">lavTestLRT</span>(lcm.hom.fit, lcm.het.fit)</span></code></pre></div>
-<pre><code>## Chi-Squared Difference Test
+<pre><code>## 
+## Chi-Squared Difference Test
 ## 
-##             Df    AIC    BIC  Chisq Chisq diff Df diff Pr(&gt;Chisq)
-## lcm.het.fit  5 514.35 531.56 12.140                              
-## lcm.hom.fit  8 510.93 522.40 14.724     2.5837       3     0.4604</code></pre>
+##             Df    AIC    BIC  Chisq Chisq diff RMSEA Df diff Pr(&gt;Chisq)
+## lcm.het.fit  5 514.35 531.56 12.140                                    
+## lcm.hom.fit  8 510.93 522.40 14.724     2.5837     0       3     0.4604</code></pre>
 <p>However, in the output, the heteroscedastic model is listed first. This is because the more complex model is always the reference and we are testing whether the imposition of model simplifications (i.e., constraints; here homoscedastic residuals) significantly decreases model fit. Here we can see that the chi-square difference test is not significant (<span class="math inline">\(p = 0.460\)</span>), so we could retain the simplification without decreasing the fit of the model to our data. This is the reason that our parameters did not change much. In models where we would reject homoscedasticity, the imposition of the constraint would lead to more pronounced parameter changes elsewhere in the model. While there is not an associated inference test for the AIC/BIC, we could also use those values for model comparisons if we wished.</p>
 <p>To implement heteroscedastic residuals in mixed-effects models, we have to leave our familiar <code>lmer()</code> and travel back in time to the days of <code>lme()</code>. We can first fit the canonical model we know and love, where the default is homoscedasticity.</p>
 <div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="03-time.html#cb88-1" aria-hidden="true" tabindex="-1"></a>mlm.hom <span class="ot">&lt;-</span> nlme<span class="sc">::</span><span class="fu">lme</span>(dlpfc <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> wave,</span>
@@ -1557,33 +1578,33 @@ Marginal R<sup>2</sup> / Conditional R<sup>2</sup>
 ##  Formula: ~1 + wave | id
 ##  Structure: General positive-definite, Log-Cholesky parametrization
 ##             StdDev    Corr  
-## (Intercept) 0.8975033 (Intr)
-## wave        0.2413015 -0.495
-## Residual    0.5269509       
+## (Intercept) 0.8975009 (Intr)
+## wave        0.2413003 -0.495
+## Residual    0.5269518       
 ## 
 ## Variance function:
 ##  Structure: Different standard deviations per stratum
 ##  Formula: ~1 | wave 
 ##  Parameter estimates:
 ##        1        2        3        4 
-## 1.000000 1.287070 1.184208 1.515230 
+## 1.000000 1.287069 1.184203 1.515231 
 ## Fixed effects:  dlpfc ~ 1 + wave 
 ##                 Value  Std.Error  DF  t-value p-value
-## (Intercept) 0.5144230 0.16258060 140 3.164111  0.0019
-## wave        0.1139613 0.05386352 140 2.115741  0.0361
+## (Intercept) 0.5144231 0.16258045 140 3.164114  0.0019
+## wave        0.1139612 0.05386346 140 2.115743  0.0361
 ##  Correlation: 
 ##      (Intr)
 ## wave -0.675
 ## 
 ## Standardized Within-Group Residuals:
 ##         Min          Q1         Med          Q3         Max 
-## -2.09851710 -0.47236199 -0.01588571  0.64203246  2.12262857 
+## -2.09852285 -0.47236320 -0.01588848  0.64203216  2.12263672 
 ## 
 ## Number of Observations: 191
 ## Number of Groups: 50</code></pre>
 <p>Looking at the <code>Random effects</code> output, we still only see a single value for the residual. Unfortunately the output structure here leaves something to be desired. We need to look to the <code>Variance function</code> output section where we see for unique values. Well these are not technically the residual estimates, but rather they indicate the relative size of the residual scaled to the first estimate (the one we see in the <code>Random effects</code> section). To extract the actual estimates, we can use the following code.</p>
 <div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb92-1"><a href="03-time.html#cb92-1" aria-hidden="true" tabindex="-1"></a>mlm.het<span class="sc">$</span>sigma <span class="sc">*</span> <span class="fu">exp</span>(<span class="fu">as.numeric</span>(mlm.het<span class="sc">$</span>modelStruct<span class="sc">$</span>varStruct))</span></code></pre></div>
-<pre><code>## [1] 0.6782225 0.6240195 0.7984517</code></pre>
+<pre><code>## [1] 0.6782232 0.6240178 0.7984535</code></pre>
 <p>So the first residual can be extracted as <code>model$sigma</code>, but the residual weights from the model are stuck in the <code>varStruct</code> portion of the fitted <code>lme()</code> object and are in the <span class="math inline">\(log(\sigma)\)</span> scale. So we have to extract the values, convert them to numeric format, exponentiate them, and then multiple the weights by the estimated residual to obtain the other three estimates (tired yet?).</p>
 <p>Fortunately, model comparisons are straightforward with the <code>anova()</code> function, which we can use in the same way we used <code>lavTestLRT()</code> to compare LCMs early.</p>
 <div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb94-1"><a href="03-time.html#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(mlm.het, mlm.hom)</span></code></pre></div>
