@@ -1,0 +1,18 @@
+---
+title: "Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for a neural noise hypothesis in a large lifespan cohort."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF]() | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI]() | [<i class="ai ai-open-materials"></i> Code](https://osf.io/nkjdt/)
+
+
+### Abstract
+Most prior research has focused on characterizing averages in cognition, brain characteristics, or behavior, and attempting to predict differences in these averages among individuals. However, this overwhelming focus on mean levels may leave us with an incomplete picture of what drives individual differences in behavioral phenotypes by ignoring the variability of behavior around an individual’s mean. Particularly, enhanced white matter (WM) structural microstructure has been hypothesized to support consistent behavioral performance by decreasing gaussian noise in signal transfer. Conversely, lower indices of white matter microstructure are associated with greater within-subject variance in deploying performance-related resources, especially in clinical populations. We tested a mechanistic account of a ‘neural noise’ hypothesis in a large adult lifespan cohort (Cam-CAN) with over 2500 adults (ages 18–102; 1508 female; 1173 male; 2681 behavioral sessions; 708 MRI scans) using WM fractional anisotropy (FA) to predict mean levels and variability in reaction time performance on a simple behavioral task using a dynamic structural equation model (DSEM). By modeling robust and reliable individual differences in within-person variability, we found support for a neural noise hypothesis (Kail, 1997), with lower FA predicted individual differences in separable components of behavioral performance estimated using DSEM, including slower mean responses and increased variability. These effects remained when including age, suggesting consistent effects of WM microstructure across the adult lifespan unique from concurrent effects of ageing. Crucially, we show that variability can be reliably separated from mean performance using advanced modeling tools, enabling tests of distinct hypotheses for each component of performance.
+
+**Citation:** McCormick, E. M., Cam-CAN, & Kievit, R. A. (2023). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for a neural noise hypothesis in a large lifespan cohort. *Journal of Neuroscience*, Accepted February 2023.

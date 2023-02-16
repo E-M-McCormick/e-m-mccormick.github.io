@@ -32,12 +32,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-2. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*preprint*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53)
 
-<aside>
-<div data-badge-type="donut" data-doi="10.31234/osf.io/8xf53" data-hide-no-mentions="true" class="altmetric-embed"></div>
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-</aside>
 
 
 
@@ -51,6 +46,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## Peer-reviewed
+### 2023
+2. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*in press*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. Accepted February 2023. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.31234/osf.io/8xf53" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
+
 ### 2022
 31. Metherell, T.E., Ghai, S., **McCormick, E.M.**, Ford T.J., & Orben, A. (2022). [Digital exclusion predicts worse mental health among adolescents during COVID-19.](static/pubs/31-2022-SciRep/31-2022-SciRep.html) *Scientific Reports, 12*, 19088. DOI: [10.1038/s41598-022-23899-y](https://doi.org/10.1038/s41598-022-23899-y) | [<i class="fas fa-download"></i> PDF](static/pubs/31-2022-SciRep/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf) | [<i class="ai ai-biorxiv"></i> Preprint](https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1) 
 
