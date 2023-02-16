@@ -47,7 +47,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2023
-2. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*in press*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. Accepted February 2023. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53)
+32. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*in press*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. Accepted February 2023. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/8xf53" data-hide-no-mentions="true" class="altmetric-embed"></div>
