@@ -14,7 +14,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
-3. Parsons, S. & **McCormick, E. M.** (*preprint*). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/96ph3)
+4. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint forthcoming*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876).
+
+
+3. Parsons, S. & **McCormick, E. M.** (*preprint*). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. 
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/96ph3" data-hide-no-mentions="true" class="altmetric-embed"></div>
