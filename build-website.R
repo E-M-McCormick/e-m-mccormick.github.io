@@ -15,3 +15,4 @@ lapply(1:length(Rmds), function(n){
 })
 
 rmarkdown::render_site(encoding = 'UTF-8')
+
