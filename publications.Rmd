@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
-4. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint forthcoming*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876).
+<!-- 4. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint forthcoming*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). -->
 
 
 3. Parsons, S. & **McCormick, E. M.** (*preprint*). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. 
@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-1. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (*preprint*). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html)
+1. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (*preprint*). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2023
-32. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*in press*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. Accepted February 2023. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53)
+32. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (*in press*). Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for the neural noise hypothesis in a large lifespan cohort. Accepted February 2023. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53) [<i class="ai ai-osf"></i> OSF](https://osf.io/nkjdt/)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/8xf53" data-hide-no-mentions="true" class="altmetric-embed"></div>
