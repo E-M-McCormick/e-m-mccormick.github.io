@@ -14,6 +14,15 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
+5. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (*preprint*). Latent Growth Factors as Predictors of Distal Outcomes: Completing the Triad. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/fevra)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.31234/osf.io/fevra" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
+
 4. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). [<i class="ai ai-biorxiv"></i> Preprint](https://doi.org/10.1101/2023.03.06.529634)
 
 <aside>
