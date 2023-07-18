@@ -1,0 +1,15 @@
+---
+title: "A multivariate growth curve model for three-level data."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](34.Curran-Strauss-McCormick-McGinley-2023-APA.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib)
+
+
+**Citation:** Curran, P.J., Strauss, C., McCormick, E.M., & McGinley, J.S. (2023). A multivariate growth curve model for three-level data. In H. Cooper (Ed.) APA Handbook of Research Methods in Psychology, Second Edition. Washington, DC: American Psychological Association.
