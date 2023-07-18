@@ -354,4 +354,4 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## Book Chapters
-1. Curran, P.J., Strauss, C., **McCormick, E.M.**, & McGinley, J.S. (2023). [A multivariate growth curve model for three-level data](static/pubs/34-2023-APA/34.Curran-Strauss-McCormick-McGinley-2023-APA.pdf). In H. Cooper (Ed.) APA Handbook of Research Methods in Psychology, Second Edition. Washington, DC: American Psychological Association.
+1. Curran, P.J., Strauss, C., **McCormick, E.M.**, & McGinley, J.S. (2023). [A multivariate growth curve model for three-level data](static/pubs/34-2023-APA/34-2023-APA.html). In H. Cooper (Ed.) APA Handbook of Research Methods in Psychology, Second Edition. Washington, DC: American Psychological Association.
