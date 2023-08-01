@@ -65,7 +65,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-33. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (2023). [The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods.](static/pubs/33-2023-DCN/33-2023-DCN.html) *Developmental Cognitive Neuroscience, 63* 101281. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
+33. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (2023). [The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods.](static/pubs/33-2023-DCN/33-2023-DCN.html) *Developmental Cognitive Neuroscience, 63*, 101281. DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281) | [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true" class="altmetric-embed"></div>
