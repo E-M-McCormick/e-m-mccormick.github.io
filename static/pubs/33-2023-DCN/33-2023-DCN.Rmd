@@ -1,0 +1,18 @@
+---
+title: "The Hitchhiker’s Guide to Longitudinal Models: A primer on model selection for repeated-measures methods."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](33.McCormick-Byrne-Flournoy-Mills-Pfeifer-2023-DCN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.dcn.2023.101281) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/bn6yu/)
+
+
+### Abstract
+Longitudinal data are becoming increasingly available in developmental neuroimaging. To maximize the promise of this wealth of information on how biology, behavior, and cognition change over time, there is a need to incorporate broad and rigorous training in longitudinal methods into the repertoire of developmental neuroscientists. Fortunately, these models have an incredibly rich tradition in the broader developmental sciences that we can draw from. Here, we provide a primer on longitudinal models, written in a beginner-friendly (and slightly irreverent) manner, with a particular focus on selecting among different modeling frameworks (e.g., multilevel versus latent curve models) to build the theoretical model of development a researcher wishes to test. Our aims are three-fold: (1) lay out a heuristic framework for longitudinal model selection, (2) build a repository of references that ground each model in its tradition of methodological development and practical implementation with a focus on connecting researchers to resources outside traditional neuroimaging journals, and (3) provide practical resources in the form of a codebook companion demonstrating how to fit these models. These resources together aim to enhance training for the next generation of developmental neuroscientists by providing a solid foundation for future forays into advanced modeling applications.
+
+**Citation:** McCormick, E. M., Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (2023). The Hitchhiker’s guide to longitudinal models: A primer on model selection for repeated-measures methods. *Developmental Cognitive Neuroscience, 63*, 101281. 

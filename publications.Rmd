@@ -14,7 +14,16 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Preprints
-5. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (*preprint*). Latent Growth Factors as Predictors of Distal Outcomes: Completing the Triad. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/fevra)
+5. **McCormick, E. M.** & Bauer D. J. (*preprint*). How should we model the effect of "change" - or should we? [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/pbhmq)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.31234/osf.io/pbhmq" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
+
+4. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (*preprint*). Latent Growth Factors as Predictors of Distal Outcomes: Completing the Triad. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/fevra)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/fevra" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -23,7 +32,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-4. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). [<i class="ai ai-biorxiv"></i> Preprint](https://doi.org/10.1101/2023.03.06.529634)
+3. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). [<i class="ai ai-biorxiv"></i> Preprint](https://doi.org/10.1101/2023.03.06.529634)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1101/2023.03.06.529634" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -32,7 +41,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-3. Parsons, S. & **McCormick, E. M.** (*preprint*). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/96ph3) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/two-time-points)
+2. Parsons, S. & **McCormick, E. M.** (*preprint*). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/96ph3) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/two-time-points)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/96ph3" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -41,7 +50,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-2. **McCormick, E. M.**, Borgeest, G.S., & Kievit, R. A. (*preprint*). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/48xj5)
+1. **McCormick, E. M.**, Borgeest, G.S., & Kievit, R. A. (*preprint*). Interrupted mediation: A cautionary note on using derived metrics as intervening variables in path models. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/48xj5)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/48xj5" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -50,7 +59,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-1. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (*preprint*). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
+## Peer-reviewed
+### 2023
+34.} Duell, N., Perino, M.T., **McCormick, E.M.**, & Telzer, E.H. (*in press*) Differential processing of risk and reward in delinquent and non-delinquent youth. *Social Cognitive and Affective Neuroscience*. Accepted July 2023. 
+
+
+
+33. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (*in press*). The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods. *Developmental Cognitive Neuroscience*. Accepted July 2023. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -58,9 +73,6 @@ knitr::opts_chunk$set(echo = FALSE)
 </aside>
 
 
-
-## Peer-reviewed
-### 2023
 32. **McCormick, E. M.**, Cam-CAN, & Kievit, R. A. (2023). [Poorer white matter microstructure predicts slower and more variable reaction time performance: evidence for a neural noise hypothesis in a large lifespan cohort.](static/pubs/32-2023-JNeuro/32-2023-JNeuro.html) *Journal of Neuroscience, 43*(19), 3557-3566. DOI: [10.1523/JNEUROSCI.1042-22.2023](https://doi.org/10.1523/JNEUROSCI.1042-22.2023) | [<i class="fas fa-download"></i> PDF](static/pubs/32-2023-JNeuro/32.McCormick-CamCAN-Kievit-2023-JNeuro.pdf) | [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/8xf53) | [<i class="ai ai-osf"></i> OSF](https://osf.io/nkjdt/)
 
 <aside>

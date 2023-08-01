@@ -43,6 +43,8 @@ Download my [<i class="fas fa-file-download"></i> current CV](static/McCormick_C
 
 ----------------------------------------------------------------------------------
 ### News
+**New Preprint:** With co-author Dan Bauer, I have a new preprint deriving relationships between different version of TVC models in longtiudinal analysis, with implications for mediation with change scores. Interested readers can find the newly-posted preprint [here](https://doi.org/10.31234/osf.io/pbhmq).
+
 **New Preprint:** With co-authors Patrick Curran and Greg Hancock, I have a new preprint deriving time coding effects in latent growth models with distal outcomes, focusing on how to obtain time-invariant and interpretable predictive effects. Interested readers can find the newly-posted preprint [here](https://doi.org/10.31234/osf.io/fevra).
 
 **New Preprint:** With co-author Sam Parsons, I have a new preprint quantifying the poor recovery of individual trajectory parameters using two time point models. Interested readers can find the newly-posted preprint [here](https://doi.org/10.31234/osf.io/96ph3).
