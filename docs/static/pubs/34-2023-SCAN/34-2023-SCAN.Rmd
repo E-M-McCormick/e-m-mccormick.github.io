@@ -1,0 +1,18 @@
+---
+title: "Differential processing of risk and reward in delinquent and non-delinquent youth."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](34.Duell-Perino-McCormick-Telzer-2023-SCAN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="ai ai-open-data"></i> Dataset](https://neurovault.org/collections/12312/) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1093/scan/nsad040)
+
+
+### Abstract
+The present study examined the behavioral and neural differences in risky decision-making between delinquent (n = 23) and nondelinquent (n = 27) youth ages 13–17 years (M = 16, SD = 0.97) in relation to reward processing. While undergoing functional neuroimaging, participants completed an experimental risk task wherein they received feedback about the riskiness of their behavior in the form of facial expressions that morphed from happy to angry. Behavioral results indicated that delinquent youth took fewer risks and earned fewer rewards on the task than non-delinquent youth. Results from whole-brain analyses indicated no group differences in sensitivity to punishments (i.e. angry faces), but instead showed that delinquent youth evinced greater neural tracking of reward outcomes (i.e. cash-ins) in regions including the ventral striatum and inferior frontal gyrus. While behavioral results show that delinquent youth were more risk-averse, the neural results indicated that delinquent youth were also more reward-driven, potentially suggesting a preference for immediate rewards.  Results offer important insights into differential decision-making processes between delinquent and non-delinquent youth.
+
+**Citation:** Duell, N., Perino, M. T., McCormick, E. M., & Telzer, E. H. (2023). Differential processing of risk and reward in delinquent and non-delinquent youth. *Social Cognitive and Affective Neuroscience. 18*(1), 1-9.

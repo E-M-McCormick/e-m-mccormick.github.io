@@ -61,11 +61,16 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2023
-34. Duell, N., Perino, M.T., **McCormick, E.M.**, & Telzer, E.H. (*in press*) Differential processing of risk and reward in delinquent and non-delinquent youth. *Social Cognitive and Affective Neuroscience*. Accepted July 2023. 
+34. Duell, N., Perino, M.T., **McCormick, E.M.**, & Telzer, E.H. (2023) [Differential processing of risk and reward in delinquent and non-delinquent youth.](static/pubs/34-2023-SCAN/34-2023-SCAN.html) *Social Cognitive and Affective Neuroscience, 18*(1), 1-9. DOI: [10.1093/scan/nsad040](https://doi.org/10.1093/scan/nsad040) | [<i class="fas fa-download"></i> PDF](static/pubs/34-2023-SCAN/34.Duell-Perino-McCormick-Telzer-2023-SCAN.pdf)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.1093/scan/nsad040" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
 
 
 
-33. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (2023). [The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods.](static/pubs/33-2023-DCN/33-2023-DCN.html) *Developmental Cognitive Neuroscience, 63*, 101281. DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281) | [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
+33. **McCormick, E. M.**, Byrne, M. L., Flournoy, J. C., Mills, K. L., & Pfeifer, J. H. (2023). [The Hitchhiker’s Guide to Longitudinal Models: A Primer on Model Selection for Repeated-Measures Methods.](static/pubs/33-2023-DCN/33-2023-DCN.html) *Developmental Cognitive Neuroscience, 63*, 101281. DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281)| [<i class="fas fa-download"></i> PDF](static/pubs/33-2023-DCN/33.McCormick-Byrne-Flournoy-Mills-Pfeifer-2023-DCN.pdf) | [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/ga4qz) | [<i class="fas fa-book"></i> Codebook Companion](static/longitudinal-primer/index.html) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/longitudinal-primer)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.31234/osf.io/ga4qz" data-hide-no-mentions="true" class="altmetric-embed"></div>
