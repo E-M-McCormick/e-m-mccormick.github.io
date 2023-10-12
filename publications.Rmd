@@ -232,8 +232,8 @@ knitr::opts_chunk$set(echo = FALSE)
 </aside>
 
 
-### 2018
-15. **McCormick, E. M.**, Gates, K. M., & Telzer, E. H. (2018). [Model-based network discovery of developmental and performance-related differences during risky decision-making.](static/pubs/15-2019-NeuroImage/15-2019-NeuroImage.html) *NeuroImage, 188*, 456-464. DOI: [10.1016/j.neuroimage.2018.12.042](https://doi.org/10.1016/j.neuroimage.2018.12.042) | [<i class="fas fa-download"></i> PDF](static/pubs/15-2019-NeuroImage/15.McCormick-Gates-Telzer-2019-NeuroImage.pdf)
+
+15. **McCormick, E. M.**, Gates, K. M., & Telzer, E. H. (2019). [Model-based network discovery of developmental and performance-related differences during risky decision-making.](static/pubs/15-2019-NeuroImage/15-2019-NeuroImage.html) *NeuroImage, 188*, 456-464. DOI: [10.1016/j.neuroimage.2018.12.042](https://doi.org/10.1016/j.neuroimage.2018.12.042) | [<i class="fas fa-download"></i> PDF](static/pubs/15-2019-NeuroImage/15.McCormick-Gates-Telzer-2019-NeuroImage.pdf)
 
 <aside>
 <div data-badge-type="donut" data-doi="10.1016/j.neuroimage.2018.12.042" data-hide-no-mentions="true" class="altmetric-embed"></div>
@@ -241,7 +241,7 @@ knitr::opts_chunk$set(echo = FALSE)
 </aside>
 
 
-
+### 2018
 14. **McCormick, E. M.**, & Telzer, E. H. (2018). [Contributions of default mode network stability and deactivation to adolescent task engagement.](static/pubs/14-2018-SciRep/14-2018-SciRep.html) *Scientific Reports, 8*, 18049. DOI: [10.1038/s41598-018-36269-4](https://doi.org/10.1038/s41598-018-36269-4) | [<i class="fas fa-download"></i> PDF](static/pubs/14-2018-SciRep/14.McCormick-Telzer-2018-ScientificReports.pdf)
 
 <aside>
