@@ -458,8 +458,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -570,9 +570,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -667,6 +679,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1428,6 +1445,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1505,8 +1528,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1532,12 +1556,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -2068,7 +2093,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2113,6 +2138,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-title">
 <h1>Publications</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 <p><p>Stable PDF versions of all papers can be downloaded from here. Select article titles for additional information.</p></p>
@@ -2127,21 +2153,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><a href="#preprints" id="toc-preprints">Preprints</a></li>
 <li><a href="#peer-reviewed" id="toc-peer-reviewed">Peer-reviewed</a>
 <ul>
-<li><a href="#section" id="toc-section">2023</a></li>
-<li><a href="#section-1" id="toc-section-1">2022</a></li>
-<li><a href="#section-2" id="toc-section-2">2021</a></li>
-<li><a href="#section-3" id="toc-section-3">2020</a></li>
-<li><a href="#section-4" id="toc-section-4">2019</a></li>
-<li><a href="#section-5" id="toc-section-5">2018</a></li>
-<li><a href="#section-6" id="toc-section-6">2017</a></li>
-<li><a href="#section-7" id="toc-section-7">2016</a></li>
+<li><a href="#section" id="toc-section">2024</a></li>
+<li><a href="#section-1" id="toc-section-1">2023</a></li>
+<li><a href="#section-2" id="toc-section-2">2022</a></li>
+<li><a href="#section-3" id="toc-section-3">2021</a></li>
+<li><a href="#section-4" id="toc-section-4">2020</a></li>
+<li><a href="#section-5" id="toc-section-5">2019</a></li>
+<li><a href="#section-6" id="toc-section-6">2018</a></li>
+<li><a href="#section-7" id="toc-section-7">2017</a></li>
+<li><a href="#section-8" id="toc-section-8">2016</a></li>
 </ul></li>
 <li><a href="#book-chapters" id="toc-book-chapters">Book Chapters</a></li>
 </ul>
 </nav>
 </div>
 <h2 id="preprints">Preprints</h2>
-<ol start="6" type="1">
+<ol start="5" type="1">
 <li><strong>McCormick, E. M.</strong> (<em>preprint</em>). Deriving models of change with interpretable parameters: linear estimation with nonlinear inference. <a href="https://osf.io/preprints/psyarxiv/r4vxb"><i class="ai ai-psyarxiv"></i> Preprint</a></li>
 </ol>
 <aside>
@@ -2150,7 +2177,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<ol start="5" type="1">
+<ol start="4" type="1">
 <li><strong>McCormick, E. M.</strong> &amp; Bauer D. J. (<em>preprint</em>). How should we model the effect of “change” - or should we? <a href="https://doi.org/10.31234/osf.io/pbhmq"><i class="ai ai-psyarxiv"></i> Preprint</a></li>
 </ol>
 <aside>
@@ -2159,7 +2186,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<ol start="4" type="1">
+<ol start="3" type="1">
 <li><strong>McCormick, E. M.</strong>, Curran, P. J. &amp; Hancock G. R. (<em>preprint</em>). Latent Growth Factors as Predictors of Distal Outcomes: Completing the Triad. <a href="https://doi.org/10.31234/osf.io/fevra"><i class="ai ai-psyarxiv"></i> Preprint</a></li>
 </ol>
 <aside>
@@ -2168,20 +2195,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<ol start="3" type="1">
+<ol start="2" type="1">
 <li>Michel L. C., <strong>McCormick, E. M.</strong>, &amp; Kievit, R.A. (<em>preprint</em>). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). <a href="https://doi.org/10.1101/2023.03.06.529634"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
 <aside>
 <div class="altmetric-embed" data-badge-type="donut" data-doi="10.1101/2023.03.06.529634" data-hide-no-mentions="true">
-
-</div>
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-</aside>
-<ol start="2" type="1">
-<li>Parsons, S. &amp; <strong>McCormick, E. M.</strong> (<em>preprint</em>). “Don’t peek at your data” applies to longitudinal studies too: two time points poorly capture trajectories of change. <a href="https://doi.org/10.31234/osf.io/96ph3"><i class="ai ai-psyarxiv"></i> Preprint</a> | <a href="https://github.com/E-M-McCormick/two-time-points"><i class="fa fa-github"></i> GitHub</a></li>
-</ol>
-<aside>
-<div class="altmetric-embed" data-badge-type="donut" data-doi="10.31234/osf.io/96ph3" data-hide-no-mentions="true">
 
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
@@ -2196,7 +2214,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
 <h2 id="peer-reviewed">Peer-reviewed</h2>
-<h3 id="section">2023</h3>
+<h3 id="section">2024</h3>
+<ol start="35" type="1">
+<li>Parsons, S., &amp; <strong>McCormick, E.M.</strong> (2024) <a href="static/pubs/35-2024-DCN/35-2024-DCN.html">Limitations of two time point data for understanding individual differences in longitudinal modeling — What can difference reveal about change?.</a> <em>Developmental Cognitive Neuroscience, 66</em>, 101353. DOI: <a href="https://doi.org/10.1016/j.dcn.2024.101353">10.1016/j.dcn.2024.101353</a> | <a href="static/pubs/35-2024-DCN/35.Parsons-McCormick-2024-DCN.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://doi.org/10.31234/osf.io/96ph3"><i class="ai ai-psyarxiv"></i> Preprint</a> | <a href="https://github.com/E-M-McCormick/two-time-points"><i class="fa fa-github"></i> GitHub</a></li>
+</ol>
+<aside>
+<div class="altmetric-embed" data-badge-type="donut" data-doi="10.1016/j.dcn.2024.101353" data-hide-no-mentions="true">
+
+</div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+<h3 id="section-1">2023</h3>
 <ol start="34" type="1">
 <li>Duell, N., Perino, M.T., <strong>McCormick, E.M.</strong>, &amp; Telzer, E.H. (2023) <a href="static/pubs/34-2023-SCAN/34-2023-SCAN.html">Differential processing of risk and reward in delinquent and non-delinquent youth.</a> <em>Social Cognitive and Affective Neuroscience, 18</em>(1), 1-9. DOI: <a href="https://doi.org/10.1093/scan/nsad040">10.1093/scan/nsad040</a> | <a href="static/pubs/34-2023-SCAN/34.Duell-Perino-McCormick-Telzer-2023-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
@@ -2233,7 +2261,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-1">2022</h3>
+<h3 id="section-2">2022</h3>
 <ol start="30" type="1">
 <li>Metherell, T.E., Ghai, S., <strong>McCormick, E.M.</strong>, Ford T.J., &amp; Orben, A. (2022). <a href="static/pubs/31-2022-SciRep/31-2022-SciRep.html">Digital exclusion predicts worse mental health among adolescents during COVID-19.</a> <em>Scientific Reports, 12</em>, 19088. DOI: <a href="https://doi.org/10.1038/s41598-022-23899-y">10.1038/s41598-022-23899-y</a> | <a href="static/pubs/31-2022-SciRep/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
@@ -2270,7 +2298,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-2">2021</h3>
+<h3 id="section-3">2021</h3>
 <ol start="26" type="1">
 <li><strong>McCormick, E. M.</strong> (2021). <a href="static/pubs/26-2021-DCN/26-2021-DCN.html">Multi-Level Multi-Growth Models: New opportunities for addressing developmental theory using advanced longitudinal designs with planned missingness.</a> <em>Developmental Cognitive Neuroscience, 51</em>, 101001. DOI: <a href="https://doi.org/10.1016/j.dcn.2021.101001">10.1016/j.dcn.2021.101001</a> | <a href="static/pubs/26-2021-DCN/26.McCormick-2021-DCN.pdf"><i class="fas fa-download"></i> PDF</a> | <a href="https://www.biorxiv.org/content/10.1101/2020.10.21.349274v1"><i class="ai ai-biorxiv"></i> Preprint</a></li>
 </ol>
@@ -2298,7 +2326,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-3">2020</h3>
+<h3 id="section-4">2020</h3>
 <ol start="23" type="1">
 <li>Kwon, S-J., Do, K. T., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2020). <a href="static/pubs/23-2020-JRA/23-2020-JRA.html">Neural correlates of conflicting social influence on adolescent risk-taking.</a> <em>Journal of Research on Adolescence, 31</em>(1), 139-152. DOI: <a href="https://doi.org/https://doi.org/10.1111/jora.12587">10.1111/jora.12587</a> | <a href="static/pubs/23-2020-JRA/23.Kwon-Do-McCormick-Telzer-2020-JRA.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
@@ -2335,7 +2363,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-4">2019</h3>
+<h3 id="section-5">2019</h3>
 <ol start="19" type="1">
 <li>Perino, M. T., Guassi Moreira, J. F., <strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2019). <a href="static/pubs/19-2019-SCAN/19-2019-SCAN.html">Apples to apples? Neural correlates of emotion regulation differences between high and low risk adolescents.</a> <em>Social Cognitive and Affective Neuroscience, 14</em>(2), 129-139. DOI: <a href="https://doi.org/10.1093/scan/nsz063">10.1093/scan/nsz063</a> | <a href="static/pubs/19-2019-SCAN/19.Perino-Moreira-McCormick-Telzer-2019-SCAN.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
@@ -2381,7 +2409,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-5">2018</h3>
+<h3 id="section-6">2018</h3>
 <ol start="14" type="1">
 <li><strong>McCormick, E. M.</strong>, &amp; Telzer, E. H. (2018). <a href="static/pubs/14-2018-SciRep/14-2018-SciRep.html">Contributions of default mode network stability and deactivation to adolescent task engagement.</a> <em>Scientific Reports, 8</em>, 18049. DOI: <a href="https://doi.org/10.1038/s41598-018-36269-4">10.1038/s41598-018-36269-4</a> | <a href="static/pubs/14-2018-SciRep/14.McCormick-Telzer-2018-ScientificReports.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
@@ -2472,7 +2500,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-6">2017</h3>
+<h3 id="section-7">2017</h3>
 <ol start="4" type="1">
 <li><strong>McCormick, E. M.</strong>, Qu, Y., &amp; Telzer, E. H. (2017). <a href="static/pubs/04-2017-Frontiers/04-2017-Frontiers.html">Activation in context: Differential conclusions drawn from cross-sectional and longitudinal analyses of adolescents’ cognitive control-related neural activity.</a> <em>Frontiers in Human Neuroscience, 11</em>, 141. DOI: <a href="https://doi.org/10.3389/fnhum.2017.00141">10.3389/fnhum.2017.00141</a> | <a href="static/pubs/04-2017-Frontiers/4.McCormick-Qu-Telzer-2017-Frontiers.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>
@@ -2500,7 +2528,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
 </aside>
-<h3 id="section-7">2016</h3>
+<h3 id="section-8">2016</h3>
 <ol type="1">
 <li><strong>McCormick, E. M.</strong>, Qu, Y., &amp; Telzer, E. H. (2016). <a href="static/pubs/01-2016-NeuroImage/01-2016-NeuroImage.html">Adolescent neurodevelopment of cognitive control and risk-taking in negative family contexts.</a> <em>NeuroImage, 124</em>, 989-996. DOI: <a href="https://doi.org/10.1016/j.neuroimage.2015.09.063">10.1016/j.neuroimage.2015.09.063</a> | <a href="static/pubs/01-2016-NeuroImage/1.McCormick-Qu-Telzer-2016-NeuroImage.pdf"><i class="fas fa-download"></i> PDF</a></li>
 </ol>

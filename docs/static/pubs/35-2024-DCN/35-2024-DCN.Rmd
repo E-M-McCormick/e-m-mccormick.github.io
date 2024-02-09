@@ -1,0 +1,18 @@
+---
+title: "Limitations of two time point data for understanding individual differences in longitudinal modeling—What can difference reveal about change?."
+output:
+  distill::distill_article:
+    css: ../../../styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[<i class="fas fa-file-download"></i> PDF](35.Parsons-McCormick-2024-DCN.pdf) | [<i class="fas fa-quote-left"></i><i class="fas fa-quote-right"></i> BibTeX Citation](cite.bib) | [<i class="fas fa-link"></i> DOI](https://doi.org/10.1016/j.dcn.2024.101353) | [<i class="ai ai-open-materials"></i> Code](https://osf.io/9rjcv/)
+
+
+### Abstract
+Emerging neuroimaging studies investigating changes in the brain aim to collect sufficient data points to examine trajectories of change across key developmental periods. Yet, current studies are often constrained by the number of time points available now. We demonstrate that these constraints should be taken seriously and that studies with two time points should focus on particular questions (e.g., group-level or intervention effects), while complex questions of individual differences and investigations into causes and consequences of those differences should be deferred until additional time points can be incorporated into models of change. We generated underlying longitudinal data and fit models with 2, 3, 4, and 5 time points across 1000 samples. While fixed effects could be recovered on average even with few time points, recovery of individual differences was particularly poor for the two time point model, correlating at r = 0.41 with the true individual parameters - meaning these scores share only 16.8% of variance As expected, models with more time points recovered the growth parameter more accurately; yet parameter recovery for the three time point model was still low, correlating around r = 0.57. We argue that preliminary analyses on early subsets of time points in longitudinal analyses should focus on these average or group-level effects and that individual difference questions should be addressed in samples that maximize the number of time points available. We conclude with recommendations for researchers using early time point models, including ideas for preregistration, careful interpretation of 2 time point results, and treating longitudinal analyses as dynamic, where early findings are updated as additional information becomes available.
+
+**Citation:** Parsons, S., & McCormick, E. M. (2024). Limitations of two time point data for understanding individual differences in longitudinal modeling – what can difference reveal about change?. *Developmental Cognitive Neuroscience, 66*, 101353. 
