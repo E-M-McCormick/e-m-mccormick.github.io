@@ -32,15 +32,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-3. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (*preprint*). Latent Growth Factors as Predictors of Distal Outcomes: Completing the Triad. [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/fevra)
-
-<aside>
-<div data-badge-type="donut" data-doi="10.31234/osf.io/fevra" data-hide-no-mentions="true" class="altmetric-embed"></div>
-<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
-</aside>
-
-
-
 2. Michel L. C., **McCormick, E. M.**, & Kievit, R.A. (*preprint*). Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). [<i class="ai ai-biorxiv"></i> Preprint](https://doi.org/10.1101/2023.03.06.529634)
 
 <aside>
@@ -61,6 +52,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Peer-reviewed
 ### 2024
+36. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (*in press*). Latent Growth Factors as Predictors of Distal Outcomes: Completing the Triad. DOI: [10.1037/met0000642](https://doi.org/10.1037/met0000642) | [<i class="fas fa-download"></i> PDF](static/pubs/36-2024-PsychMethods/36.McCormick-Curran-Hancock-2024-PsychMethods.pdf) | [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/fevra)
+
+<aside>
+<div data-badge-type="donut" data-doi="10.31234/osf.io/fevra" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+</aside>
+
+
 
 35. Parsons, S., & **McCormick, E.M.** (2024) [Limitations of two time point data for understanding individual differences in longitudinal modeling — What can difference reveal about change?.](static/pubs/35-2024-DCN/35-2024-DCN.html) *Developmental Cognitive Neuroscience, 66*, 101353. DOI: [10.1016/j.dcn.2024.101353](https://doi.org/10.1016/j.dcn.2024.101353) | [<i class="fas fa-download"></i> PDF](static/pubs/35-2024-DCN/35.Parsons-McCormick-2024-DCN.pdf) | [<i class="ai ai-psyarxiv"></i> Preprint](https://doi.org/10.31234/osf.io/96ph3) | [<i class="fa fa-github"></i> GitHub](https://github.com/E-M-McCormick/two-time-points)
 
