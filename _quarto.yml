@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Ethan M. McCormick"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: pubs.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+
+
+

@@ -1,0 +1,285 @@
+---
+title: "Ethan M. McCormick"
+standalone: false
+number-sections: false
+engine: knitr
+---
+
+::: columns 
+::: {.column width="75%"}
+[{{< fa envelope size=huge >}}](mailto:emccorm@udel.edu){style="color: inherit;"} &emsp; 
+[{{< fa graduation-cap size=huge >}}](https://scholar.google.com/citations?user=hiua2E8AAAAJ&hl=en){style="color: inherit;"} &emsp; 
+[{{< fa brands twitter size=huge >}}](https://twitter.com/E_M_McCormick){style="color: inherit;"} &emsp;
+[{{< fa brands github size=huge >}}](https://github.com/E-M-McCormick){style="color: inherit;"} &emsp;
+[{{< fa brands orcid size=huge >}}](https://orcid.org/0000-0002-7919-4340){style="color: inherit;"} &emsp;
+[{{< ai osf size=huge >}}](https://osf.io/bfcgy/){style="color: inherit;"} &emsp;
+[{{< ai cv size=huge >}}](static/files/McCormick_CV.pdf){style="color: inherit;"}
+
+
+Jump to: [Selected Research](#sec-selected) \| 
+[Student Projects](#sec-students) \|
+[Software & Resources](#sec-resources) \| 
+[Teaching & Workshops](#sec-teaching)
+
+
+::: {.callout-tip appearance="simple"}
+## Graduate Student Recruitment
+
+I will be interviewing new students this cycle (Fall `r format(Sys.Date(), format = "%Y")`) to start in
+Fall `r format(Sys.Date() + 365, format = "%Y")` at the University of Delaware. If you are interested in working together -- or know of interested students -- please get in touch at `emccorm @ udel [dot] edu`.
+:::
+
+
+I am starting in Fall 2024 as an Assistant Professor of Educational Statistics and Data Science in the [School of Education](https://www.education.udel.edu/) at the [University of Delaware](https://www.udel.edu/). I am also affiliated with the [Data Science Institute](https://dsi.udel.edu/) as a [Resident Faculty](https://dsi.udel.edu/faculty/#resident) and the [Department of Psychological & Brain Sciences](https://www.psych.udel.edu/). I am also affiliated with the [Methodology & Statistics](https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/methodology-and-statistics) at [Leiden University](https://www.universiteitleiden.nl/en) in The Netherlands.
+
+My research interests focus on a number of methodological approaches for longitudinal, time series, and psychometric modeling in the fields of education and development. My current work includes developing methods for: **distal outcome** and **time-varying covariate** growth models, improving estimation of **nonlinear models** for testing specific research hypotheses, and using Bayesian approaches for **merging longitudinal and time series** models.
+
+For the full details of my academic bio, please see my [CV](static/files/McCormick_CV.pdf).
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="20%"}
+![](static/img/headshot.jpg){style="border-radius: 15px;"}
+:::
+:::
+
+## Selected Research {#sec-selected}
+
+#### Click for [full publication list](pubs.html) \
+
+<!-- Item -->
+
+::: columns
+::: {.column width="25%"}
+![](./static/img/featured/leni-transforms.png)
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**Deriving models of change with interpretable parameters: linear
+estimation with nonlinear inference.**]{style="font-size: 125%;"}
+
+Nonlinear longitudinal models are great for testing interesting
+theoretical questions, but they are hard to estimate. In this paper, I
+laid out a series of approaches which allow the benefits of nonlinear
+models with the computational efficiency of linear estimation. I have
+included extensive code, detailed derivations, and example data if you
+are interested in fitting these models in your own work.
+
+**Ethan M. McCormick**    \
+*Preprint* (revision submitted at *Psychometrika*)    \
+[preprint](https://osf.io/preprints/psyarxiv/r4vxb) \| 
+[supplemental material](https://osf.io/5dmy3/)
+:::
+:::
+
+\
+
+<!-- Item -->
+
+::: columns
+::: {.column width="25%"}
+![](./static/img/featured/lcm-distal-outcome-path-model.png)
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**Latent Growth Factors as Predictors of Distal Outcomes.**]{style="font-size: 125%;"}
+
+Modeling the impact of individual differences in growth for later (i.e., distal) outcomes is a relatively undeveloped area of research. Here, I outlined a general latent curve framework for modeling these developmental *consequences* and solve some theoretical and technical challenges related to where we choose to place the intercept in these models.
+
+**Ethan M. McCormick**, 
+[Patrick J. Curran](https://curran.web.unc.edu/),
+[Gregory R. Hancock](https://education.umd.edu/directory/gregory-r-hancock)   \
+*Psychological Methods*. Accepted January 2024    \
+[preprint](https://doi.org/10.31234/osf.io/fevra) \| 
+[supplemental material](https://osf.io/fzubt/)
+<!-- | DOI: [10.1037/met0000642](https://doi.org/10.1037/met0000642) -->
+:::
+:::
+
+\
+
+<!-- Item -->
+
+::: columns
+::: {.column width="25%"}
+![](./static/img/featured/dontPanic.png)
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**The Hitchhiker's Guide to Longitudinal Models: A Primer on Model
+Selection for Repeated-Measures Methods.**]{style="font-size: 125%;"}
+
+There are a multitude of ways to approach longitudinal modeling, with different frameworks (mixed-effects vs. structural equation models) containing several different options for repeated measures data. Here I laid out the basics of these decisions and how to choose the analysis strategy that best matches your data and theoretical question. In additional I provide a complete set of R code (with some SAS and Mplus thrown in) to help you implement these models in your own research (see code companion).
+
+**Ethan M. McCormick**, 
+[Michelle L. Byrne](https://research.monash.edu/en/persons/michelle-byrne), 
+[John C. Flournoy](https://johnflournoy.science/), 
+[Kathryn L. Mills](https://devbrainlab.org/), 
+[Jennifer H. Pfeifer](http://dsn.uoregon.edu/)    \
+*Developmental Cognitive Neuroscience*, 2023    \
+[paper](static/pubs/33.McCormick-Byrne-Flournoy-Mills-Pfeifer-2023-DCN.pdf) \| [preprint](https://doi.org/10.31234/osf.io/ga4qz) \| 
+[supplemental material](https://github.com/E-M-McCormick/longitudinal-primer) \| 
+[code companion](https://e-m-mccormick.github.io/static/longitudinal-primer/index.html) \|
+DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281)
+:::
+:::
+
+## Supported Student Projects {#sec-students}
+
+::: columns
+::: {.column width="25%"}
+![](./static/img/students/tom-metherell.jpeg){fig-align="center" width=50%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**Digital exclusion predicts worse mental health among adolescents during COVID-19.**]{style="font-size: 125%;"}
+
+Tom Metherell is currently completing a 4-year Wellcome PhD in Mental Health Science at University College London. In this project, he examined how of lack of computer/internet access at home impacted adolescent mental health during the COVID-19 pandemic by employing multiple-groups nonlinear growth modeling.
+
+[Tom E. Metherell](https://profiles.ucl.ac.uk/90708-tom-metherell),
+Sakshi Ghai,
+**Ethan M. McCormick**,
+Tamsin J. Ford,
+Amy Orben   \
+*Scientific Reports*, 2022    \
+[paper](static/pubs/31.Metherell-Ghai-McCormick-Ford-Orben-2022-ScientificReports.pdf) \| 
+[preprint](https://www.medrxiv.org/content/10.1101/2021.11.25.21266853v1) \| 
+[supplemental material](https://osf.io/qhtbj/) \| 
+DOI: [10.1038/s41598-022-23899-y](https://doi.org/10.1038/s41598-022-23899-y)
+:::
+:::
+
+\
+
+::: columns
+::: {.column width="25%"}
+![](static/img/students/lea-michel.jpeg){fig-align="center" width=50%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876).**]{style="font-size: 125%;"}
+
+Léa Michel is completing her PhD in Developmental Neuroscience at the Donders Institute for Brain, Cognition, and Behaviour at RadboudUMC. Her first-author paper at *Journal of Neuroscience* used regularized regression models to test the additive predictive contributions of grey and white matter on cognitive ability.
+
+[Léa Michel](https://leacmichel.github.io/),
+**Ethan M. McCormick**,
+Rogier A. Kievit   \
+*Journal of Neuroscience*, 2024    \
+[paper](static/pubs/36.Michel-McCormick-Kievit-2024-JNeuro.pdf) \|
+[preprint](https://doi.org/10.1101/2023.03.06.529634) \|
+[supplemental material](https://osf.io/ryskf/) \|
+DOI: [10.1523/JNEUROSCI.0465-23.2023](https://doi.org/10.1523/JNEUROSCI.0465-23.2023)
+:::
+:::
+
+\
+
+::: columns
+::: {.column width="25%"}
+![](static/img/students/maxi-konig.png){fig-align="center" width=50%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**Friendship buffering effects on mental health symptoms before and during the COVID-19 pandemic: a UK longitudinal study of young people with childhood adversity**]{style="font-size: 125%;"}
+
+Maximilian König is a PhD candidate and cognitive neuroscientist at the Institute of Education and Child Studies studying how social support can promote resilience in young people with a history of early-life adversity. In this project, he investigated the role of friendship in protecting youth against mental health challenges during the pandemic.
+
+[Maximilian König](https://www.mxkoenig.com/),
+Alicia J. Smith,
+Laura Moreno-López,
+Eugenia Davidson,
+Maria Dauvermann,
+Sofia Orellana,
+**Ethan M. McCormick**,
+Muzaffer Kaçer,
+Konstantinos Ioannidis,
+Anne-Laura van Harmelen \
+*in prep*    \
+<!-- [paper]() \|  -->
+[preprint](https://doi.org/10.31234/osf.io/g5d9z) \|
+[supplemental material](https://osf.io/mdqgr/) <!-- \| -->
+<!-- DOI: []() -->
+:::
+:::
+
+\
+
+::: columns
+::: {.column width="25%"}
+![](static/img/students/yuqi-liu.jpeg){fig-align="center" width=50%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**A Two-step estimator for growth mixture models with covariates**]{style="font-size: 125%;"}
+
+Yuqi Liu is completing her PhD in Methodology and Statistics at Leiden University, supported by the China Scholarship Council. In her first project, she is tackling the issue of growth mixture models with indirect (covariates predict class membership) and direct (covariates predict the class-specific factors) effects, and testing the performance of one- and two-step estimation procedures in recovering the parameters of these models.
+
+[Yuqi Liu](https://nl.linkedin.com/in/yuqi-liu-675089252),
+Zsuzsa Bakk,
+Mark de Rooij,
+**Ethan M. McCormick**    \
+*in prep*    \
+<!-- [paper]() \|  -->
+<!-- [preprint]() \|  -->
+<!-- [supplemental material]() \|  -->
+<!-- DOI: []() -->
+:::
+:::
+
+
+
+## Software & Resources {#sec-resources}
+
+::: columns
+::: {.column width="25%"}
+![](static/img/featured/hex-leni.png){fig-align="center" width=50%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+The leni package provides a collection of tools for Linear Estimation with Nonlinear Inference (LENI) which involves estimating the parameters of nonlinear target functions as transformations of linear models. Includes support for regression and mixed-effects models (main function: `leni()`) which produces transformed parameter estimates, as well as structural equation models (main function: `leni_sem()`) which generates [`lavaan`](https://lavaan.ugent.be/) syntax for fitting linearized SEMs. You can find more information about this package at my GitHub page <https://github.com/E-M-McCormick/leni>.
+:::
+:::
+
+\
+
+::: columns
+::: {.column width="25%"}
+![](static/img/featured/primer-codebook.png){fig-align="center" width=90%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+A primarily R-based companion to the paper [McCormick, Byrne, Flournoy, Mills, & Pfeifer, (2023), *DCN*](static/pubs/33.McCormick-Byrne-Flournoy-Mills-Pfeifer-2023-DCN.pdf). Here I provide the syntax to accomplish the models we discussed in the main text. Sprinkled in are tips and tricks for the best way to fit various model options, with some additional resources in other programs when needed. <https://e-m-mccormick.github.io/static/longitudinal-primer/index.html>
+:::
+:::
+
+\
+
+::: columns
+::: {.column width="25%"}
+![](static/img/featured/cheat-sheet.png){fig-align="center" width=90%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+Vector and matrix notation is a nicely compact and efficient way to represent models, however, many people aren't train in these approaches and tend to skip over equations. This cheat sheet is meant to be a gentle introduction to matrix notation and how it can help you represent your model easily. The file can be found on OSF at <https://osf.io/d54fx>.
+:::
+:::
