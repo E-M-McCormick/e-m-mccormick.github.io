@@ -93,10 +93,11 @@ Modeling the impact of individual differences in growth for later (i.e., distal)
 **Ethan M. McCormick**, 
 [Patrick J. Curran](https://curran.web.unc.edu/),
 [Gregory R. Hancock](https://education.umd.edu/directory/gregory-r-hancock)   \
-*Psychological Methods*. Accepted January 2024    \
+*Psychological Methods*. Advance online publication    \
+[paper](https://doi.org/10.1037/met0000642) \|
 [preprint](https://doi.org/10.31234/osf.io/fevra) \| 
 [supplemental material](https://osf.io/fzubt/)
-<!-- | DOI: [10.1037/met0000642](https://doi.org/10.1037/met0000642) -->
+| DOI: [10.1037/met0000642](https://doi.org/10.1037/met0000642)
 :::
 :::
 

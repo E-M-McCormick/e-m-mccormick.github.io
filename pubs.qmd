@@ -51,15 +51,15 @@ How should we model the effect of "change" - or should we?.
 [{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/pbhmq)
 
 
-37\. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (*in press*). 
+### 2024
+37\. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (2024). 
 Latent Growth Factors as Predictors of Distal Outcomes. 
-*Psychological Methods*, Accepted January 2024. <https://doi.org/10.1037/met0000642> \
-[{{< fa download >}} Download](static/pubs/MET-2023-1364.pdf) \|
+*Psychological Methods*, Advance online publication. <https://doi.org/10.1037/met0000642> \
+[{{< fa download >}} Download](static/pubs/37.McCormick-Curran-Hancock-2024-PsychMethods.pdf) \|
 [{{< ai osf >}} Supplemental Material](https://osf.io/fzubt/) \|
 [{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/fevra)
 
 
-### 2024
 36\. $^\dagger$Michel L. C., **McCormick, E. M.**, & Kievit, R. A. (2024). 
 Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). 
 *Journal of Neuroscience, 44*(12), e0465232023oi. <https://doi.org/10.1523/JNEUROSCI.0465-23.2023> \
