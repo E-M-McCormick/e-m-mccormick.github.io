@@ -76,6 +76,29 @@ are interested in fitting these models in your own work.
 
 \
 
+::: columns
+::: {.column width="25%"}
+
+![](./static/img/featured/cortical-thinning-figure.png)
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+
+As well as a user-friendly tutorial which was recently posted as a preprint.
+
+[**A tutorial on formalizing and testing specific psychological theory using nonlinear models.**]{style="font-size: 125%;"}
+
+**Ethan M. McCormick**    \
+*Preprint* (invited submission at *Advances in Methods and Practices in Psychological Science*)    \
+[preprint](https://osf.io/preprints/psyarxiv/4y7q9) \| 
+[supplemental material](https://osf.io/jqgkv/)
+:::
+:::
+
+\
+
 <!-- Item -->
 
 ::: columns
@@ -130,6 +153,23 @@ There are a multitude of ways to approach longitudinal modeling, with different 
 DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281)
 :::
 :::
+
+## Collaborators
+
+[Patrick J. Curran](https://curran.web.unc.edu/) - University of North Carolina at Chapel Hill
+
+[Kathryn Humphreys](https://www.vanderbilt.edu/psychological_sciences/bio/kathryn-humphreys) - Vanderbilt University
+
+[Gregory R. Hancock](https://education.umd.edu/directory/gregory-r-hancock) - University of Maryland
+
+[Rogier A. Kievit](https://orcid.org/0000-0003-0700-4568) - Donders Institute for Brain Cognition and Behaviour
+
+[Jennifer Pfeifer](https://cas.uoregon.edu/directory/psychology-faculty/all/jpfeifer) - University of Oregon
+
+[Øystein Sørenesen](https://www.sv.uio.no/psi/english/people/academic/oyss/) - University of Oslo
+
+
+
 
 ## Supported Student Projects {#sec-students}
 
