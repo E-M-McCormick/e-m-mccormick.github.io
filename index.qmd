@@ -30,7 +30,9 @@ Fall `r format(Sys.Date() + 365, format = "%Y")` at the University of Delaware. 
 :::
 
 
-I am starting in Fall 2024 as an Assistant Professor of Educational Statistics and Data Science in the [School of Education](https://www.education.udel.edu/) at the [University of Delaware](https://www.udel.edu/). I am also affiliated with the [Data Science Institute](https://dsi.udel.edu/) as a [Resident Faculty](https://dsi.udel.edu/faculty/#resident) and the [Department of Psychological & Brain Sciences](https://www.psych.udel.edu/). I am also affiliated with the [Methodology & Statistics](https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/methodology-and-statistics) at [Leiden University](https://www.universiteitleiden.nl/en) in The Netherlands.
+I am starting in Fall 2024 as an Assistant Professor of Educational Statistics and Data Science in the [School of Education](https://www.education.udel.edu/) at the [University of Delaware](https://www.udel.edu/). I am also affiliated with the [Data Science Institute](https://dsi.udel.edu/) as a [Resident Faculty](https://dsi.udel.edu/faculty/#resident)
+<!-- and the [Department of Psychological & Brain Sciences](https://www.psych.udel.edu/) -->
+. I am also affiliated with the [Methodology & Statistics](https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/methodology-and-statistics) at [Leiden University](https://www.universiteitleiden.nl/en) in The Netherlands.
 
 My research interests focus on a number of methodological approaches for longitudinal, time series, and psychometric modeling in the fields of education and development. My current work includes developing methods for: **distal outcome** and **time-varying covariate** growth models, improving estimation of **nonlinear models** for testing specific research hypotheses, and using Bayesian approaches for **merging longitudinal and time series** models.
 
