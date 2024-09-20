@@ -13,36 +13,28 @@ $*$ denotes senior/corresponding author role
 ![A selection of key publication models and results.](static/img/header.png){width=100% fig-align="center"}
 
 ## Preprints
-6\. **McCormick, E.M.** (*preprint*). 
-A tutorial on formalizing and testing specific psychological theory using nonlinear models.
+5\. Schaaf, J.V., Sørensen, Ø., **McCormick, E.M.**, Aristodemou, M., & Kievit, R.A. (*preprint*).
+Advocating a new default for time series modeling: Asymmetric temporal dynamics using threshold dynamics parameters.
 [{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/4y7q9)
 [{{< ai osf >}} Supplemental Material](https://osf.io/jqgkv/)
 
 
-5\. Sadeghi, N., Van Der Velpen, I., Baker, B., Batta, I., Genon, S., **McCormick, E. M.**, Michel, L., Moraczewski, D., Morton, J.B., Seraji, M., Shaw, P., Silva, R.F., Soleimani, N., Sprooten, E., Sørensen, Ø., Thomas, A.G., Wazana, A., Zhou, Z., Calhoun, V., Chakravarty, M.M., Kievit, R.A., Plachti, A., Zuo, X., & White, T. (*preprint*). 
+4\. **McCormick, E.M.** (*preprint*). 
+A tutorial on formalizing and testing specific psychological theory using nonlinear models.
+[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/osf/3b5ra)
+[{{< ai osf >}} Supplemental Material](https://osf.io/hwmgk/)
+
+
+3\. Sadeghi, N., Van Der Velpen, I., Baker, B., Batta, I., Genon, S., **McCormick, E. M.**, Michel, L., Moraczewski, D., Morton, J.B., Seraji, M., Shaw, P., Silva, R.F., Soleimani, N., Sprooten, E., Sørensen, Ø., Thomas, A.G., Wazana, A., Zhou, Z., Calhoun, V., Chakravarty, M.M., Kievit, R.A., Plachti, A., Zuo, X., & White, T. (*preprint*). 
 What do we really know about the interplay between brain, behavior, and cognition from childhood to early adulthood? An international group effort to generate and share simulated datasets.
 [{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/3un9j) \|
 [{{< ai osf >}} Supplemental Material](https://osf.io/yjt9p/)
 
 
-4\. Brandmaier, A. M., Lindenberger, U., & $\mathbf{^*}$**McCormick, E. M.** (*preprint*).
-Optimal Two-Time Point Longitudinal Models for Estimating Individual-Level Change: Asymptotic Insights and Practical Implications.
-[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/6dc8e) \|
-[{{< ai osf >}} Supplemental Material](https://osf.io/3g2z6/)
-
-
-3\. $^{\dagger}$König, M., Smith, A., Moreno-Lopez L., Davidson, E., Dauvermann, M., Orellana, S., **McCormick, E. M.**, Kaçer, M., Ioannidis, K., & Van Harmelen, A. L. (*preprint*).
+2\. $^{\dagger}$König, M., Smith, A., Moreno-Lopez L., Davidson, E., Dauvermann, M., Orellana, S., **McCormick, E. M.**, Kaçer, M., Ioannidis, K., & Van Harmelen, A. L. (*preprint*).
 Friendship buffering effects on mental health symptoms before and during the COVID-19 pandemic: a UK longitudinal study of young people with childhood adversity.
 [{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/g5d9z) \|
 [{{< ai osf >}} Supplemental Material](https://osf.io/mdqgr/)
-
-
-
-2\. **McCormick, E. M.** (*preprint*). 
-Deriving models of change with interpretable parameters: linear estimation with nonlinear inference. 
-[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/r4vxb) \|
-[{{< ai osf >}} Supplemental Material](https://osf.io/5dmy3/) \|
-[{{< fa brands github >}} LENI Package](https://github.com/E-M-McCormick/leni)
 
 
 1\. **McCormick, E. M.**, Borgeest, G. S., & Kievit, R. A. (*preprint*). 
@@ -54,16 +46,30 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 
 ## Published
 ### In press
+40\. Brandmaier, A. M., Lindenberger, U., & $\mathbf{^*}$**McCormick, E. M.** (*in press*).
+Optimal Two-Time Point Longitudinal Models for Estimating Individual-Level Change: Asymptotic Insights and Practical Implications.
+*Developmental Cognitive Neuroscience*, Accepted September 2024
+[{{< ai osf >}} Supplemental Material](https://osf.io/3g2z6/)
+[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/6dc8e) \|
 
-38\. **McCormick, E. M.** & Bauer, D. J. (*in press*).
+
+39\. **McCormick, E. M.** (*in press*). 
+Deriving models of change with interpretable parameters: linear estimation with nonlinear inference. 
+*Psychometrika*, Accepted September 2024.
+[{{< ai osf >}} Supplemental Material](https://osf.io/5dmy3/) \|
+[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/r4vxb) \|
+[{{< fa brands github >}} LENI Package](https://github.com/E-M-McCormick/leni)
+
+
+### 2024
+38\. **McCormick, E. M.** & Bauer, D. J. (2024).
 How should we model the effect of "change" - or should we?.
-*Psychological Methods*, Accepted April 2024. <https://doi.org/10.1037/met0000663> \
-[{{< fa download >}} Download](static/pubs/MET-2023-1460-proof.pdf) \|
+*Psychological Methods*, Advance online publication. <https://doi.org/10.1037/met0000663> \
+[{{< fa download >}} Download](static/pubs/38.McCormick-Bauer-2024-PsychMethods.pdf) \|
 [{{< ai osf >}} Supplemental Material](https://osf.io/yc96v/) \|
 [{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/pbhmq)
 
 
-### 2024
 37\. **McCormick, E. M.**, Curran, P. J. & Hancock G. R. (2024). 
 Latent Growth Factors as Predictors of Distal Outcomes. 
 *Psychological Methods*, Advance online publication. <https://doi.org/10.1037/met0000642> \
