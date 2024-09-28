@@ -46,14 +46,8 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 
 ## Published
 ### In press
-40\. Brandmaier, A. M., Lindenberger, U., & $\mathbf{^*}$**McCormick, E. M.** (*in press*).
-Optimal Two-Time Point Longitudinal Models for Estimating Individual-Level Change: Asymptotic Insights and Practical Implications.
-*Developmental Cognitive Neuroscience*, Accepted September 2024
-[{{< ai osf >}} Supplemental Material](https://osf.io/3g2z6/)
-[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/6dc8e) \|
 
-
-39\. **McCormick, E. M.** (*in press*). 
+40\. **McCormick, E. M.** (*in press*). 
 Deriving models of change with interpretable parameters: linear estimation with nonlinear inference. 
 *Psychometrika*, Accepted September 2024.
 [{{< ai osf >}} Supplemental Material](https://osf.io/5dmy3/) \|
@@ -62,6 +56,14 @@ Deriving models of change with interpretable parameters: linear estimation with 
 
 
 ### 2024
+39\. Brandmaier, A. M., Lindenberger, U., & $\mathbf{^*}$**McCormick, E. M.** (2024).
+Optimal Two-Time Point Longitudinal Models for Estimating Individual-Level Change: Asymptotic Insights and Practical Implications.
+*Developmental Cognitive Neuroscience, 70*, 101450. <https://doi.org/10.1016/j.dcn.2024.101450> \
+[{{< fa download >}} Download](static/pubs/39.Brandmaier-Lindenberger-McCormick-2024-DCN.pdf) \|
+[{{< ai osf >}} Supplemental Material](https://osf.io/3g2z6/) \|
+[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/6dc8e) 
+
+
 38\. **McCormick, E. M.** & Bauer, D. J. (2024).
 How should we model the effect of "change" - or should we?.
 *Psychological Methods*, Advance online publication. <https://doi.org/10.1037/met0000663> \
