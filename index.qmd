@@ -70,7 +70,7 @@ included extensive code, detailed derivations, and example data if you
 are interested in fitting these models in your own work.
 
 **Ethan M. McCormick**    \
-*Preprint* (revision submitted at *Psychometrika*)    \
+2024 (accepted at *Psychometrika*)    \
 [preprint](https://osf.io/preprints/psyarxiv/r4vxb) \| 
 [supplemental material](https://osf.io/5dmy3/)
 :::
