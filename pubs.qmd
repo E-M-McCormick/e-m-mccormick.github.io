@@ -46,7 +46,6 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 
 ## Published
 ### In press
-
 40\. **McCormick, E. M.** (*in press*). 
 Deriving models of change with interpretable parameters: linear estimation with nonlinear inference. 
 *Psychometrika*, Accepted September 2024.
