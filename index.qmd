@@ -30,11 +30,11 @@ Fall `r format(Sys.Date() + 365, format = "%Y")` at the University of Delaware. 
 :::
 
 
-I am starting in Fall 2024 as an Assistant Professor of Educational Statistics and Data Science in the [School of Education](https://www.education.udel.edu/) at the [University of Delaware](https://www.udel.edu/). I am also affiliated with the [Data Science Institute](https://dsi.udel.edu/) as a [Resident Faculty](https://dsi.udel.edu/faculty/#resident),
-<!-- and the [Department of Psychological & Brain Sciences](https://www.psych.udel.edu/) -->
+I am an Assistant Professor of Educational Statistics and Data Science in the [School of Education](https://www.education.udel.edu/) at the [University of Delaware](https://www.udel.edu/). I am also affiliated with the [Data Science Institute](https://dsi.udel.edu/) as a [Resident Faculty](https://dsi.udel.edu/faculty/#resident),
+the [Department of Psychological & Brain Sciences](https://www.psych.udel.edu/)
 and with the [Methodology & Statistics](https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/methodology-and-statistics) unit at [Leiden University](https://www.universiteitleiden.nl/en) in The Netherlands.
 
-My research interests focus on a number of methodological approaches for longitudinal, time series, and psychometric modeling in the fields of education and development. My current work includes developing methods for: **distal outcome** and **time-varying covariate** growth models, improving estimation of **nonlinear models** for testing specific research hypotheses, and using Bayesian approaches for **merging longitudinal and time series** models.
+My research interests focus on a number of methodological approaches for longitudinal, time series, and psychometric modeling in the fields of education and development. My current work includes developing methods for: **distal outcome** and **time-varying covariate** growth models, improving estimation of **nonlinear** and **moderated parameter models** for testing specific research hypotheses, and using Bayesian approaches for **merging longitudinal and time series** models.
 
 For the full details of my academic bio, please see my [CV](static/files/McCormick_CV.pdf).
 :::
@@ -70,9 +70,11 @@ included extensive code, detailed derivations, and example data if you
 are interested in fitting these models in your own work.
 
 **Ethan M. McCormick**    \
-2024 (accepted at *Psychometrika*)    \
+*Psychometrika*, 2025    \
+[paper](static/pubs/41.McCormick-2025-Psychometrika.pdf) \|
 [preprint](https://osf.io/preprints/psyarxiv/r4vxb) \| 
-[supplemental material](https://osf.io/5dmy3/)
+[supplemental material](https://osf.io/5dmy3/) \| 
+DOI: [10.1017/psy.2024.2](https://doi.org/10.1017/psy.2024.2)
 :::
 :::
 
@@ -119,10 +121,10 @@ Modeling the impact of individual differences in growth for later (i.e., distal)
 [Patrick J. Curran](https://curran.web.unc.edu/),
 [Gregory R. Hancock](https://education.umd.edu/directory/gregory-r-hancock)   \
 *Psychological Methods*. Advance online publication    \
-[paper](https://doi.org/10.1037/met0000642) \|
+[paper](static/pubs/37.McCormick-Curran-Hancock-2024-PsychMethods.pdf) \|
 [preprint](https://doi.org/10.31234/osf.io/fevra) \| 
-[supplemental material](https://osf.io/fzubt/)
-| DOI: [10.1037/met0000642](https://doi.org/10.1037/met0000642)
+[supplemental material](https://osf.io/fzubt/) \| 
+DOI: [10.1037/met0000642](https://doi.org/10.1037/met0000642)
 :::
 :::
 
@@ -157,6 +159,8 @@ DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281)
 :::
 
 ## Collaborators
+
+[Daniel J. Bauer](https://dbauer.web.unc.edu/) - University of North Carolina at Chapel Hill
 
 [Patrick J. Curran](https://curran.web.unc.edu/) - University of North Carolina at Chapel Hill
 
@@ -249,11 +253,11 @@ Sofia Orellana,
 Muzaffer Kaçer,
 Konstantinos Ioannidis,
 Anne-Laura van Harmelen \
-*in prep*    \
-<!-- [paper]() \|  -->
+*Development and Psychopathology*, 2025    \
+[paper](static/pubs/40.Konig-Smith-Moreno-Lopez-Davison-Dauvermann-Orellana-McCormick-Peris-Kaser-Ioannidis-vanHarmelen-2025-DevPsychopathol.pdf) \|
 [preprint](https://doi.org/10.31234/osf.io/g5d9z) \|
-[supplemental material](https://osf.io/mdqgr/) <!-- \| -->
-<!-- DOI: []() -->
+[supplemental material](https://osf.io/mdqgr/) \|
+DOI: [10.1017/S0954579424001986](https://doi.org/10.1017/S0954579424001986)
 :::
 :::
 
@@ -273,11 +277,11 @@ Yuqi Liu is completing her PhD in Methodology and Statistics at Leiden Universit
 
 [Yuqi Liu](https://nl.linkedin.com/in/yuqi-liu-675089252),
 Zsuzsa Bakk,
-Mark de Rooij,
-**Ethan M. McCormick**    \
-*in prep*    \
+**Ethan M. McCormick** 
+Mark de Rooij,   \
+*preprint*, (revise and resubmit at *Multivariate Behavioral Research*)    \
 <!-- [paper]() \|  -->
-<!-- [preprint]() \|  -->
+[preprint](https://osf.io/preprints/psyarxiv/4n7ke) \|
 <!-- [supplemental material]() \|  -->
 <!-- DOI: []() -->
 :::
