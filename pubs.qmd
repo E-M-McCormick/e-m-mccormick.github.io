@@ -105,7 +105,7 @@ Latent Growth Factors as Predictors of Distal Outcomes.
 
 
 36\. $^\dagger$Michel L. C., **McCormick, E. M.**, & Kievit, R. A. (2024). 
-Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N= 11 876). 
+Grey and white matter metrics demonstrate distinct and complementary prediction of differences in cognitive performance in children: Findings from ABCD (N = 11 876). 
 *Journal of Neuroscience, 44*(12), e0465232023oi. <https://doi.org/10.1523/JNEUROSCI.0465-23.2023> \
 [{{< fa download >}} Download](static/pubs/36.Michel-McCormick-Kievit-2024-JNeuro.pdf) \|
 [{{< ai osf >}} Supplemental Material](https://osf.io/ryskf/) \|
