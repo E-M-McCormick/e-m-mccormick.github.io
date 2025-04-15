@@ -25,8 +25,7 @@ Jump to: [Selected Research](#sec-selected) \|
 ::: {.callout-tip appearance="simple"}
 ## Graduate Student Recruitment
 
-I will be interviewing new students this cycle (Fall `r format(Sys.Date(), format = "%Y")`) to start in
-Fall `r format(Sys.Date() + 365, format = "%Y")` at the University of Delaware. If you are interested in working together -- or know of interested students -- please get in touch at `emccorm @ udel [dot] edu`.
+I will be interviewing new students this cycle (Fall `r format(Sys.Date(), format = "%Y")`) to start in Fall `r format(Sys.Date() + 365, format = "%Y")` at the University of Delaware. If you are interested in working together -- or know of interested students -- please get in touch at `emccorm @ udel [dot] edu`.
 :::
 
 
