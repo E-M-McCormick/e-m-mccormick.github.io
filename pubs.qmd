@@ -12,28 +12,16 @@ $*$ denotes senior/corresponding author role
 
 ![A selection of key publication models and results.](static/img/header.png){width=100% fig-align="center"}
 
-## Preprints
-6\. Sørensen, Ø. & **McCormick, E.M.** (*preprint*).
-Modeling cycles, trends, and time-varying effects in dynamic structural equation models with regression splines.
-[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/2ajpt)
-[{{< ai osf >}} Supplemental Material](https://osf.io/qpkmg/)
+## Preprints and Preregistrations
+4\. van Rijn, R., **McCormick, E.M.**, van Schijndel, R., Sijtsma, H., Krabbendam, L., & Braams, B.R. (*preregistration*).
+Quantifying and Explaining Short-term fMRI Variability in Adolescent Reward Sensitivity.
+[{{< ai osf >}} Preregistration](https://doi.org/10.17605/OSF.IO/UTQZH)
 
 
-5\. **McCormick, E.M.** (*preprint*).
+3\. **McCormick, E.M.** (*preprint*).
 Moderating the consequences of longitudinal change for distal outcomes.
 [{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/bmynp)
 [{{< ai osf >}} Supplemental Material](https://osf.io/a5ruy/)
-
-
-4\. $^\dagger$Liu, Y., Bakk, Z. **McCormick, E.M.**, & de Rooij, M.J. (*preprint*).
-A Two-step estimator for growth mixture models with covariates in the presence of direct effects.
-[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/4n7ke)
-
-
-3\. Schaaf, J.V., Sørensen, Ø., **McCormick, E.M.**, Aristodemou, M., & Kievit, R.A. (*preprint*).
-Advocating a new default for time series modeling: Asymmetric temporal dynamics using threshold dynamics parameters.
-[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/4y7q9)
-[{{< ai osf >}} Supplemental Material](https://osf.io/jqgkv/)
 
 
 2\. **McCormick, E.M.** (*preprint*). 
@@ -51,9 +39,44 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 
 ## Published
 
-<!-- ## In Press -->
+## In Press
+47\. Liu, Y., Bakk, Z. **McCormick, E.M.**, & de Rooij, M.J. (*in press*).
+A Two-step estimator for growth mixture models with covariates in the presence of direct effects.
+*Multivariate Behavioral Research*. Accepted July 2025. \
+[{{< ai osf >}} Supplemental Material]() \|
+[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/4n7ke)
+
+
+46\. Dugan, K., Kunkel, J., **McCormick, E.M.**, Bleil, M.E., Booth-LaForce, C., Fraley, R.C., Simpson, J.A., & Roisman, G.I. (*in press*).
+A prospective longitudinal study of the associations between childhood and adolescent interpersonal experiences and adult attachment orientations.
+*Journal of Personality and Social Psychology*. Stage 2 Registered Report Accepted June 2025. \
+[{{< ai osf >}} Preregistration](https://osf.io/tdrxy/resources)
+
 
 ### 2025
+45\. Schaaf, J.V., Sørensen, Ø., **McCormick, E.M.**, Aristodemou, M., & Kievit, R.A. (2025).
+Uncovering asymmetric temporal dynamics using threshold dynamics parameters.
+*Structural Equation Modeling: A Multidisciplinary Journal*, 1--17. <https://doi.org/10.1080/10705511.2025.2519208> \
+[{{< fa download >}} Download](static/pubs/45.Schaaf-Sorensen-McCormick-Aristodemou-Kievit-2025-SEM.pdf) \|
+[{{< ai osf >}} Supplemental Material](https://osf.io/5vumh) \|
+[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31219/osf.io/3b5ra_v2)
+
+
+44\. Sørensen, Ø. & **McCormick, E.M.** (2025).
+Modeling cycles, trends, and time-varying effects in dynamic structural equation models with regression splines.
+*Multivariate Behavioral Research*, 1-16. <https://doi.org/10.1080/00273171.2025.2507297> \
+[{{< fa download >}} Download](static/pubs/44.Sorensen-McCormick-2025-MBR.pdf) \|
+[{{< ai osf >}} Supplemental Material](https://osf.io/qpkmg/) \|
+[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/2ajpt)
+
+
+43\. Student, S., & **McCormick, E.M.** (2025).
+Digital module 38: Differential item functioning by multiple variables using moderated nonlinear factor analysis. 
+*Educational Measurement: Issues and Practice, 44*(2), 39–41. <https://doi.org/10.1111/emip.12669> \
+[{{< fa download >}} Download](static/pubs/43.Student-McCormick-2025-EMIP.pdf) \|
+[{{< fa globe >}} Digital Module](https://www.ncme.org/itemsportal/digital-modules/dm38)
+
+
 42\. Sadeghi, N., Van Der Velpen, I., Baker, B., Batta, I., Genon, S., **McCormick, E.M.**, Michel, L., Moraczewski, D., Morton, J.B., Seraji, M., Shaw, P., Silva, R.F., Soleimani, N., Sprooten, E., Sørensen, Ø., Thomas, A.G., Wazana, A., Zhou, Z., Calhoun, V., Chakravarty, M.M., Kievit, R.A., Plachti, A., Zuo, X., & White, T. (2025).
 What do we really know about the interplay between brain, behavior, and cognition from childhood to early adulthood? An international group effort to generate and share simulated datasets.
 *Scientific Data, 12*, 473. <https://doi.org/10.1038/s41597-025-04740-3> \
@@ -73,7 +96,7 @@ Deriving models of change with interpretable parameters: linear estimation with 
 
 40\. $^\dagger$König, M., Smith, A., Moreno-Lopez L., Davidson, E., Dauvermann, M., Orellana, S., **McCormick, E.M.**, Kaçer, M., Ioannidis, K., & Van Harmelen, A.L. (2025).
 Friendship buffering effects on mental health symptoms before and during the COVID-19 pandemic: a UK longitudinal study of young people with childhood adversity.
-*Development and Psychopathology*. 1-16. <https://doi.org/10.1017/S0954579424001986> \
+*Development and Psychopathology*, 1-16. <https://doi.org/10.1017/S0954579424001986> \
 [{{< fa download >}} Download](static/pubs/40.Konig-Smith-Moreno-Lopez-Davison-Dauvermann-Orellana-McCormick-Peris-Kaser-Ioannidis-vanHarmelen-2025-DevPsychopathol.pdf) \|
 [{{< ai osf >}} Supplemental Material](https://osf.io/mdqgr/) \|
 [{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/g5d9z) 

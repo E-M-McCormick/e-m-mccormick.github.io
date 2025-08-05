@@ -31,7 +31,7 @@ I will be interviewing new students this cycle (Fall `r format(Sys.Date(), forma
 
 I am an Assistant Professor of Educational Statistics and Data Science in the [School of Education](https://www.education.udel.edu/) at the [University of Delaware](https://www.udel.edu/). I am also affiliated with the [Data Science Institute](https://dsi.udel.edu/) as a [Resident Faculty](https://dsi.udel.edu/faculty/#resident),
 the [Department of Psychological & Brain Sciences](https://www.psych.udel.edu/)
-and with the [Methodology & Statistics](https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/methodology-and-statistics) unit at [Leiden University](https://www.universiteitleiden.nl/en) in The Netherlands.
+and with the [Methodology & Statistics](https://www.universiteitleiden.nl/en/social-behavioural-sciences/psychology/methodology-and-statistics) unit at [Leiden University](https://www.universiteitleiden.nl/en) in the Netherlands.
 
 My research interests focus on a number of methodological approaches for longitudinal, time series, and psychometric modeling in the fields of education and development. My current work includes developing methods for: **distal outcome** and **time-varying covariate** growth models, improving estimation of **nonlinear** and **moderated parameter models** for testing specific research hypotheses, and using Bayesian approaches for **merging longitudinal and time series** models.
 
@@ -49,6 +49,36 @@ For the full details of my academic bio, please see my [CV](static/files/McCormi
 #### Click for [full publication list](pubs.html) \
 
 <!-- Item -->
+
+::: columns
+::: {.column width="25%"}
+![](./static/img/featured/var_smooths.png)
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**Modeling cycles, trends, and time-varying effects in dynamic structural equation models with regression splines.**]{style="font-size: 125%;"}
+
+In hiearachical time series models, like dynamic structural equation models 
+(DSEMs), standard model formulations typically assume a stationary process or 
+simple (linear) trends that can be partialed out. However, in many phenomenon, 
+we might expect more complex group and individual directional changes. 
+To capture these nonlinear trends, in this paper we laid out a formulation of a
+DSEM with semi-parametric splines to capture nonlinear changes in the outcome
+over the assessment period. 
+
+[Øystein Sørensen](https://www.sv.uio.no/psi/english/people/academic/oyss/),
+**Ethan M. McCormick**    \
+*Multivariate Behavioral Research*, 2025    \
+[paper](static/pubs/44.Sorensen-McCormick-2025-MBR.pdf) \|
+[preprint](https://doi.org/10.31234/osf.io/2ajpt) \| 
+[supplemental material](https://osf.io/qpkmg/) \| 
+DOI: [10.1080/00273171.2025.2507297](https://doi.org/10.1080/00273171.2025.2507297)
+:::
+:::
+
+\
 
 ::: columns
 ::: {.column width="25%"}
@@ -171,7 +201,7 @@ DOI: [10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281)
 
 [Jennifer Pfeifer](https://cas.uoregon.edu/directory/psychology-faculty/all/jpfeifer) - University of Oregon
 
-[Øystein Sørenesen](https://www.sv.uio.no/psi/english/people/academic/oyss/) - University of Oslo
+[Øystein Sørensen](https://www.sv.uio.no/psi/english/people/academic/oyss/) - University of Oslo
 
 
 
@@ -276,9 +306,9 @@ Yuqi Liu is completing her PhD in Methodology and Statistics at Leiden Universit
 
 [Yuqi Liu](https://nl.linkedin.com/in/yuqi-liu-675089252),
 Zsuzsa Bakk,
-**Ethan M. McCormick** 
+**Ethan M. McCormick**,
 Mark de Rooij,   \
-*preprint*, (revise and resubmit at *Multivariate Behavioral Research*)    \
+*preprint*, (accepted at *Multivariate Behavioral Research*)    \
 <!-- [paper]() \|  -->
 [preprint](https://osf.io/preprints/psyarxiv/4n7ke) \|
 <!-- [supplemental material]() \|  -->
@@ -286,7 +316,28 @@ Mark de Rooij,   \
 :::
 :::
 
+::: columns
+::: {.column width="25%"}
+![](static/img/students/wyatt-read.jpeg){fig-align="center" width=50%}
+:::
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="70%"}
+[**A Two-step estimator for growth mixture models with covariates**]{style="font-size: 125%;"}
 
+Wyatt Read is completing his PhD in Educational Statistics and Research Methods at the University of Delaware, supported by a Graduate Scholar Award. In his first year, he has contributed to projects surrounding the detection of differential item functioning (DIF) in scale scores.
+
+[Wyatt Read](https://www.linkedin.com/in/wyatt-read-994510265),
+**Ethan M. McCormick**, 
+Sanford R. Student,   \
+*in prep*    \
+<!-- [paper]() \|  -->
+<!-- [preprint](https://osf.io/preprints/psyarxiv/4n7ke) \| -->
+<!-- [supplemental material]() \|  -->
+<!-- DOI: []() -->
+:::
+:::
 
 ## Software & Resources {#sec-resources}
 
