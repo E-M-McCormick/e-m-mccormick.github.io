@@ -68,5 +68,12 @@
     "title": "Ethan M. McCormick",
     "section": "Software & Resources",
     "text": "Software & Resources\n\n\n\n\n\n\n\n\n\n\nThe leni package provides a collection of tools for Linear Estimation with Nonlinear Inference (LENI) which involves estimating the parameters of nonlinear target functions as transformations of linear models. Includes support for regression and mixed-effects models (main function: leni()) which produces transformed parameter estimates, as well as structural equation models (main function: leni_sem()) which generates lavaan syntax for fitting linearized SEMs. You can find more information about this package at my GitHub page https://github.com/E-M-McCormick/leni.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA primarily R-based companion to the paper McCormick, Byrne, Flournoy, Mills, & Pfeifer, (2023), DCN. Here I provide the syntax to accomplish the models we discussed in the main text. Sprinkled in are tips and tricks for the best way to fit various model options, with some additional resources in other programs when needed. https://e-m-mccormick.github.io/static/longitudinal-primer/index.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVector and matrix notation is a nicely compact and efficient way to represent models, however, many people aren’t train in these approaches and tend to skip over equations. This cheat sheet is meant to be a gentle introduction to matrix notation and how it can help you represent your model easily. The file can be found on OSF at https://osf.io/d54fx."
+  },
+  {
+    "objectID": "static/statistical-programming/index.html",
+    "href": "static/statistical-programming/index.html",
+    "title": "Statistical Programming in R & Python—HTML Notes",
+    "section": "",
+    "text": "Click for Link for Each Week’s Slides\n\nIntroduction\nWeek 1\nWeek 2"
   }
 ]

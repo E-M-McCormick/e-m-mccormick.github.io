@@ -1,0 +1,15 @@
+---
+title: "Statistical Programming in R & Python---HTML Notes"
+standalone: false
+number-sections: false
+engine: knitr
+---
+
+# Click for Link for Each Week's Slides 
+
+- [Introduction](intro-sprp.html)
+
+- [Week 1](week-1-sprp.html)
+
+- [Week 2](week-2-sprp.html)
+
