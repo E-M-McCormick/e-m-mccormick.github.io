@@ -40,20 +40,28 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 ## Published
 
 ## In Press
-47\. Liu, Y., Bakk, Z. **McCormick, E.M.**, & de Rooij, M.J. (*in press*).
+48\. Aczel, B., ..., **McCormick, E.M**, ... & Nosek, B.A. (*in press*). Investigating the analytical robustness of the social and behavioural sciences. 
+*Nature*. Accepted September 2025. \
+[{{< ai osf >}} Preregistration](https://osf.io/q5h2c/)
+
+### 2025
+
+47\. Dugan, K., Kunkel, J., Simpson, J.A., Fraley, R.C., **McCormick, E.M.**, Bleil, M.E., Booth-LaForce, C., & Roisman, G.I. (*in press*).
+A prospective longitudinal study of the associations between childhood and adolescent interpersonal experiences and adult attachment orientations.
+*Journal of Personality and Social Psychology*. Advance online publication. \
+<https://doi.org/10.1037/pspi0000502> \
+[{{< fa download >}} Download](static/pubs/47.Dugan-Kunkel-Fraley-Simpson-McCormick-Bleil-BoothLaForce-Roisman-2025-JPSP.pdf) \|
+[{{< ai osf >}} Preregistration](https://osf.io/tdrxy/resources)
+
+46\. $^\dagger$Liu, Y., Bakk, Z. **McCormick, E.M.**, & de Rooij, M.J. (*in press*).
 A Two-step estimator for growth mixture models with covariates in the presence of direct effects.
-*Multivariate Behavioral Research*. Accepted July 2025. \
-[{{< ai osf >}} Supplemental Material]() \|
+*Multivariate Behavioral Research*. 1--17. \
+<https://doi.org/10.1080/00273171.2025.2557275> \
+[{{< fa download >}} Download](static/pubs/46.Liu-Baak-McCormick-deRooij-2025-MBR.pdf) \|
+[{{< ai osf >}} Supplemental Material](https://www.tandfonline.com/doi/suppl/10.1080/00273171.2025.2557275?scroll=top) \|
 [{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/psyarxiv/4n7ke)
 
 
-46\. Dugan, K., Kunkel, J., **McCormick, E.M.**, Bleil, M.E., Booth-LaForce, C., Fraley, R.C., Simpson, J.A., & Roisman, G.I. (*in press*).
-A prospective longitudinal study of the associations between childhood and adolescent interpersonal experiences and adult attachment orientations.
-*Journal of Personality and Social Psychology*. Stage 2 Registered Report Accepted June 2025. \
-[{{< ai osf >}} Preregistration](https://osf.io/tdrxy/resources)
-
-
-### 2025
 45\. Schaaf, J.V., Sørensen, Ø., **McCormick, E.M.**, Aristodemou, M., & Kievit, R.A. (2025).
 Uncovering asymmetric temporal dynamics using threshold dynamics parameters.
 *Structural Equation Modeling: A Multidisciplinary Journal*, 1--17. <https://doi.org/10.1080/10705511.2025.2519208> \
