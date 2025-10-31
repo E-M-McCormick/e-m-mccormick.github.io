@@ -46,14 +46,14 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 
 ### 2025
 
-47\. Dugan, K., Kunkel, J., Simpson, J.A., Fraley, R.C., **McCormick, E.M.**, Bleil, M.E., Booth-LaForce, C., & Roisman, G.I. (*in press*).
+47\. Dugan, K., Kunkel, J., Simpson, J.A., Fraley, R.C., **McCormick, E.M.**, Bleil, M.E., Booth-LaForce, C., & Roisman, G.I. (2025).
 A prospective longitudinal study of the associations between childhood and adolescent interpersonal experiences and adult attachment orientations.
 *Journal of Personality and Social Psychology*. Advance online publication. \
 <https://doi.org/10.1037/pspi0000502> \
 [{{< fa download >}} Download](static/pubs/47.Dugan-Kunkel-Fraley-Simpson-McCormick-Bleil-BoothLaForce-Roisman-2025-JPSP.pdf) \|
 [{{< ai osf >}} Preregistration](https://osf.io/tdrxy/resources)
 
-46\. $^\dagger$Liu, Y., Bakk, Z. **McCormick, E.M.**, & de Rooij, M.J. (*in press*).
+46\. $^\dagger$Liu, Y., Bakk, Z. **McCormick, E.M.**, & de Rooij, M.J. (2025).
 A Two-step estimator for growth mixture models with covariates in the presence of direct effects.
 *Multivariate Behavioral Research*. 1--17. \
 <https://doi.org/10.1080/00273171.2025.2557275> \
