@@ -41,7 +41,7 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 
 ## In Press
 48\. Aczel, B., ..., **McCormick, E.M**, ... & Nosek, B.A. (*in press*). Investigating the analytical robustness of the social and behavioural sciences. 
-*Nature*. Accepted September 2025. \
+*Nature*. Accepted October 2025. \
 [{{< ai osf >}} Preregistration](https://osf.io/q5h2c/)
 
 ### 2025
