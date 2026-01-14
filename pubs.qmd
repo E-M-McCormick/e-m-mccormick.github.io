@@ -13,15 +13,9 @@ $*$ denotes senior/corresponding author role
 ![A selection of key publication models and results.](static/img/header.png){width=100% fig-align="center"}
 
 ## Preprints and Preregistrations
-4\. van Rijn, R., **McCormick, E.M.**, van Schijndel, R., Sijtsma, H., Krabbendam, L., & Braams, B.R. (*preregistration*).
+3\. van Rijn, R., **McCormick, E.M.**, van Schijndel, R., Sijtsma, H., Krabbendam, L., & Braams, B.R. (*preregistration*).
 Quantifying and Explaining Short-term fMRI Variability in Adolescent Reward Sensitivity.
 [{{< ai osf >}} Preregistration](https://doi.org/10.17605/OSF.IO/UTQZH)
-
-
-3\. **McCormick, E.M.** (*preprint*).
-Moderating the consequences of longitudinal change for distal outcomes.
-[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/bmynp)
-[{{< ai osf >}} Supplemental Material](https://osf.io/a5ruy/)
 
 
 2\. **McCormick, E.M.** (*preprint*). 
@@ -40,9 +34,19 @@ Interrupted mediation: A cautionary note on using derived metrics as intervening
 ## Published
 
 ## In Press
-48\. Aczel, B., ..., **McCormick, E.M**, ... & Nosek, B.A. (*in press*). Investigating the analytical robustness of the social and behavioural sciences. 
+49\. Aczel, B., ..., **McCormick, E.M**, ... & Nosek, B.A. (*in press*). Investigating the analytical robustness of the social and behavioural sciences. 
 *Nature*. Accepted October 2025. \
 [{{< ai osf >}} Preregistration](https://osf.io/q5h2c/)
+
+### 2026
+
+48\. **McCormick, E.M.** (2026).
+Moderating the consequences of longitudinal change for distal outcomes.
+*Multivariate Behavioral Research*. 1--19. \
+<https://doi.org/10.1080/00273171.2026.2613311> \
+[{{< fa download >}} Download](static/pubs/48.McCormick-2026-MBR.pdf) \|
+[{{< ai osf >}} Supplemental Material](https://osf.io/a5ruy/) \|
+[{{< ai psyarxiv >}} Preprint](https://doi.org/10.31234/osf.io/bmynp)
 
 ### 2025
 
